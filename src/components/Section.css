@@ -1,0 +1,98 @@
+/* Container styling */
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Content styling */
+  .section-content {
+    max-width: 60%;
+  }
+  
+  .section-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+  
+  .section-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0462ac; /* Blue for the second heading */
+  }
+  
+  .section-content p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons styling */
+  .buttons {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+  }
+  
+  .learn-more {
+    background-color: #0462ac;
+    color: #fff;
+  }
+  
+  .get-estimate {
+    background-color: #004e92;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #023e73;
+  }
+  
+  /* Image styling */
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .section-image {
+    max-width: 35%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .section-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section-content {
+      max-width: 100%;
+    }
+  
+    .section-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      margin-bottom: 15px;
+    }
+  }
+  
