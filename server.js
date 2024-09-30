@@ -2,10 +2,13 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require('dotenv').config(); // Load environment variables
 
 // server used to send send emails
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000' // Allow your React app's origin
+}));
 app.use(express.json());
 app.use("/", router);
 app.listen(5001, () => console.log("Server Running"));
@@ -47,12 +50,12 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
+  const name = req.body.firstName + ' ' + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
   const phone = req.body.phone;
   const mail = {
-    from: name,
+    from: `${name} <${email}>`,
     to: "admin@haspper.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
@@ -62,7 +65,8 @@ router.post("/contact", (req, res) => {
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json(error);
+      console.log("Email send error: ", error);
+      res.status(500).json({ code: 500, status: "Error sending message" });
     } else {
       res.json({ code: 200, status: "Message Sent" });
     }
