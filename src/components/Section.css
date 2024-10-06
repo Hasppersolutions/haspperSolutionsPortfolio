@@ -21,7 +21,7 @@
   .section-content h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #0462ac; /* Blue for the second heading */
+    color: #c75425; /* Blue for the second heading */
   }
   
   .section-content p {
@@ -34,10 +34,12 @@
   /* Buttons styling */
   .buttons {
     margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
   }
   
   .btn {
-    padding: 12px 20px;
+    padding: 12px 30px;
     border-radius: 25px;
     font-size: 1rem;
     font-weight: bold;
@@ -45,20 +47,26 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-right: 15px;
+    background-color: #c75425; /* Set background color to #c75425 */
+    color: #fff; /* Set text color to white */
   }
   
-  .learn-more {
-    background-color: #0462ac;
-    color: #fff;
+  .btn-learn-more {
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded buttons */
+    font-size: 1em; /* Button text size */
+    cursor: pointer; /* Pointer cursor */
+    min-width: 150px; /* Minimum width for buttons */
+    text-align: center; /* Center text in buttons */
+    background-color: #c75425; /* Button background color */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s; /* Transition effect */
   }
   
-  .get-estimate {
-    background-color: #004e92;
-    color: #fff;
-  }
-  
-  .btn:hover {
-    background-color: #023e73;
+  .btn-learn-more:hover {
+    background-color: #ffca76; /* Hover effect */
+    color: #000; /* Change text color on hover */
   }
   
   /* Image styling */
@@ -89,6 +97,8 @@
   
     .buttons {
       flex-direction: column;
+      background-color: #c75425;
+      justify-content: center;
     }
   
     .btn {
