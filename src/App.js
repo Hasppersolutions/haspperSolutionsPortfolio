@@ -3,6 +3,8 @@ import {NavBar} from './components/NavBar';
 import Banner from "./components/Banner"
 import Section from "./components/Section"
 import ExpertServices from './components/ExpertServices';
+import { Contact } from "./components/Contact";
+import {Mailus} from "./components/Mailus"
 import Mission from './components/Mission';
 import Certification from './components/Certification';
 import Review from './components/Review';
@@ -17,6 +19,8 @@ function App() {
       <Section/>
       <Banner />
       <ExpertServices/>
+      <Mailus/>
+      <Contact />
       <ServicesOffered/>
       <Mission/>
       <Certification/>
