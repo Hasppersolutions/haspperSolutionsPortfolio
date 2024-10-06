@@ -1,0 +1,80 @@
+/* MainSection CSS */
+.main-section {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full height of viewport */
+    padding: 0 40px; /* Horizontal padding */
+    background: url('../assets/img/Background.svg') no-repeat center center/cover; /* Background image */
+    color: #fff; /* Default text color */
+    margin-top: 80px; /* Space for fixed navbar */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    margin-bottom: 20px; /* Space below the logo */
+  }
+  
+  .logo-image {
+    width: 50px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
+  .logo-text {
+    font-size: 1.5em; /* Font size for logo text */
+    font-weight: bold; /* Bold text */
+    color: #c75425; /* Brand color for logo text */
+  }
+  
+  .text-container {
+    max-width: 600px; /* Limit the width of the text */
+  }
+  
+  h1 {
+    font-size: 3em; /* Font size for main heading */
+    font-weight: bold; /* Bold text */
+    margin: 0 0 10px 0; /* Remove margin for h1 */
+    color: #c75425; /* Brand color for h1 */
+  }
+  
+  p {
+    font-size: 1.2em; /* Font size for paragraphs */
+    margin: 0 0 20px 0; /* Space below paragraphs */
+    line-height: 1.5; /* Line height for readability */
+  }
+  
+  h2 {
+    font-size: 2.5em; /* Font size for subheading */
+    margin: 10px 0; /* Space around h2 */
+    color: #c75425; /* Brand color for subheading */
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+  }
+  
+  .consult-btn,
+  .estimate-btn {
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded buttons */
+    font-size: 1em; /* Button text size */
+    cursor: pointer; /* Pointer cursor */
+    min-width: 150px; /* Minimum width for buttons */
+    text-align: center; /* Center text in buttons */
+    background-color: #c75425; /* Button background color */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s; /* Transition effect */
+  }
+  
+  .consult-btn:hover,
+  .estimate-btn:hover {
+    background-color: #ffca76; /* Hover effect */
+    color: #000; /* Change text color on hover */
+  }
+  
