@@ -4,6 +4,7 @@ import Banner from "./components/Banner"
 import Section from "./components/Section"
 import ExpertServices from './components/ExpertServices';
 import { Contact } from "./components/Contact";
+import { ProjectEstimate } from "./components/ProjectEstimate";
 import {Mailus} from "./components/Mailus"
 import Mission from './components/Mission';
 import Certification from './components/Certification';
@@ -21,6 +22,7 @@ function App() {
       <ExpertServices/>
       <Mailus/>
       <Contact />
+      <ProjectEstimate/>
       <ServicesOffered/>
       <Mission/>
       <Certification/>
