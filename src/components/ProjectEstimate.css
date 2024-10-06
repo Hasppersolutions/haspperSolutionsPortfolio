@@ -1,0 +1,105 @@
+/************ Project Estimate ************/
+
+#projectEstimate {
+  background: #ffffff; /* Simple white background */
+  padding: 60px 0 200px 0;
+}
+
+#projectEstimate h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+#projectEstimate form {
+  background: #d3d0d0; /* Changed background color to white */
+  padding: 100px 50 200px 1; /* Added padding */
+}
+
+#projectEstimate form input,
+#projectEstimate form textarea {
+  width: 100%;
+  background: rgba(244, 238, 238, 0.1); /* Slightly dark background */
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+  color: #000; /* Change to black for contrast */
+  margin: 0 0 8px 0;
+  padding: 18px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+#projectEstimate form input:focus,
+#projectEstimate form textarea:focus {
+  background: rgba(0, 0, 0, 0.2); /* Darker on focus */
+  color: #121212;
+}
+
+#projectEstimate form input::placeholder,
+#projectEstimate form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000; /* Change to black for contrast */
+}
+
+#projectEstimate form input:focus::placeholder,
+#projectEstimate form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+
+#projectEstimate form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #C55F34;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 25px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+#projectEstimate form button span {
+  z-index: 1;
+  position: relative;
+}
+
+#projectEstimate form button:hover {
+  color: #fff;
+}
+
+#projectEstimate form button::before {
+  content: "";
+  background: #e67848;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#projectEstimate form button:hover::before {
+  width: 100%;
+}
+
+/* Layout styles for left image and right form */
+#projectEstimate .container {
+  display: flex;
+  align-items: center;
+}
+
+#projectEstimate .left-image {
+  flex: 1;
+}
+
+#projectEstimate .form-container {
+  flex: 1;
+  padding-left: 20px; /* Add space between image and form */
+}

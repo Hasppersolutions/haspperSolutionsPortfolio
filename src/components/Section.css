@@ -41,7 +41,7 @@
     border-radius: 25px;
     font-size: 1rem;
     font-weight: bold;
-    border: none;
+    border: brown;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-right: 15px;

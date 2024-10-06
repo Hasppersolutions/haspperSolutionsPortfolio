@@ -4,6 +4,7 @@ import Banner from "./components/Banner"
 import Section from "./components/Section"
 import ExpertServices from './components/ExpertServices';
 import { Contact } from "./components/Contact";
+import { ProjectEstimate } from "./components/ProjectEstimate";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Section/>
       <ExpertServices/>
       <Contact />
+      <ProjectEstimate/>
     </div>
   );
 }

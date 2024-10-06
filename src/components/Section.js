@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Section.css';
+import { ProjectEstimate } from './ProjectEstimate';
+
 
 const Section = () => {
+  const [showEstimate, setShowEstimate] = useState(false);
   return (
     <div className="section-container">
       <div className="section-content">
@@ -22,8 +25,9 @@ const Section = () => {
         <p>So, what’s holding you back from being the best in the market?</p>
         <div className="buttons">
           <button className="btn learn-more">LEARN MORE ABOUT ONGRAPH</button>
-          <button className="btn get-estimate">GET AN ESTIMATE</button>
+          <button onclick = {() => setShowEstimate(true)}  className="btn get-estimate">GET AN ESTIMATE</button>
         </div>
+        {showEstimate && <ProjectEstimate />}
       </div>
       <div className="section-image">
         <img src="path-to-your-image" alt="Consulting Service" />
