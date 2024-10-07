@@ -11,6 +11,8 @@ import Certification from './components/Certification';
 import Review from './components/Review';
 import ServicesOffered from './components/ServiceOffered';
 import MainSection from './components/MainSection';
+import Footer from './components/Footer';
+import ServicesAndStaffing from './components/ServicesAndStaffing'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       <Mission/>
       <Certification/>
       <Review/>
+      <ServicesAndStaffing /> 
+      <Footer />
     </div>
   );
 }
