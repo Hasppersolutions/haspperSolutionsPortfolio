@@ -1,0 +1,111 @@
+.book-meeting-container {
+    background-color: #1e1e1e; /* Dark background for contrast */
+    padding: 40px 20px; /* Space around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 600px; /* Max width for better layout */
+    margin: 0 auto; /* Center the form */
+    margin-top: 100px;
+  }
+  
+  .book-meeting-container h2 {
+    font-size: 28px; /* Font size for the heading */
+    font-weight: 700; /* Bold heading */
+    color: #fff; /* White text color */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .book-meeting-container label {
+    display: block; /* Block display for labels */
+    font-size: 18px; /* Font size for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #fff; /* White text for labels */
+  }
+  
+  .book-meeting-container input, 
+  .book-meeting-container select {
+    width: 100%; /* Full width */
+    padding: 12px 15px; /* Padding for input fields */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Font size for inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    transition: background 0.3s; /* Smooth background change */
+  }
+  
+  .book-meeting-container input:focus, 
+  .book-meeting-container select:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Darker background on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  .book-meeting-container button {
+    padding: 12px 20px; /* Button padding */
+    background-color: #AA367C; /* Button background color */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth background change on hover */
+  }
+  
+  .book-meeting-container button:hover {
+    background-color: #4A2FBD; /* Change background on hover */
+  }
+  
+  .meeting-link-container {
+    margin-top: 20px; /* Space above the meeting link section */
+  }
+  
+  .meeting-link-container h3 {
+    font-size: 20px; /* Font size for the meeting link heading */
+    color: #fff; /* White text color */
+    margin-bottom: 10px; /* Space below heading */
+  }
+  
+  .meeting-link-container a {
+    color: #AA367C; /* Link color */
+    text-decoration: underline; /* Underline links */
+  }
+  
+  .meeting-link-container a:hover {
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  /* DatePicker Wrapper */
+.react-datepicker {
+    z-index: 1000; /* High z-index to ensure it appears above other elements */
+  }
+  
+  /* Header for DatePicker */
+  .react-datepicker__header {
+    background-color: #1e1e1e; /* Match the dark theme */
+    border: none; /* Remove default borders */
+  }
+  
+  /* Navigation Arrows */
+  .react-datepicker__navigation {
+    z-index: 1001; /* Ensure arrows are above other content */
+  }
+  
+  /* Arrow styles */
+  .react-datepicker__navigation--previous, 
+  .react-datepicker__navigation--next {
+    color: #fff; /* Change arrow color to white for better visibility */
+    width: 20px;
+    height: 20px;
+    margin-top: 40px;
+  }
+  
+.react-datepicker__time-name 
+{
+        color: #e656ad;
+        display: inline-block;
+        width: 1.7rem;
+        line-height: 1.7rem;
+        text-align: center;
+        margin: 0.166rem;
+    }
