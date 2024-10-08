@@ -1,0 +1,17 @@
+.ProjectEstIntro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.ProjectEstIntro {
+    max-width: 60%;
+}
+
+.ProjectEstIntro h2{
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
