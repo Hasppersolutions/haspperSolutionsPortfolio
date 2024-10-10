@@ -56,14 +56,14 @@ export const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className = "align-items-center" >
-          <Col size={12} md={6} class = "right-image">
+          <Col size={12} md={6} className = "right-image">
             <TrackVisibility>
               {({ isVisible }) =>
                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactUs} alt="Contact Us"/>
               }
             </TrackVisibility>
           </Col>
-          <Col size={12} md={6} class = "form-container">
+          <Col size={12} md={6} className = "form-container">
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
