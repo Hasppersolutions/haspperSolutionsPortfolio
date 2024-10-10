@@ -4,11 +4,11 @@
     flex-direction: column; /* Arrange items in a column */
     align-items: flex-start; /* Align items to the left */
     justify-content: center; /* Center items vertically */
-    height: 100vh; /* Full height of viewport */
+    height: calc(100vh - 104px); /* Full height of viewport */
     padding: 0 40px; /* Horizontal padding */
     background: url('../assets/img/Background.svg') no-repeat center center/cover; /* Background image */
     color: #fff; /* Default text color */
-    margin-top: 80px; /* Space for fixed navbar */
+    margin-top: 104px; /* Space for fixed navbar */
   }
   
   .logo-container {

@@ -41,11 +41,11 @@
   }
   
   /* To ensure the parent container occupies the full viewport and centers vertically */
-  html, body {
+  /* html, body {
     height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
