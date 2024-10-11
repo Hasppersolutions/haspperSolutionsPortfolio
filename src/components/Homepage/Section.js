@@ -1,6 +1,6 @@
 import React from 'react';
 import './Section.css';
-import SectionImage from '../assets/img/SectionImage.svg';
+import SectionImage from '../../assets/img/SectionImage.svg';
 const Section = () => {
   return (
     <div className="section-container">

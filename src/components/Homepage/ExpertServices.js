@@ -1,6 +1,6 @@
 import React from 'react';
 import './ExpertServices.css';
-import logo from "../assets/img/nav-icon1.svg";
+import logo from "../../assets/img/nav-icon1.svg";
 
 const services = [
   {
@@ -48,7 +48,7 @@ const ExpertServices = () => {
         {/* Services Section */}
         <div className="services">
           <div className="logo-container">
-            <img src="../assets/img/media.svg" alt="HaspperSolutions Logo" />
+            <img src="../../assets/img/media.svg" alt="HaspperSolutions Logo" />
           </div>
           <div className="services-list">
             {services.map((service, index) => (
