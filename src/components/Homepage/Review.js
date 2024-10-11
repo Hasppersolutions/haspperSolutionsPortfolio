@@ -1,5 +1,9 @@
-import React from 'react';
+import { useState } from 'react';
 import './Review.css';
+import { Box, Button, MobileStepper, Typography, Paper } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const reviews = [
   {
@@ -26,11 +30,23 @@ const reviews = [
 ];
 
 const Review = () => {
+  // const theme = useTheme();
+  // const [activeStep, setActiveStep] = useState(0);
+  // const maxSteps = reviews.length;
+
+  // const handleNext = () => {
+  //   setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  // };
+
+  // const handleBack = () => {
+  //   setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  // };
+
   const renderStars = (rating) => {
     const totalStars = 5;
     const filledStars = Math.floor(rating);
     const emptyStars = totalStars - filledStars;
-    
+
     return (
       <>
         {Array(filledStars).fill().map((_, i) => (
@@ -43,13 +59,34 @@ const Review = () => {
     );
   };
 
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 900 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 900, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 600, min: 0 },
+      items: 1
+    }
+  };
+
   return (
     <div className="reviews-container">
       <header className="reviews-header">
         <h2>Our Reviews</h2>
       </header>
-      
-      <div className="reviews-list">
+
+      {/* <div className="reviews-list">
         {reviews.map((review) => (
           <div key={review.id} className="review-card">
             <img src={review.logo} alt={review.name} className="review-logo" />
@@ -59,9 +96,39 @@ const Review = () => {
             <p className="review-description">{review.description}</p>
           </div>
         ))}
-      </div>
-    </div>
+      </div> */}
+      <Carousel
+        responsive={responsive}
+        autoPlaySpeed={3000}
+        infinite={true}
+        draggable
+        pauseOnHover
+        minimumTouchDrag={80}
+        swipeable
+        removeArrowOnDeviceType={["mobile"]}
+        containerClass="carousel-list-container"
+      >
+        {reviews.map((review) => (
+          <Box key={review.id} sx={cardStyle}>
+            <img src={review.logo} alt={review.name} className="review-logo" />
+            <div className="review-stars">
+              {renderStars(review.stars)}
+            </div>
+            <p className="review-description">{review.description}</p>
+          </Box>
+        ))}
+      </Carousel>
+    </div >
   );
 };
 
 export default Review;
+const cardStyle = {
+  backgroundColor: "#fff",
+  borderRadius: "10px",
+  padding: "20px",
+  minWidth: 300,
+  textAlign: "center",
+  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+  margin: "0px 10px",
+}
