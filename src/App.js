@@ -4,8 +4,10 @@ import Homepage from './Pages/Homepage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
-import { NavBar } from './components/NavBar';
-import Footer from './components/Footer';
+import { NavBar } from './components/Layout/NavBar';
+import Footer from './components/Layout/Footer';
+import WhyHaspper from './Pages/WhyHaspper';
+
 function App() {
   return (
     <>
@@ -15,8 +17,9 @@ function App() {
           <Route path='/' element={<Homepage />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/why-haspper' element={<WhyHaspper />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

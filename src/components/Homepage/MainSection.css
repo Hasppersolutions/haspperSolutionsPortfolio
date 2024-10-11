@@ -6,7 +6,7 @@
     justify-content: center; /* Center items vertically */
     height: calc(100vh - 104px); /* Full height of viewport */
     padding: 0 40px; /* Horizontal padding */
-    background: url('../assets/img/Background.svg') no-repeat center center/cover; /* Background image */
+    background: url('../../assets/img/Background.svg') no-repeat center center/cover; /* Background image */
     color: #fff; /* Default text color */
     margin-top: 104px; /* Space for fixed navbar */
   }
