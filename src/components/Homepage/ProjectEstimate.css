@@ -98,6 +98,9 @@
   #projectEstimate .left-image {
     flex: 1;
   }
+  .left-image img {
+    width: 92%;
+  }
   
   #projectEstimate .form-container {
     flex: 1;
