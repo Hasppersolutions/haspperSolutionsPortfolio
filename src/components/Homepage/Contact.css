@@ -1,4 +1,4 @@
-
+/* 
 .contact {
     background: linear-gradient(90.21deg, #57220B -5.91%, #BD4918 111.58%);
     padding: 60px 0 200px 0;
@@ -72,4 +72,110 @@
     
     #projectEstimate form button:hover::before {
       width: 100%;
+    } */
+
+
+    /* .contact {
+      background: linear-gradient(90.21deg, #57220B -5.91%, #BD4918 111.58%);
     }
+    
+    .contact-form-box {
+      background: #fff; 
+      border-radius: 15px; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+      margin-top: 20px;
+    }
+    
+    .contact h2 {
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    
+    .contact form button {
+      font-weight: 700;
+      color: #000;
+      background-color: #C55F34;
+      padding: 14px 48px;
+      font-size: 18px;
+      margin-top: 25px;
+      border-radius: 25px;
+      position: relative;
+      transition: 0.3s ease-in-out;
+    } */
+    
+    /* Contact.css */
+/* .contact {
+  background: linear-gradient(90.21deg, #57220B -5.91%, #BD4918 111.58%);
+  padding: 60px 0 200px 0;
+}
+
+.contact img {
+  width: 92%;
+}
+
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  color: #121212;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+  border-color: #c55f34;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+}
+
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #C55F34;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 25px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form button:hover {
+  background-color: #e67848;
+  color: #fff;
+} */
