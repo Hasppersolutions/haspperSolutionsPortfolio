@@ -7,7 +7,7 @@ const Section = () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".section-container",
-      start: "top 15$",
+      start: "top 15%",
       end: "bottom 15%",
       toggleActions: "play none none reset"
     },
