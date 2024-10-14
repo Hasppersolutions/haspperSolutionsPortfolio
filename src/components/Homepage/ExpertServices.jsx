@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ExpertServices.css";
 import logo from "../../assets/img/nav-icon1.svg";
 import {
@@ -10,7 +10,12 @@ import {
 } from "@mui/material";
 import haspperLogo from "../../assets/img/logo.svg";
 import roundCurve from "../../assets/img/round_curve.png";
+import line from "../../assets/img/line.svg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     title: "APP DEVELOPMENT",
@@ -45,24 +50,80 @@ const services = [
 ];
 
 const ExpertServices = () => {
+  // useEffect(() => {
+  //   gsap.utils.toArray("#item").forEach((card) => {
+  //   gsap.from(".services #item", {
+  //     x: 100,
+  //     opacity: 0,
+  //     stagger: 0.8,
+  //     scrollTrigger: {
+  //       trigger: ".services",
+  //       start: "top 15%",
+  //       end: "bottom 15%",
+  //       scrub: true,
+  //       markers: true,
+  //     },
+  //   });
+  //   });
+  // });
+
   return (
     <Box
+      className="expertMainBox"
       sx={{
         backgroundColor: "#f2f2f2",
-        textAlign: "center",
-        pb: 5,
+        // textAlign: "center",
+        py: 5,
       }}
     >
       <Container>
         {/* Header Section */}
         <div className="header">
-          <h1>16 Years</h1>
-          <p>of empirical understanding</p>
-          <div className="scroll-down-icon">⏷</div>
+          <Typography
+            sx={{
+              fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
+              color: "#0462ac",
+              fontWeight: 700,
+              lineHeight: 0.6,
+            }}
+          >
+            16 Years
+          </Typography>
+          <Box>
+            <img
+              src={line}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </Box>
+          <Typography
+            sx={{
+              marginLeft: { md: "6%" },
+              fontSize: "1.2rem",
+              color: "#666",
+              marginTop: { md: "-0.6rem" },
+            }}
+          >
+            of empirical understanding
+          </Typography>
+          <Box
+            className="scroll-down-icon"
+            sx={{
+              textAlign: "center",
+              width: "fit-content",
+              margin: "auto",
+              marginTop: "12px",
+            }}
+          >
+            ⏷
+          </Box>
         </div>
 
         {/* Main Content */}
-        <div className="main-content">
+        <Box className="main-content" sx={{ textAlign: "center" }}>
           <p>Trusted by 218 Customers Globally</p>
           <h2>
             Do you have an Idea? <br />
@@ -72,7 +133,7 @@ const ExpertServices = () => {
           {/* Services Section */}
           <Box
             sx={{
-              mt: { xs: 4, sm: 8},
+              mt: { xs: 4, sm: 8 },
             }}
           >
             <Grid container rowGap={{ xs: 6, sm: 0 }}>
@@ -120,6 +181,7 @@ const ExpertServices = () => {
               </Grid>
               <Grid size={{ xs: 12, sm: 8 }}>
                 <Box
+                  className="services"
                   sx={[
                     {
                       display: "flex",
@@ -150,13 +212,18 @@ const ExpertServices = () => {
                         alt={service.title}
                         className="service-icon"
                       />
-                      <Box>
+                      <Box
+                        id="item"
+                        sx={{
+                          paddingLeft: { xs: "20px", sm: "25px", md: "40px" },
+                        }}
+                      >
                         <Typography
                           component={"h3"}
                           sx={{
                             fontWeight: 700,
                             color: "#0462ac",
-                            fontSize: {xs: "1rem", md: "1.2rem"},
+                            fontSize: { xs: "1rem", md: "1.2rem" },
                           }}
                         >
                           {service.title}
@@ -170,7 +237,7 @@ const ExpertServices = () => {
             </Grid>
           </Box>
           <button className="view-services-btn">VIEW ALL SERVICES</button>
-        </div>
+        </Box>
       </Container>
     </Box>
   );
@@ -257,12 +324,12 @@ const LogoShadow2 = styled(Box)(({ theme }) => ({
 }));
 const afterStyle = {
   "&:after": {
-    display: {xs: "none", sm: "block"},
+    display: { xs: "none", sm: "block" },
     content: "''",
     background: `url(${roundCurve})`,
     position: "absolute",
     top: 20,
-    left: -10,
+    left: -20,
     width: 185,
     height: 591,
     zIndex: -1,
