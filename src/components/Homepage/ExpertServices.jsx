@@ -155,7 +155,7 @@ const ExpertServices = () => {
                           component={"h3"}
                           sx={{
                             fontWeight: 700,
-                            color: "#0462ac",
+                            color: "#C94C16",
                             fontSize: {xs: "1rem", md: "1.2rem"},
                           }}
                         >

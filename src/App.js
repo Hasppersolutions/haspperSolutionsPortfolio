@@ -7,6 +7,7 @@ import Projects from './Pages/Projects';
 import { NavBar } from './components/Layout/NavBar';
 import Footer from './components/Layout/Footer';
 import WhyHaspper from './Pages/WhyHaspper';
+import ContactUs from './Pages/ContactUs';
 
 function App() {
   return (
@@ -18,11 +19,13 @@ function App() {
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/why-haspper' element={<WhyHaspper />} />
+          <Route path='/contact-us' element={<ContactUs />}/>
         </Routes>
-        {/* <Footer /> */}
+        <Footer /> 
       </BrowserRouter>
     </>
   );
 }
 
 export default App;
+
