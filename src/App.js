@@ -19,7 +19,7 @@ function App() {
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/why-haspper' element={<WhyHaspper />} />
-          <Route path='/contact-us' element={<ContactUs />}/>
+          <Route path='/contact' element={<ContactUs />} />
         </Routes>
         <Footer /> 
       </BrowserRouter>

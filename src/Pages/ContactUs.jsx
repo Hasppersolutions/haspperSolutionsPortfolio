@@ -1,5 +1,5 @@
 import React from "react";
-import {Contact} from "../components/Homepage/Contact";
+import { ContactPage } from "../components/Contact/ContactPage";
 import { Box } from "@mui/material";
 
 const ContactUs = () => {
@@ -11,7 +11,7 @@ const ContactUs = () => {
           height: "100%",
         }}
       >
-        <Contact />
+        <ContactPage />
       </Box>
     </>
   );
