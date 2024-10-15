@@ -8,7 +8,7 @@ export const ContactIntro = () => {
         backgroundColor: 'white',
         color: 'black',
         padding: '300px 20px 0px', // Adjust padding to prevent overlap with navbar and form
-        marginBottom: '60px', // Adjust margin to create space below
+        //marginBottom: '60px', // Adjust margin to create space below
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',

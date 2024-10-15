@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography, Grid2 as Grid, Paper, Container } from '@mui/material';
 import BackgroundImage from '../../assets/img/Background.svg';  // Update with the correct path to your ima
+import { Link } from 'react-router-dom';
 
 const StatsCard = ({ value, label }) => (
   <Paper
@@ -70,6 +71,7 @@ const HeroSection = () => (
         >
           Consult With Us
         </Button>
+        <Link to="/project-estimate" style={{ textDecoration: 'none' }}>
         <Button
           variant="contained"
           sx={{
@@ -82,6 +84,7 @@ const HeroSection = () => (
         >
           Get An Estimate
         </Button>
+        </Link>
       </Box>
     </Container>
   </Box>
