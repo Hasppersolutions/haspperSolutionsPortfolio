@@ -17,7 +17,6 @@ const Homepage = () => {
     <>
       <MainSection />
       <Section />
-      <Banner />
       <ExpertServices />
       <Mailus />
       <Contact />

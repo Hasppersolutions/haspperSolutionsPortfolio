@@ -21,10 +21,11 @@ function App() {
           <Route path='/why-haspper' element={<WhyHaspper />} />
           <Route path='/contact' element={<ContactUs />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer /> 
       </BrowserRouter>
     </>
   );
 }
 
 export default App;
+

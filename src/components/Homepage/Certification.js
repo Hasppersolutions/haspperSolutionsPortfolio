@@ -24,7 +24,7 @@ const Certification = () => {
           We are happy to bag these recognitions, motivating us to deliver the same service throughout.
         </p>
       </header>
-      
+
       <div className="certifications-slider">
         <div className="certifications">
           {certifications.map((cert) => (

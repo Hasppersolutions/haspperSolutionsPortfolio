@@ -2,7 +2,7 @@ import React from "react";
 import { Box, styled, Typography } from "@mui/material";
 import whyHaspperBanner from "../../assets/img/whyHaspper/why-haspper-banner.png";
 import background from "../../assets/img/whyHaspper/background.png";
-
+import Mission from "../Homepage/Mission";
 const Banner = () => {
   return (
     <>
@@ -75,6 +75,7 @@ const Banner = () => {
           {/* <Box sx={{ width: 273, height: 197, backgroundColor: "#fff" }}></Box> */}
         </NavigateBox>
       </MainBox>
+      <Mission/>
     </>
   );
 };
