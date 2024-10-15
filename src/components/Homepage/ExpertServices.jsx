@@ -8,7 +8,7 @@ import {
   styled,
   Typography,
 } from "@mui/material";
-import haspperLogo from "../../assets/img/LOGO.svg";
+// import haspperLogo from "../../assets/img/LOGO.svg";
 import roundCurve from "../../assets/img/round_curve.png";
 import line from "../../assets/img/line.svg";
 import { useGSAP } from "@gsap/react";
@@ -187,7 +187,7 @@ const ExpertServices = () => {
                     }}
                   >
                     <img
-                      src={haspperLogo}
+                      src={"haspperLogo"}
                       alt="HaspperSolutions Logo"
                       style={{
                         width: "100%",
