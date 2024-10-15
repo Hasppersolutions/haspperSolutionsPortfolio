@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Box, Button, Typography, Grid2 as Grid, Paper, Container } from '@mui/material';
 import BackgroundImage from '../../assets/img/Background.svg';  // Update with the correct path to your ima
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   let tl = gsap.timeline()

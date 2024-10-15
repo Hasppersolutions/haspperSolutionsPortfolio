@@ -8,6 +8,7 @@ import { NavBar } from './components/Layout/NavBar';
 import Footer from './components/Layout/Footer';
 import WhyHaspper from './Pages/WhyHaspper';
 import ContactUs from './Pages/ContactUs';
+import GetProjectEstimate from './Pages/GetProjectEstimate';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/why-haspper' element={<WhyHaspper />} />
-          <Route path='/contact-us' element={<ContactUs />}/>
+          <Route path='/contact' element={<ContactUs />} />
+          <Route path='/project-estimate' element={<GetProjectEstimate/>} />
         </Routes>
         <Footer /> 
       </BrowserRouter>
