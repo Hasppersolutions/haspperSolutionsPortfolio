@@ -12,6 +12,7 @@ const Mission = () => {
           <Typography
             variant="h3"
             sx={{
+              fontSize: { xs: "28px", sm: "32px", md: "42px", lg: "48px" },
               fontWeight: 'bold',
               color: '#212121',
               mb: 2,
@@ -22,6 +23,7 @@ const Mission = () => {
           <Typography
             variant="h3"
             sx={{
+              fontSize: { xs: "28px", sm: "32px", md: "42px", lg: "48px" },
               fontWeight: 'bold',
               color: '#C94C16',
               mb: 3,

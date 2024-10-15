@@ -8,8 +8,8 @@ const Section = () => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".section-container",
-      start: "top 10%",
-      end: "bottom 10%",
+      start: "top 20%",
+      end: "bottom 20%",
       toggleActions: "play none none reset"
     },
   })
