@@ -50,6 +50,25 @@ const services = [
 ];
 
 const ExpertServices = () => {
+  // let tl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".expertMainBox",
+  //     start: "top 80%",
+  //     end: "bottom 15%",
+  //     toggleActions: "play none none reset",
+  //     markers: true,
+  //   },
+  // });
+
+  // useGSAP(() => {
+  //   tl.from(".expertMainBox h1 .headingText", {
+  //     x: -10,
+  //     scale: 0,
+  //     opacity: 0,
+  //     duration: 1,
+  //     delay: 0.5,
+  //   });
+  // });
   // useEffect(() => {
   //   gsap.utils.toArray("#item").forEach((card) => {
   //   gsap.from(".services #item", {
@@ -78,8 +97,10 @@ const ExpertServices = () => {
     >
       <Container>
         {/* Header Section */}
-        <div className="header">
+        <Box>
           <Typography
+            component={"h1"}
+            className="headingText"
             sx={{
               fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
               color: "#0462ac",
@@ -100,6 +121,7 @@ const ExpertServices = () => {
             />
           </Box>
           <Typography
+            className="headingText"
             sx={{
               marginLeft: { md: "6%" },
               fontSize: "1.2rem",
@@ -120,7 +142,7 @@ const ExpertServices = () => {
           >
             ⏷
           </Box>
-        </div>
+        </Box>
 
         {/* Main Content */}
         <Box className="main-content" sx={{ textAlign: "center" }}>
@@ -222,7 +244,7 @@ const ExpertServices = () => {
                           component={"h3"}
                           sx={{
                             fontWeight: 700,
-                            color: "#0462ac",
+                            color: "#C94C16",
                             fontSize: { xs: "1rem", md: "1.2rem" },
                           }}
                         >

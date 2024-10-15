@@ -29,10 +29,6 @@
     color: #c75425; /* Brand color for logo text */
   }
   
-  .text-container {
-    max-width: 600px; /* Limit the width of the text */
-  }
-  
   h1 {
     font-size: 3em; /* Font size for main heading */
     font-weight: bold; /* Bold text */
@@ -50,12 +46,6 @@
     font-size: 2.5em; /* Font size for subheading */
     margin: 10px 0; /* Space around h2 */
     color: #c75425; /* Brand color for subheading */
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px; /* Space above buttons */
   }
   
   .consult-btn,
