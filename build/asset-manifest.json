@@ -1,22 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ad9bc65.css",
-    "main.js": "/static/js/main.d9858875.js",
+    "main.css": "/static/css/main.0b917beb.css",
+    "main.js": "/static/js/main.e0b1e789.js",
     "static/js/453.8566fc8c.chunk.js": "/static/js/453.8566fc8c.chunk.js",
+    "static/media/why-haspper-banner.png": "/static/media/why-haspper-banner.46d53386491f4f30c199.png",
+    "static/media/Background.svg": "/static/media/Background.728a1c1fe15f63b35bedd5ffdc509b74.svg",
+    "static/media/LOGO.svg": "/static/media/LOGO.38903f30acd796151e3b3aa612d11c19.svg",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/contactUs.svg": "/static/media/contactUs.d83dce26d7d3f1ef74a49e838801a320.svg",
+    "static/media/estimateProject.svg": "/static/media/estimateProject.fde43d9410a2e247e4d5f0496310ea49.svg",
+    "static/media/SectionImage.svg": "/static/media/SectionImage.777d0cb3d068d48ab0548f834977eaa3.svg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/background.png": "/static/media/background.54d79b2ac138032f35d0.png",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/nav-icon3.svg": "/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
-    "static/media/logo.svg": "/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
-    "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/index.html",
+    "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.1ad9bc65.css.map": "/static/css/main.1ad9bc65.css.map",
-    "main.d9858875.js.map": "/static/js/main.d9858875.js.map",
+    "main.0b917beb.css.map": "/static/css/main.0b917beb.css.map",
+    "main.e0b1e789.js.map": "/static/js/main.e0b1e789.js.map",
     "453.8566fc8c.chunk.js.map": "/static/js/453.8566fc8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ad9bc65.css",
-    "static/js/main.d9858875.js"
+    "static/css/main.0b917beb.css",
+    "static/js/main.e0b1e789.js"
   ]
 }
