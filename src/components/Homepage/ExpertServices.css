@@ -9,18 +9,20 @@
   .header h1 {
     font-size: 4rem;
     font-weight: bold;
-    color: #0462ac;
+    color: #C94C16;
     margin: 0;
+    text-align: left;
   }
   
   .header p {
     font-size: 1.2rem;
     color: #666;
+    text-align: left;
   }
   
   .scroll-down-icon {
     font-size: 2rem;
-    color: #0462ac;
+    color: #C94C16;
     margin-top: 10px;
   }
   
@@ -71,7 +73,7 @@
   
   .service-item h3 {
     font-size: 1.2rem;
-    color: #0462ac;
+    color: #C94C16;
     margin: 0;
   }
   
@@ -82,7 +84,7 @@
   
   /* Button styling */
   .view-services-btn {
-    background-color: #0462ac;
+    background-color: #C94C16;
     color: #fff;
     padding: 12px 30px;
     border-radius: 30px;
@@ -94,7 +96,7 @@
   }
   
   .view-services-btn:hover {
-    background-color: #023e73;
+    background-color: #C94C16;
   }
   
   /* Responsive Design */
