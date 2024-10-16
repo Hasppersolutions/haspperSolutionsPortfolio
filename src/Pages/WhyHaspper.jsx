@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/WhyHaspper/Banner";
 import { Box } from "@mui/material";
+import Mission from "../components/Homepage/Mission";
 
 const WhyHaspper = () => {
   return (
@@ -12,6 +13,7 @@ const WhyHaspper = () => {
         }}
       >
         <Banner />
+        <Mission/>
       </Box>
     </>
   );
