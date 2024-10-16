@@ -8,7 +8,7 @@ import {
   styled,
   Typography,
 } from "@mui/material";
-import haspperLogo from "../../assets/img/LOGO.svg";
+import haspperLogo from "../../assets/img/logo.svg";
 import roundCurve from "../../assets/img/round_curve.png";
 
 const services = [
