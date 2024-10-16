@@ -10,7 +10,12 @@ import {
 } from "@mui/material";
 import haspperLogo from "../../assets/img/logo.svg";
 import roundCurve from "../../assets/img/round_curve.png";
+import line from "../../assets/img/line.svg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     title: "APP DEVELOPMENT",
@@ -45,26 +50,135 @@ const services = [
 ];
 
 const ExpertServices = () => {
+  useGSAP(() => {
+    // heading animation
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".expertMainBox",
+        start: "top 80%",
+        end: "bottom 15%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".expertMainBox .headingText", {
+      scale: 0,
+      x: -20,
+      opacity: 0,
+      duration: 1,
+    });
+    gsap.from(".globalText", {
+      scrollTrigger: {
+        trigger: ".main-content",
+        start: "top 85%",
+        end: "bottom 85%",
+        toggleActions: "play none none reset",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+
+    //services Title animation
+    gsap.utils.toArray("#item").forEach((card) => {
+      gsap.from(
+        card,
+        {
+          x: 100,
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            end: "bottom 90%",
+            toggleActions: "play none none reset",
+          },
+        },
+        "list"
+      );
+    });
+     //services Icon animation
+    gsap.utils.toArray(".service-icon").forEach((card) => {
+      gsap.from(
+        card,
+        {
+          scale: 0,
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            end: "bottom 90%",
+            toggleActions: "play none none reset",
+          },
+        },
+        "list"
+      );
+    });
+  });
+
   return (
     <Box
+      className="expertMainBox"
       sx={{
         backgroundColor: "#f2f2f2",
-        textAlign: "center",
-        pb: 5,
+        // textAlign: "center",
+        py: 5,
       }}
     >
       <Container>
         {/* Header Section */}
-        <div className="header">
-          <h1>16 Years</h1>
-          <p>of empirical understanding</p>
-          <div className="scroll-down-icon">⏷</div>
-        </div>
+        <Box>
+          <Typography
+            component={"h1"}
+            className="headingText"
+            sx={{
+              fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
+              color: "#0462ac",
+              fontWeight: 700,
+              lineHeight: 0.6,
+            }}
+          >
+            16 Years
+          </Typography>
+          <Box>
+            <img
+              src={line}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </Box>
+          <Typography
+            className="headingText"
+            sx={{
+              marginLeft: { md: "6%" },
+              fontSize: "1.2rem",
+              color: "#666",
+              marginTop: { md: "-0.6rem" },
+            }}
+          >
+            of empirical understanding
+          </Typography>
+          <Box
+            className="scroll-down-icon"
+            sx={{
+              textAlign: "center",
+              width: "fit-content",
+              margin: "auto",
+              marginTop: "12px",
+            }}
+          >
+            ⏷
+          </Box>
+        </Box>
 
         {/* Main Content */}
-        <div className="main-content">
-          <p>Trusted by 218 Customers Globally</p>
-          <h2>
+        <Box className="main-content" sx={{ textAlign: "center" }}>
+          <p className="globalText">Trusted by 218 Customers Globally</p>
+          <h2 className="globalText">
             Do you have an Idea? <br />
             We have an Expert Team!
           </h2>
@@ -72,7 +186,7 @@ const ExpertServices = () => {
           {/* Services Section */}
           <Box
             sx={{
-              mt: { xs: 4, sm: 8},
+              mt: { xs: 4, sm: 8 },
             }}
           >
             <Grid container rowGap={{ xs: 6, sm: 0 }}>
@@ -104,7 +218,7 @@ const ExpertServices = () => {
                     }}
                   >
                     <img
-                      src={haspperLogo}
+                      src={"haspperLogo"}
                       alt="HaspperSolutions Logo"
                       style={{
                         width: "100%",
@@ -120,6 +234,7 @@ const ExpertServices = () => {
               </Grid>
               <Grid size={{ xs: 12, sm: 8 }}>
                 <Box
+                  className="services"
                   sx={[
                     {
                       display: "flex",
@@ -150,13 +265,18 @@ const ExpertServices = () => {
                         alt={service.title}
                         className="service-icon"
                       />
-                      <Box>
+                      <Box
+                        id="item"
+                        sx={{
+                          paddingLeft: { xs: "20px", sm: "25px", md: "40px" },
+                        }}
+                      >
                         <Typography
                           component={"h3"}
                           sx={{
                             fontWeight: 700,
                             color: "#C94C16",
-                            fontSize: {xs: "1rem", md: "1.2rem"},
+                            fontSize: { xs: "1rem", md: "1.2rem" },
                           }}
                         >
                           {service.title}
@@ -170,7 +290,7 @@ const ExpertServices = () => {
             </Grid>
           </Box>
           <button className="view-services-btn">VIEW ALL SERVICES</button>
-        </div>
+        </Box>
       </Container>
     </Box>
   );
@@ -257,12 +377,12 @@ const LogoShadow2 = styled(Box)(({ theme }) => ({
 }));
 const afterStyle = {
   "&:after": {
-    display: {xs: "none", sm: "block"},
+    display: { xs: "none", sm: "block" },
     content: "''",
     background: `url(${roundCurve})`,
     position: "absolute",
     top: 20,
-    left: -10,
+    left: -20,
     width: 185,
     height: 591,
     zIndex: -1,
