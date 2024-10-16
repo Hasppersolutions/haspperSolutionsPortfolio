@@ -11,6 +11,7 @@ import Mission from "../components/Homepage/Mission";
 import Certification from "../components/Homepage/Certification";
 import Review from "../components/Homepage/Review";
 import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
+import ServicesGrid from "../components/Homepage/HowCanWeHelp";
 
 const Homepage = () => {
   return (
@@ -19,12 +20,13 @@ const Homepage = () => {
       <Section />
       <TheDifference/>
       <ExpertServices />
-      <Mailus />
+      <ServicesGrid />
       <Contact />
       <ServicesOffered />
       <Mission />
       <Certification />
       <Review />
+      <Mailus />
       <ServicesAndStaffing />
     </>
   );
