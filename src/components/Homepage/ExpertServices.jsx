@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./ExpertServices.css";
 import logo from "../../assets/img/nav-icon1.svg";
 import {
@@ -50,41 +50,72 @@ const services = [
 ];
 
 const ExpertServices = () => {
-  // let tl = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: ".expertMainBox",
-  //     start: "top 80%",
-  //     end: "bottom 15%",
-  //     toggleActions: "play none none reset",
-  //     markers: true,
-  //   },
-  // });
+  useGSAP(() => {
+    // heading animation
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".expertMainBox",
+        start: "top 80%",
+        end: "bottom 15%",
+        toggleActions: "play none none reset",
+      },
+    });
 
-  // useGSAP(() => {
-  //   tl.from(".expertMainBox h1 .headingText", {
-  //     x: -10,
-  //     scale: 0,
-  //     opacity: 0,
-  //     duration: 1,
-  //     delay: 0.5,
-  //   });
-  // });
-  // useEffect(() => {
-  //   gsap.utils.toArray("#item").forEach((card) => {
-  //   gsap.from(".services #item", {
-  //     x: 100,
-  //     opacity: 0,
-  //     stagger: 0.8,
-  //     scrollTrigger: {
-  //       trigger: ".services",
-  //       start: "top 15%",
-  //       end: "bottom 15%",
-  //       scrub: true,
-  //       markers: true,
-  //     },
-  //   });
-  //   });
-  // });
+    tl.from(".expertMainBox .headingText", {
+      scale: 0,
+      x: -20,
+      opacity: 0,
+      duration: 1,
+    });
+    gsap.from(".globalText", {
+      scrollTrigger: {
+        trigger: ".main-content",
+        start: "top 85%",
+        end: "bottom 85%",
+        toggleActions: "play none none reset",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+
+    //services Title animation
+    gsap.utils.toArray("#item").forEach((card) => {
+      gsap.from(
+        card,
+        {
+          x: 100,
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            end: "bottom 90%",
+            toggleActions: "play none none reset",
+          },
+        },
+        "list"
+      );
+    });
+     //services Icon animation
+    gsap.utils.toArray(".service-icon").forEach((card) => {
+      gsap.from(
+        card,
+        {
+          scale: 0,
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            end: "bottom 90%",
+            toggleActions: "play none none reset",
+          },
+        },
+        "list"
+      );
+    });
+  });
 
   return (
     <Box
@@ -146,8 +177,8 @@ const ExpertServices = () => {
 
         {/* Main Content */}
         <Box className="main-content" sx={{ textAlign: "center" }}>
-          <p>Trusted by 218 Customers Globally</p>
-          <h2>
+          <p className="globalText">Trusted by 218 Customers Globally</p>
+          <h2 className="globalText">
             Do you have an Idea? <br />
             We have an Expert Team!
           </h2>

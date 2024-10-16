@@ -1,9 +1,6 @@
 /* Container styling */
   
   /* Content styling */
-  .section-content {
-    max-width: 60%;
-  }
   
   
   /* Buttons styling */
@@ -42,16 +39,6 @@
   .btn-learn-more:hover {
     background-color: #ffca76; /* Hover effect */
     color: #000; /* Change text color on hover */
-  }
-  
-  /* Image styling */
-  .section-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .section-image {
-    max-width: 35%;
   }
   
   /* Responsive design */

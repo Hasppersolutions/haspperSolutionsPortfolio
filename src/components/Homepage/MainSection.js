@@ -211,7 +211,7 @@ const textBoxStyle = {
   "&:last-child": {
     borderRight: 0,
   },
-  "&:nth-child(2)": {
+  "&:nth-of-type(2)": {
     borderRight: { xs: 0, sm: "1px solid rgba(0, 0, 0, 0.11)" }
   }
 };
