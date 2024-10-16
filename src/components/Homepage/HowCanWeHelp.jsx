@@ -77,6 +77,10 @@ export default function CircularGrid() {
         minHeight: '100vh', // Optional: Ensures full height of viewport
       }}
     >
+        {/* Heading */}
+      <Typography variant="h4" color="black" gutterBottom>
+        How We Can Help You
+      </Typography>
       <Grid container spacing={2} justifyContent="center">
         <Grid item xs={12} container justifyContent="center" spacing={2}>
           {sections.slice(0, 2).map((section, index) => (
