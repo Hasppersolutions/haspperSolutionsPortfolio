@@ -9,6 +9,7 @@ import Footer from './components/Layout/Footer';
 import WhyHaspper from './Pages/WhyHaspper';
 import ContactUs from './Pages/ContactUs';
 import GetProjectEstimate from './Pages/GetProjectEstimate';
+import ArtificialIntelligence from './Pages/ArtificialIntelligence';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/why-haspper' element={<WhyHaspper />} />
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/project-estimate' element={<GetProjectEstimate/>} />
+          <Route path='/artificial-intelligence' element={<ArtificialIntelligence/>} />
         </Routes>
         <Footer /> 
       </BrowserRouter>
