@@ -243,7 +243,7 @@ const ExpertServices = () => {
                       textAlign: "left",
                       position: "relative",
                       minHeight: 640,
-                      zIndex: 100,
+                      zIndex: 98,
                     },
                     afterStyle,
                   ]}
