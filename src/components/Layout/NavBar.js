@@ -5,12 +5,14 @@ import navIcon1 from '../../assets/img/nav-icon1.svg';
 import navIcon2 from '../../assets/img/nav-icon2.svg';
 import navIcon3 from '../../assets/img/nav-icon3.svg';
 import './NavBar.css';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Box, Grid2 as Grid, Typography } from "@mui/material";
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-  
+
   // These are the missing state variables for showing/hiding the cards
   const [showCard, setShowCard] = useState(false);
   const [showAppContent, setShowAppContent] = useState(false);
@@ -30,7 +32,7 @@ export const NavBar = () => {
   }, [])
 
   const navigate = useNavigate();
-  
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
     if (value !== "home") {
@@ -51,36 +53,36 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link 
-              className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} 
+            <Nav.Link
+              className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('home')}>
               Home
             </Nav.Link>
-            <Nav.Link 
-              className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} 
+            <Nav.Link
+              className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('skills')}>
               Skills
             </Nav.Link>
-            <Nav.Link 
-              className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} 
+            <Nav.Link
+              className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('projects')}>
               Projects
             </Nav.Link>
-            <Nav.Link 
-              className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} 
+            <Nav.Link
+              className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('contact')}>
               Contact Us
             </Nav.Link>
-            <Nav.Link 
-              className={activeLink === 'why-haspper' ? 'active navbar-link' : 'navbar-link'} 
+            <Nav.Link
+              className={activeLink === 'why-haspper' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('why-haspper')}>
               Why Haspper
             </Nav.Link>
 
             {/* Solutions Section */}
-            <div 
+            <div
               className="solutions-wrapper"
-              onMouseEnter={() => setShowCard(true)} 
+              onMouseEnter={() => setShowCard(true)}
               onMouseLeave={() => setShowCard(false)}
               style={{ position: 'relative' }}
             >
@@ -129,15 +131,101 @@ export const NavBar = () => {
             </div>
 
             {/* Services Section */}
-            <div 
+            <div
               className="services-wrapper"
-              onMouseEnter={() => setShowAppContent(true)} 
-              onMouseLeave={() => setShowAppContent(false)}
+              // onMouseEnter={() => setShowAppContent(true)}
+              // onMouseLeave={() => setShowAppContent(false)}
               style={{ position: 'relative' }}
             >
-              <Nav.Link className={activeLink === 'services' ? 'active navbar-link' : 'navbar-link'}>
-                Services
-              </Nav.Link>
+
+              <Tooltip
+                placement="bottom-start"
+                slotProps={{
+                  popper: {
+                    sx: {
+                      [`&.${tooltipClasses.popper}[data-popper-placement*="bottom"] .${tooltipClasses.tooltip}`]:
+                      {
+                        marginTop: '34px',
+                      },
+                    },
+                  },
+                  tooltip: {
+                    sx: tooltipStyle,
+                  },
+                }}
+                title={
+                  <Box>
+                    <Grid container>
+                      <Grid size={3}>
+                        <Box sx={{
+                          rowGap: 4
+                        }}>
+
+                          <Box sx={{
+                            backgroundColor: "#fff",
+                            borderRadius: "20px",
+                            height: 100,
+                            width: 100
+                          }}>
+                          </Box>
+                          <Box sx={{
+                            backgroundColor: "#fff",
+                            borderRadius: "20px",
+                            height: 100,
+                            width: 100
+                          }}>
+                          </Box>
+                        </Box>
+                      </Grid>
+                      <Grid size={3}>
+                        <Box sx={{ width: "100%" }}>
+                          {mobileServicesData.map((data, index) => (
+                            <Link to={data.link} target="_blank" style={{ textDecoration: "none" }}>
+                              <Typography
+                                key={index}
+                                sx={
+                                  data.type === "heading" ? headingStyle : subHeadingStyle
+                                }>
+                                {data.name}
+                              </Typography>
+                            </Link>
+                          ))}
+                        </Box>
+                      </Grid>
+                      <Grid size={3}>
+                        <Box sx={{ width: "100%" }}>
+                          {mobileServicesData.map((data, index) => (
+                            <Typography
+                              key={index}
+                              sx={
+                                data.type === "heading" ? headingStyle : subHeadingStyle
+                              }>
+                              {data.name}
+                            </Typography>
+                          ))}
+                        </Box>
+                      </Grid>
+                      <Grid size={3}>
+                        <Box sx={{ width: "100%" }}>
+                          {mobileServicesData.map((data, index) => (
+                            <Typography
+                              key={index}
+                              sx={
+                                data.type === "heading" ? headingStyle : subHeadingStyle
+                              }>
+                              {data.name}
+                            </Typography>
+                          ))}
+                        </Box>
+                      </Grid>
+                    </Grid>
+                  </Box>
+                }
+              >
+                <Nav.Link className={activeLink === 'services' ? 'active navbar-link' : 'navbar-link'}>
+                  Services
+                </Nav.Link>
+              </Tooltip>
               {showAppContent && (
                 <div className="services-content-container">
                   <div className="services-container">
@@ -177,4 +265,84 @@ export const NavBar = () => {
       </Container>
     </Navbar>
   )
+}
+
+const mobileServicesData = [
+  {
+    name: "App Development",
+    link: "",
+    type: "heading"
+  },
+  {
+    name: "ios",
+    link: "",
+    type: "subHeading",
+  },
+  {
+    name: "Android",
+    link: "",
+    type: "subHeading",
+  },
+  {
+    name: "Flutter",
+    link: "",
+    type: "subHeading",
+  },
+  {
+    name: "Cross Platform App Development",
+    link: "",
+    type: "heading",
+  },
+  {
+    name: "React Native",
+    link: "",
+    type: "subHeading",
+  },
+  {
+    name: "Ionic",
+    link: "",
+    type: "Flutter",
+  },
+  {
+    name: "Startup IT Solutions",
+    link: "",
+    type: "heading",
+  },
+  {
+    name: "Market Research Software Development",
+    link: "",
+    type: "heading",
+  },
+  {
+    name: "Enterprise IT Solutions",
+    link: "",
+    type: "heading",
+  },
+]
+const tooltipStyle = {
+  color: "#000",
+  backgroundColor: "#fff",
+  fontSize: "2em",
+  padding: "43px 40px 60px",
+  borderRadius: "26px",
+  maxWidth: "80vw",
+  // zIndex: 100000
+};
+const headingStyle = {
+  fontSize: 18,
+  fontWeight: 600,
+  color: "#333",
+  my: 1.5,
+  cursor: "pointer"
+}
+const subHeadingStyle = {
+  fontSize: 15,
+  fontWeight: 500,
+  color: "#999",
+  marginBottom: 0.5,
+  cursor: "pointer",
+  ":hover": {
+    textDecoration: "underline",
+    color: "#c75425"
+  }
 }

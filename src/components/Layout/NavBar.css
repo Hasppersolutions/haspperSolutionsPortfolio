@@ -4,7 +4,7 @@ nav.navbar {
   width: 100vw;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99;
   transition:  0.32s ease-in-out;
   background-color: #c75425;
   height: 10%;
