@@ -24,4 +24,6 @@ const bannerTextData = {
   middleHeading: "Solutions",
   bottomHeading:
     "Step into the future of business with our comprehensive Artificial Intelligence Solutions, propelling you toward unrivaled success.",
-};
+  // button: "Get Free Demo",
+  // link: "link"
+}
