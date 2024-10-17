@@ -12,5 +12,5 @@ const Projects = () => {
 
 export default Projects;
 const mainBoxStyle = {
-  marginTop: "104px",
+  // marginTop: "104px",
 };

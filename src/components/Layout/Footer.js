@@ -47,7 +47,6 @@ const footerContainer = {
   padding: '10px 20px',
   backgroundColor: '#f1f1f1',
   borderTop: '1px solid #e7e7e7',
-  marginTop: '20px'
 }
 const styles = {
   leftText: {
