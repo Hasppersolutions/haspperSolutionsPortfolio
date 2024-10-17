@@ -6,8 +6,6 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import AiBannerIcon from "../../assets/img/AiBannerIcon.png";
-import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import { Link } from "react-router-dom";
 
 const Banner = ({ data }) => {
@@ -30,7 +28,7 @@ const Banner = ({ data }) => {
       >
         <Box
           sx={{
-            backgroundImage: `url(${ServiceBackgroudImage})`,
+            backgroundImage: `url(${data.backgroundImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -123,7 +121,7 @@ const Banner = ({ data }) => {
             >
               <Box>
                 <img
-                  src={AiBannerIcon}
+                  src={data.rightImage}
                   style={{ width: "100%", height: "100%" }}
                 />
               </Box>
