@@ -1,15 +1,16 @@
-import { Box, Container, Grid2 as Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Grid2 as Grid,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import AiBannerIcon from "../../assets/img/AiBannerIcon.png";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
+import { Link } from "react-router-dom";
 
-const Banner = () => {
-  const bannerTextData = {
-    mainHeading: "Artificial Intelligence",
-    middleHeading: "Solutions",
-    bottomHeading:
-      "Step into the future of business with our comprehensive Artificial Intelligence Solutions, propelling you toward unrivaled success.",
-  };
+const Banner = ({ data }) => {
   return (
     <>
       <Box
@@ -23,7 +24,8 @@ const Banner = () => {
           py: { xs: 5, sm: 10 },
           position: "relative", // To make it the relative parent for StatsSection
           marginTop: { xs: "85px", xl: "95px" },
-          background: "linear-gradient(90.21deg, rgb(87, 34, 11) -5.91%, rgba(189, 73, 24, .6) 88%)",
+          background:
+            "linear-gradient(90.21deg, rgb(87, 34, 11) -5.91%, rgba(189, 73, 24, .6) 88%)",
         }}
       >
         <Box
@@ -42,7 +44,7 @@ const Banner = () => {
           }}
         />
         <Container>
-          <Grid container rowGap={{xs: 4, md: 0}}>
+          <Grid container rowGap={{ xs: 4, md: 0 }}>
             <Grid
               size={{ xs: 12, md: 7 }}
               sx={{
@@ -58,48 +60,54 @@ const Banner = () => {
                   sx={{
                     fontSize: { xs: "1rem", sm: "1.2rem" },
                     color: "#ffffff",
-                    padding: "5px 15px",
                     marginTop: "10px",
                     width: "fit-content",
                     fontSize: 40,
                     fontWeight: 800,
                     lineHeight: {
-                        xs: 1.2,
-                        sm: 0.7
-                      },
+                      xs: 1.2,
+                      sm: 0.7,
+                    },
                   }}
                 >
-                  {bannerTextData["mainHeading"]}
+                  {data.mainHeading}
                 </Typography>
-                <Typography
-                  sx={{
-                    fontSize: { xs: "1rem", sm: "1.2rem" },
-                    color: "#d9652b",
-                    padding: "5px 15px",
-                    marginTop: "10px",
-                    width: "fit-content",
-                    fontSize: 40,
-                    fontWeight: 800,
-                    lineHeight: {
+                {data.middleHeading && (
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "1rem", sm: "1.2rem" },
+                      color: "#d9652b",
+                      marginTop: "10px",
+                      width: "fit-content",
+                      fontSize: 40,
+                      fontWeight: 800,
+                      lineHeight: {
                         xs: 1.2,
-                        sm: 0.7
+                        sm: 0.7,
                       },
-                  }}
-                >
-                  {bannerTextData["middleHeading"]}
-                </Typography>
+                    }}
+                  >
+                    {data.middleHeading}
+                  </Typography>
+                )}
                 <Typography
                   sx={{
                     fontSize: { xs: "1rem", sm: "1.2rem" },
                     color: "#ffffff",
-                    padding: "5px 15px",
-                    marginTop: "10px",
+                    marginTop: "25px",
                     width: "fit-content",
                   }}
                 >
-                  {bannerTextData["bottomHeading"]}
+                  {data.bottomHeading}
                 </Typography>
               </Box>
+              {data.button && (
+                <Box>
+                  <Link to={data.link} style={{ textDecoration: "none" }}>
+                    <Button sx={buttonStyle}>{data.button}</Button>
+                  </Link>
+                </Box>
+              )}
             </Grid>
             <Grid
               size={{ xs: 12, md: 5 }}
@@ -114,7 +122,10 @@ const Banner = () => {
               }}
             >
               <Box>
-                <img src={AiBannerIcon} style={{width: "100%", height: "100%"}} />
+                <img
+                  src={AiBannerIcon}
+                  style={{ width: "100%", height: "100%" }}
+                />
               </Box>
             </Grid>
           </Grid>
@@ -125,3 +136,15 @@ const Banner = () => {
 };
 
 export default Banner;
+const buttonStyle = {
+  backgroundColor: "#d9652b",
+  color: "#fff",
+  borderRadius: "22px",
+  transition: "background-color 0.3s",
+  ":hover": {
+    backgroundColor: "#ffca76",
+    color: "#000",
+  },
+  marginTop: 4,
+  padding: "12px 30px",
+};
