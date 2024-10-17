@@ -12,5 +12,5 @@ const Skills = () => {
 
 export default Skills;
 const mainBoxStyle = {
-    marginTop: "104px",
+    // marginTop: "104px",
 }

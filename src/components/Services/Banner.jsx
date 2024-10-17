@@ -21,7 +21,7 @@ const Banner = ({ data }) => {
           alignContent: "center",
           py: { xs: 5, sm: 10 },
           position: "relative", // To make it the relative parent for StatsSection
-          marginTop: { xs: "85px", xl: "95px" },
+          // marginTop: { xs: "85px", xl: "95px" },
           background:
             "linear-gradient(90.21deg, rgb(87, 34, 11) -5.91%, rgba(189, 73, 24, .6) 88%)",
         }}
@@ -62,10 +62,7 @@ const Banner = ({ data }) => {
                     width: "fit-content",
                     fontSize: 40,
                     fontWeight: 800,
-                    lineHeight: {
-                      xs: 1.2,
-                      sm: 0.7,
-                    },
+                    lineHeight: 1.2,
                   }}
                 >
                   {data.mainHeading}

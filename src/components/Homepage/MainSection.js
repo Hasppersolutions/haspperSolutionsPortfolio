@@ -39,7 +39,7 @@ const HeroSection = () => {
         height: { xs: "100%", sm: "78vh", md: "calc(100vh - 185px)", xl: "calc(100vh - 200px)" },
         py: { xs: 5, sm: 10 },
         position: 'relative',  // To make it the relative parent for StatsSection
-        marginTop: { xs: "85px", xl: "95px" },
+        // marginTop: { xs: "85px", xl: "95px" },
       }}
     >
       <Container>
