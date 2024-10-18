@@ -4,6 +4,7 @@ import Banner from "../components/Services/Banner";
 import AiDescription from "../components/Services/AiDescription";
 import ServiceBackgroudImage from "../assets/img/ServiceBackgroudImage.png";
 import AiBannerIcon from "../assets/img/AiBannerIcon.png";
+import AiTool from "../components/Services/Ai/AiTool";
 
 const ArtificialIntelligence = () => {
   return (
@@ -15,6 +16,7 @@ const ArtificialIntelligence = () => {
       >
         <Banner data={bannerTextData} />
         <AiDescription />
+        <AiTool />
       </Box>
     </>
   );
