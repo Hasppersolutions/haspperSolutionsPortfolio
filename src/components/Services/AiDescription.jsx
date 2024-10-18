@@ -56,16 +56,12 @@ const AiDescription = () => {
     <Box
       className="section-content"
       sx={{
-        // padding: { xs: "70px 16px 50px", sm: "140px 50px 50px" },
         backgroundColor: "#f9f9f9",
-        // textAlign: "center",
       }}
     >
       <Container
         sx={{
           paddingTop: { xs: "30px ", sm: "40px" },
-          // backgroundColor: "#f9f9f9",
-          // textAlign: "center",
         }}
       >
         <Box
@@ -83,7 +79,7 @@ const AiDescription = () => {
           <Grid
             size={{ xs: 12, md: 8 }}
             sx={{
-              padding: { xs: "30px 0 0", sm: "60px 0 0" },
+              padding: { xs: "30px 0", sm: "60px 0" },
               // backgroundColor: "#f9f9f9",
               // textAlign: "center",
             }}
