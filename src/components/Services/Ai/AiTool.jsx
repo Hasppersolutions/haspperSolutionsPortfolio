@@ -57,7 +57,7 @@ const AiTool = ({ data }) => {
             <Grid size={{ xs: 12, md: 6 }}>
               <Grid container rowGap={{ xs: 2, md: 0 }}>
                 {data?.uppeCardData.map((item, index) => (
-                  <Grid size={{ xs: 12, sm: 6 }}>
+                  <Grid size={{ xs: 12, sm: 6 }} key={index}>
                     <Box
                       sx={{
                         borderRight: {
@@ -105,7 +105,7 @@ const AiTool = ({ data }) => {
                         <Typography
                           sx={{
                             fontSize: { xs: "18px" },
-                            color: "#337AB7",
+                            color: "#c75425",
                             marginTop: "15px",
                             textAlign: "center",
                           }}
@@ -120,7 +120,7 @@ const AiTool = ({ data }) => {
                             left: 0,
                             width: "100%",
                             height: "100%",
-                            background: "#337AB7",
+                            background: "#c75425",
                             textAlign: "center",
                             display: "flex",
                             alignItems: "center",
@@ -151,7 +151,7 @@ const AiTool = ({ data }) => {
             sx={{ marginTop: { xs: 2, md: 0, sm: 0 } }}
           >
             {data?.belowCardData?.map((item, index) => (
-              <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Box
                   sx={{
                     borderRight: {
@@ -199,7 +199,7 @@ const AiTool = ({ data }) => {
                     <Typography
                       sx={{
                         fontSize: { xs: "18px" },
-                        color: "#337AB7",
+                        color: "#c75425",
                         marginTop: "15px",
                         textAlign: "center",
                       }}
@@ -214,7 +214,7 @@ const AiTool = ({ data }) => {
                         left: 0,
                         width: "100%",
                         height: "100%",
-                        background: "#337AB7",
+                        background: "#c75425",
                         textAlign: "center",
                         display: "flex",
                         alignItems: "center",
