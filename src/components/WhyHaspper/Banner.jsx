@@ -160,7 +160,7 @@ const haspperLetters = ["H", "A", "S", "P", "P", "E", "R"];
 const MainBox = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "100%",
-  marginTop: { xs: 85, xl: 95 },
+  // marginTop: { xs: 85, xl: 95 },
 }));
 const BannerBox = styled(Box)(({ theme }) => ({
   height: "70vh",
