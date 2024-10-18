@@ -5,6 +5,7 @@ import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import mobileDevelopmentRight from "../../assets/img/Services/mobile-development-right.png";
 import Accredited from "../../components/Services/MobileAppDevelopment/Accredited.jsx";
 import { Box } from "@mui/material";
+import DevelopmentServices from "../../components/Services/MobileAppDevelopment/DevelopmentServices.jsx";
 
 const MobileAppDevelopment = () => {
   return (
@@ -13,6 +14,7 @@ const MobileAppDevelopment = () => {
         <Banner data={bannerTextData} />
         <Features data={featuresData} />
         <Accredited />
+        <DevelopmentServices data={developmentServicesData} />
       </Box>
     </>
   );
@@ -44,5 +46,47 @@ const featuresData = {
     "QA, automated testing, and manual testing",
     "Embedded Android & AOSP customizations",
     "Maintenance and post-warranty support",
+  ],
+};
+const developmentServicesData = {
+  firstHeading: "Our Range of ",
+  secondHeading: "Mobile Application Development Services",
+  description: "",
+  cardData: [
+    {
+      icon: "",
+      title: "Mobile App Development Consulting",
+      description: `Our team of professionals offers advice and suggestions on the best methods for developing mobile apps, including app ideation, market research, programming language, and technology stack selection.`,
+    },
+    {
+      icon: "",
+      title: "Mobile UX & UI Design",
+      description: `We produce user-friendly and intuitive mobile app designs that improve user experience, engagement, and conversion rates.`,
+    },
+    {
+      icon: "",
+      title: "Backend Development",
+      description: `To ensure a smooth connection with frontend mobile applications, our backend developers build scalable and secure server-side architectures, APIs, and databases. We also focus on open-source adoption for cost-effective development and increased customization.`,
+    },
+    {
+      icon: "",
+      title: "Mobile App Integration",
+      description: `We connect mobile applications to other services and platforms, including enterprise software, social media platforms, and payment gateways.`,
+    },
+    {
+      icon: "",
+      title: "Mobile App QA & Testing",
+      description: `To make sure that mobile apps are free of bugs, functional, and adhere to industry standards, we conduct thorough quality assurance and testing.`,
+    },
+    {
+      icon: "",
+      title: "Mobile App Maintenance and Support",
+      description: `To keep mobile apps safe, reliable, and current, we offer maintenance and post-launch L0-L3 support services that include bug fixes, security, compliance, upgrades, and enhancements.`,
+    },
+    {
+      icon: "",
+      title: "Mobile App Modernization",
+      description: `Hire mobile app developer from OnGraph to get complete assistance for adding new features, updating the user experience, and improving speed and security to modernize websites into mobile apps.`,
+    },
   ],
 };

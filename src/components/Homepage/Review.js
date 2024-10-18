@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import './Review.css';
-import { Box, Button, MobileStepper, Typography, Paper } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
+import { Box} from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
