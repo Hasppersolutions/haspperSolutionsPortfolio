@@ -36,6 +36,10 @@ body {
   text-decoration: none;
 }
 
+.MuiContainer-root {
+  max-width: 1367px !important
+}
+
 /* html {
   margin: 0;
   padding: 0;
