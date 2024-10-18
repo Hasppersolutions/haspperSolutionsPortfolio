@@ -4,8 +4,6 @@ import Homepage from './Pages/Homepage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
-import { NavBar } from './components/Layout/NavBar';
-import Footer from './components/Layout/Footer';
 import WhyHaspper from './Pages/WhyHaspper';
 import ContactUs from './Pages/ContactUs';
 import GetProjectEstimate from './Pages/GetProjectEstimate';
