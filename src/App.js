@@ -8,6 +8,7 @@ import { NavBar } from './components/Layout/NavBar';
 import Footer from './components/Layout/Footer';
 import WhyHaspper from './Pages/WhyHaspper';
 import ContactUs from './Pages/ContactUs';
+import ReactNative from './Pages/ReactNative';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/why-haspper' element={<WhyHaspper />} />
           <Route path='/contact-us' element={<ContactUs />}/>
+          <Route path='react-native-app-development' element={<ReactNative />}/>
         </Routes>
         <Footer /> 
       </BrowserRouter>
