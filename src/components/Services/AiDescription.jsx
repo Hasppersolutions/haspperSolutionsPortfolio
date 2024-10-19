@@ -1,6 +1,4 @@
 import React from "react";
-// import './Section.css';
-import AiFeature from "../../assets/img/aiFeature.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import {
@@ -10,7 +8,8 @@ import {
   Grid2 as Grid,
   Typography,
 } from "@mui/material";
-const AiDescription = () => {
+
+const AiDescription = ({ data }) => {
   useGSAP(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -75,7 +74,7 @@ const AiDescription = () => {
         >
           ⏷
         </Box>
-        <Grid container spacing={{xs: 0, md: 5}} rowGap={{xs: 5, md: 0}}>
+        <Grid container spacing={{ xs: 0, md: 5 }} rowGap={{ xs: 5, md: 0 }}>
           <Grid
             size={{ xs: 12, md: 8 }}
             sx={{
@@ -94,7 +93,7 @@ const AiDescription = () => {
                   lineHeight: 1.2,
                 }}
               >
-                Unleashing Business Potential with
+                {data.firstHeading}
               </Typography>
               <Typography
                 // component={"h2"}
@@ -106,42 +105,19 @@ const AiDescription = () => {
                   lineHeight: 1.2,
                 }}
               >
-                Tailor-Made Artificial Intelligence Development Services
+                {data.secondHeading}
               </Typography>
-              <Typography sx={descriptionText}>
-                With OnGraph’s cutting-edge AI solutions, you can increase
-                operational efficiency, uncover untapped opportunities, and
-                achieve a competitive advantage. We are your one-stop shop for
-                any AI requirements.
-              </Typography>
-              <Typography sx={descriptionText}>
-                Discover the power of OnGraph’s intelligent, secured, and highly
-                personalized artificial intelligence services. Natural language
-                processing for faster processes, machine learning for insightful
-                decision-making, computer vision for enhanced customer
-                experience, and deep learning for discovering new opportunities
-                can all help your organization.
-              </Typography>
-              <Typography sx={descriptionText}>
-                Besides offering Development in AI across diverse domains, we
-                specialize in artificial intelligence game development, and
-                software development powered by AI, and provide top-tier
-                artificial intelligence automation consulting. Our AI
-                technologies go beyond automation, allowing you to create and
-                excel.
-              </Typography>
-              <Typography sx={descriptionText}>
-                As a leading Artificial Intelligence Company, we cover all
-                bases, from AI consulting and development of Artificial
-                Intelligence to Integration, Maintenance, Generative AI, and AI
-                Data Engineering. Trust our AI consulting experts to guide you
-                through the AI transformation process. Choose OnGraph for an
-                AI-powered, smarter, faster, and genuinely revolutionary
-                corporate future.
-              </Typography>
-              <Button className="btn-learn-more" sx={learnButton}>
-                GET FREE DEMO
-              </Button>
+              <Typography
+                sx={descriptionText}
+                dangerouslySetInnerHTML={{
+                  __html: data?.description?.split("\n")?.join("<br/>"),
+                }}
+              />
+              {data.button && (
+                <Button className="btn-learn-more" sx={learnButton}>
+                  {data.button}
+                </Button>
+              )}
             </Box>
           </Grid>
           <Grid
@@ -150,15 +126,14 @@ const AiDescription = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-            //   padding: { xs: "0 50px", sm: "0 50px " },
-              // width: {
-              //     xs: "100%",
-              //     md: 390,
-              // }
             }}
           >
             <Box className="section-image">
-              <img src={AiFeature} alt="Consulting Service" style={{width: "100%", height: "100%"}} />
+              <img
+                src={data.image}
+                alt="Consulting Service"
+                style={{ width: "100%", height: "100%" }}
+              />
             </Box>
           </Grid>
         </Grid>

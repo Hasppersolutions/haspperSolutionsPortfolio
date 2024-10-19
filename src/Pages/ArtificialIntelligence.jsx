@@ -10,6 +10,7 @@ import healthCare from "../assets/img/healthCare.png";
 import dataEngineer from "../assets/img/dataEngineer.png";
 import generativeAi from "../assets/img/generativeAi.png";
 import recommendationSystem from "../assets/img/recommendationSystem.png";
+import AiFeature from "../assets/img/aiFeature.png";
 
 const ArtificialIntelligence = () => {
   return (
@@ -20,7 +21,7 @@ const ArtificialIntelligence = () => {
         }}
       >
         <Banner data={bannerTextData} />
-        <AiDescription />
+        <AiDescription data={aiDescriptionData} />
         <AiTool data={toolData} />
       </Box>
     </>
@@ -38,7 +39,16 @@ const bannerTextData = {
   // button: "Get Free Demo", //uncomment to add button to banner
   // link: "link" //uncomment to add link to button
 };
-
+const aiDescriptionData = {
+  firstHeading: "Unleashing Business Potential with",
+  secondHeading: "Tailor-Made Artificial Intelligence Development Services",
+  description: `With OnGraph’s cutting-edge AI solutions, you can increase operational efficiency, uncover untapped opportunities, and achieve a competitive advantage. We are your one-stop shop for any AI requirements.<br />
+  Discover the power of OnGraph’s intelligent, secured, and highly personalized artificial intelligence services. Natural language processing for faster processes, machine learning for insightful decision-making, computer vision for enhanced customer experience, and deep learning for discovering new opportunities can all help your organization.<br />
+  Besides offering Development in AI across diverse domains, we specialize in artificial intelligence game development, and software development powered by AI, and provide top-tier artificial intelligence automation consulting. Our AI technologies go beyond automation, allowing you to create and excel.<br />
+  As a leading Artificial Intelligence Company, we cover all bases, from AI consulting and development of Artificial Intelligence to Integration, Maintenance, Generative AI, and AI Data Engineering. Trust our AI consulting experts to guide you through the AI transformation process. Choose OnGraph for an AI-powered, smarter, faster, and genuinely revolutionary corporate future.`,
+  button: "GET FREE DEMO",
+  image: AiFeature,
+};
 const toolData = {
   heading: "AI Tools Simplifying",
   subHeading: "Business Complexities",

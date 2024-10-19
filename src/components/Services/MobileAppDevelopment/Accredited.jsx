@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Grid2 as Grid, Typography, Box } from "@mui/material";
-// import googleReview from "../../../assets/img/"
 
 const Accredited = () => {
   return (
