@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box,Typography, Container, Grid2 as Grid} from '@mui/material';
 import SectionImage from '../../../assets/img/Services/Background.svg';
+
 const Section = () => {
   return (
     <Box
