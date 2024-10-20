@@ -13,6 +13,9 @@ import Layout from "./components/Layout/index"
 import Ios from './Pages/Services/Ios';
 import Android from './Pages/Services/Android';
 import Flutter from './Pages/Services/Flutter';
+import ProductEngineer from './Pages/Services/ProductEngineer';
+import ChatBot from './Pages/Services/ChatBot';
+import IotDevelopment from './Pages/Services/IotDevelopment';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
             <Route path='/services/ios-app-development' element={<Ios />} />
             <Route path='/services/android-application-development' element={<Android />} />
             <Route path='/services/flutter-app-development' element={<Flutter />} />
+            <Route path='/chatbot-development' element={<ChatBot />} />
+            <Route path='/iot-development' element={<IotDevelopment />} />
+            <Route path='/product-engineer-development' element={<ProductEngineer />} />
           </Routes>
         </Layout>
       </BrowserRouter>

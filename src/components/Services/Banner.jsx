@@ -35,7 +35,7 @@ const Banner = ({ data }) => {
             position: "absolute",
             top: 0,
             left: 0,
-            zIndex: -1,
+            zIndex: 0,
             bottom: 0,
             right: "auto",
             width: "100%",
