@@ -5,7 +5,7 @@ const ServicesAndStaffing = () => {
   return (
     <>
       <Container sx={{ pb: 3 }}>
-        <Grid container columnSpacing={{ sm: 3 }} rowGap={{ xs: 3, md: 0 }}>
+        <Grid container columnSpacing={{ sm: 3 }} rowGap={{ xs: 3, md: 0 ,margin:'60px'}}>
           <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             {/* Services Column */}
             <div style={styles.column}>
