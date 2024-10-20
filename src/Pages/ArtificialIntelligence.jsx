@@ -10,6 +10,7 @@ import healthCare from "../assets/img/healthCare.png";
 import dataEngineer from "../assets/img/dataEngineer.png";
 import generativeAi from "../assets/img/generativeAi.png";
 import recommendationSystem from "../assets/img/recommendationSystem.png";
+import InnovationSection from "../components/Services/Ai/InnovationSection";
 
 const ArtificialIntelligence = () => {
   return (
@@ -21,6 +22,7 @@ const ArtificialIntelligence = () => {
       >
         <Banner data={bannerTextData} />
         <AiDescription />
+        <InnovationSection />
         <AiTool data={toolData} />
       </Box>
     </>
