@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography, Card, CardContent, Container, Box } from "@mui/material";
 import Carousel from "react-multi-carousel";
-import mobileAppConsult from "../../../assets/img/Services/mobile-app-consulting.png";
 
 const DevelopmentServices = ({ data }) => {
   const responsive = {
@@ -72,11 +71,7 @@ const DevelopmentServices = ({ data }) => {
               <Card sx={card} key={index}>
                 <CardContent sx={{ p: "30px" }}>
                   <Box sx={icon} className="iconBox">
-                    <img
-                      src={mobileAppConsult}
-                      alt=""
-                      style={{ width: "48px" }}
-                    />
+                    <img src={data.icon} alt="" style={{ width: "48px" }} />
                   </Box>
                   <Typography
                     sx={{

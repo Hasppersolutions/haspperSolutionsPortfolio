@@ -10,6 +10,9 @@ import GetProjectEstimate from './Pages/GetProjectEstimate';
 import ArtificialIntelligence from './Pages/ArtificialIntelligence';
 import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment';
 import Layout from "./components/Layout/index"
+import Ios from './Pages/Services/Ios';
+import Android from './Pages/Services/Android';
+import Flutter from './Pages/Services/Flutter';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
             <Route path='/project-estimate' element={<GetProjectEstimate />} />
             <Route path='/artificial-intelligence' element={<ArtificialIntelligence />} />
             <Route path='/mobile-app-development' element={<MobileAppDevelopment />} />
+            <Route path='/services/ios-app-development' element={<Ios />} />
+            <Route path='/services/android-application-development' element={<Android />} />
+            <Route path='/services/flutter-app-development' element={<Flutter />} />
           </Routes>
         </Layout>
       </BrowserRouter>

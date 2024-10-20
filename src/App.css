@@ -30,6 +30,7 @@ body {
   width: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #F2F2F2 !important;
 }
 
 .link {
@@ -38,6 +39,45 @@ body {
 
 .MuiContainer-root {
   max-width: 1367px !important
+}
+
+.animate-line {
+  animation: 10s linear infinite alternate animate-line;
+}
+
+.headingBoxWidth {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1536px) {
+  .animate-line img {
+    opacity: 1 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .animate-line {
+    animation-duration: 25s !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .animate-line {
+    animation-duration: 25s !important;
+  }
+}
+
+@keyframes animate-line {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 /* html {
