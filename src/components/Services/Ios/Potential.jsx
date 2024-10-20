@@ -18,13 +18,26 @@ const Potential = ({ data }) => {
         >
           ⏷
         </Box>
-        <Box className="headingBoxWidth" sx={{ mt: { xs: "20px", md: "50px" } }}>
+        <Box
+          className="headingBoxWidth"
+          sx={{ mt: { xs: "20px", md: "50px" } }}
+        >
           <Typography sx={titleStyle}>{data.firstHeading}</Typography>
           <Typography sx={[titleStyle, { color: "#c75425" }]}>
             {data.secondHeading}
           </Typography>
+          {data.description && (
+            <Typography sx={{
+              fontSize: 16,
+              textAlign: "center",
+              color: "#666666",
+              marginTop: "10px"
+            }}>
+              {data.description}
+            </Typography>
+          )}
         </Box>
-        <Box sx={{ mt: { xs: "60px", sm: "87px",}, pb: "27px" }}>
+        <Box sx={{ mt: { xs: "60px", sm: "87px" }, pb: "27px" }}>
           <Grid container spacing={{ xs: 4, md: 6 }}>
             {data.cardData.map((item, index) => (
               <Grid size={{ xs: 12, sm: 6 }} key={index}>

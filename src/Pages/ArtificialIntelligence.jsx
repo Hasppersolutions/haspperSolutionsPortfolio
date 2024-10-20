@@ -10,7 +10,9 @@ import healthCare from "../assets/img/healthCare.png";
 import dataEngineer from "../assets/img/dataEngineer.png";
 import generativeAi from "../assets/img/generativeAi.png";
 import recommendationSystem from "../assets/img/recommendationSystem.png";
+import InnovationSection from "../components/Services/Ai/InnovationSection";
 import AiFeature from "../assets/img/aiFeature.png";
+import innovationBackImg from "../assets/img/innovationBackImg.png";
 
 const ArtificialIntelligence = () => {
   return (
@@ -22,6 +24,7 @@ const ArtificialIntelligence = () => {
       >
         <Banner data={bannerTextData} />
         <AiDescription data={aiDescriptionData} />
+        <InnovationSection data={innovationSectionData}/>
         <AiTool data={toolData} />
       </Box>
     </>
@@ -88,4 +91,7 @@ const toolData = {
         "We structure and organize your data for insightful and data-driven decision-making. Harness the power of data for an evidence-based business strategy.",
     },
   ],
+};
+const innovationSectionData = {
+  backgroundImage: innovationBackImg,
 };
