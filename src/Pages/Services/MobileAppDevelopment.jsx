@@ -10,19 +10,19 @@ import DevelopmentServices from "../../components/Services/MobileAppDevelopment/
 import Technologies from "../../components/Services/MobileAppDevelopment/Technologies.jsx";
 import Industries from "../../components/Services/MobileAppDevelopment/Industries.jsx";
 import WaveLine from "../../components/WaveLine.jsx";
+import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ.jsx";
 
 const MobileAppDevelopment = () => {
   return (
     <>
-      {/* <Box sx={{ backgroundColor: "#F2F2F2" }}> */}
-        <Banner data={bannerTextData} />
-        <Features data={featuresData} />
-        <WaveLine />
-        <Accredited />
-        <DevelopmentServices data={developmentServicesData} />
-        <Technologies data={technologiesData} />
-        <Industries data={industriesData} />
-      {/* </Box> */}
+      <Banner data={bannerTextData} />
+      <Features data={featuresData} />
+      <WaveLine />
+      <Accredited />
+      <DevelopmentServices data={developmentServicesData} />
+      <Technologies data={technologiesData} />
+      <Industries data={industriesData} />
+      <FAQ data={faqData} />
     </>
   );
 };
@@ -223,6 +223,38 @@ const industriesData = {
       title: "Education and E-Learning",
       description:
         "We develop unique e-learning mobile apps that provide students and professionals with dynamic and engaging learning experiences, such as online courses, assessments, and skill-building tools.",
+    },
+  ],
+};
+const faqData = {
+  faqItems: [
+    {
+      question:
+        "Q. Why should I choose React Native over native app development?",
+      answer:
+        "React Native allows for faster development with reusable components, cross-platform capabilities, and a large developer community.",
+    },
+    {
+      question: "Q. What's the difference between React and React Native?",
+      answer:
+        "React is used for building web applications, while React Native is for building mobile applications using native components.",
+    },
+    {
+      question: "Q. How long does it take to build a React Native application?",
+      answer:
+        "The time to develop a React Native app depends on the complexity, but it typically takes around 2-6 months.",
+    },
+    {
+      question:
+        "Q. How much does it cost to build an application using React Native?",
+      answer:
+        "The cost of building an app using React Native varies depending on the app complexity, team size, and features.",
+    },
+    {
+      question:
+        "Q. How much does it cost to build an application using React Native?",
+      answer:
+        "The cost of building an app using React Native varies depending on the app complexity, team size, and features.",
     },
   ],
 };
