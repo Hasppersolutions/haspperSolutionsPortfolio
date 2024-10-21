@@ -13,7 +13,7 @@ import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
 import stripe from "../../assets/img/Services/chatbot/stripe.png";
 import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 
-const Technology = () => {
+const Technology = ({data}) => {
   const renderTechItems = (items) => {
     return items?.map((item, index) => (
       <Grid
@@ -71,15 +71,15 @@ const Technology = () => {
           Languages
         </Typography>
         <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(technologyData?.languages)}
+          {renderTechItems(data.languages)}
         </Grid>
         <Typography sx={sectionHeadingStyle}>Framework</Typography>
         <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(technologyData?.frameworks)}
+          {renderTechItems(data.frameworks)}
         </Grid>
         <Typography sx={sectionHeadingStyle}>Payment Gateway</Typography>
         <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(technologyData?.paymentGateways)}
+          {renderTechItems(data.paymentGateways)}
         </Grid>
       </Container>
     </Box>
