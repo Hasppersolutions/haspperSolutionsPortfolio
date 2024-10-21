@@ -9,6 +9,13 @@ import chatTesting from "../../assets/img/Services/chatbot/chatTesting.png";
 import customer from "../../assets/img/Services/chatbot/customer.png";
 import support from "../../assets/img/Services/chatbot/support.png";
 import voiceAnable from "../../assets/img/Services/chatbot/voiceAnable.png";
+import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
+import scale from "../../assets/img/Services/chatbot/scale.png";
+import Group from "../../assets/img/Services/chatbot/Group.png";
+import Vector from "../../assets/img/Services/chatbot/Vector.png";
+import bot from "../../assets/img/Services/chatbot/bot.png";
+import person from "../../assets/img/Services/chatbot/person.png";
+import optimize from "../../assets/img/Services/chatbot/optimize.png";
 
 const ChatBot = () => {
   return (
@@ -19,6 +26,7 @@ const ChatBot = () => {
         }}
       >
         <Banner data={bannerTextData} />
+        <FeatureSection data = {featureData}/>
         <Potential data={potentialData} />
       </Box>
     </>
@@ -78,3 +86,35 @@ const potentialData = {
       },
     ],
   };
+
+  const featureData = {
+    mainHeading: "AI-Powered",
+    subHeading: "Chatbot development company",
+    description: "We have created several virtual assistants that give enterprises the first-mover advantage and instantly add value to industries and functions like sales, service, IT Help Desk, retail banking, and eCommerce. With our Chatbot App Development Services, we build a personal assistant, which is ready to be deployed, extending easily to company-specific needs. As a top-rated Chatbot development company, we can state a few benefits of AI-powered chatbots, and they are as follows:",
+    cardData: [
+      {
+        image: Group,
+        text: "Available 24 X 7"
+      },
+      {
+        image: Vector,
+        text: "Cost-Effective"
+      },
+      {
+        image: bot,
+        text: "Work Automation"
+      },
+      {
+        image: person,
+        text: "Increased Customer Engagement"
+      },
+      {
+        image: optimize,
+        text: "Proactive Interaction"
+      },
+      {
+        image: scale,
+        text: "Keeping Up With The Trend"
+      },
+    ]
+  }
