@@ -9,6 +9,8 @@ import chatTesting from "../../assets/img/Services/chatbot/chatTesting.png";
 import customer from "../../assets/img/Services/chatbot/customer.png";
 import support from "../../assets/img/Services/chatbot/support.png";
 import voiceAnable from "../../assets/img/Services/chatbot/voiceAnable.png";
+import Stats from "../../components/Services/Stats";
+import Technology from "../../components/Services/Technology";
 
 const ChatBot = () => {
   return (
@@ -20,6 +22,8 @@ const ChatBot = () => {
       >
         <Banner data={bannerTextData} />
         <Potential data={potentialData} />
+        <Stats />
+        <Technology />
       </Box>
     </>
   );
