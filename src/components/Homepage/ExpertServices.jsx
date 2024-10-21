@@ -1,6 +1,10 @@
 import React from "react";
 import "./ExpertServices.css";
-import logo from "../../assets/img/nav-icon1.svg";
+import iot from "../../assets/img/iot.png";
+import Chatbot from "../../assets/img/Chatbot.png";
+import Enterprise from "../../assets/img/Enterprice.png";
+import appDevelopment from "../../assets/img/APPICON.svg";
+import webDevelopment from "../../assets/img/webDevelopment.png";
 import {
   Box,
   Container,
@@ -21,31 +25,31 @@ const services = [
     title: "APP DEVELOPMENT",
     description:
       "Unlock new opportunities and services with our interactive and innovative app development.",
-    icon: logo,
+    icon: appDevelopment,
   },
   {
     title: "CHATBOT & VOICEBOT DEVELOPMENT",
     description:
       "Connect with your customers in real-time and make the most out of the situation with our custom-built bots.",
-    icon: logo,
+    icon: Chatbot,
   },
   {
     title: "SMART IOT SOLUTIONS",
     description:
       "With IoT power, automate your crucial workflow and improve your productivity.",
-    icon: logo,
+    icon: iot,
   },
   {
     title: "WEB DEVELOPMENT",
     description:
       "Do not leave your desktop customers behind, have your web app ready!",
-    icon: logo,
+    icon: webDevelopment,
   },
   {
     title: "ENTERPRISE RESOURCE PLANNING",
     description:
       "Grow your network and connect with other companies for more shared resources.",
-    icon: logo,
+    icon: Enterprise,
   },
 ];
 
@@ -134,7 +138,7 @@ const ExpertServices = () => {
             className="headingText"
             sx={{
               fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
-              color: "#0462ac",
+              color: "#C94c16",
               fontWeight: 700,
               lineHeight: 0.6,
             }}
@@ -148,6 +152,7 @@ const ExpertServices = () => {
               style={{
                 width: "100%",
                 height: "100%",
+                color: "#c94c16"
               }}
             />
           </Box>
@@ -261,9 +266,16 @@ const ExpertServices = () => {
                       }}
                     >
                       <img
-                        src={service.icon}
+                        src={service.icon }
                         alt={service.title}
                         className="service-icon"
+
+                        style={{
+                          width: "100px", // Set your desired width
+                          height: "100px", // Set your desired height
+                          objectFit: "contain", // Ensures the image maintains its aspect ratio
+                          
+                        }}
                       />
                       <Box
                         id="item"
@@ -289,7 +301,7 @@ const ExpertServices = () => {
               </Grid>
             </Grid>
           </Box>
-          <button className="view-services-btn">VIEW ALL SERVICES</button>
+          <button className="view-services-btn" style={{marginTop:'100px'}}>VIEW ALL SERVICES</button>
         </Box>
       </Container>
     </Box>
@@ -381,10 +393,12 @@ const afterStyle = {
     content: "''",
     background: `url(${roundCurve})`,
     position: "absolute",
-    top: 20,
-    left: -20,
-    width: 185,
-    height: 591,
+    top: 8,
+    left: 5,
+    width: 182,
+    height: 590,
     zIndex: -1,
   },
 };
+
+
