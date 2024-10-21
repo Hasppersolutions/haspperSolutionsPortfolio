@@ -161,22 +161,31 @@ const statsData = {
     },
   ],
 };
-const technologyData = {
-  languages: [
-    "path/to/html5-icon",
-    python,
-    java,
-    objectC,
-    "path/to/swift-icon",
-  ],
-  frameworks: [
-    "path/to/flutter-icon",
-    "path/to/flutter-icon",
-    "path/to/flutter-icon",
-    xamarin,
-    ionic,
-    node,
-    laravel,
-  ],
-  paymentGateways: [securePay, amazonPay, payPal, stripe, authorizeNet],
-};
+const technologyData = [
+  {
+    name: "Languages",
+    imgData: [
+      "path/to/html5-icon",
+      python,
+      java,
+      objectC,
+      "path/to/swift-icon",
+    ],
+  },
+  {
+    name: "Framework",
+    imgData: [
+      "path/to/flutter-icon",
+      "path/to/flutter-icon",
+      "path/to/flutter-icon",
+      xamarin,
+      ionic,
+      node,
+      laravel,
+    ],
+  },
+  {
+    name: "Payment Gateway",
+    imgData: [securePay, amazonPay, payPal, stripe, authorizeNet],
+  },
+];

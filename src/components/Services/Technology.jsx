@@ -13,7 +13,7 @@ import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
 import stripe from "../../assets/img/Services/chatbot/stripe.png";
 import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 
-const Technology = ({data}) => {
+const Technology = ({ data }) => {
   const renderTechItems = (items) => {
     return items?.map((item, index) => (
       <Grid
@@ -67,45 +67,55 @@ const Technology = ({data}) => {
             We Use
           </Typography>
         </Typography>
-        <Typography sx={[sectionHeadingStyle, { mt: "0px !important" }]}>
-          Languages
-        </Typography>
-        <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(data.languages)}
-        </Grid>
-        <Typography sx={sectionHeadingStyle}>Framework</Typography>
-        <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(data.frameworks)}
-        </Grid>
-        <Typography sx={sectionHeadingStyle}>Payment Gateway</Typography>
-        <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(data.paymentGateways)}
-        </Grid>
+        {data.map((item, index) => (
+          <Box key={index}>
+            <Typography
+              sx={[
+                sectionHeadingStyle,
+                index == 0 ? { mt: "0px !important" } : "",
+              ]}
+            >
+              {item.name}
+            </Typography>
+            <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
+              {renderTechItems(item.imgData)}
+            </Grid>
+          </Box>
+        ))}
       </Container>
     </Box>
   );
 };
 
 export default Technology;
-const technologyData = {
-  languages: [
-    "path/to/html5-icon",
-    python,
-    java,
-    objectC,
-    "path/to/swift-icon",
-  ],
-  frameworks: [
-    "path/to/flutter-icon",
-    "path/to/flutter-icon",
-    "path/to/flutter-icon",
-    xamarin,
-    ionic,
-    node,
-    laravel,
-  ],
-  paymentGateways: [securePay, amazonPay, payPal, stripe, authorizeNet],
-};
+const technologyData = [
+  {
+    name: "Languages",
+    imgData: [
+      "path/to/html5-icon",
+      python,
+      java,
+      objectC,
+      "path/to/swift-icon",
+    ],
+  },
+  {
+    name: "Framework",
+    imgData: [
+      "path/to/flutter-icon",
+      "path/to/flutter-icon",
+      "path/to/flutter-icon",
+      xamarin,
+      ionic,
+      node,
+      laravel,
+    ],
+  },
+  {
+    name: "Payment Gateway",
+    imgData: [securePay, amazonPay, payPal, stripe, authorizeNet],
+  },
+];
 
 const iconContainer = {
   display: "flex",
@@ -124,9 +134,6 @@ const sectionHeadingStyle = {
   textTransform: "uppercase",
   textAlign: "center",
   marginTop: { xs: "40px", md: "50px", lg: "60px" },
-  ":nth-child(1)": {
-    marginTop: "0px !important",
-  },
 };
 const titleStyle = {
   fontSize: { xs: 24, sm: 32, md: 39 },
