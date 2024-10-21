@@ -1,43 +1,7 @@
 import React from "react";
-import {
-  Grid2 as Grid,
-  Typography,
-  Card,
-  CardContent,
-  Box,
-  Container,
-} from "@mui/material";
-// import { ThumbUp, MobileFriendly, People, Star } from "@mui/icons-material";
-import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
+import { Typography, Box, Container } from "@mui/material";
 
-const data = [
-  {
-    // icon: <MobileFriendly fontSize="large" />,
-    icon: multilingualChatbots,
-    number: "1500+",
-    label: "Apps Developed",
-  },
-  {
-    // icon: <People fontSize="large" />,
-    icon: multilingualChatbots,
-    number: "150+",
-    label: "Mobile App Developers",
-  },
-  {
-    // icon: <ThumbUp fontSize="large" />,
-    icon: multilingualChatbots,
-    number: "1000+",
-    label: "Clients Worldwide",
-  },
-  {
-    // icon: <Star fontSize="large" />,
-    icon: multilingualChatbots,
-    number: "98%",
-    label: "Success Rate",
-  },
-];
-
-const Stats = () => {
+const Stats = ({ data }) => {
   return (
     <Box
       sx={{
@@ -75,7 +39,7 @@ const Stats = () => {
             position: "relative",
           }}
         >
-          {data.map((item, index) => (
+          {data.cardData.map((item, index) => (
             <Box sx={cardStyle} key={index}>
               <img src={item.icon} alt="" />
               <Typography

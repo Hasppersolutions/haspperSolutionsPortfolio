@@ -13,35 +13,9 @@ import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
 import stripe from "../../assets/img/Services/chatbot/stripe.png";
 import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 
-const techData = {
-  languages: [
-    { name: "HTML5", icon: "path/to/html5-icon" },
-    { name: "Python", icon: python },
-    { name: "Java", icon: java },
-    { name: "Objective-C", icon: objectC },
-    { name: "Swift", icon: "path/to/swift-icon" },
-  ],
-  frameworks: [
-    { name: "Flutter", icon: "path/to/flutter-icon" },
-    { name: "Angular", icon: "path/to/angular-icon" },
-    { name: "PhoneGap", icon: "path/to/phonegap-icon" },
-    { name: "Xamarin", icon: xamarin },
-    { name: "Ionic", icon: ionic },
-    { name: "Ionic", icon: node },
-    { name: "Ionic", icon: laravel },
-  ],
-  paymentGateways: [
-    { name: "SecurePay", icon: securePay },
-    { name: "Amazon Pay", icon: amazonPay },
-    { name: "PayPal", icon: payPal },
-    { name: "Stripe", icon: stripe },
-    { name: "Authorize.net", icon: authorizeNet },
-  ],
-};
-
 const Technology = () => {
-  const renderTechItems = (items) =>
-    items.map((item, index) => (
+  const renderTechItems = (items) => {
+    return items?.map((item, index) => (
       <Grid
         key={index}
         size={{ xs: 6, sm: 4, md: 2.4 }}
@@ -69,14 +43,15 @@ const Technology = () => {
               },
             }}
           >
-            <img src={item.icon} alt={item.name} className="icons" />
+            <img src={item} alt={"icon"} className="icons" />
           </Box>
         </Box>
       </Grid>
     ));
+  };
 
   return (
-    <Box sx={{ pt: 3, pb: { xs: 8, md: 14} }}>
+    <Box sx={{ pt: 3, pb: { xs: 8, md: 14 } }}>
       <Container>
         <Typography sx={titleStyle}>
           Technologies <br />
@@ -96,15 +71,15 @@ const Technology = () => {
           Languages
         </Typography>
         <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(techData.languages)}
+          {renderTechItems(technologyData?.languages)}
         </Grid>
         <Typography sx={sectionHeadingStyle}>Framework</Typography>
         <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(techData.frameworks)}
+          {renderTechItems(technologyData?.frameworks)}
         </Grid>
         <Typography sx={sectionHeadingStyle}>Payment Gateway</Typography>
         <Grid container rowGap={{ xs: 3, sm: 6 }} justifyContent="center">
-          {renderTechItems(techData.paymentGateways)}
+          {renderTechItems(technologyData?.paymentGateways)}
         </Grid>
       </Container>
     </Box>
@@ -112,6 +87,26 @@ const Technology = () => {
 };
 
 export default Technology;
+const technologyData = {
+  languages: [
+    "path/to/html5-icon",
+    python,
+    java,
+    objectC,
+    "path/to/swift-icon",
+  ],
+  frameworks: [
+    "path/to/flutter-icon",
+    "path/to/flutter-icon",
+    "path/to/flutter-icon",
+    xamarin,
+    ionic,
+    node,
+    laravel,
+  ],
+  paymentGateways: [securePay, amazonPay, payPal, stripe, authorizeNet],
+};
+
 const iconContainer = {
   display: "flex",
   alignItems: "center",
