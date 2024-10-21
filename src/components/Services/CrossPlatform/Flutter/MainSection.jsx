@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Typography, Grid2 as Grid, Paper, Container } from '@mui/material';
-import BackgroundImage from '../../../../assets/img/Services/MainImg.svg';  // Update with the correct path to your ima
+// import BackgroundImage from '../../../../assets/img/Services/MainImg.svg'; 
 const StatsCard = ({ value, label }) => (
   <Paper
     elevation={3}
@@ -23,8 +23,7 @@ const StatsCard = ({ value, label }) => (
 const HeroSection = () => (
   <Box
     sx={{
-      backgroundImage: `url(${BackgroundImage})`,
-      
+      // backgroundImage: `url(${BackgroundImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       height: '100vh',
