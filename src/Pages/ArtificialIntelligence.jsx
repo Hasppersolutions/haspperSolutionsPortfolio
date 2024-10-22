@@ -13,6 +13,10 @@ import recommendationSystem from "../assets/img/recommendationSystem.png";
 import InnovationSection from "../components/Services/Ai/InnovationSection";
 import AiFeature from "../assets/img/aiFeature.png";
 import innovationBackImg from "../assets/img/innovationBackImg.png";
+import Review from "../components/Homepage/Review";
+import Mailus from "../components/Homepage/Mailus";
+import Certification from "../components/Homepage/Certification";
+import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
 
 const ArtificialIntelligence = () => {
   return (
@@ -26,6 +30,10 @@ const ArtificialIntelligence = () => {
         <AiDescription data={aiDescriptionData} />
         <InnovationSection data={innovationSectionData}/>
         <AiTool data={toolData} />
+        <Certification />
+        <Review />
+        <Mailus />
+        <ServicesAndStaffing />
       </Box>
     </>
   );

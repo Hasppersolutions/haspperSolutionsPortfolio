@@ -30,6 +30,7 @@ import amazonPay from "../../assets/img/Services/chatbot/amazon-pay.png";
 import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
 import stripe from "../../assets/img/Services/chatbot/stripe.png";
 import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
+import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 
 const ChatBot = () => {
   return (
@@ -44,6 +45,7 @@ const ChatBot = () => {
         <Potential data={potentialData} />
         <Stats data={statsData} />
         <Technology data={technologyData} />
+        <FAQ data={faqData}/>
       </Box>
     </>
   );
@@ -189,3 +191,36 @@ const technologyData = [
     imgData: [securePay, amazonPay, payPal, stripe, authorizeNet],
   },
 ];
+
+const faqData = {
+  faqItems: [
+    {
+      question:
+        "Q. Why should I choose React Native over native app development?",
+      answer:
+        "React Native allows for faster development with reusable components, cross-platform capabilities, and a large developer community.",
+    },
+    {
+      question: "Q. What's the difference between React and React Native?",
+      answer:
+        "React is used for building web applications, while React Native is for building mobile applications using native components.",
+    },
+    {
+      question: "Q. How long does it take to build a React Native application?",
+      answer:
+        "The time to develop a React Native app depends on the complexity, but it typically takes around 2-6 months.",
+    },
+    {
+      question:
+        "Q. How much does it cost to build an application using React Native?",
+      answer:
+        "The cost of building an app using React Native varies depending on the app complexity, team size, and features.",
+    },
+    {
+      question:
+        "Q. How much does it cost to build an application using React Native?",
+      answer:
+        "The cost of building an app using React Native varies depending on the app complexity, team size, and features.",
+    },
+  ]
+}
