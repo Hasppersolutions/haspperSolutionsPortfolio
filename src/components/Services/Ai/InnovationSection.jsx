@@ -70,7 +70,7 @@ const InnovationSection = ({ data }) => {
               paddingBottom: "15px",
             }}
           >
-            OnGraph, fueling innovation with pioneering AI solutions
+           {data.firstHeading}
           </Typography>
           <Typography
             className="heading"
@@ -78,12 +78,7 @@ const InnovationSection = ({ data }) => {
               fontSize: { xs: "15px", sm: "16px", md: "17px" },
             }}
           >
-            With our robust, secure, and comprehensive AI tools, we create
-            synergy between challenges and solutions. OnGraph professionals
-            simplify the difficulty by providing capabilities to manage AI
-            processes, track KPIs, generate and customize AI algorithms, and
-            ensure seamless integration and increased security. Improve your
-            business with our skillfully created AI services.
+            {data.description}
           </Typography>
         </Container>
       </Box>
