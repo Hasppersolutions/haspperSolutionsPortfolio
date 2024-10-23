@@ -14,11 +14,11 @@ import InnovationSection from "../components/Services/Ai/InnovationSection";
 import AiFeature from "../assets/img/aiFeature.png";
 import innovationBackImg from "../assets/img/innovationBackImg.png";
 import Review from "../components/Homepage/Review";
-import Mailus from "../components/Homepage/Mailus";
 import Certification from "../components/Homepage/Certification";
+import Mailus from "../components/Homepage/Mailus";
 import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
 import Challenges from "../components/Services/Challenges";
-
+import WaveLine from "../components/WaveLine.jsx";
 const ArtificialIntelligence = () => {
   return (
     <>
@@ -29,6 +29,7 @@ const ArtificialIntelligence = () => {
       >
         <Banner data={bannerTextData} />
         <AiDescription data={aiDescriptionData} />
+        <WaveLine />
         <Challenges data={challengesData} />
         <InnovationSection data={innovationSectionData} />
         <AiTool data={toolData} />

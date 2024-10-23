@@ -38,6 +38,9 @@ import quality from "../../assets/img/Services/chatbot/quality.png";
 import planning from "../../assets/img/Services/chatbot/planning.png";
 import research from "../../assets/img/Services/chatbot/research.png";
 import development from "../../assets/img/Services/chatbot/development.png";
+import Mailus from "../../components/Homepage/Mailus";
+import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
+import WaveLine from "../../components/WaveLine.jsx";
 
 const ChatBot = () => {
   return (
@@ -50,10 +53,14 @@ const ChatBot = () => {
         <Banner data={bannerTextData} />
         <FeatureSection data={featureData} />
         <Potential data={potentialData} />
+        <WaveLine />
         <Stats data={statsData} />
         <Technology data={technologyData} />
-        <FAQ data={faqData}/>
         <DevelopmentProcess data={developmentProcessData} />
+        <WaveLine />
+        <FAQ data={faqData}/>
+        <Mailus />
+        <ServicesAndStaffing />
       </Box>
     </>
   );
@@ -202,31 +209,40 @@ const faqData = {
   faqItems: [
     {
       question:
-        "Q. Why should I choose React Native over native app development?",
+        "Q. When it comes to creating a chatbot, how long does it take?",
       answer:
-        "React Native allows for faster development with reusable components, cross-platform capabilities, and a large developer community.",
+        "The time it takes to create a chatbot has no fixed value. As a result, it is preferable to contact professionals to determine the timing for developing a chatbot that meets your company’s requirements.",
     },
     {
-      question: "Q. What's the difference between React and React Native?",
+      question: "Q. What does it cost to develop a chatbot?",
       answer:
-        "React is used for building web applications, while React Native is for building mobile applications using native components.",
+        "The cost of developing a chatbot is determined by a number of factors, including the type of bot and the sector it serves just like the cost of developing an app. Therefore, consulting with a professional to receive a cost estimate on your chatbot development needs is useful.",
     },
     {
-      question: "Q. How long does it take to build a React Native application?",
+      question: "Q. Can chatbots be used to improve customer service?",
       answer:
-        "The time to develop a React Native app depends on the complexity, but it typically takes around 2-6 months.",
+        `If you’re having trouble improving customer service, you’ll almost certainly need a chatbot. More than 67 percent of internet firms in the globe employ chatbots. Self-help features, quick responses, and real-time engaged discussion are all advantages of the chatbot.
+
+        Here are a few more advantages:
+
+        ✅Chatbots provide users with a quick answer
+        ✅Chatbots save time and money
+        ✅A chatbot is available 24 hours a day, 7 days a week.
+        ✅It can handle a large number of inquiries at once
+        ✅It supports multiple languages
+        `,
     },
     {
       question:
-        "Q. How much does it cost to build an application using React Native?",
+        "Q. Is it possible to have a safe and secure discussion with a chatbot?",
       answer:
-        "The cost of building an app using React Native varies depending on the app complexity, team size, and features.",
+        "Yes, a chatbot does safeguard the security of live chats. The majority of chatbots ensure that conversations are conducted in a secure, encrypted environment from beginning to end. Furthermore, chatbot security has been improved by using cutting-edge technologies such as facial recognition, artificial intelligence, and encrypted messaging.",
     },
     {
       question:
-        "Q. How much does it cost to build an application using React Native?",
+        "Q. Which programming language is ideal for creating a customer-service chatbot?",
       answer:
-        "The cost of building an app using React Native varies depending on the app complexity, team size, and features.",
+        "Building a chatbot with AI (Artificial Intelligence) characteristics is the greatest solution for businesses. Programming languages including Java, Python, C++, PHP, Ruby, and Lisp are ideal for creating AI chatbots.",
     },
   ]
 }
@@ -238,39 +254,39 @@ const developmentProcessData = {
     "We take all the worry so that you can relax and see your ideas turning into reality! We follow a comprehensive approach in our Chatbot App Development process to ensure we fulfill all your requirements",
   stepsData: [
     {
-      title: "UI/UX Design",
+      title: "Protecting Your Intellectual Property",
       description:
-        "Our creative team will collaborate with you to build a design that embodies your startup’s vision.",
+        "We safeguard your splendid idea by signing an NDA to protect your original concept and secure your application.",
       icon: ux,
     },
     {
-      title: "Ideation and Market Research",
+      title: "Discovery",
       description:
-        "We work hand-in-hand with you to define the scope and requirements of your startup’s tech project.",
+        "We research thoroughly and ask questions to know your detailed requirements and suggest the best solution",
       icon: research,
     },
     {
-      title: "Development and Iteration",
+      title: "Design",
       description:
-        "Using cutting-edge frameworks, our expert developers will create a tailored solution.",
+        "We create wireframe prototypes before transforming them into world-class UI designs.",
       icon: development,
     },
     {
-      title: "Development Planning",
+      title: "Development",
       description:
-        "We create wireframe prototypes before transforming them into world-class UI designs.",
+        "We turn the designs into an app using the most advanced technology stacks and frameworks.",
       icon: planning,
     },
     {
-      title: "Ongoing Support and Optimization",
+      title: "Testing",
       description:
-        "Post-launch, we continue to monitor performance analytics and roll-out updates.",
+        "We do extensive testing to remove all the bugs and issues before making your app live.",
       icon: support2,
     },
     {
-      title: "Testing and Quality Assurance",
+      title: "Support and Maintenance",
       description:
-        "Our rigorous QA process will vet the functionality and stability of your solution.",
+        "We continue to offer widespread support and maintenance to guarantee smooth operations.",
       icon: quality,
     },
   ],
