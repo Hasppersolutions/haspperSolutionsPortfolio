@@ -19,6 +19,11 @@ import Flutter from './Pages/Services/Flutter';
 import ProductEngineer from './Pages/Services/ProductEngineer';
 import ChatBot from './Pages/Services/ChatBot';
 import IotDevelopment from './Pages/Services/IotDevelopment';
+import PhpDevelopment from './Pages/Services/Php';
+import DotnetDevelopment from './Pages/Services/DotNet';
+import VueDevelopment from  './Pages/Services/Vuejs';
+import ReactWebDevelopment from './Pages/Services/ReactWebDev';
+
 function App() {
   return (
     <>
@@ -41,6 +46,10 @@ function App() {
             <Route path='/product-engineer-development' element={<ProductEngineer />} />
             <Route path='/react-native-app-development' element={<ReactNative />}/>
             <Route path='/ionic-app-development' element={<Ionic />}/>
+            <Route path='/php-development' element={< PhpDevelopment/> }/>
+            <Route path= '/dotnet-development' element = {< DotnetDevelopment/>}/>
+            <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
+            <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
