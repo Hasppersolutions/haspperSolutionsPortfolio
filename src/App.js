@@ -20,6 +20,11 @@ import ProductEngineer from './Pages/Services/ProductEngineer';
 import ChatBot from './Pages/Services/ChatBot';
 import IotDevelopment from './Pages/Services/IotDevelopment';
 import Hrms from './Pages/Solutions/Hrms';
+import PhpDevelopment from './Pages/Services/Php';
+import DotnetDevelopment from './Pages/Services/DotNet';
+import VueDevelopment from  './Pages/Services/Vuejs';
+import ReactWebDevelopment from './Pages/Services/ReactWebDev';
+
 function App() {
   return (
     <>
@@ -43,6 +48,10 @@ function App() {
             <Route path='/react-native-app-development' element={<ReactNative />}/>
             <Route path='/ionic-app-development' element={<Ionic />}/>
             <Route path='/solutions/hrms-development' element={<Hrms />}/>
+            <Route path='/php-development' element={< PhpDevelopment/> }/>
+            <Route path= '/dotnet-development' element = {< DotnetDevelopment/>}/>
+            <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
+            <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
