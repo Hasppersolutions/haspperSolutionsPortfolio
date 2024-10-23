@@ -39,8 +39,8 @@ function App() {
             <Route path='/chatbot-development' element={<ChatBot />} />
             <Route path='/iot-development' element={<IotDevelopment />} />
             <Route path='/product-engineer-development' element={<ProductEngineer />} />
-            <Route path='/react-native-app-development' element={<ReactNative />}/>
-            <Route path='/ionic-app-development' element={<Ionic />}/>
+            <Route path='/services/react-native-app-development' element={<ReactNative />}/>
+            <Route path='/services/ionic-app-development' element={<Ionic />}/>
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>

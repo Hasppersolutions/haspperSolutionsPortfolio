@@ -9,7 +9,7 @@ nav.navbar {
   background-color: #c75425;
   height: 10%;
 }
-nav.navbar.scrolled {
+.scrolled {
   padding: 0px 0px;
   background-color: #c75425;
 }

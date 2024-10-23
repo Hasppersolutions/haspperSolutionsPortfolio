@@ -1,15 +1,36 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../../assets/img/logo.svg';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import navIcon2 from '../../assets/img/nav-icon2.svg';
 import navIcon3 from '../../assets/img/nav-icon3.svg';
 import './NavBar.css';
 import { Link, useNavigate } from "react-router-dom";
-import { Box, Grid2 as Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Grid2 as Grid,
+  Typography,
+  Drawer,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from "@mui/material";
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { CloseRounded, MenuRounded, Remove, Add, HomeOutlined } from "@mui/icons-material";
 
 export const NavBar = () => {
+  const navigate = useNavigate();
+  const [open, setOpen] = React.useState(false);
+  const [expanded, setExpanded] = useState(-1);
+
+  // drawer onClick
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+    if (expanded) setExpanded(false)
+  };
+  //accordion onChange
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,292 +52,644 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
 
-  const navigate = useNavigate();
+  // const onUpdateActiveLink = (value) => {
+  //   setActiveLink(value);
+  //   if (value !== "home") {
+  //     navigate(`/${value}`);
+  //   } else {
+  //     navigate(`/`);
+  //   }
+  // }
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-    if (value !== "home") {
-      navigate(`/${value}`);
-    } else {
-      navigate(`/`);
-    }
+  const handleNavigate = (link) => {
+    if (open) setOpen(false)
+    navigate(link)
   }
 
+  // drawer
+  const DrawerList = (
+    <Box
+      sx={{
+        width: { xs: 300, sm: 340 },
+        backgroundColor: "#bb3600",
+        height: "100%",
+        overflow: "auto",
+        transition: ".3s ease-in-out"
+      }}
+      role="presentation"
+    >
+      <CloseRounded
+        onClick={toggleDrawer(false)}
+        sx={{
+          color: "#fff",
+          fontSize: 32,
+          float: "right",
+          mt: 1.5,
+          mr: 1.5
+        }} />
+      <Box sx={{
+        padding: "60px 24px"
+      }}>
+        <HomeOutlined sx={{ color: "#fff", my: 1.5 }} onClick={() => handleNavigate("/")} />
+        {linkData?.map((item, index) => (
+          <Box key={index} sx={{
+            py: 1.5,
+          }}>
+            {item?.dropdownLinks ? (
+              <Accordion
+                expanded={expanded === `panel${index}`}
+                onChange={handleChange(`panel${index}`)}
+                sx={{
+                  boxShadow: 0, backgroundColor: "#bb3600", color: "#fff",
+                  ".MuiAccordionSummary-root": {
+                    minHeight: "auto"
+                  },
+                  ".MuiAccordionSummary-root.Mui-expanded": {
+                    minHeight: "auto",
+                    marginBottom: 1
+                  },
+                }}>
+                <AccordionSummary
+                  sx={accordionSummaryStyle}
+                  expandIcon={
+                    expanded == `panel${index}` ? (
+                      <Remove sx={{ color: "#fff" }} />
+                    ) : (
+                      <Add sx={{ color: "#fff" }} />
+                    )
+                  }
+                >
+                  {item?.name}
+                </AccordionSummary>
+                <AccordionDetails sx={{ p: 0, maxHeight: 500, overflow: "auto" }}>
+                  {item?.dropdownLinks?.map((item, index) => (
+                    <Box key={index} sx={{ pb: 2.5 }}>
+                      <Typography sx={sectionNameStyle}>{item?.title}</Typography>
+                      {item?.links?.map((item, index) => (
+                        <Box key={index} sx={{ pt: item?.name ? 0 : 2.5 }}>
+                          {item?.name && (
+                            <Typography sx={heading2Style} onClick={() => handleNavigate(item?.link)}>
+                              {item?.name}
+                            </Typography>
+                          )}
+                          {item?.subHeadings?.map((item, index) => (
+                            <Typography key={index} sx={subHeading2Style} onClick={() => handleNavigate(item?.link)}>
+                              {item?.name}
+                            </Typography>
+                          ))}
+                        </Box>
+                      ))}
+                    </Box>
+                  ))}
+                </AccordionDetails>
+              </Accordion>
+            ) : (
+              <Typography
+                onClick={() => handleNavigate(item?.link)}
+                sx={{
+                  color: "#fff",
+                  fontWeight: 500,
+                  textTransform: "uppercase",
+                  transition: ".3s ease-in-out",
+                  fontSize: 14
+                }}>
+                {item.name}
+              </Typography>
+            )}
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  );
+
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link
-              className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('home')}>
-              Home
-            </Nav.Link>
-            <Nav.Link
-              className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('skills')}>
-              Skills
-            </Nav.Link>
-            <Nav.Link
-              className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('projects')}>
-              Projects
-            </Nav.Link>
-            <Nav.Link
-              className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('contact')}>
-              Contact Us
-            </Nav.Link>
-            <Nav.Link
-              className={activeLink === 'why-haspper' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('why-haspper')}>
-              Why Haspper
-            </Nav.Link>
-
-            {/* Solutions Section */}
-            <div
-              className="solutions-wrapper"
-              onMouseEnter={() => setShowCard(true)}
-              onMouseLeave={() => setShowCard(false)}
-              style={{ position: 'relative' }}
-            >
-              <Nav.Link className={activeLink === 'solutions' ? 'active navbar-link' : 'navbar-link'}>
-                Solutions
-              </Nav.Link>
-              {showCard && (
-                <div className="solutions-card-container">
-                  <div className="solutions-card">
-                    <div className="solutions-column">
-                      <h3>INDUSTRIES WE SERVE</h3>
-                      <p>HTML</p>
-                      <p>Market Research</p>
-                      <p>Banking</p>
-                      <p>Food</p>
-                      <p>Telecom</p>
-                      <p>E-Learning</p>
-                      <p>Fitness</p>
-                      <p>Media and Entertainment</p>
-                    </div>
-                    <div className="solutions-column">
-                      <h3>SOLUTIONS</h3>
-                      <p>Technical & Operations Staffing</p>
-                      <p>Software Support</p>
-                      <p>Enterprise Product</p>
-                      <p>Artificial Intelligence</p>
-                      <p>Blockchain</p>
-                      <p>Marketplace</p>
-                      <p>Cloud Computing</p>
-                      <p>Chatbot</p>
-                      <p>Voicebot</p>
-                    </div>
-                    <div className="solutions-column">
-                      <h3>WHITE LABEL SOLUTIONS</h3>
-                      <p>Project Management</p>
-                      <p>Panel Management Tool</p>
-                      <p>Food Delivery Application</p>
-                      <p>Home Services Application</p>
-                      <p>Taxi Application</p>
-                      <p>Data Application</p>
-                      <p>OTT Application</p>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Services Section */}
-            <div
-              className="services-wrapper"
-              // onMouseEnter={() => setShowAppContent(true)}
-              // onMouseLeave={() => setShowAppContent(false)}
-              style={{ position: 'relative' }}
-            >
-
-              <Tooltip
-                placement="bottom-start"
-                slotProps={{
-                  popper: {
-                    sx: {
-                      [`&.${tooltipClasses.popper}[data-popper-placement*="bottom"] .${tooltipClasses.tooltip}`]:
-                      {
-                        marginTop: '34px',
+    <Box
+      className={scrolled ? "scrolled" : ""}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        backgroundColor: "#c75425",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        zIndex: 1010,
+        transition: "0.32s ease -in -out",
+        backgroundColor: "#c75425",
+        height: "10%",
+        py: "18px",
+      }}>
+      <Box sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        width: "100%",
+        maxWidth: 1376,
+        margin: "auto",
+        px: { xs: 2, sm: 3, md: 4 }
+      }}>
+        <Box sx={{
+          width: { xs: 200, sm: 228 },
+          height: { xs: 50, sm: 58 }
+        }}>
+          <img src={logo} alt="Haspper" style={{ width: "100%", height: "100%" }} />
+        </Box>
+        {/* Desktop Navbar */}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            width: "max-content",
+            display: { xs: "none", lg: "flex" }
+          }}>
+          <HomeOutlined sx={{ color: "#fff", mr: 4, cursor: "pointer"}} onClick={() => handleNavigate("/")} />
+          {linkData.map((item, index) => (
+            <>
+              {item.name == "Services" ? (
+                <Tooltip
+                  placement="bottom"
+                  slotProps={{
+                    popper: {
+                      sx: {
+                        [`&.${tooltipClasses.popper}[data-popper-placement*="bottom"] .${tooltipClasses.tooltip}`]:
+                        {
+                          marginTop: '34px',
+                        },
                       },
                     },
-                  },
-                  tooltip: {
-                    sx: tooltipStyle,
-                  },
-                }}
-                title={
-                  <Box>
-                    <Grid container>
-                      <Grid size={3}>
-                        <Box sx={{
-                          rowGap: 4
-                        }}>
+                    tooltip: {
+                      sx: tooltipStyle,
+                    },
+                  }}
+                  title={
+                    <Box>
+                      <Grid container>
+                        <Grid size={3}>
+                          <Box sx={{
+                            rowGap: 4
+                          }}>
 
-                          <Box sx={{
-                            backgroundColor: "#fff",
-                            borderRadius: "20px",
-                            height: 100,
-                            width: 100
-                          }}>
+                            <Box sx={{
+                              backgroundColor: "#fff",
+                              borderRadius: "20px",
+                              height: 100,
+                              width: 100
+                            }}>
+                            </Box>
+                            <Box sx={{
+                              backgroundColor: "#fff",
+                              borderRadius: "20px",
+                              height: 100,
+                              width: 100
+                            }}>
+                            </Box>
                           </Box>
+                        </Grid>
+                        <Grid size={9}>
+                          <Grid container columnSpacing={4}>
+                            {item?.dropdownLinks?.map((item, index) => (
+                              <Grid size={4}>
+                                <Box key={index}>
+                                  <Typography sx={sectionName2Style}>{item?.title}</Typography>
+                                  {item?.links?.map((item, index) => (
+                                    <Box key={index}>
+                                      <Typography sx={headingStyle} onClick={() => handleNavigate(item?.link)}>{item?.name}</Typography>
+                                      {item?.subHeadings?.map((item, index) => (
+                                        <Typography key={index} sx={subHeadingStyle} onClick={() => handleNavigate(item?.link)}>{item.name}</Typography>
+                                      ))}
+                                    </Box>
+                                  ))}
+                                </Box>
+                              </Grid>
+                            ))}
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    </Box>
+                  }
+                >
+                  <Typography sx={{
+                    color: "#fff",
+                    letterSpacing: "0.8px",
+                    fontSize: 18,
+                    opacity: 0.75,
+                    mr: 4,
+                    ":hover": {
+                      opacity: 1,
+                    }
+                  }}>
+                    {item.name}
+                  </Typography>
+                </Tooltip>
+              ) : item.name == "Solution" ? (
+                <Tooltip
+                  placement="bottom"
+                  slotProps={{
+                    popper: {
+                      sx: {
+                        [`&.${tooltipClasses.popper}[data-popper-placement*="bottom"] .${tooltipClasses.tooltip}`]:
+                        {
+                          marginTop: '34px',
+                        },
+                      },
+                    },
+                    tooltip: {
+                      sx: [tooltipStyle, { minWidth: { lg: "900px" } }],
+                    },
+                  }}
+                  title={
+                    <Box>
+                      <Grid container>
+                        <Grid size={3}>
                           <Box sx={{
-                            backgroundColor: "#fff",
-                            borderRadius: "20px",
-                            height: 100,
-                            width: 100
+                            rowGap: 4
                           }}>
+
+                            <Box sx={{
+                              backgroundColor: "#fff",
+                              borderRadius: "20px",
+                              height: 100,
+                              width: 100
+                            }}>
+                            </Box>
+                            <Box sx={{
+                              backgroundColor: "#fff",
+                              borderRadius: "20px",
+                              height: 100,
+                              width: 100
+                            }}>
+                            </Box>
                           </Box>
-                        </Box>
+                        </Grid>
+                        <Grid size={9}>
+                          <Grid container columnSpacing={4}>
+                            {item?.dropdownLinks?.map((item, index) => (
+                              <Grid size={6}>
+                                <Box key={index}>
+                                  <Typography sx={sectionName2Style}>{item?.title}</Typography>
+                                  {item?.links?.map((item, index) => (
+                                    <Box key={index}>
+                                      <Typography sx={headingStyle} onClick={() => handleNavigate(item?.link)}>{item?.name}</Typography>
+                                      {item?.subHeadings?.map((item, index) => (
+                                        <Typography key={index} sx={subHeadingStyle} onClick={() => handleNavigate(item?.link)}>{item.name}</Typography>
+                                      ))}
+                                    </Box>
+                                  ))}
+                                </Box>
+                              </Grid>
+                            ))}
+                          </Grid>
+                        </Grid>
                       </Grid>
-                      <Grid size={3}>
-                        <Box sx={{ width: "100%" }}>
-                          {mobileServicesData.map((data, index) => (
-                            <Link to={data.link} target="_blank" style={{ textDecoration: "none" }}>
-                              <Typography
-                                key={index}
-                                sx={
-                                  data.type === "heading" ? headingStyle : subHeadingStyle
-                                }>
-                                {data.name}
-                              </Typography>
-                            </Link>
-                          ))}
-                        </Box>
-                      </Grid>
-                      <Grid size={3}>
-                        <Box sx={{ width: "100%" }}>
-                          {mobileServicesData.map((data, index) => (
-                            <Typography
-                              key={index}
-                              sx={
-                                data.type === "heading" ? headingStyle : subHeadingStyle
-                              }>
-                              {data.name}
-                            </Typography>
-                          ))}
-                        </Box>
-                      </Grid>
-                      <Grid size={3}>
-                        <Box sx={{ width: "100%" }}>
-                          {mobileServicesData.map((data, index) => (
-                            <Typography
-                              key={index}
-                              sx={
-                                data.type === "heading" ? headingStyle : subHeadingStyle
-                              }>
-                              {data.name}
-                            </Typography>
-                          ))}
-                        </Box>
-                      </Grid>
-                    </Grid>
-                  </Box>
-                }
-              >
-                <Nav.Link className={activeLink === 'services' ? 'active navbar-link' : 'navbar-link'}>
-                  Services
-                </Nav.Link>
-              </Tooltip>
-              {showAppContent && (
-                <div className="services-content-container">
-                  <div className="services-container">
-                    <div className="left-section">
-                      <h1>APP DEVELOPMENT</h1>
-                      <h2>WEB APP DEVELOPMENT</h2>
-                      <h3>STARTUP IT SOLUTIONS</h3>
-                      <h4>ENTERPRISE IT SOLUTIONS</h4>
-                      <h5>MARKET RESEARCH SOFTWARE DEVELOPMENT</h5>
-                    </div>
-                    <div className="right-section">
-                      <ul>
-                        <li>.Net</li>
-                        <li>AWS</li>
-                        <li>Java</li>
-                        <li>AI/ML</li>
-                        <li>React</li>
-                        <li>Node.Js</li>
-                        <li>Angular</li>
-                        <li>Wordpress</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                    </Box>
+                  }
+                >
+                  <Typography sx={{
+                    color: "#fff",
+                    letterSpacing: "0.8px",
+                    fontSize: 18,
+                    opacity: 0.75,
+                    mr: 4,
+                    ":hover": {
+                      opacity: 1,
+                    }
+                  }}>
+                    {item.name}
+                  </Typography>
+                </Tooltip>
+              ) : (
+                <Link to={item.link} key={index} className="link">
+                  <Typography sx={{
+                    color: "#fff",
+                    letterSpacing: "0.8px",
+                    fontSize: 18,
+                    opacity: 0.75,
+                    mr: 4,
+                    ":hover": {
+                      opacity: 1,
+                    }
+                  }}>
+                    {item.name}
+                  </Typography>
+                </Link>
               )}
-            </div>
-
-          </Nav>
-          <span className="navbar-text">
-            <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="" /></a>
-              <a href="#"><img src={navIcon2} alt="" /></a>
-              <a href="#"><img src={navIcon3} alt="" /></a>
-            </div>
-          </span>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            </>
+          ))}
+          <Box className="social-icon">
+            <Link to="#"><img src={navIcon1} alt="LinkedIn" /></Link>
+            <Link to="#"><img src={navIcon2} alt="Facebook" /></Link>
+            <Link to="#"><img src={navIcon3} alt="Instagram" /></Link>
+          </Box>
+        </Box>
+        {/* Mobile Navbar */}
+        <Box sx={{ display: { xs: "block", lg: "none" } }}>
+          <MenuRounded
+            sx={{ color: "#fff", fontSize: 32 }}
+            onClick={toggleDrawer(true)}
+          />
+        </Box>
+        <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+          {DrawerList}
+        </Drawer>
+      </Box>
+    </Box >
   )
 }
-
-const mobileServicesData = [
+const linkData = [
   {
-    name: "App Development",
+    name: "Services",
     link: "",
-    type: "heading"
+    dropdownLinks: [
+      {
+        title: "Mobile",
+        links: [
+          {
+            name: "App Development",
+            link: "/mobile-app-development",
+            type: "heading",
+            subHeadings: [
+              {
+                name: "iOS",
+                link: "/services/ios-app-development",
+                type: "subHeading"
+              },
+              {
+                name: "Android",
+                link: "/services/android-application-development",
+                type: "subHeading"
+              },
+              {
+                name: "Flutter",
+                link: "/services/flutter-app-development",
+                type: "subHeading"
+              },
+            ]
+          },
+          {
+            name: "Cross Platform App Development",
+            link: "",
+            type: "heading",
+            subHeadings: [
+              {
+                name: "React Native",
+                link: "/services/react-native-app-development",
+                type: "subHeading"
+              },
+              {
+                name: "Ionic",
+                link: "/services/ionic-app-development",
+                type: "subHeading"
+              },
+              {
+                name: "Flutter",
+                link: "/services/flutter-app-development",
+                type: "subHeading"
+              },
+            ]
+          },
+          {
+            name: "Startup IT Solutions",
+            link: "",
+            type: "heading"
+          },
+          {
+            name: "Market Research Software Development",
+            link: "",
+            type: "heading"
+          },
+          {
+            name: "Enterprise IT Solutions",
+            link: "",
+            type: "heading"
+          },
+        ]
+      },
+      {
+        title: "Web",
+        links: [
+          {
+            name: "Web App Development",
+            link: "",
+            type: "heading",
+            subHeadings: [
+              {
+                name: "PHP",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Java",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "ROR",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Python",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "VueJs",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Angular",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "React",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "NodeJs",
+                link: "",
+                type: "subHeading"
+              },
+            ]
+          },
+          {
+            name: "Ecommerce and CMS",
+            link: "",
+            type: "heading",
+            subHeadings: [
+              {
+                name: "Marketplace",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "WordPress",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Shopify",
+                link: "",
+                type: "subHeading"
+              },
+            ]
+          },
+        ]
+      },
+      {
+        title: "Emerging Technologies",
+        links: [
+          {
+            subHeadings: [
+              {
+                name: "Artificial Intelligence",
+                link: "/artificial-intelligence",
+                type: "subHeading"
+              },
+              {
+                name: "Chatbot",
+                link: "/chatbot-development",
+                type: "subHeading"
+              },
+              {
+                name: "IoT Development",
+                link: "/iot-development",
+                type: "subHeading"
+              },
+              {
+                name: "Enterprise Product Engineering",
+                link: "/product-engineer-development",
+                type: "subHeading"
+              },
+            ]
+          },
+        ]
+      },
+    ]
   },
   {
-    name: "ios",
+    name: "Solution",
     link: "",
-    type: "subHeading",
+    dropdownLinks: [
+      {
+        title: "Industries We Serve",
+        links: [
+          {
+            subHeadings: [
+              {
+                name: "HRMS",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Market Research",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Food",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Banking",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Telecom",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Media And Entertainment",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Fitness",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "E-Learning",
+                link: "",
+                type: "subHeading"
+              },
+            ]
+          },
+        ]
+      },
+      {
+        title: "Solutions",
+        links: [
+          {
+            subHeadings: [
+              {
+                name: "Cloud Computing",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Artificial Intelligence",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Voicebot",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Chatbot",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Blockchain",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Marketplace",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Technical & Operations Staffing",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Software Support",
+                link: "",
+                type: "subHeading"
+              },
+              {
+                name: "Enterprise Product",
+                link: "",
+                type: "subHeading"
+              },
+            ]
+          },
+        ]
+      },
+    ]
   },
   {
-    name: "Android",
-    link: "",
-    type: "subHeading",
+    name: "Contact Us",
+    link: "/contact-us"
   },
   {
-    name: "Flutter",
-    link: "",
-    type: "subHeading",
+    name: "Why Haspper",
+    link: "/why-haspper"
   },
   {
-    name: "Cross Platform App Development",
-    link: "",
-    type: "heading",
-  },
-  {
-    name: "React Native",
-    link: "",
-    type: "subHeading",
-  },
-  {
-    name: "Ionic",
-    link: "",
-    type: "Flutter",
-  },
-  {
-    name: "Startup IT Solutions",
-    link: "",
-    type: "heading",
-  },
-  {
-    name: "Market Research Software Development",
-    link: "",
-    type: "heading",
-  },
-  {
-    name: "Enterprise IT Solutions",
-    link: "",
-    type: "heading",
+    name: "",
+    link: ""
   },
 ]
 const tooltipStyle = {
@@ -326,6 +699,7 @@ const tooltipStyle = {
   padding: "43px 40px 60px",
   borderRadius: "26px",
   maxWidth: "80vw",
+  minWidth: { lg: "1180px", xl: "75vw" }
   // zIndex: 100000
 };
 const headingStyle = {
@@ -345,4 +719,71 @@ const subHeadingStyle = {
     textDecoration: "underline",
     color: "#c75425"
   }
+}
+const sectionNameStyle = {
+  width: "100%",
+  borderRadius: "18px 18px 5px 5px",
+  fontWeight: 16,
+  fontWeight: 600,
+  padding: "4px 21px",
+  backgroundColor: "rgba(255, 255, 255, 0.5)"
+}
+const heading2Style = {
+  fontSize: 15,
+  fontWeight: 500,
+  textTransform: "capitalize",
+  padding: "12px 0px 12px 20px",
+  position: "relative",
+  ":after": {
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
+    width: 8,
+    height: 8,
+    background: "#fff",
+    borderRadius: "50%",
+    content: "''",
+    left: 0,
+    margin: 0,
+  }
+}
+const subHeading2Style = {
+  opacity: .8,
+  color: "#fff",
+  padding: "0 0 0 35px",
+  fontWeight: 400,
+  position: "relative",
+  ":after": {
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
+    width: 10,
+    height: "1px",
+    background: "#fff",
+    content: "''",
+    left: 15,
+    margin: 0,
+  }
+}
+const accordionSummaryStyle = {
+  p: 0,
+  ".MuiAccordionSummary-content": {
+    my: 0,
+    textTransform: "uppercase",
+    fontSize: 14
+  },
+  ".MuiAccordionSummary-content.Mui-expanded": {
+    my: 0,
+  }
+};
+const sectionName2Style = {
+  backgroundColor: "rgba(189, 73, 24, 0.3)",
+  borderRadius: "10px",
+  padding: "0 21px",
+  lineHeight: "42px",
+  color: "#BD4918",
+  fontSize: 20,
+  fontWeight: 600,
+  width: "fit-content",
+  mb: 2
 }
