@@ -32,6 +32,7 @@ import elearning from "../../assets/img/Solutions/hrms/elearning.png";
 import quality from "../../assets/img/Solutions/hrms/quality.png";
 import softwareSolution from "../../assets/img/Solutions/hrms/softwareSolution.png";
 import supportGear from "../../assets/img/Solutions/hrms/supportGear.png";
+import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
 
 
 
@@ -59,7 +60,7 @@ const bannerTextData = {
   mainHeading:
     "Optimize Workforce Efficiency with a Comprehensive HRMS Platform",
   middleHeading: "",
-  backgroundImage: ServiceBackgroudImage,
+  backgroundImage: rebrandCities,
   rightImage: AiFeature,
   bottomHeading:
     "HR management—from recruiting and onboarding to payroll, time tracking, and performance reviews. Empower your HR team to work smarter with intuitive self-service tools, reducing administrative burden and enhancing employee engagement. With real-time analytics and customizable workflows, you'll gain actionable insights into workforce trends and make more informed decisions.",
