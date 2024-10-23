@@ -52,6 +52,17 @@ const Technology = ({ data }) => {
 
   return (
     <Box sx={{ pt: 3, pb: { xs: 8, md: 14 } }}>
+              <Box
+          className="scroll-down-icon"
+          sx={{
+            textAlign: "center",
+            width: "fit-content",
+            margin: "auto",
+            marginTop: "20px",
+          }}
+        >
+          ⏷
+        </Box>
       <Container>
         <Typography sx={titleStyle}>
           Technologies <br />

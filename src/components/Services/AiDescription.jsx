@@ -95,18 +95,20 @@ const AiDescription = ({ data }) => {
               >
                 {data.firstHeading}
               </Typography>
-              <Typography
-                // component={"h2"}
-                sx={{
-                  fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
-                  fontWeight: 800,
-                  color: "#c75425",
-                  mb: 2,
-                  lineHeight: 1.2,
-                }}
-              >
-                {data.secondHeading}
-              </Typography>
+              {data.secondHeading && (
+                <Typography
+                  // component={"h2"}
+                  sx={{
+                    fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
+                    fontWeight: 800,
+                    color: "#c75425",
+                    mb: 2,
+                    lineHeight: 1.2,
+                  }}
+                >
+                  {data.secondHeading}
+                </Typography>
+              )}
               <Typography
                 sx={descriptionText}
                 dangerouslySetInnerHTML={{

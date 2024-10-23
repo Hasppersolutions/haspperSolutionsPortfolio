@@ -13,8 +13,12 @@ import recommendationSystem from "../assets/img/recommendationSystem.png";
 import InnovationSection from "../components/Services/Ai/InnovationSection";
 import AiFeature from "../assets/img/aiFeature.png";
 import innovationBackImg from "../assets/img/innovationBackImg.png";
+import Review from "../components/Homepage/Review";
+import Certification from "../components/Homepage/Certification";
+import Mailus from "../components/Homepage/Mailus";
+import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
 import Challenges from "../components/Services/Challenges";
-
+import WaveLine from "../components/WaveLine.jsx";
 const ArtificialIntelligence = () => {
   return (
     <>
@@ -25,9 +29,14 @@ const ArtificialIntelligence = () => {
       >
         <Banner data={bannerTextData} />
         <AiDescription data={aiDescriptionData} />
+        <WaveLine />
         <Challenges data={challengesData} />
         <InnovationSection data={innovationSectionData} />
         <AiTool data={toolData} />
+        <Certification />
+        <Review />
+        <Mailus />
+        <ServicesAndStaffing />
       </Box>
     </>
   );
