@@ -10,6 +10,7 @@ import customer from "../../assets/img/Services/chatbot/customer.png";
 import support from "../../assets/img/Services/chatbot/support.png";
 import voiceAnable from "../../assets/img/Services/chatbot/voiceAnable.png";
 import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
+import DevelopmentProcess from "../../components/Services/Chatbot/DevelopmentProcess";
 import scale from "../../assets/img/Services/chatbot/scale.png";
 import Group from "../../assets/img/Services/chatbot/Group.png";
 import Vector from "../../assets/img/Services/chatbot/Vector.png";
@@ -30,6 +31,12 @@ import amazonPay from "../../assets/img/Services/chatbot/amazon-pay.png";
 import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
 import stripe from "../../assets/img/Services/chatbot/stripe.png";
 import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
+import support2 from "../../assets/img/Services/chatbot/support-1.png";
+import ux from "../../assets/img/Services/chatbot/ux.png";
+import quality from "../../assets/img/Services/chatbot/quality.png";
+import planning from "../../assets/img/Services/chatbot/planning.png";
+import research from "../../assets/img/Services/chatbot/research.png";
+import development from "../../assets/img/Services/chatbot/development.png";
 
 const ChatBot = () => {
   return (
@@ -44,6 +51,7 @@ const ChatBot = () => {
         <Potential data={potentialData} />
         <Stats data={statsData} />
         <Technology data={technologyData} />
+        <DevelopmentProcess data={developmentProcessData} />
       </Box>
     </>
   );
@@ -103,7 +111,6 @@ const potentialData = {
     },
   ],
 };
-
 const featureData = {
   mainHeading: "AI-Powered",
   subHeading: "Chatbot development company",
@@ -136,7 +143,6 @@ const featureData = {
     },
   ],
 };
-
 const statsData = {
   cardData: [
     {
@@ -189,3 +195,48 @@ const technologyData = [
     imgData: [securePay, amazonPay, payPal, stripe, authorizeNet],
   },
 ];
+//Keep 6 max step data
+const developmentProcessData = {
+  firstHeading: "Chatbot Development",
+  secondHeading: "Process We Follow",
+  description:
+    "We take all the worry so that you can relax and see your ideas turning into reality! We follow a comprehensive approach in our Chatbot App Development process to ensure we fulfill all your requirements",
+  stepsData: [
+    {
+      title: "UI/UX Design",
+      description:
+        "Our creative team will collaborate with you to build a design that embodies your startup’s vision.",
+      icon: ux,
+    },
+    {
+      title: "Ideation and Market Research",
+      description:
+        "We work hand-in-hand with you to define the scope and requirements of your startup’s tech project.",
+      icon: research,
+    },
+    {
+      title: "Development and Iteration",
+      description:
+        "Using cutting-edge frameworks, our expert developers will create a tailored solution.",
+      icon: development,
+    },
+    {
+      title: "Development Planning",
+      description:
+        "We create wireframe prototypes before transforming them into world-class UI designs.",
+      icon: planning,
+    },
+    {
+      title: "Ongoing Support and Optimization",
+      description:
+        "Post-launch, we continue to monitor performance analytics and roll-out updates.",
+      icon: support2,
+    },
+    {
+      title: "Testing and Quality Assurance",
+      description:
+        "Our rigorous QA process will vet the functionality and stability of your solution.",
+      icon: quality,
+    },
+  ],
+};

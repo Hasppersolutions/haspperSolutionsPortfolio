@@ -13,6 +13,7 @@ import recommendationSystem from "../assets/img/recommendationSystem.png";
 import InnovationSection from "../components/Services/Ai/InnovationSection";
 import AiFeature from "../assets/img/aiFeature.png";
 import innovationBackImg from "../assets/img/innovationBackImg.png";
+import Challenges from "../components/Services/Challenges";
 
 const ArtificialIntelligence = () => {
   return (
@@ -24,7 +25,8 @@ const ArtificialIntelligence = () => {
       >
         <Banner data={bannerTextData} />
         <AiDescription data={aiDescriptionData} />
-        <InnovationSection data={innovationSectionData}/>
+        <Challenges data={challengesData} />
+        <InnovationSection data={innovationSectionData} />
         <AiTool data={toolData} />
       </Box>
     </>
@@ -93,5 +95,77 @@ const toolData = {
   ],
 };
 const innovationSectionData = {
+  firstHeading: " OnGraph, fueling innovation with pioneering AI solutions",
+  description:
+    "With our robust, secure, and comprehensive AI tools, we create synergy between challenges and solutions. OnGraph professionals simplify the difficulty by providing capabilities to manage AI processes, track KPIs, generate and customize AI algorithms, and ensure seamless integration and increased security. Improve your business with our skillfully created AI services.",
   backgroundImage: innovationBackImg,
+};
+// Keep 6 max Steps data
+const challengesData = {
+  firstHeading: "Solutions Conquering the Toughest",
+  secondHeading: "AI Challenges",
+  description:
+    "Are operational inefficiencies impeding your progress? What are the roadblocks to transforming your company? With our technical skills, we can help you eliminate essential business obstacles and pain areas. Utilize powerful, comprehensive, user-friendly AI technologies and solutions to catapult your company to new heights.",
+  stepsData: [
+    {
+      id: 1,
+      icon: "",
+      title: "Managing projects internally",
+      position: {
+        top: -24,
+        left: -20,
+      },
+      side: "right",
+    },
+    {
+      id: 2,
+      icon: "",
+      title: "Conducting and distributing surveys smoothly",
+      position: {
+        top: 180,
+        left: 144,
+      },
+      side: "right",
+    },
+    {
+      id: 3,
+      icon: "",
+      title: "Gathering the right respondent to make the survey worthwhile",
+      position: {
+        top: 450,
+        left: 76,
+      },
+      side: "right",
+    },
+    {
+      id: 4,
+      icon: "",
+      title: "Managing projects internally",
+      position: {
+        top: -36,
+        left: -170,
+      },
+      side: "left",
+    },
+    {
+      id: 5,
+      icon: "",
+      title: "Conducting and distributing surveys smoothly",
+      position: {
+        top: 209,
+        left: -256,
+      },
+      side: "left",
+    },
+    {
+      id: 6,
+      icon: "",
+      title: "Gathering the right respondent to make the survey worthwhile",
+      position: {
+        top: 452,
+        left: -81,
+      },
+      side: "left",
+    },
+  ],
 };
