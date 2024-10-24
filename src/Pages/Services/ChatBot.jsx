@@ -41,6 +41,7 @@ import development from "../../assets/img/Services/chatbot/development.png";
 import Mailus from "../../components/Homepage/Mailus";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
 import WaveLine from "../../components/WaveLine.jsx";
+// import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
 
 const ChatBot = () => {
   return (
@@ -61,6 +62,7 @@ const ChatBot = () => {
         <FAQ data={faqData}/>
         <Mailus />
         <ServicesAndStaffing />
+        {/* <KeyFeatures /> */}
       </Box>
     </>
   );
