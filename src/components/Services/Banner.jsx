@@ -19,8 +19,7 @@ const Banner = ({ data }) => {
           backgroundRepeat: "no-repeat",
           height: {
             xs: "100%",
-            sm: "calc(100vh - 80px)",
-            xl: "calc(100vh - 80px)",
+            sm: "calc(100vh - 85px)",
           },
           alignContent: "center",
           py: { xs: 5, sm: 10 },
