@@ -6,11 +6,22 @@ const FeatureSection = ({ data }) => {
     <>
       <Box
         sx={{
-          margin: "20px 0px",
+          marginBottom: "20px",
           backgroundColor: "#ffffff",
-          padding: "100px 0px 50px 0px",
+          padding: "50px 0px 50px 0px",
         }}
       >
+        <Box
+          className="scroll-down-icon"
+          sx={{
+            textAlign: "center",
+            width: "fit-content",
+            margin: "auto",
+            marginTop: "2px",
+          }}
+        >
+          ⏷
+        </Box>
         <Container>
           <Grid container>
             <Grid size={{ xs: 12, sm: 12, md: 6 }}>
@@ -90,20 +101,21 @@ const FeatureSection = ({ data }) => {
                   justifyContent: "center",
                 }}
               >
-                {/* <Box> */}
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: "bold",
-                    color: "#d9652b",
-                    fontSize: "3rem",
-                    marginBottom: "10px",
-                    marginTop: "-10px",
-                    fontFamily: "sans",
-                  }}
-                >
-                  {data.mainHeading}
-                </Typography>
+                {data.mainHeading && (
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: "bold",
+                      color: "#d9652b",
+                      fontSize: "3rem",
+                      marginBottom: "10px",
+                      marginTop: "-10px",
+                      fontFamily: "sans",
+                    }}
+                  >
+                    {data.mainHeading}
+                  </Typography>
+                )}
                 <Typography
                   variant="h6"
                   sx={{
@@ -111,13 +123,20 @@ const FeatureSection = ({ data }) => {
                     fontSize: "2.5rem",
                     marginBottom: "10px",
                     marginTop: "-30px",
+                    lineHeight: 1.1,
                   }}
                 >
                   {data.subHeading}
                 </Typography>
-                <Typography variant="body2" sx={{ fontSize: "1rem" }}>
-                  {data.description}
-                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{ fontSize: "1rem" }}
+                  dangerouslySetInnerHTML={{
+                    __html: data?.description?.split("\n")?.join("<br/>"),
+                  }}
+                />
+                {/* {data.description} */}
+                {/* </Typography> */}
                 {/* </Box> */}
               </Box>
             </Grid>

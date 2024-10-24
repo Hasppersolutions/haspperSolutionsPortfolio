@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 
-const AiDescription = ({ data }) => {
+const WebPageDesc = ({ data }) => {
   useGSAP(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -95,20 +95,18 @@ const AiDescription = ({ data }) => {
               >
                 {data.firstHeading}
               </Typography>
-              {data.secondHeading && (
-                <Typography
-                  // component={"h2"}
-                  sx={{
-                    fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
-                    fontWeight: 800,
-                    color: "#c75425",
-                    mb: 2,
-                    lineHeight: 1.2,
-                  }}
-                >
-                  {data.secondHeading}
-                </Typography>
-              )}
+              <Typography
+                // component={"h2"}
+                sx={{
+                  fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
+                  fontWeight: 800,
+                  color: "#c75425",
+                  mb: 2,
+                  lineHeight: 1.2,
+                }}
+              >
+                {data.secondHeading}
+              </Typography>
               <Typography
                 sx={descriptionText}
                 dangerouslySetInnerHTML={{
@@ -144,7 +142,7 @@ const AiDescription = ({ data }) => {
   );
 };
 
-export default AiDescription;
+export default WebPageDesc;
 const descriptionText = {
   fontSize: { xs: "1rem", md: "1.1rem" },
   color: "#333",
