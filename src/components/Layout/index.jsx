@@ -7,7 +7,7 @@ const Index = ({children}) => {
   return (
     <>
       <NavBar />
-      <Box sx={{ marginTop: 10 }}>{children}</Box>
+      <Box sx={{ marginTop: "85px" }}>{children}</Box>
       <Footer />
     </>
   );

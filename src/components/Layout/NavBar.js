@@ -177,7 +177,7 @@ export const NavBar = () => {
         zIndex: 1010,
         transition: "0.32s ease -in -out",
         backgroundColor: "#c75425",
-        height: "10%",
+        // height: "10%",
         py: "18px",
       }}>
       <Box sx={{
