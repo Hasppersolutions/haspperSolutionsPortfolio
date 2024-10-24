@@ -65,6 +65,7 @@ const DevelopmentServices = ({ data }) => {
               responsive={responsive}
               autoPlaySpeed={3000}
               draggable
+              infinite
               pauseOnHover
               minimumTouchDrag={80}
               swipeable
