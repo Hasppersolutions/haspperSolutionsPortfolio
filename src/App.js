@@ -24,7 +24,12 @@ import PhpDevelopment from './Pages/Services/Php';
 import DotnetDevelopment from './Pages/Services/DotNet';
 import VueDevelopment from './Pages/Services/Vuejs';
 import ReactWebDevelopment from './Pages/Services/ReactWebDev';
-
+import BlockChain from './Pages/Solutions/BlockChain';
+import Voicebot from './Pages/Solutions/Voicebot';
+import SoftwareSupport from './Pages/Solutions/SoftwareSupport';
+import OperationStaffing from './Pages/Solutions/OperationStaffing';
+import CloudComputing from './Pages/Solutions/CloudComputing';
+import Marketplace from './Pages/Solutions/Marketplace';
 function App() {
   return (
     <>
@@ -52,6 +57,12 @@ function App() {
             <Route path='/dotnet-development' element={< DotnetDevelopment />} />
             <Route path='/vuejs-development' element={<VueDevelopment />} />
             <Route path='/react-web-development' element={<ReactWebDevelopment />} />
+            <Route path='/services/block-chain' element={<BlockChain />} />
+            <Route path='/services/voicebot' element={<Voicebot />} />
+            <Route path='/services/operation-staffing' element={<OperationStaffing />} />
+            <Route path='/services/software-support' element={<SoftwareSupport />} />
+            <Route path='/services/cloud-computing' element={<CloudComputing />} />
+            <Route path='/services/marketplace' element={<Marketplace />} />
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
