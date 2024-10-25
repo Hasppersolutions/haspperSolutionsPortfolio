@@ -1,7 +1,7 @@
 import { Box, Container, Grid2 as Grid, Typography } from "@mui/material";
 import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
 
-const KeyFeatures = ({ data }) => {
+const KeyFeatures = ({ data, gridContainerClass }) => {
   return (
     <>
       <Box
@@ -59,8 +59,9 @@ const KeyFeatures = ({ data }) => {
             )}
           </Box>
           <Grid
+            className={gridContainerClass}
             container
-            sx={{ margin: "50px 0px" }}
+            sx={{ margin: "50px auto" }}
             rowGap={{ xs: 4, md: 0 }}
             columnSpacing={{ xs: 0, md: 2 }}
           >
@@ -136,9 +137,7 @@ const KeyFeatures = ({ data }) => {
                     </Typography>
                     <Typography
                       sx={{
-                        display: "flex",
-                        justifyContent: "start",
-                        alignContent: "center",
+                        textAlign: "start",
                         color: "#666666",
                       }}
                     >

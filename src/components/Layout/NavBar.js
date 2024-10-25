@@ -596,12 +596,12 @@ const linkData = [
               },
               {
                 name: "Banking",
-                link: "",
+                link: "/solutions/banking",
                 type: "subHeading"
               },
               {
                 name: "Telecom",
-                link: "",
+                link: "/solutions/telecom",
                 type: "subHeading"
               },
               {

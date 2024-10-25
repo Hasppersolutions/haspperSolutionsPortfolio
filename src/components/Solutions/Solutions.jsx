@@ -140,11 +140,11 @@ const Solutions = ({ data }) => {
                       ":hover": {
                         backgroundColor: "#BD4918",
                         img: {
-                          filter: "invert(0)",
+                          filter: "invert(1)",
                         },
                       },
                       img: {
-                        filter: "invert(1)",
+                        filter: "invert(0)",
                       },
                     }}
                   >

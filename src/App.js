@@ -32,6 +32,8 @@ import CloudComputing from './Pages/Solutions/CloudComputing';
 import Marketplace from './Pages/Solutions/Marketplace';
 import MarketResearch from './Pages/Solutions/MarketResearch';
 import Food from './Pages/Solutions/Food';
+import Banking from './Pages/Solutions/Banking';
+import Telecom from './Pages/Solutions/Telecom';
 function App() {
   return (
     <>
@@ -57,6 +59,8 @@ function App() {
             <Route path='/solutions/hrms-development' element={<Hrms />} />
             <Route path='/solutions/market-research' element={<MarketResearch />} />
             <Route path='/solutions/food' element={<Food />} />
+            <Route path='/solutions/banking' element={<Banking />} />
+            <Route path='/solutions/telecom' element={<Telecom />} />
             <Route path='/php-development' element={< PhpDevelopment />} />
             <Route path='/dotnet-development' element={< DotnetDevelopment />} />
             <Route path='/vuejs-development' element={<VueDevelopment />} />
