@@ -22,14 +22,18 @@ import IotDevelopment from './Pages/Services/IotDevelopment';
 import Hrms from './Pages/Solutions/Hrms';
 import PhpDevelopment from './Pages/Services/Php';
 import DotnetDevelopment from './Pages/Services/DotNet';
-import VueDevelopment from  './Pages/Services/Vuejs';
+import VueDevelopment from './Pages/Services/Vuejs';
 import ReactWebDevelopment from './Pages/Services/ReactWebDev';
 import BlockChain from './Pages/Solutions/BlockChain';
-import Voicebot  from './Pages/Solutions/Voicebot';
+import Voicebot from './Pages/Solutions/Voicebot';
 import SoftwareSupport from './Pages/Solutions/SoftwareSupport';
 import OperationStaffing from './Pages/Solutions/OperationStaffing';
 import CloudComputing from './Pages/Solutions/CloudComputing';
 import Marketplace from './Pages/Solutions/Marketplace';
+import MarketResearch from './Pages/Solutions/MarketResearch';
+import Food from './Pages/Solutions/Food';
+import Banking from './Pages/Solutions/Banking';
+import Telecom from './Pages/Solutions/Telecom';
 function App() {
   return (
     <>
@@ -50,19 +54,23 @@ function App() {
             <Route path='/chatbot-development' element={<ChatBot />} />
             <Route path='/iot-development' element={<IotDevelopment />} />
             <Route path='/product-engineer-development' element={<ProductEngineer />} />
-            <Route path='/services/react-native-app-development' element={<ReactNative />}/>
-            <Route path='/services/ionic-app-development' element={<Ionic />}/>
-            <Route path='/solutions/hrms-development' element={<Hrms />}/>
-            <Route path='/php-development' element={< PhpDevelopment/> }/>
-            <Route path= '/dotnet-development' element = {< DotnetDevelopment/>}/>
-            <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
-            <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
-            <Route path = '/Services/Blockchain' element = { <BlockChain/>}/>
-            <Route path = '/Services/Voicebot' element = { <Voicebot/>}/>
-            <Route path = '/Services/OperationStaffing' element = { <OperationStaffing/>}/>
-            <Route path = '/Services/SoftwareSupport' element = { <SoftwareSupport/>}/>
-            <Route path = '/Services/CloudComputing' element = { <CloudComputing/>}/>
-            <Route path = '/Services/Marketplace' element = { <Marketplace/>}/>
+            <Route path='/services/react-native-app-development' element={<ReactNative />} />
+            <Route path='/services/ionic-app-development' element={<Ionic />} />
+            <Route path='/solutions/hrms-development' element={<Hrms />} />
+            <Route path='/solutions/market-research' element={<MarketResearch />} />
+            <Route path='/solutions/food' element={<Food />} />
+            <Route path='/solutions/banking' element={<Banking />} />
+            <Route path='/solutions/telecom' element={<Telecom />} />
+            <Route path='/php-development' element={< PhpDevelopment />} />
+            <Route path='/dotnet-development' element={< DotnetDevelopment />} />
+            <Route path='/vuejs-development' element={<VueDevelopment />} />
+            <Route path='/react-web-development' element={<ReactWebDevelopment />} />
+            <Route path='/services/block-chain' element={<BlockChain />} />
+            <Route path='/services/voicebot' element={<Voicebot />} />
+            <Route path='/services/operation-staffing' element={<OperationStaffing />} />
+            <Route path='/services/software-support' element={<SoftwareSupport />} />
+            <Route path='/services/cloud-computing' element={<CloudComputing />} />
+            <Route path='/services/marketplace' element={<Marketplace />} />
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
