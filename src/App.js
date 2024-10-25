@@ -30,6 +30,7 @@ import SoftwareSupport from './Pages/Solutions/SoftwareSupport';
 import OperationStaffing from './Pages/Solutions/OperationStaffing';
 import CloudComputing from './Pages/Solutions/CloudComputing';
 import Marketplace from './Pages/Solutions/Marketplace';
+import ELearning from './Pages/Solutions/ELearning';
 import MarketResearch from './Pages/Solutions/MarketResearch';
 import Food from './Pages/Solutions/Food';
 import Banking from './Pages/Solutions/Banking';
@@ -54,6 +55,20 @@ function App() {
             <Route path='/chatbot-development' element={<ChatBot />} />
             <Route path='/iot-development' element={<IotDevelopment />} />
             <Route path='/product-engineer-development' element={<ProductEngineer />} />
+            <Route path='/services/react-native-app-development' element={<ReactNative />}/>
+            <Route path='/services/ionic-app-development' element={<Ionic />}/>
+            <Route path='/solutions/hrms-development' element={<Hrms />}/>
+            <Route path='/php-development' element={< PhpDevelopment/> }/>
+            <Route path= '/dotnet-development' element = {< DotnetDevelopment/>}/>
+            <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
+            <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
+            <Route path = '/Services/Blockchain' element = { <BlockChain/>}/>
+            <Route path = '/Services/Voicebot' element = { <Voicebot/>}/>
+            <Route path = '/Services/OperationStaffing' element = { <OperationStaffing/>}/>
+            <Route path = '/Services/SoftwareSupport' element = { <SoftwareSupport/>}/>
+            <Route path = '/Services/CloudComputing' element = { <CloudComputing/>}/>
+            <Route path = '/Services/Marketplace' element = { <Marketplace/>}/>
+            <Route path ='/solutions/e-learning-development' element={<ELearning />}/>
             <Route path='/services/react-native-app-development' element={<ReactNative />} />
             <Route path='/services/ionic-app-development' element={<Ionic />} />
             <Route path='/solutions/hrms-development' element={<Hrms />} />

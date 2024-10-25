@@ -27,7 +27,7 @@ const Project = ({data}) => {
         // variant="h4"
         align="center"
         sx={{
-          fontWeight: 800,
+          fontWeight: 600,
           color: "#fff",
           fontSize: { xs: "26px", sm: "40px", md: "62px" },
         }}
@@ -53,7 +53,7 @@ const Project = ({data}) => {
           sx={{
             backgroundColor: "#d9652b",
             color: "#fff",
-            padding: "10px 20px",
+            padding: "15px 20px",
             fontSize: "16px",
             mr: 2,
             borderRadius: "50px", // Rounded button

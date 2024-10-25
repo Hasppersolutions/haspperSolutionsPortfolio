@@ -616,7 +616,7 @@ const linkData = [
               },
               {
                 name: "E-Learning",
-                link: "",
+                link: "/solutions/e-learning-development",
                 type: "subHeading"
               },
             ]
