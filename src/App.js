@@ -30,6 +30,7 @@ import SoftwareSupport from './Pages/Solutions/SoftwareSupport';
 import OperationStaffing from './Pages/Solutions/OperationStaffing';
 import CloudComputing from './Pages/Solutions/CloudComputing';
 import Marketplace from './Pages/Solutions/Marketplace';
+import ELearning from './Pages/Solutions/ELearning';
 function App() {
   return (
     <>
@@ -63,6 +64,7 @@ function App() {
             <Route path = '/Services/SoftwareSupport' element = { <SoftwareSupport/>}/>
             <Route path = '/Services/CloudComputing' element = { <CloudComputing/>}/>
             <Route path = '/Services/Marketplace' element = { <Marketplace/>}/>
+            <Route path ='/solutions/e-learning-development' element={<ELearning />}/>
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
