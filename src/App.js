@@ -30,6 +30,8 @@ import SoftwareSupport from './Pages/Solutions/SoftwareSupport';
 import OperationStaffing from './Pages/Solutions/OperationStaffing';
 import CloudComputing from './Pages/Solutions/CloudComputing';
 import Marketplace from './Pages/Solutions/Marketplace';
+import MarketResearch from './Pages/Solutions/MarketResearch';
+import Food from './Pages/Solutions/Food';
 function App() {
   return (
     <>
@@ -53,6 +55,8 @@ function App() {
             <Route path='/services/react-native-app-development' element={<ReactNative />} />
             <Route path='/services/ionic-app-development' element={<Ionic />} />
             <Route path='/solutions/hrms-development' element={<Hrms />} />
+            <Route path='/solutions/market-research' element={<MarketResearch />} />
+            <Route path='/solutions/food' element={<Food />} />
             <Route path='/php-development' element={< PhpDevelopment />} />
             <Route path='/dotnet-development' element={< DotnetDevelopment />} />
             <Route path='/vuejs-development' element={<VueDevelopment />} />

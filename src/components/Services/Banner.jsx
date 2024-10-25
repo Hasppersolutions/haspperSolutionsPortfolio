@@ -7,13 +7,14 @@ import {
 } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
 
 const Banner = ({ data }) => {
   return (
     <>
       <Box
         sx={{
-          backgroundImage: `url(${data.backgroundImage})`,
+          backgroundImage: `url(${data?.backgroundImage || rebrandCities})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

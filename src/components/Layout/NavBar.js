@@ -581,17 +581,17 @@ const linkData = [
             subHeadings: [
               {
                 name: "HRMS",
-                link: "",
+                link: "/solutions/hrms-development",
                 type: "subHeading"
               },
               {
                 name: "Market Research",
-                link: "",
+                link: "/solutions/market-research",
                 type: "subHeading"
               },
               {
                 name: "Food",
-                link: "",
+                link: "/solutions/food",
                 type: "subHeading"
               },
               {
