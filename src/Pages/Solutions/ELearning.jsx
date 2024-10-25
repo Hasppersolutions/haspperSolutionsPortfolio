@@ -34,6 +34,14 @@ import softwareSolution from "../../assets/img/Solutions/hrms/softwareSolution.p
 import supportGear from "../../assets/img/Solutions/hrms/supportGear.png";
 import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
 import wordpress from "../../assets/img/Solutions/ELearning/wordpress.png";
+import onlineLearingPortal from "../../assets/img/Solutions/ELearning/onlineLearingPortal.png";
+import Solutions from "../../components/Solutions/Solutions.jsx";
+import performance from "../../assets/img/Solutions/hrms/performance.png";
+import wallet from "../../assets/img/Solutions/banking/wallet.png";
+import pos from "../../assets/img/Solutions/banking/pos.png";
+import protection from "../../assets/img/Solutions/banking/protection.png";
+import wealthManagement from "../../assets/img/Solutions/banking/wealth-management.png";
+import investment from "../../assets/img/Solutions/banking/investment.png";
 
 
 
@@ -44,11 +52,12 @@ const ELearning = () => {
       <Banner data={bannerTextData} />
       <AiDescription data={aiDescriptionData} />
       <WaveLine />
+      <Solutions data = {solutionsData}/>
       <Stats data={statsData} />
       <Technology data={technologyData} />
       <DevelopmentServices data={developmentServicesData} />
       <WaveLine />
-      <KeyFeatures data={keyFeatureData} />
+      <KeyFeatures data={keyFeatureData}/>
       <FAQ data={faqData} />
       <Mailus />
       <ServicesAndStaffing />
@@ -81,7 +90,7 @@ const aiDescriptionData = {
 const keyFeatureData = {
   mainHeading: "Development Process",
   secondHeading: "We Follow",
-  image: keyFeatures,
+  image: onlineLearingPortal,
   description:
     "We take all the worry so that you can relax and see your ideas turning into reality! We follow a comprehensive approach in our mobile app development process to ensure we fulfill all your requirements.",
   leftSideData: [
@@ -254,3 +263,49 @@ const developmentServicesData = {
       }
     ],
   };
+  // Keep 6 Steps max
+const solutionsData = {
+    firstHeading: "Bespoke E-learning",
+    secondHeading: "development solutions",
+    description:
+      "Our custom e-learning development services are designed to build intuitive learning solutions. Our experts will help you identify your e-learning needs, build strategy, analyze solutions, build storyboards, develop specific content modules and create real-life classroom experiences for online learners.",
+    stepsData: [
+      {
+        name: "Learning Management System (LMS)",
+        description:
+          "Based on your training needs, we build and customize open source & cloud-based LMS. Our LMS development entails content management modules, course planners, progress trackers, automated self-assessment tests and communication channels to meet your business goals.",
+        image: investment,
+      },
+      {
+        name: "Online Learning Portals & MOOCs",
+        description:
+          "We build online learning portals capable of hosting Massive Open Online Courses (MOOCs). We build advanced features for managing courses, learners, tutors, billing and payments, The extensive reporting modules are also added to easily track the learning effectiveness of MOOC courses.",
+        image: protection,
+      },
+      {
+        name: "mLearning Solutions",
+        description:
+          "We help to learn programs to reach their on-the-go audience with iOS and Android compatible learning apps. Built with comprehensive features, our mlearning solutions allow learners to access digital content such as study material and video tutorials even in offline mode.",
+        image: performance,
+      },
+      {
+        name: "School Management System",
+        description:
+          "To meet your vast school administration needs, we build school management systems with comprehensive modules that allow you to manage online courses, schedules, attendance, assignments, online tests, grades, fees & online payments and parent-teacher collaboration",
+        image: wealthManagement,
+      },
+      {
+        name: "Localization & Translation",
+        description:
+          "Our comprehensive translation services for businesses enable multilingual learners to deliver text and video translations.",
+        image: pos,
+      },
+      {
+        name: "Instructor Led Training",
+        description:
+          "During corporate training sessions, we seek to bring the efficient use of trainers, either online or in a classroom setting, to resolve the learner's challenges.",
+        image: wallet,
+      },
+    ],
+  };
+   
