@@ -63,7 +63,7 @@ const OutSourcing = ({ data }) => {
                 key={index}
                 sx={{
                   display: "flex",
-                  textAlign: { xs: "start" },
+                  textAlign: { xs: "center", md: "end" },
                   justifyContent: { xs: "start" },
                   alignContent: { xs: "start" },
                   marginBottom: { xs: "16px", md: 0 },
@@ -118,62 +118,64 @@ const OutSourcing = ({ data }) => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid
-                size={{ xs: 12, md: 6 }}
-                key={index}
-                sx={{
-                  display: "flex",
-                  alignContent: { xs: "start", md: "end" },
-                  textAlign: "start",
-                  justifyContent: "start",
-                }}
-              >
-                <Box
+              {item[1] && (
+                <Grid
+                  size={{ xs: 12, md: 6 }}
+                  key={index}
                   sx={{
-                    boxShadow: { xs: "0 0 2px 0 #00000040", md: 0 },
-                    borderBottom: { xs: 0, md: "1px solid #dfdfdf" },
-                    borderRight: { xs: 0 },
                     display: "flex",
-                    flexDirection: "column",
-                    alignItems: { xs: "center", md: "start" },
-                    padding: { xs: "20px 10px 20px", md: "35px 50px 15px" },
+                    alignContent: { xs: "center", md: "end" },
+                    textAlign: { xs: "center", md: "start" },
+                    justifyContent: "start",
                   }}
                 >
                   <Box
                     sx={{
-                      borderRadius: "50%",
-                      border: "2px solid #BD4918",
-                      height: "91px",
-                      width: "91px",
+                      boxShadow: { xs: "0 0 2px 0 #00000040", md: 0 },
+                      borderBottom: { xs: 0, md: "1px solid #dfdfdf" },
+                      borderRight: { xs: 0 },
                       display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      margin: "0px 10px",
-                      flexShrink: 0,
-                      marginBottom: "15px",
+                      flexDirection: "column",
+                      alignItems: { xs: "center", md: "start" },
+                      padding: { xs: "20px 10px 20px", md: "35px 50px 15px" },
                     }}
                   >
-                    <img src={item[1].image} alt={item[1].text} />
+                    <Box
+                      sx={{
+                        borderRadius: "50%",
+                        border: "2px solid #BD4918",
+                        height: "91px",
+                        width: "91px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        margin: "0px 10px",
+                        flexShrink: 0,
+                        marginBottom: "15px",
+                      }}
+                    >
+                      <img src={item[1].image} alt={item[1].text} />
+                    </Box>
+                    <Typography
+                      sx={{
+                        fontWeight: 600,
+                        fontSize: { sx: "18px", sm: "26px" },
+                        marginBottom: "10px",
+                      }}
+                    >
+                      {item[1].heading}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontWeight: 400,
+                        fontSize: { sx: "14px", sm: "16px" },
+                      }}
+                    >
+                      {item[1].description}
+                    </Typography>
                   </Box>
-                  <Typography
-                    sx={{
-                      fontWeight: 600,
-                      fontSize: { sx: "18px", sm: "26px" },
-                      marginBottom: "10px",
-                    }}
-                  >
-                    {item[1].heading}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { sx: "14px", sm: "16px" },
-                    }}
-                  >
-                    {item[1].description}
-                  </Typography>
-                </Box>
-              </Grid>
+                </Grid>
+              )}
             </Grid>
           ))}
         </Grid>
