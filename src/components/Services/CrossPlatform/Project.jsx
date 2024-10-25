@@ -1,41 +1,73 @@
-import React from 'react';
-import { Box,Typography, Container, Grid2 as Grid,Button} from '@mui/material';
+import React from "react";
+import {
+  Box,
+  Typography,
+  Container,
+  Grid2 as Grid,
+  Button,
+} from "@mui/material";
 
-const Project = () => {
-    return (
-        <Box sx={{ padding: '50px',  backgroundColor: '#c94c16' }}>
-        <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 600 ,color:'#fff'}}>
-        HAVE AN
+const Project = ({data}) => {
+
+  return (
+    <Box sx={{ padding: "50px", backgroundColor: "#c94c16" }}>
+      <Typography
+        // variant="h4"
+        align="center"
+        sx={{
+          fontWeight: 600,
+          color: "#fff",
+          fontSize: { xs: "18px", sm: "20px", md: "30px" },
+        }}
+      >
+        {data.mainHeading}
       </Typography>
 
-      <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 600,color:'#fff' }}>
-        AWESOME PROJECT IDEA 
+      <Typography
+        // variant="h4"
+        align="center"
+        sx={{
+          fontWeight: 800,
+          color: "#fff",
+          fontSize: { xs: "26px", sm: "40px", md: "62px" },
+        }}
+      >
+        {data.secondHeading}
       </Typography>
 
-      <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 300 ,color:'#fff'}}>
-      AND NOT SURE HOW TO GET STARTED?
+      <Typography
+        // variant="h4"
+        align="center"
+        sx={{
+          fontWeight: 300,
+          color: "#fff",
+          fontSize: { xs: "16px", sm: "18px", md: "24px" },
+        }}
+      >
+        {data.description}
       </Typography>
 
-      <Box sx={{ textAlign: 'center', mt: 5 }}>
+      <Box sx={{ textAlign: "center", mt: 5 }}>
         <Button
           variant="contained"
           sx={{
-            backgroundColor: '#d9652b',
-            color: '#fff',
-            padding: '10px 20px',
-            fontSize: '1.1rem',
+            backgroundColor: "#d9652b",
+            color: "#fff",
+            padding: "10px 20px",
+            fontSize: "16px",
             mr: 2,
-            borderRadius: '50px',  // Rounded button
+            borderRadius: "50px", // Rounded button
+            ":hover": {
+              backgroundColor: "#ffca76",
+              color: "#000",
+            },
           }}
         >
-          TALK TO OUR EXPERTS
+          {data.buttonText}
         </Button>
-       
       </Box>
-
-        </Box>
-        
-    );
+    </Box>
+  );
 };
 
 export default Project;
