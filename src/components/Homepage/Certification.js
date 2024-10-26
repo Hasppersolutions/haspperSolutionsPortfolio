@@ -1,14 +1,16 @@
 import React from "react";
 import "./Certification.css";
-
+import silicon from "../../assets/img/Certification/silicon.png"
+import aws from "../../assets/img/Certification/smart.png"
+import goodfirm from "../../assets/img/Certification/GoodFirm.png"
+import designrush from "../../assets/img/Certification/Design-Rush.png"
+import nascom from "../../assets/img/Certification/nascom.png"
 const certifications = [
-  { id: 1, src: "../assets/img/logo.svg", alt: "AWS Partner" },
-  { id: 2, src: "../assets/img/logo.svg", alt: "TechBehemoths Winner" },
-  { id: 3, src: "../assets/img/logo.svg", alt: "GoodFirms Work With" },
-  { id: 4, src: "../assets/img/logo.svg", alt: "Silicon India" },
-  { id: 5, src: "../assets/img/logo.svg", alt: "NASSCOM" },
-  { id: 6, src: "../assets/img/logo.svg", alt: "Clutch Top Developers" },
-  { id: 7, src: "../assets/img/logo.svg", alt: "DesignRush Accredited" },
+  { id: 1, src: aws, alt: "AWS Partner" },
+  { id: 3, src: goodfirm, alt: "GoodFirms Work With" },
+  { id: 4, src: silicon, alt: "Silicon India" },
+  { id: 5, src: nascom, alt: "NASSCOM" }, 
+  { id: 7, src: designrush, alt: "DesignRush Accredited" },
 ];
 
 const Certification = () => {
