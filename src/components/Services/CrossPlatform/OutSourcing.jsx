@@ -1,12 +1,32 @@
 import React from "react";
 import { Grid2 as Grid, Typography, Box, Container } from "@mui/material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const OutSourcing = ({ data }) => {
+  //Animation
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".outsourcingTitleBox",
+        start: "top 98%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".outsourcingTitleBox p", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
   return (
     <Box sx={{ padding: "40px 20px", backgroundColor: "#f5f5f5" }}>
       <Container>
         <Box
-          className="headingBoxWidth"
+          className="headingBoxWidth outsourcingTitleBox"
           sx={{ mt: { xs: "20px", md: "50px" }, marginBottom: "35px" }}
         >
           <Typography

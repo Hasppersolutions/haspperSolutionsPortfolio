@@ -1,5 +1,4 @@
 import Banner from "../../components/Services/Banner";
-import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import AiFeature from "../../assets/img/aiFeature.png";
 import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
 import keyFeatures from "../../assets/img/Solutions/keyFeature.png";

@@ -1,14 +1,35 @@
 import { Box, Container, Grid2 as Grid, Typography } from "@mui/material";
 import React from "react";
 import haspperLogo from "../../assets/img/haspper-logo.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Solutions = ({ data }) => {
+  //Animation
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".solutionsBox",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".solutionsTitle", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
   return (
     <>
-      <Box sx={{ pb: 10, pt: { xs: 5, md: 0 } }}>
+      <Box className="solutionsBox" sx={{ pb: 10, pt: { xs: 5, md: 0 } }}>
         <Container>
           <Box
-            className="headingBoxWidth"
+            className="headingBoxWidth solutionsTitle"
             sx={{ pt: { xs: "20px", md: "50px" } }}
           >
             <Typography sx={titleStyle}>{data.firstHeading}</Typography>

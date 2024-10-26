@@ -8,11 +8,48 @@ import {
 import React from "react";
 import { Link } from "react-router-dom";
 import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Banner = ({ data }) => {
+  //Animation
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".bannerMainBox",
+        start: "top 30%",
+        end: "bottom 80%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(
+      ".bannerBottomHeading",
+      {
+        x: -200,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.5,
+      },
+      "anim"
+    );
+    tl.from(
+      ".bannerMiddleHeading",
+      {
+        x: 200,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.5,
+      },
+      "anim"
+    );
+  });
+
   return (
     <>
       <Box
+        className="bannerMainBox"
         sx={{
           backgroundImage: `url(${data?.backgroundImage || rebrandCities})`,
           backgroundSize: "cover",
@@ -80,6 +117,7 @@ const Banner = ({ data }) => {
                 </Typography>
                 {data.middleHeading && (
                   <Typography
+                    className="bannerMiddleHeading"
                     sx={{
                       fontSize: { xs: "1rem", sm: "1.2rem" },
                       color: "#d9652b",
@@ -87,16 +125,14 @@ const Banner = ({ data }) => {
                       width: "fit-content",
                       fontSize: 40,
                       fontWeight: 800,
-                      lineHeight: {
-                        xs: 1.2,
-                        sm: 0.7,
-                      },
+                      lineHeight: 1.2,
                     }}
                   >
                     {data.middleHeading}
                   </Typography>
                 )}
                 <Typography
+                  className="bannerBottomHeading"
                   sx={{
                     fontSize: { xs: "1rem", sm: "1.2rem" },
                     color: "#ffffff",
