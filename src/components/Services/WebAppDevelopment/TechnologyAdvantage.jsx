@@ -1,8 +1,28 @@
 import React from "react";
 import WaveLine from "../../WaveLine";
 import { Container, Grid2 as Grid, Typography, Box } from "@mui/material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const TechnologyAdv = ({ data }) => {
+  //Animation
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".technologyAdvantageTitleBox",
+        start: "top 98%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".technologyAdvantageTitleBox p", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
   return (
     <>
       <WaveLine />
@@ -19,7 +39,7 @@ const TechnologyAdv = ({ data }) => {
           ⏷
         </Box>
         <Box
-          className="headingBoxWidth"
+          className="headingBoxWidth technologyAdvantageTitleBox"
           sx={{ mt: { xs: "20px", md: "50px" } }}
         >
           <Typography sx={titleStyle}>{data.firstHeading}</Typography>
@@ -27,12 +47,14 @@ const TechnologyAdv = ({ data }) => {
             {data.secondHeading}
           </Typography>
           {data.description && (
-            <Typography sx={{
-              fontSize: 16,
-              textAlign: "center",
-              color: "#666666",
-              marginTop: "10px"
-            }}>
+            <Typography
+              sx={{
+                fontSize: 16,
+                textAlign: "center",
+                color: "#666666",
+                marginTop: "10px",
+              }}
+            >
               {data.description}
             </Typography>
           )}

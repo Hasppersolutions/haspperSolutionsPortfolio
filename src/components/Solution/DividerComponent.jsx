@@ -1,17 +1,46 @@
-import React from 'react';
-import { Grid2 as Grid, Typography, Box, Divider } from '@mui/material';
+import React from "react";
+import { Grid2 as Grid, Typography, Box, Divider } from "@mui/material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const DividerComponent = ({ data }) => {
-  return (
-    <Box className="headingBoxWidth" sx={{ mt: { xs: "20px", md: "50px" } }}>
-      <Typography sx={titleStyle}>{data.firstHeading}</Typography>
+  //Animation
 
-      <Typography sx={[titleStyle, { color: "#c75425" }]}>
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".dividerComponentBox",
+        start: "top 98%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".dividerComponentTitle", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
+  return (
+    <Box
+      className="headingBoxWidth dividerComponentBox"
+      sx={{ mt: { xs: "20px", md: "50px" } }}
+    >
+      <Typography className="dividerComponentTitle" sx={titleStyle}>
+        {data.firstHeading}
+      </Typography>
+      <Typography
+        className="dividerComponentTitle"
+        sx={[titleStyle, { color: "#c75425" }]}
+      >
         {data.secondHeading}
       </Typography>
 
       {data.description && (
         <Typography
+          className="dividerComponentTitle"
           sx={{
             fontSize: 16,
             textAlign: "center",
@@ -24,90 +53,128 @@ const DividerComponent = ({ data }) => {
       )}
 
       {/* Middle Divider (Horizontal between title and content) */}
-      <Divider sx={{ margin: '20px 0', borderColor: '#e0e0e0', borderBottomWidth: 2 }} />
+      <Divider
+        sx={{ margin: "20px 0", borderColor: "#e0e0e0", borderBottomWidth: 2 }}
+      />
 
       <Box sx={{ mt: { xs: "60px", sm: "87px" }, pb: "27px" }}>
-        {data.cardData.map((item, index) => (
-          index % 2 === 0 && (
-            <React.Fragment key={index}>
-              <Grid container spacing={2} alignItems="center">
-                {/* Card Row Wrapper */}
-                <Box sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-                  {/* First Card */}
-                  <Box sx={{ flex: 1 }}>
-                    <Box sx={cardStyle}>
-                      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img
-                          src={data.cardData[index].image}
-                          alt={data.cardData[index].title}
-                          style={{ height: 88, marginBottom: '16px' }}
-                        />
-                        <Typography
-                          sx={{ fontSize: { xs: 22, sm: 26 }, fontWeight: 700, pb: "11px" }}
-                        >
-                          {data.cardData[index].title}
-                        </Typography>
-                        <Typography sx={{ fontSize: 16, color: "#666", textAlign: 'center' }}>
-                          {data.cardData[index].description}
-                        </Typography>
-                      </Box>
-                    </Box>
-                  </Box>
-
-                  {/* Vertical Divider */}
-                  <Divider
-                    orientation="vertical"
-                    flexItem
+        {data.cardData.map(
+          (item, index) =>
+            index % 2 === 0 && (
+              <React.Fragment key={index}>
+                <Grid container spacing={2} alignItems="center">
+                  {/* Card Row Wrapper */}
+                  <Box
                     sx={{
-                      borderRightWidth: 2,
-                      borderColor: "#dfdfdf",
-                      opacity: "0.7",
-                      height: "360px",
-                      mx: 2,
+                      display: "flex",
+                      alignItems: "center",
+                      width: "100%",
                     }}
-                  />
-
-                  {/* Second Card */}
-                  {data.cardData[index + 1] && (
+                  >
+                    {/* First Card */}
                     <Box sx={{ flex: 1 }}>
                       <Box sx={cardStyle}>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                          }}
+                        >
                           <img
-                            src={data.cardData[index + 1].image}
-                            alt={data.cardData[index + 1].title}
-                            style={{ height: 88, marginBottom: '16px' }}
+                            src={data.cardData[index].image}
+                            alt={data.cardData[index].title}
+                            style={{ height: 88, marginBottom: "16px" }}
                           />
                           <Typography
-                            sx={{ fontSize: { xs: 22, sm: 26 }, fontWeight: 700, pb: "11px" }}
+                            sx={{
+                              fontSize: { xs: 22, sm: 26 },
+                              fontWeight: 700,
+                              pb: "11px",
+                            }}
                           >
-                            {data.cardData[index + 1].title}
+                            {data.cardData[index].title}
                           </Typography>
-                          <Typography sx={{ fontSize: 16, color: "#666", textAlign: 'center' }}>
-                            {data.cardData[index + 1].description}
+                          <Typography
+                            sx={{
+                              fontSize: 16,
+                              color: "#666",
+                              textAlign: "center",
+                            }}
+                          >
+                            {data.cardData[index].description}
                           </Typography>
                         </Box>
                       </Box>
                     </Box>
-                  )}
-                </Box>
-              </Grid>
 
-              {/* Horizontal Divider after each row */}
-              <Divider
-                sx={{
-                  margin: '20px 0',
-                  borderColor: '#e0e0e0',
-                  borderBottomWidth: 2,
-                  opacity: '0.7',
-                  
-                }}
-              />
-            </React.Fragment>
-          )
-        ))}
+                    {/* Vertical Divider */}
+                    <Divider
+                      orientation="vertical"
+                      flexItem
+                      sx={{
+                        borderRightWidth: 2,
+                        borderColor: "#dfdfdf",
+                        opacity: "0.7",
+                        height: "360px",
+                        mx: 2,
+                      }}
+                    />
+
+                    {/* Second Card */}
+                    {data.cardData[index + 1] && (
+                      <Box sx={{ flex: 1 }}>
+                        <Box sx={cardStyle}>
+                          <Box
+                            sx={{
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "center",
+                            }}
+                          >
+                            <img
+                              src={data.cardData[index + 1].image}
+                              alt={data.cardData[index + 1].title}
+                              style={{ height: 88, marginBottom: "16px" }}
+                            />
+                            <Typography
+                              sx={{
+                                fontSize: { xs: 22, sm: 26 },
+                                fontWeight: 700,
+                                pb: "11px",
+                              }}
+                            >
+                              {data.cardData[index + 1].title}
+                            </Typography>
+                            <Typography
+                              sx={{
+                                fontSize: 16,
+                                color: "#666",
+                                textAlign: "center",
+                              }}
+                            >
+                              {data.cardData[index + 1].description}
+                            </Typography>
+                          </Box>
+                        </Box>
+                      </Box>
+                    )}
+                  </Box>
+                </Grid>
+
+                {/* Horizontal Divider after each row */}
+                <Divider
+                  sx={{
+                    margin: "20px 0",
+                    borderColor: "#e0e0e0",
+                    borderBottomWidth: 2,
+                    opacity: "0.7",
+                  }}
+                />
+              </React.Fragment>
+            )
+        )}
       </Box>
-
-      
     </Box>
   );
 };
@@ -123,13 +190,13 @@ const titleStyle = {
 
 const cardStyle = {
   display: "flex",
-  alignItems: "center",  // Center image and content vertically
-  flexDirection: "column",  // Stack image on top of content
+  alignItems: "center", // Center image and content vertically
+  flexDirection: "column", // Stack image on top of content
   boxShadow: "none",
   border: "none",
   backgroundColor: "#f5f5f5",
   padding: "32px",
   height: "100%",
-  textAlign: "center",  // Center content
-  rowGap: "16px",  // Add gap between elements
+  textAlign: "center", // Center content
+  rowGap: "16px", // Add gap between elements
 };

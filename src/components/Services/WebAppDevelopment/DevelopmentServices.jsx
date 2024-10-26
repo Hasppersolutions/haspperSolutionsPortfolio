@@ -1,6 +1,8 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Carousel from "react-multi-carousel";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const DevelopmentServices = ({ data }) => {
   const responsive = {
@@ -26,6 +28,32 @@ const DevelopmentServices = ({ data }) => {
     },
   };
 
+  //Animation
+  useGSAP(() => {
+    gsap.from(".developmentServicesTitleBox p", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".developmentServicesTitleBox",
+        start: "top 98%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+    gsap.from(".developmentServicesCardDataBox", {
+      scale: 0,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".developmentServicesCardDataBox",
+        start: "top 98%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+  });
+
   return (
     <>
       <Box sx={backgroundStyle}>
@@ -42,7 +70,7 @@ const DevelopmentServices = ({ data }) => {
           >
             ⏷
           </Box>
-          <Box className="headingBoxWidth">
+          <Box className="headingBoxWidth developmentServicesTitleBox">
             <Typography sx={titleStyle}>{data.heading}</Typography>
             {data.description && (
               <Typography
@@ -58,6 +86,7 @@ const DevelopmentServices = ({ data }) => {
             )}
           </Box>
           <Box
+            className="developmentServicesCardDataBox"
             sx={{ mt: { xs: "40px", md: "90px" }, pb: { xs: 10, sm: "115px" } }}
           >
             <Carousel
@@ -109,7 +138,7 @@ const DevelopmentServices = ({ data }) => {
 export default DevelopmentServices;
 
 const backgroundStyle = {
-    backgroundImage:
+  backgroundImage:
     "linear-gradient(90.21deg, rgb(87, 34, 11) -5.91%, rgba(189, 73, 24, .6) 88%)",
   clipPath: "polygon(0 18%, 100% 0, 100% 100%, 0% 100%)",
   backgroundSize: "cover",

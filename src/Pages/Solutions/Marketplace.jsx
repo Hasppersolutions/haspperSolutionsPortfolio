@@ -43,7 +43,7 @@ const Marketplace = () => {
       >
         <Banner data={bannerTextData} />
         <FeatureSection data={featureData} />
-        <WaveLine/>
+        {/* <WaveLine/> */}
         <Potential data={potentialData} />
         <WaveLine/>
         <Stats data={statsData} />

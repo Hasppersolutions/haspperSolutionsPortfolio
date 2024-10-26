@@ -6,15 +6,67 @@ import relation from "../../assets/img/whyHaspper/relation.png";
 import security from "../../assets/img/whyHaspper/security.png";
 import support from "../../assets/img/whyHaspper/support.png";
 import transparency from "../../assets/img/whyHaspper/transparency.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Banner = () => {
+  //Animation
+
+  useGSAP(() => {
+    gsap.from(".haspperLetters p", {
+      y: -100,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: ".whyHaspperMainBox",
+        start: "top 30%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+    gsap.from(".nextGenTitle", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".nextGenTitle",
+        start: "top 100%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+    gsap.from(".whyHaspperCardBox", {
+      scale: 0,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".whyHaspperCardBox",
+        start: "top 100%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+    gsap.from(".naviagateText", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".naviagateText",
+        start: "top 100%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+  });
+
   return (
     <>
-      <MainBox>
+      <MainBox className="whyHaspperMainBox">
         <BannerBox>
           <img src={whyHaspperBanner} alt="Banner" style={bannerStyle} />
         </BannerBox>
-        <Box sx={haspperLettersBoxStyle}>
+        <Box className="haspperLetters" sx={haspperLettersBoxStyle}>
           {haspperLetters.map((item, index) => (
             <Tooltip
               placement="bottom-start"
@@ -41,6 +93,7 @@ const Banner = () => {
         </Box>
         <Box sx={{ mt: "7%", pb: "10%", px: { xs: 2, sm: 3, md: 4 } }}>
           <Typography
+            className="nextGenTitle"
             sx={{
               fontSize: {
                 xs: "1.3rem",
@@ -55,6 +108,7 @@ const Banner = () => {
             Next-Generation Cloud Solutions
           </Typography>
           <Typography
+            className="nextGenTitle"
             sx={{
               fontSize: { xs: "1rem", sm: "1.8rem", md: "2rem", lg: "2.5rem" },
               fontWeight: 700,
@@ -78,11 +132,16 @@ const Banner = () => {
           </Typography>
         </Box>
         <NavigateBox>
-          <Typography sx={navigateTitle}>
+          <Typography className="naviagateText" sx={navigateTitle}>
             Navigating the Digital Landscape Together: Partnering for Innovation
             and Growth
           </Typography>
-          <Grid container spacing={3.5} sx={cardContainer}>
+          <Grid
+            className="whyHaspperCardBox"
+            container
+            spacing={3.5}
+            sx={cardContainer}
+          >
             {partneringData.map((data, index) => (
               <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Box sx={cardStyle}>

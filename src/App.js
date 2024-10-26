@@ -39,6 +39,8 @@ import MarketResearch from './Pages/Solutions/MarketResearch';
 import Food from './Pages/Solutions/Food';
 import Banking from './Pages/Solutions/Banking';
 import Telecom from './Pages/Solutions/Telecom';
+import Fitness from './Pages/Solutions/Fitness';
+import MediaEntertainment from './Pages/Solutions/MediaEntertainment';
 function App() {
   return (
     <>
@@ -59,24 +61,24 @@ function App() {
             <Route path='/chatbot-development' element={<ChatBot />} />
             <Route path='/iot-development' element={<IotDevelopment />} />
             <Route path='/product-engineer-development' element={<ProductEngineer />} />
-            <Route path='/services/react-native-app-development' element={<ReactNative />}/>
-            <Route path='/services/ionic-app-development' element={<Ionic />}/>
-            <Route path='/solutions/hrms-development' element={<Hrms />}/>
-            <Route path='/php-development' element={< PhpDevelopment/> }/>
-            <Route path= '/dotnet-development' element = {< DotnetDevelopment/>}/>
-            <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
-            <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
-            <Route path = '/java-development' element = { <JavaDevelopment/>}/>
-            <Route path = '/python-development' element = { <PythonDevelopment/>}/>
-            <Route path = '/angular-development' element = { <AngularDevelopment/>}/>
-            <Route path = '/nodejs-development' element = { <NodeJsDevelopment/>}/>
-            <Route path = '/Services/Blockchain' element = { <BlockChain/>}/>
-            <Route path = '/Services/Voicebot' element = { <Voicebot/>}/>
-            <Route path = '/Services/OperationStaffing' element = { <OperationStaffing/>}/>
-            <Route path = '/Services/SoftwareSupport' element = { <SoftwareSupport/>}/>
-            <Route path = '/Services/CloudComputing' element = { <CloudComputing/>}/>
-            <Route path = '/Services/Marketplace' element = { <Marketplace/>}/>
-            <Route path ='/solutions/e-learning-development' element={<ELearning />}/>
+            <Route path='/services/react-native-app-development' element={<ReactNative />} />
+            <Route path='/services/ionic-app-development' element={<Ionic />} />
+            <Route path='/solutions/hrms-development' element={<Hrms />} />
+            <Route path='/php-development' element={< PhpDevelopment />} />
+            <Route path='/services/dotnet-development' element={< DotnetDevelopment />} />
+            <Route path='/services/vuejs-development' element={<VueDevelopment />} />
+            <Route path='/services/react-web-development' element={<ReactWebDevelopment />} />
+            <Route path='/services/java-development' element={<JavaDevelopment />} />
+            <Route path='/services/python-development' element={<PythonDevelopment />} />
+            <Route path='/services/angular-development' element={<AngularDevelopment />} />
+            <Route path='/services/nodejs-development' element={<NodeJsDevelopment />} />
+            <Route path='/services/Blockchain' element={<BlockChain />} />
+            <Route path='/services/Voicebot' element={<Voicebot />} />
+            <Route path='/services/OperationStaffing' element={<OperationStaffing />} />
+            <Route path='/services/SoftwareSupport' element={<SoftwareSupport />} />
+            <Route path='/services/CloudComputing' element={<CloudComputing />} />
+            <Route path='/services/marketplace' element={<Marketplace />} />
+            <Route path='/solutions/e-learning-development' element={<ELearning />} />
             <Route path='/services/react-native-app-development' element={<ReactNative />} />
             <Route path='/services/ionic-app-development' element={<Ionic />} />
             <Route path='/solutions/hrms-development' element={<Hrms />} />
@@ -84,10 +86,12 @@ function App() {
             <Route path='/solutions/food' element={<Food />} />
             <Route path='/solutions/banking' element={<Banking />} />
             <Route path='/solutions/telecom' element={<Telecom />} />
-            <Route path='/php-development' element={< PhpDevelopment />} />
-            <Route path='/dotnet-development' element={< DotnetDevelopment />} />
-            <Route path='/vuejs-development' element={<VueDevelopment />} />
-            <Route path='/react-web-development' element={<ReactWebDevelopment />} />
+            <Route path='/solutions/fitness' element={<Fitness />} />
+            <Route path='/solutions/media-entertainment' element={<MediaEntertainment />} />
+            <Route path='/services/php-development' element={< PhpDevelopment />} />
+            <Route path='/services/dotnet-development' element={< DotnetDevelopment />} />
+            <Route path='/services/vuejs-development' element={<VueDevelopment />} />
+            {/* <Route path='/services/react-web-development' element={<ReactWebDevelopment />} /> */}
             <Route path='/services/block-chain' element={<BlockChain />} />
             <Route path='/services/voicebot' element={<Voicebot />} />
             <Route path='/services/operation-staffing' element={<OperationStaffing />} />
