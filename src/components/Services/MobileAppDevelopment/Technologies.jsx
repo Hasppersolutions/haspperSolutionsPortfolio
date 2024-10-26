@@ -91,6 +91,9 @@ const cardStyle = {
     ".iconBox": {
       backgroundColor: "#fff",
     },
+    ".iconBox img": {
+      filter: "grayscale(0)",
+    },
   },
 };
 const iconStyle = {
@@ -104,6 +107,9 @@ const iconStyle = {
   justifyContent: "center",
   transition: ".5s",
   flexShrink: 0,
+  img: {
+    filter: "grayscale(1)",
+  },
 };
 const titleStyle = {
   fontSize: { xs: 24, sm: 32, md: 39 },

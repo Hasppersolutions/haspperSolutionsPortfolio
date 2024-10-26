@@ -7,23 +7,25 @@ import {
 } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
 
 const Banner = ({ data }) => {
   return (
     <>
       <Box
         sx={{
+          backgroundImage: `url(${data?.backgroundImage || rebrandCities})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           height: {
             xs: "100%",
             sm: "calc(100vh - 85px)",
-            xl: "calc(100vh - 95px)",
           },
           alignContent: "center",
           py: { xs: 5, sm: 10 },
           position: "relative", // To make it the relative parent for StatsSection
           // marginTop: { xs: "85px", xl: "95px" },
-          background:
-            "linear-gradient(90.21deg, rgb(87, 34, 11) -5.91%, rgba(189, 73, 24, .6) 88%)",
         }}
       >
         <Box
@@ -39,9 +41,18 @@ const Banner = ({ data }) => {
             bottom: 0,
             right: "auto",
             width: "100%",
+            background:
+              "linear-gradient(90.21deg, rgb(87, 34, 11) -5.91%, rgba(189, 73, 24, .6) 88%)",
           }}
         />
-        <Container>
+        <Container
+          sx={{
+            zIndex: 2,
+            // color: "#fff",
+            position: "relative",
+            // textAlign: "center",
+          }}
+        >
           <Grid container rowGap={{ xs: 4, md: 0 }}>
             <Grid
               size={{ xs: 12, md: 7 }}

@@ -75,13 +75,12 @@ const FAQ = ({ data }) => {
                 <AccordionDetails
                   sx={{
                     padding: 3,
+                    lineHeight: 2
                   }}
                   dangerouslySetInnerHTML={{
                     __html: item?.answer?.split("\n")?.join("<br/>"),
                   }}
                 />
-                  {/* {item.answer} */}
-                {/* </AccordionDetails> */}
               </Accordion>
             </Box>
           ))}
