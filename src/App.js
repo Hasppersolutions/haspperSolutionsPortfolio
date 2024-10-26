@@ -24,6 +24,10 @@ import PhpDevelopment from './Pages/Services/Php';
 import DotnetDevelopment from './Pages/Services/DotNet';
 import VueDevelopment from './Pages/Services/Vuejs';
 import ReactWebDevelopment from './Pages/Services/ReactWebDev';
+import JavaDevelopment from './Pages/Services/java';
+import PythonDevelopment from './Pages/Services/Python';
+import AngularDevelopment from './Pages/Services/Angular';
+import NodeJsDevelopment from './Pages/Services/NodeJs';
 import BlockChain from './Pages/Solutions/BlockChain';
 import Voicebot from './Pages/Solutions/Voicebot';
 import SoftwareSupport from './Pages/Solutions/SoftwareSupport';
@@ -62,6 +66,10 @@ function App() {
             <Route path= '/dotnet-development' element = {< DotnetDevelopment/>}/>
             <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
             <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
+            <Route path = '/java-development' element = { <JavaDevelopment/>}/>
+            <Route path = '/python-development' element = { <PythonDevelopment/>}/>
+            <Route path = '/angular-development' element = { <AngularDevelopment/>}/>
+            <Route path = '/nodejs-development' element = { <NodeJsDevelopment/>}/>
             <Route path = '/Services/Blockchain' element = { <BlockChain/>}/>
             <Route path = '/Services/Voicebot' element = { <Voicebot/>}/>
             <Route path = '/Services/OperationStaffing' element = { <OperationStaffing/>}/>

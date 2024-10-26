@@ -44,7 +44,7 @@ const vueDescription = {
     firstHeading: "Build next-level web app interface with",
     secondHeading: "Vue.js",
     description:
-        "Our Vue.js development services help you build lightweight, high-performance applications. Whether you're aiming for cross-platform compatibility, or looking to create custom, scalable solutions, our expert team delivers results that meet your unique business needs. Leveraging the power of Vue.js, we ensure intuitive UI, seamless integration, and optimized performance that drive your business forward.",
+        ["Our Vue.js development services help you build lightweight, high-performance applications. Whether you're aiming for cross-platform compatibility, or looking to create custom, scalable solutions, our expert team delivers results that meet your unique business needs. Leveraging the power of Vue.js, we ensure intuitive UI, seamless integration, and optimized performance that drive your business forward."],
     button: "",
     image: VuejsDesc,
 };

@@ -52,7 +52,7 @@ const bannerTextData = {
 const phpdescription = {
   firstHeading: "Php",
   secondHeading: "Web App Development",
-  description: "we specialize in delivering innovative PHP-based solutions tailored to meet your business needs. Our expert team develops robust, scalable, and secure applications that enhance efficiency and drive growth. Whether you're building a dynamic website, an e-commerce platform, or a custom enterprise solution, we ensure seamless integration, optimized performance, and a user-friendly experience. With a focus on innovation and precision, we empower your business to stay ahead in today's fast-paced digital landscape. Let us transform your ideas into powerful, results-driven solutions with PHP at the core.",
+  description: ["we specialize in delivering innovative PHP-based solutions tailored to meet your business needs. Our expert team develops robust, scalable, and secure applications that enhance efficiency and drive growth. Whether you're building a dynamic website, an e-commerce platform, or a custom enterprise solution, we ensure seamless integration, optimized performance, and a user-friendly experience. With a focus on innovation and precision, we empower your business to stay ahead in today's fast-paced digital landscape. Let us transform your ideas into powerful, results-driven solutions with PHP at the core."],
   button: "",
   image: phpdescriptionimg,
 };
