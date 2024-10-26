@@ -107,12 +107,17 @@ const WebPageDesc = ({ data }) => {
               >
                 {data.secondHeading}
               </Typography>
-              <Typography
+              {/* <Typography
                 sx={descriptionText}
                 dangerouslySetInnerHTML={{
                   __html: data?.description?.split("\n")?.join("<br/>"),
                 }}
-              />
+              /> */}
+              {data.description.map((line, index) => (
+                <Typography key={index} sx={descriptionText}>
+                  {line}
+                </Typography>
+              ))}
               {data.button && (
                 <Button className="btn-learn-more" sx={learnButton}>
                   {data.button}

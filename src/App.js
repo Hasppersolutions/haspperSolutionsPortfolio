@@ -23,6 +23,10 @@ import PhpDevelopment from './Pages/Services/Php';
 import DotnetDevelopment from './Pages/Services/DotNet';
 import VueDevelopment from  './Pages/Services/Vuejs';
 import ReactWebDevelopment from './Pages/Services/ReactWebDev';
+import JavaDevelopment from './Pages/Services/java';
+import PythonDevelopment from './Pages/Services/Python';
+import AngularDevelopment from './Pages/Services/Angular';
+import NodeJsDevelopment from './Pages/Services/NodeJs';
 
 function App() {
   return (
@@ -50,6 +54,10 @@ function App() {
             <Route path= '/dotnet-development' element = {< DotnetDevelopment/>}/>
             <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
             <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
+            <Route path = '/java-development' element = { <JavaDevelopment/>}/>
+            <Route path = '/python-development' element = { <PythonDevelopment/>}/>
+            <Route path = '/angular-development' element = { <AngularDevelopment/>}/>
+            <Route path = '/nodejs-development' element = { <NodeJsDevelopment/>}/>
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
