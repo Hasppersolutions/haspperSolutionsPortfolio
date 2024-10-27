@@ -11,9 +11,38 @@ import AiFeature from "../assets/img/aiFeature.png";
 import Potential from "../components/Services/Ios/Potential";
 import revenue from "../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../components/Services/Ios/DevelopmentServices";
-import CodeLibrary from "../assets/img/Services/CrossPlatform/CodeLibrary.svg";
-import Mailus from "../components/Homepage/Mailus";
 
+import Mailus from "../components/Homepage/Mailus";
+import { Contact } from "../components/Homepage/Contact";
+import bgImg from "../assets/img/Services/Background.svg"
+import reactImg from "../assets/img/Services/React.png"
+
+import card1 from "../assets/img/Services/CrossPlatform/React/card1.png"
+import card2 from "../assets/img/Services/CrossPlatform/React/card2.png"
+import card3 from "../assets/img/Services/CrossPlatform/React/card3.png"
+import card4 from "../assets/img/Services/CrossPlatform/React/card4.png"
+import card5 from "../assets/img/Services/CrossPlatform/React/card5.png"
+import card6 from "../assets/img/Services/CrossPlatform/React/card6.png"
+import card7 from "../assets/img/Services/CrossPlatform/React/card7.png"
+
+
+import desc1 from "../assets/img/Services/CrossPlatform/React/desc1.png"
+import desc2 from "../assets/img/Services/CrossPlatform/React/desc2.png"
+import desc3 from "../assets/img/Services/CrossPlatform/React/desc3.png"
+import desc4 from "../assets/img/Services/CrossPlatform/React/desc4.png"
+import desc5 from "../assets/img/Services/CrossPlatform/React/desc5.png"
+import desc6 from "../assets/img/Services/CrossPlatform/React/desc6.png"
+
+import CodeLibrary from '../assets/img/Services/CrossPlatform/CodeLibrary.svg';
+import VariteyApp from '../assets/img/Services/CrossPlatform/VarietyApps.svg';
+import TimelyDilevery from '../assets/img/Services/CrossPlatform/TimelyDilevery.svg';
+import Mission from '../assets/img/Services/CrossPlatform/Mission.svg';
+import EnterpriseApplication from '../assets/img/Services/CrossPlatform/EnterpriceApplication.svg'
+import Pricing from '../assets/img/Services/CrossPlatform/Pricing.svg';
+import run5 from "../assets/img/Services/CrossPlatform/React/run5.png"
+
+import run1 from "../assets/img/Services/CrossPlatform/React/run1.png"
+import run2 from "../assets/img/Services/CrossPlatform/React/run3.png"
 const ReactNative = () => {
   return (
     <>
@@ -24,6 +53,7 @@ const ReactNative = () => {
       <Outsourcing data={outSoutceData} />
       <FAQ data={faqData} />
       <Project data={projectIdeaData}/>
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -35,7 +65,7 @@ const bannerTextData = {
   mainHeading: "React Native",
   middleHeading: "App Development Company",
   backgroundImage: ServiceBackgroudImage,
-  rightImage: AiBannerIcon,
+  rightImage: bgImg,
   bottomHeading:
     "Harness the power of React Native to create incredible cross-platform Android and iOS apps",
   button: "Talk to our expert", //uncomment to add button to banner
@@ -52,7 +82,7 @@ const aiDescriptionData = {
   
   Haspper is one of the leading React Native app development companies that offers services you can rely on when creating mobile apps that add value to your business.`,
   button: "GET FREE DEMO",
-  image: AiFeature,
+  image: reactImg,
 };
 const faqData = {
   faqItems: [
@@ -94,43 +124,43 @@ const potentialData = {
   secondHeading: "React Native App Development Services",
   cardData: [
     {
-      image: revenue,
+      image: card1,
       title: "Reusable Code",
       description:
         "It is possible to use a single codebase for both Android and iOS apps with React Native technology. This equates to significant time and costs savings in the development process.",
     },
     {
-      image: revenue,
+      image: card2,
       title: "Native Performance",
       description:
         "Unlike Cordova or PhoneGap, the framework generates components that operate as native views, ensuring that app users enjoy the fast performance even when the app consumes a lot of resources.",
     },
     {
-      image: revenue,
+      image: card3,
       title: "Cross Platform Framework",
       description:
         "Nothing compares to native apps in terms of user experience and efficiency. With React Native, developers can write code that runs natively on many platforms while maintaining a single codebase.",
     },
     {
-      image: revenue,
+      image: card4,
       title: "Hot Reload",
       description:
         "React Native’s hot reload feature is connected to Hot Module Replacement (HMR). The HMR came into existence after the launch of the first reload option. This hot reload function has the advantage of effectively providing you with the same set of features and actions as before.",
     },
     {
-      image: revenue,
+      image: card5,
       title: "Live Reload",
       description:
         "React Native allows you to view two different screens simultaneously.  You can modify codes on the first screen and you can see the results of your changes on the second screen. Android mobile app developers are well aware of the value of this feature.",
     },
     {
-      image: revenue,
+      image: card6,
       title: "Strong Community",
       description:
         "React Native has become one of the favorite tech stacks for developers since its launch. It has large and active community support in cross-platform mobile app development. The community ensures that no question remains unanswered.",
     },
     {
-      image: revenue,
+      image: card7,
       title: "Quick Time to Market",
       description:
         "React Native considerably reduces coding efforts because the majority of the code can be shared between the iOS and Android versions, cutting development time in half. It also comes with pre-built components for multiple functions.",
@@ -143,36 +173,36 @@ const developmentServicesData = {
     "We provide a comprehensive set of capabilities for developing apps that have the look, feel, functionality, and performance of native apps.",
   cardData: [
     {
-      icon: revenue,
+      icon: desc1,
       title: "Support and Maintenance",
       description:
         "To provide complete support and maintenance, OnGraph employs an innovative and efficient app monitoring system. Response times, crash metrics, and system uptime are all monitored to ensure that the app is meeting your real-world business goals.",
     },
     {
-      icon: revenue,
+      icon: desc2,
       title: "MVP Development",
       description: `We use React Native to build MVPs for companies so that they can have a cost-effective, faster-to-market app with only the most basic functionalities. By employing MVP development, you may win over customers and consistently deliver a superior product.`,
     },
     {
-      icon: revenue,
+      icon: desc3,
       title: "Custom Mobile Apps",
       description:
         "Our primary goal is to guide our clients through the entire process, from concept to implementation in the form of a unique app solution. We provide seamless cross-platform apps that meet all of our client’s specific demands and expectations.",
     },
     {
-      icon: revenue,
+      icon: desc4,
       title: "React Native Development and Design",
       description:
         "We combine the skills of developers with your cutting-edge mobile app ideas to develop a high-performing app. From designing an attractive UI to developing a versatile cross-platform app for Android and iOS, we have got you covered.",
     },
     {
-      icon: revenue,
+      icon: desc5,
       title: "React Native Consulting",
       description:
         "If you have any kind of confusion related to the mobile app development process or React Native framework, you are at the right place. Our React Native consultants guide you and provide you with the most suitable methodology according to your business requirements.",
     },
     {
-      icon: revenue,
+      icon: desc6,
       title: "React Native Migration",
       description:
         "TOur React Native app developers are always there if you ever change your mind and plan to migrate your present app to React Native. Hire dedicated React Native app developers with us to upgrade your app.",
@@ -186,13 +216,13 @@ const outSoutceData = {
   cardData: [
     [
       {
-        image: CodeLibrary,
+        image: run1,
         heading: "Proficient React Developers",
         description:
           "We have experienced React Native developers capable of building highly scalable mobile applications.",
       },
       {
-        image: CodeLibrary,
+        image: Mission,
         heading: "Up-to-dated developers",
         description:
           "Our team of experienced developers has the capability and skills of working with React versions 16.9-18.1 and native versions 0.61-0.63",
@@ -200,13 +230,13 @@ const outSoutceData = {
     ],
     [
       {
-        image: CodeLibrary,
+        image: run2,
         heading: "Various Libraries",
         description:
           "Our React Native team works with multiple React libraries such as material-ui, stripe, chart.js, lodash, j moment, bootstrap, firebase, react-chart-js2, push-notification, react-native-voice, semantic-ui, google-maps-react, amplitude-js, and server-timing.",
       },
       {
-        image: CodeLibrary,
+        image: VariteyApp,
         heading: "Variety of apps",
         description:
           "Our React Native developers have created a wide range of applications for social media, e-gaming, e-learning, eCommerce, Shopify, health, and many more.",
@@ -214,13 +244,13 @@ const outSoutceData = {
     ],
     [
       {
-        image: CodeLibrary,
+        image: TimelyDilevery,
         heading: "Timely delivery",
         description:
           "At OnGraph we strictly follow timelines and try to deliver defect-free, well optimized solutions, every time!",
       },
       {
-        image: CodeLibrary,
+        image: run5,
         heading: "Seamless Support",
         description:
           "Be it pre or post development issues or bugs, we are here to help you out. You just need to raise a support ticket with the concerned project manager and our technical support team will be assigned to it within an hour.",
@@ -228,13 +258,13 @@ const outSoutceData = {
     ],
     [
       {
-        image: CodeLibrary,
+        image: EnterpriseApplication,
         heading: "Enterprise Applications",
         description:
           "Enterprises need exceptional solutions that can cater millions of users without compromising on the user experience. Keeping this in mind, we employ highly experienced and dedicated developers to build powerful and robust applications for enterprise level businesses.",
       },
       {
-        image: CodeLibrary,
+        image: Pricing,
         heading: "Competitive Pricing",
         description:
           "Another feature that distinguishes us is our competitive price, as we believe in providing services that are worth the money.",

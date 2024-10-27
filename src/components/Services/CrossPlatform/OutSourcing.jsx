@@ -120,7 +120,7 @@ const OutSourcing = ({ data }) => {
                       marginBottom: "15px",
                     }}
                   >
-                    <img src={item[0].image} alt={item[0].text} style={{height:'100%',width:'100%',objectFit:'contain'}}/>
+                    <img src={item[0].image} alt={item[0].text} style={{height:'80%',width:'80%',objectFit:'contain'}}/>
                   </Box>
                   <Typography
                     sx={{
@@ -178,7 +178,7 @@ const OutSourcing = ({ data }) => {
                         marginBottom: "15px",
                       }}
                     >
-                      <img src={item[1].image} alt={item[1].text} style={{height:'100%',width:'100%',objectFit:'contain'}}/>
+                      <img src={item[1].image} alt={item[1].text} style={{height:'80%',width:'80%',objectFit:'contain'}}/>
                     </Box>
                     <Typography
                       sx={{
