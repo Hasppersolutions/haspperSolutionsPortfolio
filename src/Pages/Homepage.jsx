@@ -21,11 +21,11 @@ const Homepage = () => {
       <TheDifference/>
       <ExpertServices />
       <ServicesGrid />
-      <Contact />
       <ServicesOffered />
       <Mission />
       <Certification />
       <Review />
+      <Contact />
       <Mailus />
       <ServicesAndStaffing />
     </>

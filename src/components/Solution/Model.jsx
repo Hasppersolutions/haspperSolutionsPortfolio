@@ -1,15 +1,17 @@
 import React from "react";
 import { Grid2 as Grid, Typography, Box, Container } from "@mui/material";
+import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png"
 
 const Model = ({ data }) => {
   return (
 
     
-    <Box sx={{ py: "50px" ,position:'relative'}}>
+    <Box sx={{ py: "50px" ,position:'relative',background:
+      "linear-gradient(90.21deg, rgb(87, 34, 11) -5.91%, rgba(189, 73, 24, .6) 88%)"}}>
 
           <Box
           sx={{
-            backgroundImage: `url(${data.backgroundImage})`,
+            backgroundImage: `url(${data?.backgroundImage || rebrandCities})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
