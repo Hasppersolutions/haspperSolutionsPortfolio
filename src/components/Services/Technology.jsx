@@ -39,7 +39,7 @@ const Technology = ({ data }) => {
               alignItems: "center",
               justifyContent: "center",
               ".icons": {
-                width: { xs: "70%", sm: "auto" },
+                width: { xs: "70%", sm: "95%" },
               },
             }}
           >

@@ -13,9 +13,10 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  Button,
 } from "@mui/material";
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
-import { CloseRounded, MenuRounded, Remove, Add, HomeOutlined } from "@mui/icons-material";
+import { CloseRounded, MenuRounded, Remove, Add, HomeOutlined, Rocket, Factory } from "@mui/icons-material";
 
 export const NavBar = () => {
   const navigate = useNavigate();
@@ -227,23 +228,94 @@ export const NavBar = () => {
                       <Grid container>
                         <Grid size={3}>
                           <Box sx={{
-                            rowGap: 4
+                            rowGap: 8,
+                            display: 'flex',
+                            flexDirection: 'column'
                           }}>
 
-                            <Box sx={{
-                              backgroundColor: "#fff",
-                              borderRadius: "20px",
-                              height: 100,
-                              width: 100
-                            }}>
-                            </Box>
-                            <Box sx={{
-                              backgroundColor: "#fff",
-                              borderRadius: "20px",
-                              height: 100,
-                              width: 100
-                            }}>
-                            </Box>
+<Box sx={{
+    backgroundColor: "#fff",
+    borderRadius: "16px",
+    padding: '20px 16px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+    width: '200px',
+    marginBottom: '24px',
+  }}>
+    
+    <Button 
+      sx={{
+        backgroundColor: "#fff",
+        borderRadius: "20px",
+        height: 'auto',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '-10px'
+      }}
+      onClick={() => handleNavigate("/startup-it-solutions")}
+    >
+      <Rocket sx={{ fontSize: 100, color: '#333',  }} />
+      <Typography sx={{ 
+        marginTop: '12px', 
+        fontSize: '16px', 
+        fontWeight: '600', 
+        color: '#1E3A8A', 
+        padding: '6px 12px', 
+        backgroundColor: '#F1F5F9', 
+        borderRadius: '8px',
+        marginBottom: '-50px',
+      }}>
+        STARTUPS
+      </Typography>
+    </Button>
+  </Box>
+
+  <Box sx={{
+    backgroundColor: "#fff",
+    borderRadius: "16px",
+    padding: '20px 16px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+    width: '200px',
+  }}>
+    <Button
+      sx={{
+        backgroundColor: "#fff",
+        borderRadius: "20px",
+        height: 'auto',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '-10px'
+        
+      }}
+      onClick={() => handleNavigate("/enterprise-it-solutions")}
+    >
+      <Factory sx={{ fontSize: 60, color: '#333' }} />
+      <Typography sx={{ 
+        marginTop: '12px', 
+        fontSize: '16px', 
+        fontWeight: '600', 
+        color: '#1E3A8A', 
+        padding: '6px 12px', 
+        backgroundColor: '#F1F5F9', 
+        borderRadius: '8px',
+      }}>
+        ENTERPRISE
+      </Typography>
+    </Button>
+  </Box>                            
                           </Box>
                         </Grid>
                         <Grid size={9}>
