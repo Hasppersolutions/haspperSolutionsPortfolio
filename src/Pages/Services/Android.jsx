@@ -8,6 +8,8 @@ import Potential from "../../components/Services/Ios/Potential";
 import revenue from "../../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
+import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing";
+import CodeLibrary from "../../assets/img/Services/CrossPlatform/CodeLibrary.svg";
 
 const Android = () => {
   return (
@@ -16,6 +18,7 @@ const Android = () => {
       <AiDescription data={aiDescriptionData} />
       <Potential data={potentialData} />
       <DevelopmentServices data={developmentServicesData} />
+      <OutSourcing data={outSourcingData} />
       <FAQ data={faqData} />
     </>
   );
@@ -119,6 +122,54 @@ const developmentServicesData = {
       description:
         "We have a team of QA experts to make sure that your app is glitch-free and has zero errors. They will always keep an eye on the app to see if the app is performing smoothly on all the dedicated platforms.  ",
     },
+  ],
+};
+const outSourcingData = {
+  firstHeading: "Why to choose our",
+  secondHeading: "Android app development services?",
+  cardData: [
+    [
+      {
+        image: CodeLibrary,
+        heading: "Reliable and skilled developers",
+        description:
+          "We have the finest and most reliable team of in-house developers who will work dedicatedly to build an app that will be loved worldwide.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "Agile Methodology",
+        description:
+          "We follow agile methodology to help deliver the project in a timely manner and get feedback on every stage of development to ensure optimum, defect-free deliveries. ",
+      },
+    ],
+    [
+      {
+        image: CodeLibrary,
+        heading: "Competitive Cost",
+        description:
+          "In comparison to other companies, our low operating costs make us incredibly reasonable. We give adequate resources at a significantly reduced price.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "Result Oriented",
+        description:
+          "Our top priority is to focus on your goals and help you achieve them online. We guarantee you exceptional results, including increased traffic, enhanced brand loyalty, and a large number of new leads.",
+      },
+    ],
+    [
+      {
+        image: CodeLibrary,
+        heading: "24×7 Assistance",
+        description:
+          "As an offshore provider, we understand the need for time zone alignment and provide support in your time zone.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "Full transparency",
+        description:
+          "We offer transparency through the development process. Therefore, we keep our clients updated about the progress of the project and take suggestions at every step. We keep the process easy and simple to avoid any further issues.",
+      },
+    ],
   ],
 };
 const faqData = {

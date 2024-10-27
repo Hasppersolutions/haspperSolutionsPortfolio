@@ -8,6 +8,8 @@ import Potential from "../../components/Services/Ios/Potential";
 import revenue from "../../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
+import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing";
+import CodeLibrary from "../../assets/img/Services/CrossPlatform/CodeLibrary.svg";
 
 const Android = () => {
   return (
@@ -16,6 +18,7 @@ const Android = () => {
       <AiDescription data={aiDescriptionData} />
       <Potential data={potentialData} />
       <DevelopmentServices data={developmentServicesData} />
+      <OutSourcing data={outSourcingData} />
       <FAQ data={faqData} />
     </>
   );
@@ -116,6 +119,61 @@ const developmentServicesData = {
       description:
         "Our world-class development team assists you with all aspects of flutter app configuration and uses thorough examination to optimize functionality. To ensure complete uptime and sustainable performance, we also offer incremental upgrades.",
     },
+  ],
+};
+const outSourcingData = {
+  firstHeading: "Why choose us for all your",
+  secondHeading: "Flutter app development needs?",
+  cardData: [
+    [
+      {
+        image: CodeLibrary,
+        heading: "On-time Delivery",
+        description:
+          "Our developers understand the value of time and business requirements and therefore plan the tasks accordingly. We divide tasks according to deadlines and uphold the principle of always delivering the Flutter app on time!",
+      },
+      {
+        image: CodeLibrary,
+        heading: "Secure Apps",
+        description:
+          "These days, apps are more exposed to security risks and breaches since they are frequently accessible over many networks and connected to the cloud. In light of this, we design mobile apps with cutting-edge security and privacy features.",
+      },
+    ],
+    [
+      {
+        image: CodeLibrary,
+        heading: "Quality Solutions",
+        description:
+          "One important aspect is on-time delivery. The quality of the application is the other. By compromising the quality of the app, it serves no purpose to deliver it on time. Our skilled developers not only deliver on time but also take care of the quality of the app.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "Flutter app Development Expertise",
+        description:
+          "Our Flutter app development team holds experience in deploying Flutter apps to various sectors and for a wide range of use cases. Knowing this, they are aware of the potential pros and cons of Flutter app development and prepare the process accordingly.",
+      },
+    ],
+    [
+      {
+        image: CodeLibrary,
+        heading: "Successful Methodologies",
+        description:
+          "Our flutter app development agency believes that success comes by following a streamlined process with proven methodologies. Keeping this in mind, our experts follow proven approaches and agile methodology to fulfill the client’s requirements.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "Active Support & Maintenance",
+        description:
+          "We provide both pre and post-launch support. To ensure that the app ideas are thoroughly validated before the web app development and the app has no potential errors after launch. Additionally, we provide free app maintenance for a limited time after which you have to pay a reasonable fee for our support and maintenance services.",
+      },
+    ],
+    [
+      {
+        image: CodeLibrary,
+        heading: "Skilled and Experienced Developers",
+        description: "When we say that we have the industry-best team of Flutter app developers, we mean it. They are well-skilled and experienced to succeed in any professional environment. They are trained to create high-quality apps with rich features and can manage any challenge that comes in the way.",
+      }
+    ]
   ],
 };
 const faqData = {

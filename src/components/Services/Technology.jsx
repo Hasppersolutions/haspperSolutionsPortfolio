@@ -1,7 +1,29 @@
 import React from "react";
 import { Grid2 as Grid, Typography, Container, Box } from "@mui/material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Technology = ({ data }) => {
+
+      //Animation
+
+      useGSAP(() => {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".technologyBox",
+            start: "top 98%",
+            end: "bottom 70%",
+            toggleActions: "play none none reset",
+          },
+        });
+    
+        tl.from(".technologyTitle", {
+          y: 100,
+          opacity: 0,
+          duration: 1,
+        });
+      });
+
   const renderTechItems = (items) => {
     return items?.map((item, index) => (
       <Grid
@@ -27,7 +49,7 @@ const Technology = ({ data }) => {
               alignItems: "center",
               justifyContent: "center",
               ".icons": {
-                width: { xs: "70%", sm: "auto" },
+                width: "100%",
               },
             }}
           >
@@ -39,7 +61,7 @@ const Technology = ({ data }) => {
   };
 
   return (
-    <Box sx={{ pt: 3, pb: { xs: 8, md: 14 } }}>
+    <Box className="technologyBox" sx={{ pt: 3, pb: { xs: 8, md: 14 } }}>
       <Box
         className="scroll-down-icon"
         sx={{
@@ -52,7 +74,7 @@ const Technology = ({ data }) => {
         ⏷
       </Box>
       <Container>
-        <Typography sx={titleStyle}>
+        <Typography className="technologyTitle"  sx={titleStyle}>
           Technologies <br />
           <Typography
             component={"span"}

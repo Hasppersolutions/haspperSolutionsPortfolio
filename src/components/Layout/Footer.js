@@ -3,10 +3,13 @@ import React from "react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";  // Keep LinkedIn and Instagram icons as they are
 
 const Footer = () => {
+let date = new Date()
+let year = date.getFullYear()
+
   return (
     <Box sx={footerContainer}>
       <div style={styles.leftText}>
-        © 2024 OnGraph. All Rights Reserved.
+        © {year} Haspper. All Rights Reserved.
       </div>
 
       <div style={styles.centerLinks}>

@@ -8,6 +8,8 @@ import Potential from "../../components/Services/Ios/Potential";
 import revenue from "../../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
+import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing";
+import CodeLibrary from "../../assets/img/Services/CrossPlatform/CodeLibrary.svg";
 
 const Ios = () => {
   return (
@@ -16,6 +18,7 @@ const Ios = () => {
       <AiDescription data={aiDescriptionData} />
       <Potential data={potentialData} />
       <DevelopmentServices data={developmentServicesData} />
+      <OutSourcing data={outSourcingData} />
       <FAQ data={faqData} />
     </>
   );
@@ -118,6 +121,55 @@ const developmentServicesData = {
     },
   ],
 };
+const outSourcingData = {
+  firstHeading: "Trust Us for All Your",
+  secondHeading: "iOS App Development Needs",
+  // description: "",
+  cardData: [
+    [
+      {
+        image: CodeLibrary,
+        heading: "Experience with Various Versions of iOS, Swift, Objective-C and Xcode",
+        description:
+          "Our pool of highly skilled developers has the capability and experience to work with Swift versions 1.0 – 5.5, Xcode versions 6.3 – 13.4 and iOS versions 5.1.1 – 15.5. The most recent Objective-C version we are using is 2.0.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "Experience with Numerous Libraries",
+        description:
+          "Our iOS team uses several libraries such as Alamofire, Agora RTC, Razorpay, Stripe, Charts, GoogleWebRTC, and Firebase.",
+      },
+    ],
+    [
+      {
+        image: CodeLibrary,
+        heading: "Custom Agile Process",
+        description:
+          "We follow an agile methodology that ensures full transparency, increases development speed and reduces risk.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "End-To-End Service",
+        description:
+          "Once we onboard you, the entire development process is our responsibility. Be it requirement gathering, consulting, designing, development and testing, we take care of all. We even help you submit it to the app store.",
+      },
+    ],
+    [
+      {
+        image: CodeLibrary,
+        heading: "Built Various Types of Applications",
+        description:
+          "Our iOS developers have built a broad spectrum of applications ranging from Expense Tracking Applications (Track My Pocket), E-Learning App for (Oakridge International School), Chat Applications (AllChat) to Dating Apps (Canine Buds), E-Commerce applications, Online Food Ordering Applications, Sports Betting Applications, Job Portal application & News application.",
+      },
+      {
+        image: CodeLibrary,
+        heading: "App Store Submission",
+        description:
+          "Once the development is complete, the next big thing is to apply to the app store. It can be tricky sometimes. But, we take care of the entire process and do it for you. We will help you pass the review process and make it to the app store. It is inclusive of our services.",
+      },
+    ],
+  ],
+};
 const faqData = {
   faqItems: [
     {
@@ -148,5 +200,5 @@ const faqData = {
       answer:
         "The cost of building an app using React Native varies depending on the app complexity, team size, and features.",
     },
-  ]
-}
+  ],
+};

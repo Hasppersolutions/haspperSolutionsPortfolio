@@ -5,6 +5,8 @@ import "react-multi-carousel/lib/styles.css";
 import google from "../../assets/img/Reviews/Google_Reviews.png";
 import glassdor from "../../assets/img/Reviews/goodfirms.png";
 import goodfirm from "../../assets/img/Reviews/Glassdoor_logo.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 const reviews = [
   {
     id: 1,
@@ -79,6 +81,32 @@ const Review = () => {
       items: 1
     }
   };
+
+   //Animation
+ useGSAP(() => {
+  gsap.from(".reviews-header", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".reviews-header",
+      start: "top 100%",
+      end: "bottom 20%",
+      toggleActions: "play none none reset",
+    },
+  });
+  gsap.from(".carousel-list-container", {
+    scale: 0,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".carousel-list-container",
+      start: "top 100%",
+      end: "bottom 20%",
+      toggleActions: "play none none reset",
+    },
+  });
+});
 
   return (
     <div className="reviews-container">

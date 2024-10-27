@@ -4,23 +4,43 @@ import dedicatedEngTeam from '../../assets/img/dedicatedEngTeam.svg';
 import proactivePlan from '../../assets/img/proactivePlan.svg';
 import noTieredHelpDesk from '../../assets/img/noTieredHelpDesk.svg';
 import CyberTeam from '../../assets/img/CyberTeam.svg';
-import { Container, Typography, Box, Grid2 as Grid } from '@mui/material';
+import { Container, Typography, Box, Grid2 as Grid } from '@mui/material'; 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const TheDifference = () => {
+
+    //Animation
+    useGSAP(() => {
+        gsap.from(".differenceTitle", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".differenceTitle",
+                start: "top 100%",
+                end: "bottom 20%",
+                toggleActions: "play none none reset",
+            },
+        });
+    });
+
     return (
         <>
             <Box sx={{
-                padding: { xs: "50px 40px 120px 40px", sm: "50px 40px 160px 40px"},
+                padding: { xs: "50px 40px 120px 40px", sm: "50px 40px 160px 40px" },
                 backgroundColor: "#D9D9D9", /* Gray background */
                 textAlign: "center",
             }}>
                 <Container>
-                    <Typography sx={{
-                        fontSize: { xs: "32px", sm: "38px", md: "42px" },
-                        color: "#000",
-                        fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
-                        fontWeight: "bold",
-                    }}>
+                    <Typography
+                        className='differenceTitle'
+                        sx={{
+                            fontSize: { xs: "32px", sm: "38px", md: "42px" },
+                            color: "#000",
+                            fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+                            fontWeight: "bold",
+                        }}>
                         The Difference
                     </Typography>
                     <Box sx={{
@@ -81,7 +101,7 @@ const cardStyle = {
     height: "100%",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     borderRadius: "50px",
-    maxWidth: { xs: 280, sm: 240, md: 280},
+    maxWidth: { xs: 280, sm: 240, md: 280 },
     margin: "auto",
     // minHeight: "100%",
     // maxHeight: 169
