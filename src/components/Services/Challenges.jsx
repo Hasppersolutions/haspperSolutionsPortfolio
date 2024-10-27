@@ -3,8 +3,29 @@ import React from "react";
 import haspperLogo from "../../assets/img/haspper-logo.png";
 import leftCurve from "../../assets/img/Services/left-curve.png";
 import rightCurve from "../../assets/img/Services/right-curve.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Challenges = ({data}) => {
+  //Animation
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".challengesTitleBox",
+        start: "top 98%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".challengesTitleBox p", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
   return (
     <>
       <Box
@@ -13,7 +34,7 @@ const Challenges = ({data}) => {
         }}
       >
         <Box
-          className="headingBoxWidth"
+          className="headingBoxWidth challengesTitleBox"
           sx={{ pt: { xs: "20px", md: "50px" } }}
         >
           <Typography sx={titleStyle}>{data.firstHeading}</Typography>

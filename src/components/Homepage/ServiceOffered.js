@@ -1,5 +1,7 @@
 import React from 'react';
-import './ServiceOffered.css'; 
+import './ServiceOffered.css';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const services = [
   { name: 'Java Development', icon: '/path-to-java-icon.png' },
@@ -17,16 +19,36 @@ const ServiceCard = ({ service }) => (
   </div>
 );
 
-const ServicesOffered = () => (
-  <section className="services-offered">
-    <h1>Services We Offer</h1>
-    <h2>We Build Mobile and Web App Solutions for Every Niche</h2>
-    <div className="services-grid">
-      {services.map(service => (
-        <ServiceCard key={service.name} service={service} />
-      ))}
-    </div>
-  </section>
-);
+const ServicesOffered = () => {
+
+  //Animation
+  useGSAP(() => {
+    gsap.from(".animationText", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".services-offered",
+        start: "top 100%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+  });
+
+  return (
+    <>
+      <section className="services-offered">
+        <h1 className='animationText'>Services We Offer</h1>
+        <h2 className='animationText'>We Build Mobile and Web App Solutions for Every Niche</h2>
+        <div className="services-grid">
+          {services.map(service => (
+            <ServiceCard key={service.name} service={service} />
+          ))}
+        </div>
+      </section>
+    </>
+  )
+}
 
 export default ServicesOffered;

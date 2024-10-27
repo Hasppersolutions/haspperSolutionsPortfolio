@@ -1,7 +1,29 @@
 import React from "react";
 import { Grid2 as Grid, Typography, Box, Container } from "@mui/material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const FeatureSection = ({ data }) => {
+  //Animation
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".featureSectionTitleBox",
+        start: "top 98%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".featureSectionTitleBox h6", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      delay: 0.4,
+    });
+  });
+
   return (
     <>
       <Box
@@ -66,7 +88,15 @@ const FeatureSection = ({ data }) => {
                           flexShrink: 0,
                         }}
                       >
-                        <img src={item.image} alt={item.text} style={{width:"100%",height:"100%",objectFit:"contain"}}/>
+                        <img
+                          src={item.image}
+                          alt={item.text}
+                          style={{
+                            width: "70%",
+                            height: "70%",
+                            objectFit: "contain",
+                          }}
+                        />
                       </Box>
                       <Box
                         sx={{
@@ -91,6 +121,7 @@ const FeatureSection = ({ data }) => {
             </Grid>
             <Grid size={{ xs: 12, sm: 12, md: 6 }}>
               <Box
+                className="featureSectionTitleBox"
                 sx={{
                   backgroundColor: "#fff",
                   padding: "20px",

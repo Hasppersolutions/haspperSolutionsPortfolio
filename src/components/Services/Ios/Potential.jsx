@@ -21,8 +21,8 @@ const Potential = ({ data }) => {
     gsap.from(".dataCard", {
       y: 100,
       opacity: 0,
-      duration: 0.5,
-      stagger: 0.8,
+      duration: 1,
+      stagger: 0.2,
       scrollTrigger: {
         trigger: ".potentialsCardBox",
         start: "top 98%",

@@ -1,12 +1,34 @@
 import React from "react";
 import { Grid2 as Grid, Typography, Box, Container } from "@mui/material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const OutSourcing = ({ data }) => {
+
+  //Animation
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".outSourcingTitleBox",
+        start: "top 98%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".outSourcingTitleBox p", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
   return (
-    <Box sx={{ padding: "40px 20px", backgroundColor: "#f5f5f5" }}>
+    <Box sx={{ padding: "40px 0px", backgroundColor: "#f5f5f5" }}>
       <Container>
         <Box
-          className="headingBoxWidth"
+          className="headingBoxWidth outSourcingTitleBox"
           sx={{ mt: { xs: "20px", md: "50px" }, marginBottom: "35px" }}
         >
           <Typography
@@ -81,6 +103,7 @@ const OutSourcing = ({ data }) => {
                     flexDirection: "column",
                     alignItems: { xs: "center", md: "end" },
                     padding: { xs: "20px 10px 20px", md: "35px 50px 15px" },
+                    borderRadius: {xs: 2, md: 0}
                   }}
                 >
                   <Box
@@ -138,6 +161,7 @@ const OutSourcing = ({ data }) => {
                       flexDirection: "column",
                       alignItems: { xs: "center", md: "start" },
                       padding: { xs: "20px 10px 20px", md: "35px 50px 15px" },
+                      borderRadius: {xs: 2, md: 0}
                     }}
                   >
                     <Box
