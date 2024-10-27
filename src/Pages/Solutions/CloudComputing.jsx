@@ -2,8 +2,25 @@ import React from "react";
 import Features from "../../components/Services/MobileAppDevelopment/Features";
 import Banner from "../../components/Services/Banner.jsx";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
-import mobileDevelopmentRight from "../../assets/img/Services/mobile-development-right.png";
+import mainCloudImg from "../../assets/img/Solutions/CloudComputing/CloudComputingMain.svg"
+import aiDescImg from "../../assets/img/Solutions/CloudComputing/FeatureImg.svg"
 import mobileAppConsult from "../../assets/img/Services/mobile-app-consulting.png";
+import icon1 from "../../assets/img/Solutions/CloudComputing/img2.png"
+import icon2 from "../../assets/img/Solutions/CloudComputing/cloud-syncing.svg"
+import icon3 from "../../assets/img/Solutions/CloudComputing/img3.png"
+import icon4 from "../../assets/img/Solutions/CloudComputing/img4.png"
+import icon5 from "../../assets/img/Solutions/CloudComputing/img5.png"
+import model1 from "../../assets/img/Solutions/CloudComputing/model1.png"
+import model3 from "../../assets/img/Solutions/CloudComputing/model3.png"
+import model4 from "../../assets/img/Solutions/CloudComputing/model4.png"
+import model5 from "../../assets/img/Solutions/CloudComputing/model5.png"
+import model2 from "../../assets/img/Solutions/CloudComputing/model2.png"
+import techdata1 from "../../assets/img/Solutions/CloudComputing/techdata1.png"
+import techdata3 from "../../assets/img/Solutions/CloudComputing/techdata3.png"
+import techdata4 from "../../assets/img/Solutions/CloudComputing/techdata4.png"
+import techdata5 from "../../assets/img/Solutions/CloudComputing/techdata5.png"
+import techdata2 from "../../assets/img/Solutions/CloudComputing/techdata2.png"
+import techdata6 from "../../assets/img/Solutions/CloudComputing/techdata6.png"
 import Accredited from "../../components/Services/MobileAppDevelopment/Accredited.jsx";
 import { Box } from "@mui/material";
 import DevelopmentServices from "../../components/Services/MobileAppDevelopment/DevelopmentServices.jsx";
@@ -15,22 +32,32 @@ import AiDescription from "../../components/Services/AiDescription.jsx";
 import AiTool from "../../components/Services/Ai/AiTool.jsx";
 import Certification from "../../components/Homepage/Certification.js";
 import Review from "../../components/Homepage/Review.js";
-import ContactUs from "../ContactUs.jsx";
-
+import { Contact } from "../../components/Homepage/Contact";
+import Challenges from "../../components/Services/Challenges.jsx";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing.js";
 import Model from "../../components/Solution/Model.jsx";
+import Mailus from "../../components/Homepage/Mailus";
+import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
+
+import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
+
+
 const Chatbot = () => {
   return (
     <>
     
       <Banner data={bannerTextData} />
       <AiDescription data={aiDescriptionData} />
+      <Challenges data={challengesData} />
       <WaveLine />
       <AiTool data={toolData} />
       <Model data={ModelData} />
       <Technologies data={technologiesData} />
+      <KeyFeatures data={keyFeatureData}/>
       <Certification/>
       <Review/>
+      <Contact/>
+      <Mailus/>
       <ServicesAndStaffing/>
       
     </>
@@ -44,77 +71,54 @@ const bannerTextData = {
   mainHeading: "Cloud Computing",
   middleHeading: "Services",
   backgroundImage: ServiceBackgroudImage,
-  rightImage: mobileDevelopmentRight,
+  rightImage: mainCloudImg,
   bottomHeading:
   "Begin your digital transformation journey with our comprehensive cloud computing services, which will launch you into a new era of corporate success."
     };
 
 
 const technologiesData = {
-  firstHeading: "Our Cloud Models",
-  secondHeading: "Flexibility Tailored to Your Needs",
+  firstHeading: "Why Choose Haspper as Your Trusted",
+  secondHeading: "Cloud Services Partner?",
 
   technologies: [
     {
-      title: "Big Data",
+      title: "Proven Expertise",
       description:
-        "We integrate big data into our mobile app development services for the capturing, processing, and analysis of massive and complex data sets that assist businesses to undertake data-driven decisions.",
-      icon: mobileAppConsult,
+      "At OnGraph, we leverage our wealth of experience and strong technical skills to provide cloud solutions that help businesses succeed."
+        ,icon: techdata1,
     },
     {
-      title: "Blockchain",
+      title: "Agile Approach",
       description:
-        "Our mobile application development service team is well-versed in designing blockchain mobile apps to store and process transactions and other data securely and transparently.",
-      icon: mobileAppConsult,
+      "Our Agile process assures the rapid delivery of high-quality cloud solutions, allowing your company to respond rapidly to market developments.",
+        icon: techdata2,
     },
     {
-      title: "Cloud Computing",
+      title: "Custom Solutions",
       description:
-        "As experts in mobile app development, we make the most of cloud computing to ensure that your data is secured and easily accessible from any device, at any time.",
-      icon: mobileAppConsult,
+        "We reject the one-size-fits-all approach in favor of developing cloud solutions that are specifically suited to your company’s needs and ambitions.",
+         icon: techdata3,
     },
     {
-      title: "Image Recognition",
+      title: "Comprehensive Cloud Services",
       description:
-        "AR, object identification, and facial recognition are some of the numerous applications we utilize in our mobile app development process.",
-      icon: mobileAppConsult,
+        "We provide a comprehensive spectrum of cloud services to support your digital transformation journey, from migration and integration to consultation and maintenance.",
+      icon: techdata4,
     },
     {
-      title: "Virtual Reality (VR)",
+      title: "End-to-End Support",
       description:
-        "We create feature-rich mobile apps that leverage VR technology, allowing immersive and engaging user experiences across various industries, from gaming and entertainment to education and the arts.",
-      icon: mobileAppConsult,
+        "Our collaboration with you goes from the initial evaluation to post-implementation optimizations, ensuring continuous support at all stages.",
+      icon: techdata5,
     },
     {
-      title: "Artificial Intelligence (AI)",
+      title: "Industry-Leading Security",
       description:
-        "Our team has extensive experience incorporating AI into mobile apps to deliver customized and foresightful services to end customers.",
-      icon: mobileAppConsult,
+        "We adhere to the highest security standards, guaranteeing that your data is safe and secure, providing you with complete peace of mind.",
+         icon: techdata6,
     },
-    {
-      title: "Smart TVs",
-      description:
-        "For smart Televisions, we create specialized mobile apps that permit effortless streaming and content management.",
-      icon: mobileAppConsult,
-    },
-    {
-      title: "Internet of Things (IoT)",
-      description:
-        "To help businesses collect and analyze data in real-time, we've integrated IoT into our mobile app development services. This allows for connecting a wide range of smart devices, sensors, and equipment.",
-      icon: mobileAppConsult,
-    },
-    {
-      title: "Wearables",
-      description:
-        "We are experts in creating mobile apps that can be synced with wearables like smartwatches and fitness trackers to give consumers access to real-time data and tailor their experiences to their specific needs.",
-      icon: mobileAppConsult,
-    },
-    {
-      title: "Augmented Reality (AR)",
-      description:
-        "Our mobile app development services incorporate AR, which superimposes digital images, sounds, and other media onto the real world to improve its usability.",
-      icon: mobileAppConsult,
-    },
+    
   ],
 };
 
@@ -128,7 +132,7 @@ const aiDescriptionData = {
 
                 We offer a full range of services, including Cloud Consulting, Development, Integration, Maintenance, Edge Computing, and Data Engineering. You can count on us to be your partner at every stage of your cloud journey. Choose OnGraph for a future business that is cloud-powered, efficient, fast, and disruptive.`,
     button: "GET FREE DEMO",
-    image: mobileAppConsult,
+    image: aiDescImg,
   };
 
 
@@ -139,36 +143,36 @@ const aiDescriptionData = {
       "Say goodbye to bottlenecks with our expertise in crafting cutting-edge cloud solutions.",
     uppeCardData: [
       {
-        image: mobileAppConsult,
-        text: "Natural Language Processing for E-Commerce",
+        image: icon1,
+        text: "Cloud Migration",
         hoverText:
-          "Maximize consumer engagement with our NLP technology, designed to boost the e-commerce experience.",
+          "Ensure a smooth move to the cloud, increasing company agility while reducing risk and cost.",
       },
       {
-        image: mobileAppConsult,
-        text: "Computer Vision for Healthcare",
+        image: icon2,
+        text: "Cloud Native Development",
         hoverText:
-          "With our AI-powered computer vision solutions, enhance patient care and diagnosis accuracy.",
+          "Unleash the power of modern application development with cutting-edge technology for business change.",
       },
     ],
     belowCardData: [
         {
-          image: mobileAppConsult,
-          text: "Recommendation Engine for Media",
+          image: icon3,
+          text: "Data Strategy & Engineering",
           hoverText:
-            "Grow user engagement with personalized content using our AI-based recommendation algorithms.",
+            "Our data strategy and engineering services can help you improve your business outcomes by transforming raw data into actionable insights.",
         },
         {
-          image: mobileAppConsult,
-          text: "Generative AI for Content Creation",
+          image: icon4,
+          text: "Digital Transformation",
           hoverText:
-            "Drive uniqueness and creativity in content with our advanced generative AI systems.",
+            "Accelerate the expansion of your IT company by using proven practices that allow ongoing software releases.",
         },
         {
-          image: mobileAppConsult,
-          text: "Data Engineering for Market Research",
+          image: icon5,
+          text: "Site Reliability & Chaos Engineering",
           hoverText:
-            "We structure and organize your data for insightful and data-driven decision-making. Harness the power of data for an evidence-based business strategy.",
+            "Adopt the latest testing approaches to ensure system reliability at scale and business continuity.",
         },
       ],
     };
@@ -180,64 +184,136 @@ const aiDescriptionData = {
       
         technologies: [
           {
-            title: "Big Data",
+            title: "Public Cloud",
             description:
-              "We integrate big data into our mobile app development services for the capturing, processing, and analysis of massive and complex data sets that assist businesses to undertake data-driven decisions.",
-            icon: mobileAppConsult,
+              "Leveraging the power of scalable, dependable, and cost-effective public cloud solutions to enable your company to develop at size and speed.",
+            icon: model1,
           },
           {
-            title: "Blockchain",
+            title: "Private Cloud",
             description:
-              "Our mobile application development service team is well-versed in designing blockchain mobile apps to store and process transactions and other data securely and transparently.",
-            icon: mobileAppConsult,
+             "Providing increased control and security by providing dedicated resources tailored to your business requirements.",
+            icon: model2,
           },
           {
-            title: "Cloud Computing",
+            title: "Hybrid Cloud",
             description:
-              "As experts in mobile app development, we make the most of cloud computing to ensure that your data is secured and easily accessible from any device, at any time.",
-            icon: mobileAppConsult,
+              "With our hybrid cloud solutions, you get the best of both worlds, with the freedom of the public cloud and the protection and control of the private cloud.",
+            icon: model3,
           },
           {
-            title: "Image Recognition",
+            title: "Disaster Recovery on the Cloud",
             description:
-              "AR, object identification, and facial recognition are some of the numerous applications we utilize in our mobile app development process.",
-            icon: mobileAppConsult,
+              "Reducing risks and maintaining business continuity by restoring important IT systems and data quickly.",
+            icon: model4,
           },
           {
-            title: "Virtual Reality (VR)",
+            title: "Disaster Recovery as a Service (DRaaS)",
             description:
-              "We create feature-rich mobile apps that leverage VR technology, allowing immersive and engaging user experiences across various industries, from gaming and entertainment to education and the arts.",
-            icon: mobileAppConsult,
+            "Offering DRaaS to assist businesses in fast recovering from disasters, minimizing downtime, and avoiding costly disruptions to their business operations.",
+               icon: model5,
           },
-          {
-            title: "Artificial Intelligence (AI)",
-            description:
-              "Our team has extensive experience incorporating AI into mobile apps to deliver customized and foresightful services to end customers.",
-            icon: mobileAppConsult,
-          },
-          {
-            title: "Smart TVs",
-            description:
-              "For smart Televisions, we create specialized mobile apps that permit effortless streaming and content management.",
-            icon: mobileAppConsult,
-          },
-          {
-            title: "Internet of Things (IoT)",
-            description:
-              "To help businesses collect and analyze data in real-time, we've integrated IoT into our mobile app development services. This allows for connecting a wide range of smart devices, sensors, and equipment.",
-            icon: mobileAppConsult,
-          },
-          {
-            title: "Wearables",
-            description:
-              "We are experts in creating mobile apps that can be synced with wearables like smartwatches and fitness trackers to give consumers access to real-time data and tailor their experiences to their specific needs.",
-            icon: mobileAppConsult,
-          },
-          {
-            title: "Augmented Reality (AR)",
-            description:
-              "Our mobile app development services incorporate AR, which superimposes digital images, sounds, and other media onto the real world to improve its usability.",
-            icon: mobileAppConsult,
-          },
+          
         ],
       };   
+
+      const challengesData = {
+        firstHeading: "Solutions Conquering the Toughest",
+        secondHeading: "AI Challenges",
+        description:
+          "Are operational inefficiencies impeding your progress? What are the roadblocks to transforming your company? With our technical skills, we can help you eliminate essential business obstacles and pain areas. Utilize powerful, comprehensive, user-friendly AI technologies and solutions to catapult your company to new heights.",
+        stepsData: [
+          {
+            id: 1,
+            icon: icon1,
+            title: "Flexibility through cloud Migration",
+            position: {
+              top: -24,
+              left: -20,
+            },
+            side: "right",
+          },
+          {
+            id: 2,
+            icon: "",
+            title: "Innovation through Cloud-Native Development",
+            position: {
+              top: 180,
+              left: 144,
+            },
+            side: "right",
+          },
+          {
+            id: 3,
+            icon: "",
+            title: "Growth with Data Strategy and Engineering",
+            position: {
+              top: 450,
+              left: 76,
+            },
+            side: "right",
+          },
+          {
+            id: 4,
+            icon: "",
+            title: "Progress via Digital Transformation",
+            position: {
+              top: -36,
+              left: -170,
+            },
+            side: "left",
+          },
+          {
+            id: 5,
+            icon: "",
+            title: "Resilience with Reliability Engineeering",
+            position: {
+              top: 209,
+              left: -256,
+            },
+            side: "left",
+          },
+         
+        ],
+      };
+
+      const keyFeatureData = {
+        mainHeading: "Our Methodology:",
+        secondHeading: "A Strategic Approach to Cloud Success",
+        image: keyFeatures,
+        
+        leftSideData: [
+          {
+            heading: "In-depth Assessment",
+            description:
+              "We begin the process with a thorough evaluation of your business requirements and IT infrastructure, creating the framework for a successful cloud journey.",
+          },
+          {
+            heading: "Strategic Planning",
+            description:
+            "Creating a clear roadmap to steer your cloud journey, lowering risk, and ensuring alignment with your business goals is part of our meticulous planning stage",
+               },
+          {
+            heading: "Efficient Implementation",
+            description:
+              "Using Agile approaches, we ensure that cloud solutions are implemented efficiently and quickly, with the least disturbance to business operations.",
+          },
+        ],
+        rightSideData: [
+          {
+            heading: "Continuous Optimization",
+            description:
+              "We don't stop at implementation. We optimize and upgrade your cloud ecosystem on a regular basis to ensure it continues to add value and keeps up with changing market trends.",
+          },
+          {
+            heading: "Robust Security and Compliance",
+            description:
+              "We integrate security and compliance at every level of your cloud infrastructure, ensuring your data and applications are safeguarded. Our proactive approach helps you meet industry regulations and reduces potential vulnerabilities.",
+          },
+          {
+            heading: "Scalable Growth and Innovation",
+            description:
+              "Our solutions are designed with scalability in mind, enabling you to expand resources effortlessly as your business grows. We help you leverage cloud-native innovations, so you're always ahead in adapting to new technologies and meeting customer expectations.",
+          },
+        ],
+      };

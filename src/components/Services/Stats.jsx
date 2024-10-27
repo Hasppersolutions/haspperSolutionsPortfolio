@@ -41,7 +41,13 @@ const Stats = ({ data }) => {
         >
           {data.cardData.map((item, index) => (
             <Box sx={cardStyle} key={index}>
-              <img src={item.icon} alt="" />
+              <Typography
+                sx={{
+                  height:200
+                }}
+              >
+              <img src={item.icon} alt="" style={{height:"100%",width:'100%',objectFit:'contain'}} />
+              </Typography>
               <Typography
                 sx={{
                   fontSize: 45,
@@ -56,6 +62,7 @@ const Stats = ({ data }) => {
                 sx={{
                   fontSize: { xs: 18, md: 15 },
                   color: "#333",
+                  
                 }}
               >
                 {item.label}

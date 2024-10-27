@@ -33,6 +33,53 @@ import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import DividerComponent from "../../components/Solution/DividerComponent";
+ import workflow1 from "../../assets/img/Solutions/Voicebot/workflow1.png"
+ import workflow2 from "../../assets/img/Solutions/Voicebot/workflow2.png"
+ import workflow3 from "../../assets/img/Solutions/Voicebot/workflow3.png"
+
+ import card1 from "../../assets/img/Solutions/Voicebot/card1.png"
+ import card2 from "../../assets/img/Solutions/Voicebot/card2.png"
+ import card3 from "../../assets/img/Solutions/Voicebot/card3.png"
+ import card4 from "../../assets/img/Solutions/Voicebot/card4.png"
+ import card5 from "../../assets/img/Solutions/Voicebot/card5.png"
+ import card6 from "../../assets/img/Solutions/Voicebot/card6.png"
+
+ import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+
+import language1 from "../../assets/img/Solutions/Voicebot/language1.png"
+import language2 from "../../assets/img/Solutions/Voicebot/language2.png"
+
+
+import framework1 from "../../assets/img/Solutions/Voicebot/framework1.png"
+ import framework2 from "../../assets/img/Solutions/Voicebot/framework2.png"
+ import framework3 from "../../assets/img/Solutions/Voicebot/framework3.png"
+
+ import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing.jsx"
+
+ import outsource1 from "../../assets/img/Solutions/Voicebot/outsource1.png"
+ import outsource2 from "../../assets/img/Solutions/Voicebot/outsource2.png"
+ import outsource3 from "../../assets/img/Solutions/Voicebot/outsource3.png"
+ import outsource4 from "../../assets/img/Solutions/Voicebot/outsource4.png"
+ import outsource5 from "../../assets/img/Solutions/Voicebot/outsource5.png"
+ import outsource8 from "../../assets/img/Solutions/Voicebot/outsource8.png"
+ import outsource9 from "../../assets/img/Solutions/Voicebot/outsource9.png"
+ 
+ import backgroundImg from "../../assets/img/Solutions/Voicebot/backgroundrightImg.png"
+import { Contact } from "../../components/Homepage/Contact.js";
+import Mailus from "../../components/Homepage/Mailus.js";
+import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing.js";
+import DevelopmentProcess from "../../components/Services/Chatbot/DevelopmentProcess.jsx";
+
+import process1 from "../../assets/img/Solutions/Marketplace/process1.png";
+ import process2 from "../../assets/img/Solutions/Marketplace/process2.png";
+ import process3 from "../../assets/img/Solutions/Marketplace/process3.png";
+ import process4 from "../../assets/img/Solutions/Marketplace/process4.png";
+ import process5 from "../../assets/img/Solutions/Marketplace/process6.png";
+ import process6 from "../../assets/img/Solutions/Marketplace/process7.png";
 const Voicebot = () => {
   return (
     <>
@@ -43,15 +90,18 @@ const Voicebot = () => {
       >
         <Banner data={bannerTextData} />
         <FeatureSection data={featureData} />
-        <WaveLine/>
         <Potential data={potentialData} />
         <WaveLine/>
         <Stats data={statsData} />
         <Technology data={technologyData} />
-        <DividerComponent data={DividerComponentData}/>
+        <OutSourcing data={outSoutceData}/>
+        <DevelopmentProcess data={developmentProcessData}/>
         <WaveLine/>
         <FAQ data={FAQData}/>
         <WaveLine/>
+        <Contact/>
+        <Mailus/>
+        <ServicesAndStaffing/>
       </Box>
     </>
   );
@@ -61,7 +111,7 @@ const bannerTextData = {
   mainHeading: "Tasks made Easy with",
   middleHeading: "VoiceBot Development",
   backgroundImage: ServiceBackgroudImage,
-  rightImage: AiFeature,
+  rightImage: backgroundImg,
   bottomHeading:
     "We build highly intelligent NLP-enabled Voice Assistants for Amazon Alexa, Google Home, and Apple Pod.",
   // button: "Get Free Demo", //uncomment to add button to banner
@@ -74,37 +124,37 @@ const potentialData = {
     `You just sit back in your office or home and enjoy your app development journey with us. You can trust us for all your Voicebot app development requirements`,
   cardData: [
     {
-      image: multilingualChatbots,
+      image: card1,
       title: "Automated",
       description:
         `With AI assistance, voice calls are automatically promoted to prospects, reducing the number of manual calls and promoting automation`
     },
     {
-      image: support,
+      image: card2,
       title: "Personalized",
       description:
       `Customers will get the best calling experience with individualized conversation, language, and the correct context that will keep them engaged.`,  
     },
     {
-      image: customer,
+      image: card3,
       title: "Time-saving",
       description:
        `Our voice bot helps you save time by making multiple calls at once. This reduces your staff's contact volume and increases productivity in your call center.`,
     },
     {
-      image: chatbot,
+      image: card4,
       title: "Cost-saving",
       description:
         `Eliminates the need for several call agents and staff, resulting in significant cost savings for your company.`,
     },
     {
-      image: chatTesting,
+      image: card5,
       title: "Customizable",
       description:
         `With the help of our fully customizable Voicebot technology, you may customize your Voicebot to meet your specific company needs.`,    
     },
     {
-      image: voiceAnable,
+      image: card6,
       title: "Highly Secure",
       description:
         `Our voicebot system is built on innovative technologies and monitored by in-house developers throughout the day, ensuring that all of your data is kept safe and secure.`,    
@@ -121,15 +171,15 @@ const featureData = {
 `,
   cardData: [
     {
-      image: Group,
+      image: workflow1,
       text: "Voice Recognition",
     },
     {
-      image: Vector,
+      image: workflow2,
       text: "Server Response Generation",
     },
     {
-      image: bot,
+      image: workflow3,
       text: "Buisness Logic & Testing",
     }
   ],
@@ -138,22 +188,22 @@ const featureData = {
 const statsData = {
   cardData: [
     {
-      icon: multilingualChatbots,
+      icon: number1,
       number: "1500+",
       label: "Apps Developed",
     },
     {
-      icon: multilingualChatbots,
+      icon: number2,
       number: "50+",
       label: "Voicebot App Developers",
     },
     {
-      icon: multilingualChatbots,
+      icon: number3,
       number: "1000+",
       label: "Clients Worldwide",
     },
     {
-      icon: multilingualChatbots,
+      icon: number4,
       number: "98%",
       label: "Success Rate",
     },
@@ -163,19 +213,19 @@ const technologyData = [
   {
     name: "Languages",
     imgData: [
-      "path/to/html5-icon",
+      language1,
       python,
       java,
       objectC,
-      "path/to/swift-icon",
+      language2,
     ],
   },
   {
     name: "Framework",
     imgData: [
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
+      framework1,
+      framework2,
+      framework3,
       xamarin,
       ionic,
       node,
@@ -260,6 +310,125 @@ const FAQData = {
         title: "Highly Secure",
         description:
           `Our voicebot system is built on innovative technologies and monitored by in-house developers throughout the day, ensuring that all of your data is kept safe and secure.`,    
+      },
+    ],
+  };
+
+
+  const outSoutceData = {
+    firstHeading: "Why choose Haspper for",
+    secondHeading: "VoiceBot app development?",
+    description:
+      `You just sit back in your office or home and enjoy your app development journey with us. You can trust us for all your Voicebot app development requirements`,
+   
+    cardData: [
+      [
+        {
+          image: outsource1,
+          heading: "Fully Automated Calling",
+          description:
+            "With the support of predetermined data saved in our strong voicebot system, our AI-powered callbot performs routine calls to all of your customers automatically.",
+        },
+        {
+          image: outsource2,
+          heading: "Supports Multiple Languages",
+          description:
+            "Our Voicebot is multilingual, allowing businesses to communicate with their target audience in their preferred language."
+        },
+      ],
+      [
+        {
+          image: outsource3,
+          heading: "Conversion-optimized",
+          description:
+            "Our voicebot helps telemarketing teams close more sales and leads by using machine learning to convert more call attendants into quick purchasers."
+        },
+        {
+          image: outsource4,
+          heading: "AI-enabled",
+          description:
+            "Our AI-powered Voicebots make automated voice calls to prospects at the perfect time, when conversions are most likely."
+        },
+      ],
+      [
+        {
+          image: outsource5,
+          heading: "Multiple Business Applications",
+          description:
+          "All key business functions, such as sales, telemarketing, service, customer support, and contact center, can benefit from our multi-purpose voicebot"
+        },
+        {
+          image: outsource1,
+          heading: "Mass Calling",
+          description:
+            "Our voicebot is designed for mass calling and is extremely scalable, so you can make bulk calls to your vast audience at any time, whether it’s 500, 1000, or 100,000 each day."
+        },
+      ],
+      [
+        {
+          image: outsource4,
+          heading: "Natural Language",
+          description:
+            "Voice Bots are intelligent robots that converse with your consumers in natural language without the need for human intervention."
+        },
+        {
+          image: outsource8,
+          heading: "Customizable Scripts",
+          description:
+            "Pre-written scripts that are customisable to your company’s demands and specifications can help you communicate with your consumers."
+        },
+        {
+          image: outsource9,
+          heading: "In-depth Data & Analytics",
+          description:
+           "Our actionable data, analytics, and insights help you better nurture your customers and make more profitable business decisions." 
+        }
+      ],
+    ],
+  };
+
+
+  const developmentProcessData = {
+    firstHeading: "Blockchain Development",
+    secondHeading: "Process We Follow",
+    description:
+      "We take all the worry so that you can relax and see your ideas turning into reality! We follow a comprehensive approach in our Chatbot App Development process to ensure we fulfill all your requirements",
+    stepsData: [
+      {
+        title: "Protecting Your Intellectual Property",
+        description:
+          "We safeguard your splendid idea by signing an NDA to protect your original concept and secure your application.",
+        icon: process1,
+      },
+      {
+        title: "Discovery",
+        description:
+          "We research thoroughly and ask questions to know your detailed requirements and suggest the best solution",
+        icon: process2,
+      },
+      {
+        title: "Design",
+        description:
+          "We create wireframe prototypes before transforming them into world-class UI designs.",
+        icon: process3,
+      },
+      {
+        title: "Development",
+        description:
+          "We turn the designs into an app using the most advanced technology stacks and frameworks.",
+        icon: process4,
+      },
+      {
+        title: "Testing",
+        description:
+          "We do extensive testing to remove all the bugs and issues before making your app live.",
+        icon: process5,
+      },
+      {
+        title: "Support and Maintenance",
+        description:
+          "We continue to offer widespread support and maintenance to guarantee smooth operations.",
+        icon: process6,
       },
     ],
   };

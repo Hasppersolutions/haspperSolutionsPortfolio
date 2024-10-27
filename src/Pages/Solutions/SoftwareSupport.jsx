@@ -33,7 +33,54 @@ import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import DividerComponent from "../../components/Solution/DividerComponent";
-const BlockChain = () => {
+
+
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+ import card1 from "../../assets/img/Solutions/Operation/card1.png"
+import card2 from "../../assets/img/Solutions/Operation/card2.png"
+import card3 from "../../assets/img/Solutions/Operation/card3.png"
+import card4 from "../../assets/img/Solutions/Operation/card4.png"
+import card5 from "../../assets/img/Solutions/Operation/card5.png"
+import card6 from "../../assets/img/Solutions/Operation/card6.png"
+
+
+import potential1 from "../../assets/img/Solutions/SoftwareSupport/potential1.png"
+import potential2 from "../../assets/img/Solutions/SoftwareSupport/potential2.png"
+import potential3 from "../../assets/img/Solutions/SoftwareSupport/potential3.png"
+import potential4 from "../../assets/img/Solutions/SoftwareSupport/potential4.png"
+
+import cardA from "../../assets/img/Solutions/SoftwareSupport/card1.png"
+import cardB from "../../assets/img/Solutions/SoftwareSupport/card2.png"
+import cardC from "../../assets/img/Solutions/SoftwareSupport/card3.png"
+import cardD from "../../assets/img/Solutions/SoftwareSupport/card4.png"
+
+
+import language1 from "../../assets/img/Solutions/Voicebot/language1.png"
+import language2 from "../../assets/img/Solutions/Voicebot/language2.png"
+
+
+import framework1 from "../../assets/img/Solutions/Voicebot/framework1.png"
+ import framework2 from "../../assets/img/Solutions/Voicebot/framework2.png"
+ import framework3 from "../../assets/img/Solutions/Voicebot/framework3.png"
+
+ import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing";
+ import DevelopmentProcess from "../../components/Services/Chatbot/DevelopmentProcess";
+
+ import process1 from "../../assets/img/Solutions/Marketplace/process1.png";
+ import process2 from "../../assets/img/Solutions/Marketplace/process2.png";
+ import process3 from "../../assets/img/Solutions/Marketplace/process3.png";
+ import process4 from "../../assets/img/Solutions/Marketplace/process4.png";
+ import process5 from "../../assets/img/Solutions/Marketplace/process6.png";
+ import process6 from "../../assets/img/Solutions/Marketplace/process7.png";
+ import background from "../../assets/img/Solutions/SoftwareSupport/BackgroundImg.png"
+ import { Contact} from "../../components/Homepage/Contact";
+import Mailus from "../../components/Homepage/Mailus";
+import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
+const SoftwareSupport = () => {
   return (
     <>
       <Box
@@ -43,25 +90,29 @@ const BlockChain = () => {
       >
         <Banner data={bannerTextData} />
         <FeatureSection data={featureData} />
-        <WaveLine/>
         <Potential data={potentialData} />
         <WaveLine/>
         <Stats data={statsData} />
         <Technology data={technologyData} />
-        <DividerComponent data={DividerComponentData}/>
+        <OutSourcing data={outSoutceData}/>
+        <DevelopmentProcess data={developmentProcessData}/>
         <WaveLine/>
         <FAQ data={FAQData}/>
         <WaveLine/>
+        
+        <Contact/>
+        <Mailus/>
+        <ServicesAndStaffing/>
       </Box>
     </>
   );
 };
-export default BlockChain;
+export default SoftwareSupport;
 const bannerTextData = {
   mainHeading: "Reliable,Exceptional",
   middleHeading: "Software Support Services",
   backgroundImage: ServiceBackgroudImage,
-  rightImage: AiFeature,
+  rightImage: background,
   bottomHeading:
   `Managing,Monitoring,Upgrading and Maintaining Your Applications 24X7`,
   // button: "Get Free Demo", //uncomment to add button to banner
@@ -74,25 +125,25 @@ const potentialData = {
    `For speedy troubleshooting, digital transformation, and different enhancements, we provide dependable software maintenance and support services. Please contact us to discuss your requirements. Discover how expert software support has benefited hundreds of our clients.`,
   cardData: [
     {
-      image: multilingualChatbots,
+      image: potential1,
       title: "Professional Support",
       description:
        `Strong developers, business analysts, and test engineers make up our tech support and maintenance team. They will talk with you and determine your requirements as a group. We will build the most successful plan for your project based on the software audit, your requirements, or business analysis.`,
     },
     {
-      image: support,
+      image: potential2,
       title: "Multiple Options",
       description:
       `We are one of the few software maintenance firms that offers such a diverse set of services. Our clients like having the option of choosing a convenient timetable for this service and matching their budget expectations with our options.`,
     },
     {
-      image: customer,
+      image: potential3,
       title: "Advanced Consulting",
       description:
       `We offer sophisticated consultation on innovation, digital transformation, and numerous enhancements, in addition to expert software support solutions and services. Our team can suggest ways to improve your software by interacting with it on a regular basis.`,
     },
     {
-      image: chatbot,
+      image: potential4,
       title: "Transparent Cooperation",
       description:
         `
@@ -108,27 +159,27 @@ const featureData = {
    `Technical support or break/fix services for specific software products are referred to as software support services. Long-term technical support contracts or pay-as-you-go, incident-based help are examples of these services. Remote troubleshooting, installation assistance, and basic usability advice are all common features of software support services. Remote troubleshooting skills can be supplied by phone and online communication medium, or without human aid using automated mechanisms that reside on the customer’s device or are accessible via the Internet.`,
   cardData: [
     {
-      image: Group,
+      image: card1,
       text: "AVAILABLE 24 X 7",
     },
     {
-      image: Vector,
+      image: card2,
       text: "COST-EFFECTIVE",
     },
     {
-      image: bot,
+      image: card3,
       text: "WORK AUTOMATION",
     },
     {
-      image: Group,
+      image: card4,
       text: "INCREASED CUSTOMER ENGAGEMENT",
     },
     {
-      image: Vector,
+      image: card5,
       text: "PROACTIVE INTERACTION",
     },
     {
-      image: bot,
+      image: card6,
       text: "KEEPING UP WITH THE TREND",
     }
   ],
@@ -137,22 +188,22 @@ const featureData = {
 const statsData = {
   cardData: [
     {
-      icon: multilingualChatbots,
+      icon: number1,
       number: "1500+",
       label: "Apps Developed",
     },
     {
-      icon: multilingualChatbots,
+      icon: number2,
       number: "150+",
       label: "Developers",
     },
     {
-      icon: multilingualChatbots,
+      icon: number3,
       number: "1000+",
       label: "Clients Worldwide",
     },
     {
-      icon: multilingualChatbots,
+      icon: number4,
       number: "98%",
       label: "Success Rate",
     },
@@ -160,21 +211,21 @@ const statsData = {
 };
 const technologyData = [
   {
-    name: "Blockchain Platforms",
+    name: "Languages",
     imgData: [
-      "path/to/html5-icon",
+      language1,
       python,
       java,
       objectC,
-      "path/to/swift-icon",
+      language2,
     ],
   },
   {
-    name: "Languages",
+    name: "Framework",
     imgData: [
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
+      framework1,
+      framework2,
+      framework3,
       xamarin,
       ionic,
       node,
@@ -182,7 +233,7 @@ const technologyData = [
     ],
   },
   {
-    name: "System Architecture",
+    name: "Payment Gateway",
     imgData: [securePay, amazonPay, payPal, stripe, authorizeNet],
   },
 ];
@@ -242,66 +293,87 @@ Maintenance and Support`,
   }
 
 
-  const DividerComponentData = {
+  
+
+
+  const outSoutceData = {
     firstHeading: "Software Support",
     secondHeading: "Services we offer",
     description:
-      `Navigating the digital era necessitates a pioneering mindset, and OnGraph, with its blockchain experience, provides customized, safe, and efficient solutions.`,
-    cardData: [
+      `We offer both basic and expert software support. Our specialists have experience maintaining software after a project is completed, as well as supporting legacy systems and third-party applications.`,
+     cardData: [
+      [
       {
-        image: multilingualChatbots,
-        title: "Post-Development Support Services",
+        image: cardA,
+        heading: "Post-Development Support Services",
         description:
          `Our adaptive software maintenance assistance includes making changes to the managing functions of your software applications. Beyond the initial implementation, Ongraph will support you completely with a broad choice of services: maintenance plans tailored to your preferred level of incident resolution.`,
       },
       {
-        image: support,
-        title: "Application Upgrade & Improvements",
+        image: cardB,
+        heading: "Application Upgrade & Improvements",
         description:
         `You already have your applications built but want to upgrade them to the latest technologies or OS Versions. The OnGraph team can help you quickly define a complete roadmap to upgrade your applications. We can also help you resolve any software-related errors and bugs, like rectifying misspelled words or sentences in your software’s interface, eliminating bugs & errors, and correcting any wrong algorithms in your software product. Our professional software maintenance team provides corrective software maintenance services, and can easily correct any.`,
         },
+      ],
+      [
       {
-        image: customer,
-        title: "SLA Driven Resolution (L1, L2 & L3)",
+        image: cardC,
+        heading: "SLA Driven Resolution (L1, L2 & L3)",
         description:
          `You are already running your system and applications and your users are using them. We help you support your applications with L1, L2 and L3 24X7 support services to troubleshoot any problems, provide quick fixes and resolutions. Perfective software maintenance services support you to meet your customer’s requirements by improving your software application’s Performance, Maintainability, and Other Attributes. Our skilled support team improves your support experience for your users.`,
       },
       {
-        image: chatbot,
-        title: "Preventive Application Support Services",
+        image: cardD,
+        heading: "Preventive Application Support Services",
         description:
         `It is always better to improve applications and systems before anyone faces any problem. OnGraph’s preventive software maintenance services aim at planning and incorporating solutions to meet future requirements and overcome problems that may arise in the long run. Our expert team is capable of effectively analyzing your software’s future needs and problems based on.`,  
       },
+    ]
+    ],
+  };
+
+  const developmentProcessData = {
+    firstHeading: "Blockchain Development",
+    secondHeading: "Process We Follow",
+    description:
+      "We take all the worry so that you can relax and see your ideas turning into reality! We follow a comprehensive approach in our Chatbot App Development process to ensure we fulfill all your requirements",
+    stepsData: [
       {
-        image: chatTesting,
-        title: "Smart Contract Development",
+        title: "Protecting Your Intellectual Property",
         description:
-        `Our full-stack blockchain consulting services include creating secure and compelling smart contracts and enhancing transaction processes.`,  
+          "We safeguard your splendid idea by signing an NDA to protect your original concept and secure your application.",
+        icon: process1,
       },
       {
-        image: voiceAnable,
-        title: "Hyperledger Blockchain Development",
+        title: "Discovery",
         description:
-          `Specialized in Hyperledger to help you disrupt industries and explore undiscovered business opportunities.`,
-        },
-
-        {
-          image: chatTesting,
-          title: "Ethereum Blockchain Development",
-          description:
-          `With our personalized Ethereum blockchain solutions, we assist you in transforming into a cutting-edge Decentralized Autonomous Organization.`,
-        },
-        {
-          image: voiceAnable,
-          title: "POC Development",
-          description:
-            `Assisting in identifying potential project gaps through functional testing by providing detailed mock-ups based on your concepts.`,
-          },
-          {
-            image: voiceAnable,
-            title: "ICO Development Services",
-            description:
-              `Handling ICO smart contracts and maintaining the infrastructure for successful ICO campaigns while assisting you with your token offerings.`,
-          }
+          "We research thoroughly and ask questions to know your detailed requirements and suggest the best solution",
+        icon: process2,
+      },
+      {
+        title: "Design",
+        description:
+          "We create wireframe prototypes before transforming them into world-class UI designs.",
+        icon: process3,
+      },
+      {
+        title: "Development",
+        description:
+          "We turn the designs into an app using the most advanced technology stacks and frameworks.",
+        icon: process4,
+      },
+      {
+        title: "Testing",
+        description:
+          "We do extensive testing to remove all the bugs and issues before making your app live.",
+        icon: process5,
+      },
+      {
+        title: "Support and Maintenance",
+        description:
+          "We continue to offer widespread support and maintenance to guarantee smooth operations.",
+        icon: process6,
+      },
     ],
   };
