@@ -10,6 +10,10 @@ import DevelopmentServices from "../../components/Services/Ios/DevelopmentServic
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing";
 import CodeLibrary from "../../assets/img/Services/CrossPlatform/CodeLibrary.svg";
+import SecurityIcon from "../../assets/img/Services/ios/security.png";
+import customerIcon from "../../assets/img/Services/ios/customerInsight.png";
+import interfaceIcon from "../../assets/img/Services/ios/ux.png";
+import toolTechIcon from "../../assets/img/Services/ios/updatedTech.png";
 
 const Ios = () => {
   return (
@@ -55,25 +59,25 @@ const potentialData = {
         "iPhone apps provide a higher return on investment than Android apps. Developing iPhone apps allows businesses to get the most out of their investments. In terms of bringing a brand to success, the iPhone is a far more sophisticated option than Android, with better access to targeted people.",
     },
     {
-      image: revenue,
+      image: SecurityIcon,
       title: "Enhanced Security",
       description:
         "One of the major advantages of developing an iOS app is, that it ensures utmost security. No iPhone app can pass the review process without following all security guidelines issued by the Apple app store. It helps you protect from malware, viruses or any threats that can affect your business and operations. At the same time, it ensures the safety of the end user’s devices and data.",
     },
     {
-      image: revenue,
+      image: customerIcon,
       title: "Ultimate Customer Experience",
       description:
         "User experience is another advantage of having an iOS app. Since Apple has strict UI guidelines in place and every application has to follow them, it makes the mobile app smooth, intuitive, and bug-free, and delivers the ultimate user experience, every time!",
     },
     {
-      image: revenue,
+      image: interfaceIcon,
       title: "User Interface",
       description:
         "For any mobile application, user interface is the key to success. It should be easy for the end user to use, navigate to different screens, and make in-app purchases. Apple app store ensures all.",
     },
     {
-      image: revenue,
+      image: toolTechIcon,
       title: "Updated tools and technologies",
       description:
         "Apple provides an exceptional IDE (Integrated Development Environment) for iOS app development. iOS app developers use Apple’s Xcode to develop, test, and launch apps. Xcode offers an incredible user experience particularly when it comes to building the app’s visual layout and testing it on various screen sizes and device types.",

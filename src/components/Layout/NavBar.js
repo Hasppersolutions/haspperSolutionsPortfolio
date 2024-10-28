@@ -483,11 +483,11 @@ const linkData = [
                 link: "/services/java-development",
                 type: "subHeading"
               },
-              // {
-              //   name: "ROR",
-              //   link: "",
-              //   type: "subHeading"
-              // },
+              {
+                name: "DotNet",
+                link: "/services/dotnet-development",
+                type: "subHeading"
+              },
               {
                 name: "Python",
                 link: "/services/python-development",

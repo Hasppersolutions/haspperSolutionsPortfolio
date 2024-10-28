@@ -15,17 +15,25 @@ import MultipleLangPhp from "../../assets/img/webDevelopmentService/MultipleLang
 import easyDBphp from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import crosspltfmPhp from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityphp.png";
-import securityphp from "../../assets/img/webDevelopmentService/securityphp.jpeg";
-import cmswebdevphp from "../../assets/img/webDevelopmentService/cmswebdevphp.svg"
-import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
+import securityphp from "../../assets/img/webDevelopmentService/securityphp.png";
+import cmswebdevphp from "../../assets/img/webDevelopmentService/customCMS.png"
+import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
 import Microservices from "../../assets/img/Microservices.svg";
 import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
-import API from "../../assets/img/API.svg";
-import healthCare from "../../assets/img/healthCare.png";
+import API from "../../assets/img/webDevelopmentService/API.png";
+import healthCare from "../../assets/img/webDevelopmentService/medical.png";
 import financeicon from "../../assets/img/financeicon.png";
-import eduApp from "../../assets/img/eduApp.jpg";
+import eduApp from "../../assets/img/eduApp.png";
 import transportApp from "../../assets/img/transportApp.png";
 import dotnetDescImg from "../../assets/img/dotnetDescImg.png";
+import ecomIcon from "../../assets/img/webDevelopmentService/e-comWeb.png";
+import MediaIcon from "../../assets/img/webDevelopmentService/media.png";
+import dotnetIcon from "../../assets/img/webDevelopmentService/aspnet.png";
+import blazorIcon from "../../assets/img/webDevelopmentService/blazor.png";  
+import xamarinIcon from "../../assets/img/webDevelopmentService/xamarin.png";
+import azureIcon from "../../assets/img/webDevelopmentService/azureService.png";
+import ecomSolIcon from "../../assets/img/webDevelopmentService/shoppingapp.png" ;
+import enterpriseIcon from "../../assets/img/webDevelopmentService/enterprise.png";
 
 const DotnetDevelopment = () => {
     return(
@@ -125,7 +133,7 @@ const technologyAdv = {
       "Our extensive experience in .NET development enables us to provide customized solutions across various industries, ensuring robust performance, security, and scalability.",
     technologies: [
       {
-        icon: dynamicIntPhp,
+        icon: ecomIcon,
         title: "E-commerce Solutions",
         description:
           "We build feature-rich, secure, and scalable e-commerce platforms using .NET that provide seamless shopping experiences and efficient order management systems.",
@@ -155,7 +163,7 @@ const technologyAdv = {
           "Create .NET applications that enhance supply chain management and provide real-time tracking solutions for the logistics and transportation industry.",
       },
       {
-        icon: MultipleLangPhp,
+        icon: MediaIcon,
         title: "Media and Entertainment",
         description:
           "Utilize .NET to develop engaging media platforms that offer seamless content delivery, subscription management, and high-performance video streaming services.",
@@ -167,7 +175,7 @@ const technologyAdv = {
     mainHeading: "Experience Innovative Applications with Our DotNet Development Services",
     cards: [
         {
-            image: crosspltfmPhp,
+            image: ecomSolIcon,
             title: "E-commerce Website Development",
             description: "At Haspper, we specialize in crafting e-commerce websites that prioritize an intuitive user experience, rapid performance, and robust security. Our team designs scalable platforms that allow businesses to reach a global audience effortlessly. Whether you're looking to launch a small online store or a multi-vendor marketplace, we ensure your e-commerce website drives growth and customer engagement."
         },
@@ -182,7 +190,7 @@ const technologyAdv = {
             description: "We excel in building dynamic social networking web applications that foster interaction and engagement. Whether you're looking to create a niche community or a large-scale platform, our .NET-driven solutions offer responsive, secure, and interactive environments where users can connect, share, and engage effortlessly."
         },
         {
-            image : Microservices,
+            image : enterpriseIcon,
             title: "Enterprise Web Application Development",
             description: "Our team is adept at creating powerful enterprise web applications that streamline business operations and boost productivity. Whether it's a customer relationship management (CRM) tool, a project management system, or an internal communication platform, we build custom .NET solutions that align with your business processes and scale as you grow."
         },
@@ -204,22 +212,27 @@ const technologyAdv = {
     description: "We excel at various .NET frameworks that enhance our development process.",
     cardData: [
         {
+            icon : dotnetIcon,
             title: "ASP.NET",
             description: "An open-source web framework for building modern web apps and services with .NET."
         },
         {
+            icon: blazorIcon,
             title: "Blazor",
             description: "A framework that allows developers to build interactive web UIs using C# instead of JavaScript."
         },
         {
+            icon: xamarinIcon,
             title: "Xamarin",
             description: "A cross-platform framework for building Android, iOS, and Windows apps with .NET."
         },
         {
+            icon: dotnetIcon,
             title: "Entity Framework",
             description: "An object-relational mapper (ORM) that allows developers to work with databases using .NET objects."
         },
         {
+            icon: azureIcon,
             title: "Azure Functions",
             description: "A cloud-based serverless compute service that enables you to run event-triggered code without managing infrastructure."
         },
