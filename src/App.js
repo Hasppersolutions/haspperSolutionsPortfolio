@@ -24,6 +24,8 @@ import PhpDevelopment from './Pages/Services/Php';
 import DotnetDevelopment from './Pages/Services/DotNet';
 import VueDevelopment from './Pages/Services/Vuejs';
 import ReactWebDevelopment from './Pages/Services/ReactWebDev';
+import Startup from './Pages/Services/Startup';
+import Enterprise from './Pages/Services/Enterprise';
 import JavaDevelopment from './Pages/Services/java';
 import PythonDevelopment from './Pages/Services/Python';
 import AngularDevelopment from './Pages/Services/Angular';
@@ -41,6 +43,7 @@ import Banking from './Pages/Solutions/Banking';
 import Telecom from './Pages/Solutions/Telecom';
 import Fitness from './Pages/Solutions/Fitness';
 import MediaEntertainment from './Pages/Solutions/MediaEntertainment';
+
 function App() {
   return (
     <>
@@ -98,6 +101,8 @@ function App() {
             <Route path='/services/software-support' element={<SoftwareSupport />} />
             <Route path='/services/cloud-computing' element={<CloudComputing />} />
             <Route path='/services/marketplace' element={<Marketplace />} />
+             <Route path = '/startup-it-solutions' element = { <Startup/>}/>
+            <Route path = '/enterprise-it-solutions' element = { <Enterprise/>}/>
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
