@@ -630,42 +630,42 @@ const linkData = [
             subHeadings: [
               {
                 name: "Cloud Computing",
-                link: "",
+                link: "/services/CloudComputing",
                 type: "subHeading"
               },
               {
                 name: "Artificial Intelligence",
-                link: "",
+                link: "/artificial-intelligence",
                 type: "subHeading"
               },
               {
                 name: "Voicebot",
-                link: "",
+                link: "/services/Voicebot",
                 type: "subHeading"
               },
               {
                 name: "Chatbot",
-                link: "",
+                link: "/chatbot-development",
                 type: "subHeading"
               },
               {
                 name: "Blockchain",
-                link: "",
+                link: "/services/Blockchain",
                 type: "subHeading"
               },
               {
                 name: "Marketplace",
-                link: "",
+                link: "/services/marketplace",
                 type: "subHeading"
               },
               {
                 name: "Technical & Operations Staffing",
-                link: "",
+                link: "/services/operation-staffing",
                 type: "subHeading"
               },
               {
                 name: "Software Support",
-                link: "",
+                link: "/services/software-support",
                 type: "subHeading"
               },
               {
