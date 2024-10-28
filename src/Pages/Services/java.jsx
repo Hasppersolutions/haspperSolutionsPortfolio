@@ -16,25 +16,25 @@ import MultipleLangPhp from "../../assets/img/webDevelopmentService/MultipleLang
 import easyDBphp from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import crosspltfmPhp from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityphp.png";
-import securityphp from "../../assets/img/webDevelopmentService/securityphp.jpeg";
-import cmswebdevphp from "../../assets/img/webDevelopmentService/cmswebdevphp.svg"
-import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
+import securityphp from "../../assets/img/webDevelopmentService/securityphp.png";
+import cmswebdevphp from "../../assets/img/webDevelopmentService/customCMS.png"
+import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
 import Microservices from "../../assets/img/Microservices.svg";
 import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
 import API from "../../assets/img/API.svg";
 import JavaWebDevelopment from "../../assets/img/webDevelopmentService/javawebdevelopment.png";
-import JavaCmsDevelopment from "../../assets/img/webDevelopmentService/JavaCms.png";
 import JavaMigration from "../../assets/img/webDevelopmentService/javamigration.png";
 import JavaJ2ee from "../../assets/img/webDevelopmentService/javaj2ee.png";
 import JavaMobile from "../../assets/img/webDevelopmentService/javamobile.png";
 import JavaCustom from "../../assets/img/webDevelopmentService/CustomJava.png";
 import JavaEnterprise from "../../assets/img/webDevelopmentService/enterprise.png";
 import JavaModern from "../../assets/img/webDevelopmentService/javadevelopers.png";
-import Javadevelopers from "../../assets/img/webDevelopmentService/moderntechnology.png";
 import JavaCustomer from "../../assets/img/webDevelopmentService/customersupport.png";
 import JavaAgility from "../../assets/img/webDevelopmentService/agility.png";
-import JavaSource from "../../assets/img/webDevelopmentService/sourcecode.png";
 import JavaFlexible from "../../assets/img/webDevelopmentService/flexibleengagement.png";
+import modernTech from "../../assets/img/webDevelopmentService/reusecode.png";
+import lessTime from "../../assets/img/webDevelopmentService/lesstime.png";
+import threading from "../../assets/img/webDevelopmentService/threading.png";
 
 const JavaDevelopment = () => {
     return(
@@ -75,19 +75,19 @@ const technologyAdv = {
   secondHeading: "As the Perfect Solution for Your Product",
   cardData: [
     {
-      image: dynamicIntPhp,
+      image: lessTime,
       title: "Reduced Time-to-Market",
       description:
       "As a robust, object-oriented language, Java facilitates the creation of reusable code and modular applications. Its intuitive APIs streamline development, reducing both time and costs.",
     },
     {
-      image: MultipleLangPhp,
+      image: crosspltfmPhp,
       title: "Platform Independence",
       description:
       "Java allows applications to run seamlessly across different systems, a crucial feature for modern software solutions. Its dual independence—both at the binary and source levels—ensures adaptability and consistency across platforms.",
     },
     {
-      image: easyDBphp,
+      image: threading,
       title: "Multithreaded",
       description:
       "Java's ability to handle multiple tasks within a single program makes it an ideal choice for developing high-load applications, enhancing both efficiency and ease in software development.",
@@ -166,7 +166,7 @@ const whyUsForWebDev = {
           description: "Our committed developers collaborate using your preferred methodology while ensuring cost-effective and time-efficient management."
       },
       {
-          image : JavaModern,
+          image : modernTech,
           title: "Modern Technology Practice",
           description: "Java is viewed as a solution for the varied technological demands of businesses. By simply modernizing your approach, you can achieve a competitive edge."
       },
@@ -181,7 +181,7 @@ const whyUsForWebDev = {
           description: "You can engage Java developers on an hourly, part-time, or full-time basis, choosing to work off-site or on-site through our flexible hiring options."
       },
       {
-          image : JavaSource,
+          image : modernTech,
           title: "Source Code Security Agreement",
           description: "Our team guarantees a secure development process from the outset by implementing industry-appropriate policies, guidelines, and standards."
       },
@@ -212,7 +212,7 @@ const developmentService = {
           description: "Utilizing J2EE frameworks to create scalable, multi-tiered Java applications for enterprise-level needs."
       },
       {
-          icon: JavaCmsDevelopment,
+          icon: cmswebdevphp,
           title: "Java CMS Development",
           description: "Implementing flexible, user-friendly content management systems to streamline content workflows."
       },

@@ -9,12 +9,12 @@ import DevelopmentServices from "../../components/Services/WebAppDevelopment/Dev
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import highperfIcon from "../../assets/img/webDevelopmentService/highperformanceIcon.png";
 import crossPltIcon from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
-import approachicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
+import approachicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
 import verstileIcon from "../../assets/img/webDevelopmentService/versatileIcon.png";
 import uiuximg from "../../assets/img/UIUximg.png";
 import maintenanceIcon from "../../assets/img/maintenanceIcon.png";
 import componentIcon from "../../assets/img/webDevelopmentService/webbaseddev.png"
-import API from "../../assets/img/API.svg";
+import API from "../../assets/img/webDevelopmentService/API.png";
 
 const VueDevelopment = () => {
     return (

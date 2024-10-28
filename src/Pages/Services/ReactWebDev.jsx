@@ -17,6 +17,7 @@ import dataBindIcon from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import declarativeIcon from "../../assets/img/UIUximg.png";
 import mobileIcon from "../../assets/img/healthCare.png";
 import customIcon from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
+import virtualIcon from "../../assets/img/webDevelopmentService/virtual.png";
 
 const ReactWebDevelopment = () =>{
     return(
@@ -57,7 +58,7 @@ const technologyAdv = {
     description: "Due to its inherent flexibility and scalability, ReactJS development has seen a significant increase in demand, positioning it as a powerful JavaScript library. With the capabilities of this open-source library, Haspper's ReactJS developers are equipped to craft intricate web and mobile application solutions.",
     cardData: [
         {
-            image: VitualDomIcon,
+            image: virtualIcon,
             title: "Virtual DOM",
             description: "In contrast to traditional DOM, makes coding more straightforward by only re-rendering the parts of the UI that change."
         },

@@ -16,22 +16,29 @@ import MultipleLangPhp from "../../assets/img/webDevelopmentService/MultipleLang
 import easyDBphp from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import crosspltfmPhp from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityphp.png";
-import securityphp from "../../assets/img/webDevelopmentService/securityphp.jpeg";
-import cmswebdevphp from "../../assets/img/webDevelopmentService/cmswebdevphp.svg"
-import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
+import securityphp from "../../assets/img/webDevelopmentService/securityphp.png";
+import cmswebdevphp from "../../assets/img/webDevelopmentService/customCMS.png"
+import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
 import Support from "../../assets/img/webDevelopmentService/communication.png";
 import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
-import Ontime from "../../assets/img/webDevelopmentService/ontime2.jpeg";
+import Ontime from "../../assets/img/webDevelopmentService/lesstime.png";
 import angularDeveloper from "../../assets/img/webDevelopmentService/pythondevelopers.png";
-import angularEnterprise from "../../assets/img/webDevelopmentService/pythonEnterprise.jpg";
-import angularjsImage from "../../assets/img/webDevelopmentService/angularjs.png";
+import angularEnterprise from "../../assets/img/webDevelopmentService/pythonEnterprise.png";
+import angularjsImage from "../../assets/img/webDevelopmentService/angularjs.svg";
 import angularjsEnterprise from "../../assets/img/webDevelopmentService/angularjsenterprise.png";
 import angularmaterialImage from "../../assets/img/webDevelopmentService/angularmaterial.png";
-import angularNgx from "../../assets/img/webDevelopmentService/ngx.png";
-import angularradianImage from "../../assets/img/webDevelopmentService/radian.png";
 import angularGridImage from "../../assets/img/webDevelopmentService/uigrid.png";
-import angularRxjsImage from "../../assets/img/webDevelopmentService/rxjs.png";
 import angularMask from "../../assets/img/webDevelopmentService/Mask group.png";
+import angularCLI from "../../assets/img/webDevelopmentService/angularCLi.png";
+import ngRX from "../../assets/img/webDevelopmentService/ngRX.png";
+import prime from "../../assets/img/webDevelopmentService/primeNG.png";
+import jasKarma from "../../assets/img/webDevelopmentService/jasmine.svg";
+import PromotionalAPP from "../../assets/img/Services/productEngineer/promosntional.png";
+import SPA from "../../assets/img/Services/CrossPlatform/card3.png";
+import enterprise from "../../assets/img/webDevelopmentService/enterprise.png";
+import Realtime from "../../assets/img/webDevelopmentService/realTime.png";
+import APIicon from "../../assets/img/webDevelopmentService/API-2.png";
+import ecom from "../../assets/img/webDevelopmentService/e-comWeb.png";
 
 const AngularDevelopment = () => {
     return(
@@ -145,25 +152,25 @@ const ourIndustryExperience = {
         "RxJS brings reactive programming to Angular, enabling efficient data handling and real-time updates for responsive applications."
     },
     {
-      icon: angularNgx,
+      icon: ngRX,
       title: "NgRx",
       description:
         "NgRx is a powerful state management library, particularly useful in handling complex application states in Angular projects."
     },
     {
-      icon: angularjsEnterprise,
+      icon: angularCLI,
       title: "Angular CLI",
       description:
         "Angular CLI simplifies the development workflow, providing automated tasks like testing, bundling, and deploying applications."
     },
     {
-      icon: angularjsImage,
+      icon: prime,
       title: "PrimeNG",
       description:
         "PrimeNG offers a wide range of feature-rich UI components to enhance the user experience in Angular applications."
     },
     {
-      icon: angularGridImage,
+      icon: jasKarma,
       title: "Jasmine and Karma",
       description:
         "Jasmine and Karma are widely used in Angular projects for unit testing and ensure code reliability through comprehensive testing."
@@ -213,26 +220,32 @@ const developmentService = {
   description: ["Our Angular development services cover a wide array of offerings tailored to your business needs. From single-page applications to enterprise-level solutions, we are equipped to build solutions that stand out."],
   cardData: [
     {
+      icon: SPA,
       title: "Single-Page Applications (SPA)",
       description: "Building SPAs that provide a seamless, fast, and user-friendly experience."
     },
     {
+      icon: PromotionalAPP,
       title: "Progressive Web Applications (PWA)",
       description: "Developing responsive PWAs that work offline and are optimized for mobile devices."
     },
     {
+      icon: enterprise,
       title: "Enterprise-Grade Applications",
       description: "Creating complex, scalable applications suited to enterprise needs and large data handling."
     },
     {
+      icon: ecom,
       title: "E-commerce Platforms",
       description: "Building secure and scalable e-commerce applications that support seamless shopping experiences."
     },
     {
+      icon: Realtime,
       title: "Real-Time Applications",
       description: "Developing real-time applications like chat apps and collaborative tools using Angular and RxJS."
     },
     {
+      icon: APIicon,
       title: "API Integration",
       description: "Integrating Angular applications with various APIs, including REST and GraphQL."
     },

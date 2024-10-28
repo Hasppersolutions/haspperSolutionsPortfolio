@@ -82,6 +82,7 @@ const potentialData = {
         "iPhone apps provide a higher return on investment than Android apps. Developing iPhone apps allows businesses to get the most out of their investments. In terms of bringing a brand to success, the iPhone is a far more sophisticated option than Android, with better access to targeted people.",
     },
     {
+
       image: card2,
       title: "Enhanced Security",
       description:

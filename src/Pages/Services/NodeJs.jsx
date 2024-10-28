@@ -16,12 +16,25 @@ import MultipleLangPhp from "../../assets/img/webDevelopmentService/MultipleLang
 import easyDBphp from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import crosspltfmPhp from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityphp.png";
-import securityphp from "../../assets/img/webDevelopmentService/securityphp.jpeg";
-import cmswebdevphp from "../../assets/img/webDevelopmentService/cmswebdevphp.svg"
-import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
+import securityphp from "../../assets/img/webDevelopmentService/securityphp.png";
+import cmswebdevphp from "../../assets/img/webDevelopmentService/customCMS.png"
+import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
 import Microservices from "../../assets/img/Microservices.svg";
 import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
 import API from "../../assets/img/API.svg";
+import expressIcon from "../../assets/img/webDevelopmentService/expressjs.png";
+import socketIcon from "../../assets/img/webDevelopmentService/socketIo.png";
+import nextJs from "../../assets/img/webDevelopmentService/nextJsIcon.png";
+import mongoIcon from "../../assets/img/webDevelopmentService/mongoDb.png";
+import redisIcon from "../../assets/img/webDevelopmentService/redis.png";
+import jestIcon from "../../assets/img/webDevelopmentService/jestMocha.png";
+import microServiceIcon from "../../assets/img/webDevelopmentService/MicroService.png";
+import ecomIcon from "../../assets/img/webDevelopmentService/shoppingapp.png";
+import serverRenderIcon from "../../assets/img/webDevelopmentService/serverRender.png";
+import cloudIcon from "../../assets/img/webDevelopmentService/dataMigration.png";
+import apiIcon from "../../assets/img/webDevelopmentService/API.png";
+import realTimeIcon from "../../assets/img/webDevelopmentService/pythonmachine.png";
+import { Link } from 'react-router-dom';
 
 const NodeJsDevelopment = () => {
     return(
@@ -48,6 +61,7 @@ const bannerTextData = {
   bottomHeading:
   "We offer professional Node.js development services, creating robust, scalable, and efficient solutions suited to modern web applications. Our experienced team builds server-side applications with a strong focus on performance and flexibility.",
   button: "TALK TO OUR EXPERTS",
+
 };
 
 const nodedescription = {
@@ -123,37 +137,37 @@ const ourIndustryExperience = {
     "Our Node.js developers bring expertise across industries, providing scalable and innovative solutions tailored to specific business requirements.",
   technologies: [
     {
-      icon: dynamicIntPhp,
+      icon: expressIcon,
       title: "Express.js",
       description:
         "Express.js enables our developers to create fast, flexible APIs, streamlining data transfer and interactions."
     },
     {
-      icon: MultipleLangPhp,
+      icon: socketIcon,
       title: "Socket.io",
       description:
         "With Socket.io, we build real-time applications such as chat platforms and collaborative tools, enhancing user experience."
     },
     {
-      icon: easyDBphp,
+      icon: nextJs,
       title: "NestJS",
       description:
         "NestJS is used for building enterprise-grade applications with a focus on scalability and modularity in complex projects."
     },
     {
-      icon: crosspltfmPhp,
+      icon: mongoIcon,
       title: "MongoDB",
       description:
         "Integrating MongoDB for dynamic data handling, we ensure flexibility and efficiency in Node.js applications."
     },
     {
-      icon: Scalabilityphp,
+      icon: redisIcon,
       title: "Redis",
       description:
         "Redis offers in-memory data storage, ideal for applications requiring rapid data access and caching solutions."
     },
     {
-      icon: securityphp,
+      icon: jestIcon,
       title: "Jest and Mocha",
       description:
         "Using Jest and Mocha for testing, we ensure code quality and reliability across our Node.js projects."
@@ -203,26 +217,32 @@ const developmentService = {
   description: ["Our comprehensive Node.js services include everything from API development to full-stack solutions, enabling high-performance and scalable applications."],
   cardData: [
     {
+      icon: apiIcon,
       title: "Custom API Development",
       description: "Building efficient and reliable APIs tailored to your application’s requirements."
     },
     {
+      icon: realTimeIcon,
       title: "Real-Time Applications",
       description: "Developing applications like chat and notification systems with real-time functionality."
     },
     {
+      icon: microServiceIcon,
       title: "Microservices Architecture",
       description: "Implementing microservices for flexible scaling and independent deployment of components."
     },
     {
+      icon: ecomIcon,
       title: "E-commerce Solutions",
       description: "Creating secure and scalable e-commerce platforms with support for payments and inventory management."
     },
     {
+      icon: serverRenderIcon,
       title: "Server-Side Rendering (SSR)",
       description: "Using server-side rendering for improved SEO and performance in Node.js applications."
     },
     {
+      icon : cloudIcon,
       title: "Cloud Integration",
       description: "Deploying Node.js applications on cloud platforms with seamless integration and scalability."
     },
