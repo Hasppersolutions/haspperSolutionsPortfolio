@@ -38,11 +38,14 @@
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 .review-logo {
   max-width: 100px;
   margin-bottom: 15px;
+  height:79px;
+  object-fit: contain;
 }
 
 .review-stars {
@@ -65,7 +68,7 @@
 .review-description {
   font-size: 1.1em;
   color: #666;
-  margin-top: 10px;
+  text-align: center;
 }
 
 .carousel-list-container {

@@ -1,8 +1,30 @@
 import React from "react";
 import { Container, Grid2 as Grid, Typography, Box } from "@mui/material";
 import WaveLine from "../../WaveLine";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const DevelopmentProcess = ({ data }) => {
+
+      //Animation
+
+      useGSAP(() => {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".developmentProcessTitleBox",
+            start: "top 98%",
+            end: "bottom 70%",
+            toggleActions: "play none none reset",
+          },
+        });
+    
+        tl.from(".developmentProcessTitleBox p", {
+          y: 100,
+          opacity: 0,
+          duration: 1,
+        });
+      });
+  
   return (
     <>
       <Box>
@@ -19,7 +41,7 @@ const DevelopmentProcess = ({ data }) => {
           >
             ⏷
           </Box>
-          <Box className="headingBoxWidth">
+          <Box className="headingBoxWidth developmentProcessTitleBox">
             <Typography sx={titleStyle}>{data.firstHeading}</Typography>
             <Typography sx={[titleStyle, { color: "#c75425" }]}>
               {data.secondHeading}

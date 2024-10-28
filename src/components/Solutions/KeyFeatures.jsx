@@ -1,10 +1,31 @@
 import { Box, Container, Grid2 as Grid, Typography } from "@mui/material";
-import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
-const KeyFeatures = ({ data }) => {
+const KeyFeatures = ({ data, gridContainerClass }) => {
+  //Animation
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".keyFeatureBox",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".featureTitle", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
   return (
     <>
       <Box
+        className="keyFeatureBox"
         sx={{
           height: "100%",
         }}
@@ -23,6 +44,7 @@ const KeyFeatures = ({ data }) => {
         <Container>
           <Box className="headingBoxWidth">
             <Typography
+              className="featureTitle"
               sx={{
                 fontSize: { xs: 26, sm: 32, md: 39 },
                 fontWeight: 700,
@@ -33,6 +55,7 @@ const KeyFeatures = ({ data }) => {
               {data.mainHeading}
             </Typography>
             <Typography
+              className="featureTitle"
               sx={[
                 {
                   fontSize: { xs: 26, sm: 32, md: 39 },
@@ -59,8 +82,9 @@ const KeyFeatures = ({ data }) => {
             )}
           </Box>
           <Grid
+            className={gridContainerClass}
             container
-            sx={{ margin: "50px 0px" }}
+            sx={{ margin: "50px auto" }}
             rowGap={{ xs: 4, md: 0 }}
             columnSpacing={{ xs: 0, md: 2 }}
           >
@@ -105,15 +129,23 @@ const KeyFeatures = ({ data }) => {
             >
               <Box
                 sx={{
-                  display: "felx",
+                  display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  width: "100%",
+                  height: "100%",
+                  maxWidth: 492,
+                  maxHeight: 420,
                 }}
               >
                 <img
                   src={data.image}
                   alt="image"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
                 />
               </Box>
             </Grid>
@@ -136,9 +168,7 @@ const KeyFeatures = ({ data }) => {
                     </Typography>
                     <Typography
                       sx={{
-                        display: "flex",
-                        justifyContent: "start",
-                        alignContent: "center",
+                        textAlign: "start",
                         color: "#666666",
                       }}
                     >

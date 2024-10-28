@@ -8,13 +8,14 @@ import {
   Grid2 as Grid,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const AiDescription = ({ data }) => {
   useGSAP(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".section-content",
-        start: "top 80%",
+        start: "top 90%",
         end: "bottom 20%",
         toggleActions: "play none none reset",
       },
@@ -102,7 +103,6 @@ const AiDescription = ({ data }) => {
                     fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
                     fontWeight: 800,
                     color: "#c75425",
-                    mb: 2,
                     lineHeight: 1.2,
                   }}
                 >
@@ -116,9 +116,11 @@ const AiDescription = ({ data }) => {
                 }}
               />
               {data.button && (
-                <Button className="btn-learn-more" sx={learnButton}>
-                  {data.button}
-                </Button>
+                <Link to={data.link} style={{ textDecoration: "none" }}>
+                  <Button className="btn-learn-more" sx={learnButton}>
+                    {data.button}
+                  </Button>
+                </Link>
               )}
             </Box>
           </Grid>
@@ -149,6 +151,7 @@ const descriptionText = {
   fontSize: { xs: "1rem", md: "1.1rem" },
   color: "#333",
   mb: "20px",
+  mt: 2,
 };
 const learnButton = {
   backgroundColor: "#d9652b",

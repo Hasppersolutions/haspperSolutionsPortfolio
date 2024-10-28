@@ -8,19 +8,42 @@ import {
   Container,
 } from "@mui/material";
 import { Add, Remove } from "@mui/icons-material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const FAQ = ({ data }) => {
   const [expanded, setExpanded] = useState(-1);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
-  };
+  }; 
+  
+  //Animation
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".faqBox",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.from(".faqTitle", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+  });
+
   return (
-    <Box sx={{ padding: "40px 0px", backgroundColor: "#f5f5f5" }}>
+    <Box className="faqBox" sx={{ padding: "40px 0px", backgroundColor: "#f5f5f5" }}>
       <Container>
         <Typography
           variant="h4"
           align="center"
           gutterBottom
+          className="faqTitle"
           sx={{ fontWeight: 600, lineHeight: 1.2 }}
         >
           Frequently
@@ -30,6 +53,7 @@ const FAQ = ({ data }) => {
           variant="h4"
           align="center"
           gutterBottom
+          className="faqTitle"
           sx={{ fontWeight: 600, color: "#c94c16", lineHeight: 1 }}
         >
           Asked Question
@@ -75,13 +99,12 @@ const FAQ = ({ data }) => {
                 <AccordionDetails
                   sx={{
                     padding: 3,
+                    lineHeight: 2
                   }}
                   dangerouslySetInnerHTML={{
                     __html: item?.answer?.split("\n")?.join("<br/>"),
                   }}
                 />
-                  {/* {item.answer} */}
-                {/* </AccordionDetails> */}
               </Accordion>
             </Box>
           ))}

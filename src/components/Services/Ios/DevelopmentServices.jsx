@@ -1,7 +1,8 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Carousel from "react-multi-carousel";
-import revenue from "../../../assets/img/Services/ios/revenue.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const DevelopmentServices = ({ data }) => {
   const responsive = {
@@ -27,9 +28,37 @@ const DevelopmentServices = ({ data }) => {
       items: 1,
     },
   };
+
+  //Animation
+
+  useGSAP(() => {
+    gsap.from(".titleBox p", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".titleBox",
+        start: "top 98%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+    gsap.from(".cardBox", {
+      scale: 0,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".cardBox",
+        start: "top 98%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+  });
+
   return (
     <>
-      <Box sx={backgroundStyle}>
+      <Box className="developmentServices" sx={backgroundStyle}>
         <Container>
           <Box
             className="scroll-down-icon"
@@ -43,7 +72,7 @@ const DevelopmentServices = ({ data }) => {
           >
             ⏷
           </Box>
-          <Box className="headingBoxWidth">
+          <Box className="headingBoxWidth titleBox">
             <Typography sx={titleStyle}>{data.heading}</Typography>
             {data.description && (
               <Typography
@@ -59,12 +88,14 @@ const DevelopmentServices = ({ data }) => {
             )}
           </Box>
           <Box
+            className="cardBox"
             sx={{ mt: { xs: "40px", md: "90px" }, pb: { xs: 10, sm: "115px" } }}
           >
             <Carousel
               responsive={responsive}
               autoPlaySpeed={3000}
               draggable
+              infinite
               pauseOnHover
               minimumTouchDrag={80}
               swipeable

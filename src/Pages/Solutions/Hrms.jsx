@@ -1,5 +1,4 @@
 import Banner from "../../components/Services/Banner";
-import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import AiFeature from "../../assets/img/aiFeature.png";
 import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
 import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
@@ -33,9 +32,13 @@ import quality from "../../assets/img/Solutions/hrms/quality.png";
 import softwareSolution from "../../assets/img/Solutions/hrms/softwareSolution.png";
 import supportGear from "../../assets/img/Solutions/hrms/supportGear.png";
 import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
-
-
-
+import Solutions from "../../components/Solutions/Solutions.jsx";
+import onBoarding from "../../assets/img/Solutions/hrms/onBoarding.png";
+import performance from "../../assets/img/Solutions/hrms/performance.png";
+import recruitingTools from "../../assets/img/Solutions/hrms/recruiting-tools.png";
+import acquisition from "../../assets/img/Solutions/hrms/acquisition.png";
+import employee from "../../assets/img/Solutions/hrms/employee.png";
+import payroll from "../../assets/img/Solutions/hrms/payroll.png";
 
 const Hrms = () => {
   return (
@@ -43,6 +46,7 @@ const Hrms = () => {
       <Banner data={bannerTextData} />
       <AiDescription data={aiDescriptionData} />
       <WaveLine />
+      <Solutions data={solutionsData} />
       <Stats data={statsData} />
       <Technology data={technologyData} />
       <DevelopmentServices data={developmentServicesData} />
@@ -74,7 +78,6 @@ const aiDescriptionData = {
   button: "TALK TO OUR EXPERTS",
   image: hrms,
 };
-
 const keyFeatureData = {
   mainHeading: "KEY FEATURES OF",
   secondHeading: "our HRMS Solution",
@@ -117,30 +120,29 @@ const keyFeatureData = {
   ],
 };
 const statsData = {
-    cardData: [
-      {
-        icon: multilingualChatbots,
-        number: "1500+",
-        label: "Apps Developed",
-      },
-      {
-        icon: multilingualChatbots,
-        number: "150+",
-        label: "Mobile App Developers",
-      },
-      {
-        icon: multilingualChatbots,
-        number: "1000+",
-        label: "Clients Worldwide",
-      },
-      {
-        icon: multilingualChatbots,
-        number: "98%",
-        label: "Success Rate",
-      },
-    ],
-  };
-
+  cardData: [
+    {
+      icon: multilingualChatbots,
+      number: "1500+",
+      label: "Apps Developed",
+    },
+    {
+      icon: multilingualChatbots,
+      number: "150+",
+      label: "Mobile App Developers",
+    },
+    {
+      icon: multilingualChatbots,
+      number: "1000+",
+      label: "Clients Worldwide",
+    },
+    {
+      icon: multilingualChatbots,
+      number: "98%",
+      label: "Success Rate",
+    },
+  ],
+};
 const technologyData = [
   {
     name: "Languages",
@@ -169,77 +171,118 @@ const technologyData = [
     imgData: [securePay, amazonPay, payPal, stripe, authorizeNet],
   },
 ];
-
 const faqData = {
   faqItems: [
     {
-      question:
-        "Q. What hR software do you build ?",
+      question: "Q. What hR software do you build ?",
       answer:
         "Our full-stack team provides a comprehensive suite of software development services, including tailor-made HR software, recruitment management software, as well as HRM integration and modernizing legacy solutions.",
     },
     {
       question: "Q. is there any NDA process you follow ?",
-      answer:
-        "Yes, we follow an NDA process with all the clients.",
+      answer: "Yes, we follow an NDA process with all the clients.",
     },
     {
       question: "Q. how long does it take to deliver a full-fledged product ?",
       answer: `The development time varies depending on the project complexity. On average, it typically takes nearly six weeks to build an HR application.`,
     },
     {
-      question:
-        "Q. what are the unique features of HR software ?",
+      question: "Q. what are the unique features of HR software ?",
       answer:
         "The HR Software has a unique feature known as an alert and notification system used for managing events and through which the admin can manage the whole process for each event that is happening in the organization.",
     },
     {
-      question:
-        "Q. will this software work for my industry ?",
+      question: "Q. will this software work for my industry ?",
       answer:
         "Yes, the HR Software can be defined sector-wise and as per the organization needs.",
     },
   ],
 };
 const developmentServicesData = {
-    heading: "Why choose HASPPER for HRMS App Development?",
-    description: "We aim to be a reliable and trustworthy tech partner by reaching even the most involved development requirements and specifications of our clients",
-    cardData: [
-      {
-        icon: aglie,
-        title: "Agile Development Approach",
-        description:
-          "The Agile development model helps us to continuously improve products with every iteration having team members on the same page and providing timely deliverables.",
-      },
-      {
-        icon: quality,
-        title: "15+ Years Of Experience",
-        description:
-          "With 15+ years of expertise, we know what it takes to build one-of-a-kind solutions for your manufacturing business. With viable solutions, we strive to deliver the best for your business.",
-      },
-      {
-        icon: softwareSolution,
-        title: "End-To-End Software Development Solutions",
-        description:
-          "Get a full-stack development solution from our experienced and expert team of developers, designers, marketers, testing, and sales. Bring great minds together to develop quality software.",
-      },
-      {
-        icon: elearning,
-        title: "Continuous Learning Approach",
-        description:
-          "We carry out regular training sessions and workshops for our employees which keep them updated with the latest technologies in the market.",
-      },
-      {
-        icon: deliveryTime,
-        title: "Continuous Project Delivery",
-        description:
-          "Easy to follow development process makes it even easier for our team to work in sync and provide continuous delivery be it in the office or remote.",
-      },
-      {
-        icon: supportGear,
-        title: "24x7 Support And Maintenance",
-        description:
-          "Get round-the-clock support from our team to resolve problems and timely maintenance. It keeps your software up-to-date."
-      }
-    ],
-  };
+  heading: "Why choose HASPPER for HRMS App Development?",
+  description:
+    "We aim to be a reliable and trustworthy tech partner by reaching even the most involved development requirements and specifications of our clients",
+  cardData: [
+    {
+      icon: aglie,
+      title: "Agile Development Approach",
+      description:
+        "The Agile development model helps us to continuously improve products with every iteration having team members on the same page and providing timely deliverables.",
+    },
+    {
+      icon: quality,
+      title: "15+ Years Of Experience",
+      description:
+        "With 15+ years of expertise, we know what it takes to build one-of-a-kind solutions for your manufacturing business. With viable solutions, we strive to deliver the best for your business.",
+    },
+    {
+      icon: softwareSolution,
+      title: "End-To-End Software Development Solutions",
+      description:
+        "Get a full-stack development solution from our experienced and expert team of developers, designers, marketers, testing, and sales. Bring great minds together to develop quality software.",
+    },
+    {
+      icon: elearning,
+      title: "Continuous Learning Approach",
+      description:
+        "We carry out regular training sessions and workshops for our employees which keep them updated with the latest technologies in the market.",
+    },
+    {
+      icon: deliveryTime,
+      title: "Continuous Project Delivery",
+      description:
+        "Easy to follow development process makes it even easier for our team to work in sync and provide continuous delivery be it in the office or remote.",
+    },
+    {
+      icon: supportGear,
+      title: "24x7 Support And Maintenance",
+      description:
+        "Get round-the-clock support from our team to resolve problems and timely maintenance. It keeps your software up-to-date.",
+    },
+  ],
+};
+// Keep 6 Steps max
+const solutionsData = {
+  firstHeading: "Our HR Software",
+  secondHeading: "Development Solutions",
+  description:
+    "Custom HRMS and HRIS solutions are the backbones of a successful HR operation. We can equip you with a full set of features from data analytics and employee workflow automation.",
+  stepsData: [
+    {
+      name: "Employee engagement",
+      description:
+        "We develop sophisticated employee engagement platforms oriented at the company’s crucial KPIs. Our solutions can also help companies to evolve their corporate culture.",
+      image: employee,
+    },
+    {
+      name: "Onboarding",
+      description:
+        "Turbo-charge your team onboarding with a new digital hiring experience provided by our talented HR developers.",
+      image: onBoarding,
+    },
+    {
+      name: "Performance management",
+      description:
+        "Our team develops performance management solutions that harness process automation, data collection, and every company’s essential HR needs.",
+      image: performance,
+    },
+    {
+      name: "Payroll services",
+      description:
+        "We can provide you with your own fully-compliant payroll solution that will redefine the core of your workforce management.",
+      image: payroll,
+    },
+    {
+      name: "Recruiting tools",
+      description:
+        "Our company will help you optimize the hiring process with our innovative recruitment software products. Start hiring and win over the top candidates.",
+      image: recruitingTools,
+    },
+    {
+      name: "Recruiting/talent acquisition",
+      description:
+        "The recruiting software landscape is developing at a rapid pace. With our digital talent acquisition tools, your HR experts will be able to automate initial hiring and sales efforts.",
+      image: acquisition,
+    },
+  ],
+};

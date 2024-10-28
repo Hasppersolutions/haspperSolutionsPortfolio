@@ -79,7 +79,7 @@ const OurIndustryExperience = ({ data }) => {
 
 export default OurIndustryExperience;
 const backgroundStyle = {
- backgroundColor : "#C94C16E3",
+ backgroundColor : "#F2F2F2",
  padding : "30px",
 };
 

@@ -17,6 +17,7 @@ import dataBindIcon from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import declarativeIcon from "../../assets/img/UIUximg.png";
 import mobileIcon from "../../assets/img/healthCare.png";
 import customIcon from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
+import virtualIcon from "../../assets/img/webDevelopmentService/virtual.png";
 
 const ReactWebDevelopment = () =>{
     return(
@@ -46,7 +47,7 @@ const bannerTextData = {
 const reactDescription = {
     firstHeading: "Generate Business Value Through Our",
     secondHeading: "ReactJS Development Services",
-    description: "ReactJS is a widely used open-source JavaScript library that serves as a fundamental tool in modern web development, compatible across various platforms and operating systems. It empowers developers to build engaging user interfaces for both single-page applications (SPAs) and dynamic web applications.This approach to web development simplifies the front-end process by decomposing the user interface into reusable components, which enhances modularity and maintainability. Renowned for its flexibility and speed, ReactJS allows for rapid application development. At Haspper, a premier ReactJS development company, we offer a full spectrum of ReactJS development services tailored to meet the needs of businesses globally. Our team is well-versed in advanced frameworks and tools, including Redux, Create React App, and Material-UI, ensuring adherence to industry best practices. As a trusted ReactJS development agency, our mission is to create high-performance, business-centric applications that align with your strategic goals. Our skilled ReactJS developers specialize in crafting intricate mobile applications and progressive web apps (PWAs) that are not only functional but also user-friendly. With a diverse team of developers, we embrace innovative methodologies in both app and web development, ensuring that projects are delivered on time and to the highest standards. We take pride in our ability to provide tailored ReactJS web development services that focus on building highly interactive user interfaces and dynamic applications. Feel free to modify any parts to better suit your needs!",
+    description: ["ReactJS is a widely used open-source JavaScript library that serves as a fundamental tool in modern web development, compatible across various platforms and operating systems. It empowers developers to build engaging user interfaces for both single-page applications (SPAs) and dynamic web applications.This approach to web development simplifies the front-end process by decomposing the user interface into reusable components, which enhances modularity and maintainability. Renowned for its flexibility and speed, ReactJS allows for rapid application development. At Haspper, a premier ReactJS development company, we offer a full spectrum of ReactJS development services tailored to meet the needs of businesses globally. Our team is well-versed in advanced frameworks and tools, including Redux, Create React App, and Material-UI, ensuring adherence to industry best practices. As a trusted ReactJS development agency, our mission is to create high-performance, business-centric applications that align with your strategic goals. Our skilled ReactJS developers specialize in crafting intricate mobile applications and progressive web apps (PWAs) that are not only functional but also user-friendly. With a diverse team of developers, we embrace innovative methodologies in both app and web development, ensuring that projects are delivered on time and to the highest standards. We take pride in our ability to provide tailored ReactJS web development services that focus on building highly interactive user interfaces and dynamic applications. Feel free to modify any parts to better suit your needs!"],
     button: "",
     image: reactDescimg,
 };
@@ -57,7 +58,7 @@ const technologyAdv = {
     description: "Due to its inherent flexibility and scalability, ReactJS development has seen a significant increase in demand, positioning it as a powerful JavaScript library. With the capabilities of this open-source library, Haspper's ReactJS developers are equipped to craft intricate web and mobile application solutions.",
     cardData: [
         {
-            image: VitualDomIcon,
+            image: virtualIcon,
             title: "Virtual DOM",
             description: "In contrast to traditional DOM, makes coding more straightforward by only re-rendering the parts of the UI that change."
         },

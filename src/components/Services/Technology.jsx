@@ -1,19 +1,29 @@
 import React from "react";
 import { Grid2 as Grid, Typography, Container, Box } from "@mui/material";
-import java from "../../assets/img/Services/chatbot/java.png";
-import python from "../../assets/img/Services/chatbot/python.png";
-import objectC from "../../assets/img/Services/chatbot/object-c.png";
-import xamarin from "../../assets/img/Services/chatbot/xamarin.png";
-import ionic from "../../assets/img/Services/chatbot/ionic.png";
-import node from "../../assets/img/Services/chatbot/node.png";
-import laravel from "../../assets/img/Services/chatbot/laravel.png";
-import securePay from "../../assets/img/Services/chatbot/secure-pay.png";
-import amazonPay from "../../assets/img/Services/chatbot/amazon-pay.png";
-import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
-import stripe from "../../assets/img/Services/chatbot/stripe.png";
-import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Technology = ({ data }) => {
+
+      //Animation
+
+      useGSAP(() => {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".technologyBox",
+            start: "top 98%",
+            end: "bottom 70%",
+            toggleActions: "play none none reset",
+          },
+        });
+    
+        tl.from(".technologyTitle", {
+          y: 100,
+          opacity: 0,
+          duration: 1,
+        });
+      });
+
   const renderTechItems = (items) => {
     return items?.map((item, index) => (
       <Grid
@@ -39,11 +49,11 @@ const Technology = ({ data }) => {
               alignItems: "center",
               justifyContent: "center",
               ".icons": {
-                width: { xs: "70%", sm: "95%" },
+                width: "100%",
               },
             }}
           >
-            <img src={item} alt={"icon"} className="icons" />
+            <img src={item} alt={"icon"} className="icons" style={{height:"100%",width:"100%",objectFit:"contain"}}/>
           </Box>
         </Box>
       </Grid>
@@ -51,20 +61,20 @@ const Technology = ({ data }) => {
   };
 
   return (
-    <Box sx={{ pt: 3, pb: { xs: 8, md: 14 } }}>
-              <Box
-          className="scroll-down-icon"
-          sx={{
-            textAlign: "center",
-            width: "fit-content",
-            margin: "auto",
-            marginTop: "20px",
-          }}
-        >
-          ⏷
-        </Box>
+    <Box className="technologyBox" sx={{ pt: 3, pb: { xs: 8, md: 14 } }}>
+      <Box
+        className="scroll-down-icon"
+        sx={{
+          textAlign: "center",
+          width: "fit-content",
+          margin: "auto",
+          marginTop: "20px",
+        }}
+      >
+        ⏷
+      </Box>
       <Container>
-        <Typography sx={titleStyle}>
+        <Typography className="technologyTitle"  sx={titleStyle}>
           Technologies <br />
           <Typography
             component={"span"}
@@ -99,35 +109,6 @@ const Technology = ({ data }) => {
 };
 
 export default Technology;
-const technologyData = [
-  {
-    name: "Languages",
-    imgData: [
-      "path/to/html5-icon",
-      python,
-      java,
-      objectC,
-      "path/to/swift-icon",
-    ],
-  },
-  {
-    name: "Framework",
-    imgData: [
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      xamarin,
-      ionic,
-      node,
-      laravel,
-    ],
-  },
-  {
-    name: "Payment Gateway",
-    imgData: [securePay, amazonPay, payPal, stripe, authorizeNet],
-  },
-];
-
 const iconContainer = {
   display: "flex",
   alignItems: "center",

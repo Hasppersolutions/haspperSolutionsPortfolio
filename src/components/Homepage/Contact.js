@@ -777,12 +777,12 @@ export const Contact = () => {
       <Container>
         <Grid container spacing={3} alignItems="center">
           {/* Left side: Image */}
-          <Grid size={6} display="flex" justifyContent="center">
+          <Grid size={{xs: 12, md: 6}} display="flex" justifyContent="center">
             <img src={contactUs} alt="Contact Us" style={{ width: '92%', objectFit: 'cover' }} />
           </Grid>
           
           {/* Right side: Form */}
-          <Grid size={6}>
+          <Grid size={{xs: 12, md: 6}}>
             <Box
               sx={{
                 backgroundColor: '#fff',
@@ -797,7 +797,7 @@ export const Contact = () => {
               </Typography>
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
-                  <Grid size={6}>
+                  <Grid size={{xs: 12, sm: 6}}>
                     <TextField
                       fullWidth
                       label="First Name"
@@ -811,7 +811,7 @@ export const Contact = () => {
                       }}
                     />
                   </Grid>
-                  <Grid size={6}>
+                  <Grid size={{xs: 12, sm: 6}}>
                     <TextField
                       fullWidth
                       label="Last Name"
@@ -825,7 +825,7 @@ export const Contact = () => {
                       }}
                     />
                   </Grid>
-                  <Grid size={6}>
+                  <Grid size={{xs: 12, sm: 6}}>
                     <TextField
                       fullWidth
                       label="Email"
@@ -840,7 +840,7 @@ export const Contact = () => {
                       }}
                     />
                   </Grid>
-                  <Grid size={6}>
+                  <Grid size={{xs: 12, sm: 6}}>
                     <TextField
                       fullWidth
                       label="Phone No."

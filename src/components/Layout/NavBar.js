@@ -528,7 +528,7 @@ const linkData = [
           },
           {
             name: "Market Research Software Development",
-            link: "",
+            link: "/solutions/market-research",
             type: "heading"
           },
           {
@@ -548,42 +548,42 @@ const linkData = [
             subHeadings: [
               {
                 name: "PHP",
-                link: "",
+                link: "/services/php-development",
                 type: "subHeading"
               },
               {
                 name: "Java",
-                link: "",
+                link: "/services/java-development",
                 type: "subHeading"
               },
               {
-                name: "ROR",
-                link: "",
+                name: "DotNet",
+                link: "/services/dotnet-development",
                 type: "subHeading"
               },
               {
                 name: "Python",
-                link: "",
+                link: "/services/python-development",
                 type: "subHeading"
               },
               {
                 name: "VueJs",
-                link: "",
+                link: "/services/vuejs-development",
                 type: "subHeading"
               },
               {
                 name: "Angular",
-                link: "",
+                link: "/services/angular-development",
                 type: "subHeading"
               },
               {
                 name: "React",
-                link: "",
+                link: "/services/react-web-development",
                 type: "subHeading"
               },
               {
                 name: "NodeJs",
-                link: "",
+                link: "/services/nodejs-development",
                 type: "subHeading"
               },
             ]
@@ -595,19 +595,19 @@ const linkData = [
             subHeadings: [
               {
                 name: "Marketplace",
-                link: "",
+                link: "/services/marketplace",
                 type: "subHeading"
               },
-              {
-                name: "WordPress",
-                link: "",
-                type: "subHeading"
-              },
-              {
-                name: "Shopify",
-                link: "",
-                type: "subHeading"
-              },
+              // {
+              //   name: "WordPress",
+              //   link: "",
+              //   type: "subHeading"
+              // },
+              // {
+              //   name: "Shopify",
+              //   link: "",
+              //   type: "subHeading"
+              // },
             ]
           },
         ]
@@ -654,42 +654,42 @@ const linkData = [
             subHeadings: [
               {
                 name: "HRMS",
-                link: "",
+                link: "/solutions/hrms-development",
                 type: "subHeading"
               },
               {
                 name: "Market Research",
-                link: "",
+                link: "/solutions/market-research",
                 type: "subHeading"
               },
               {
                 name: "Food",
-                link: "",
+                link: "/solutions/food",
                 type: "subHeading"
               },
               {
                 name: "Banking",
-                link: "",
+                link: "/solutions/banking",
                 type: "subHeading"
               },
               {
                 name: "Telecom",
-                link: "",
+                link: "/solutions/telecom",
                 type: "subHeading"
               },
               {
                 name: "Media And Entertainment",
-                link: "",
+                link: "/solutions/media-entertainment",
                 type: "subHeading"
               },
               {
                 name: "Fitness",
-                link: "",
+                link: "/solutions/fitness",
                 type: "subHeading"
               },
               {
                 name: "E-Learning",
-                link: "",
+                link: "/solutions/e-learning-development",
                 type: "subHeading"
               },
             ]
@@ -703,42 +703,42 @@ const linkData = [
             subHeadings: [
               {
                 name: "Cloud Computing",
-                link: "",
+                link: "/services/CloudComputing",
                 type: "subHeading"
               },
               {
                 name: "Artificial Intelligence",
-                link: "",
+                link: "/artificial-intelligence",
                 type: "subHeading"
               },
               {
                 name: "Voicebot",
-                link: "",
+                link: "/services/Voicebot",
                 type: "subHeading"
               },
               {
                 name: "Chatbot",
-                link: "",
+                link: "/chatbot-development",
                 type: "subHeading"
               },
               {
                 name: "Blockchain",
-                link: "",
+                link: "/services/Blockchain",
                 type: "subHeading"
               },
               {
                 name: "Marketplace",
-                link: "",
+                link: "/services/marketplace",
                 type: "subHeading"
               },
               {
                 name: "Technical & Operations Staffing",
-                link: "",
+                link: "/services/operation-staffing",
                 type: "subHeading"
               },
               {
                 name: "Software Support",
-                link: "",
+                link: "/services/software-support",
                 type: "subHeading"
               },
               {

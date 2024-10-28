@@ -2,13 +2,61 @@ import React from 'react';
 import { Box, Typography, Grid2 as Grid, Container } from '@mui/material';
 import mission from "../../assets/img/mission-1.png"
 import vision from "../../assets/img/vision-1.png"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 // Main Section Component
 const Mission = () => {
+
+  //Animation
+
+  useGSAP(() => {
+
+    gsap.from(".missionTitleBox h3", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".missionTitleBox",
+        start: "top 98%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    });
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".missionAndVisionCardBox",
+        start: "top 98%",
+        end: "bottom 70%",
+        toggleActions: "play none none reset",
+      },
+    })
+    tl.from(".left", {
+      x: -200,
+      opacity: 0,
+      duration: 0.8,
+    }, "anim");
+    tl.from(".right", {
+      x: 200,
+      opacity: 0,
+      duration: 0.8,
+    }, "anim");
+    tl.from(".missionImage", {
+      scale: 0,
+      opacity: 0,
+      duration: 0.8,
+    }, "anim");
+    tl.from(".missionDescription", {
+      opacity: 0,
+      duration: 0.8,
+      delay: 0.4,
+    }, "anim");
+  });
+
   return (
     <Box sx={{ py: 8, backgroundColor: '#f5f5f5' }}>
       <Container>
-        <Box sx={{ textAlign: 'center', mb: 6 }}>
+        <Box className="missionTitleBox" sx={{ textAlign: 'center', mb: 6 }}>
           <Typography
             variant="h3"
             sx={{
@@ -43,7 +91,7 @@ const Mission = () => {
           </Typography>
         </Box>
 
-        <Grid container spacing={4} justifyContent="center">
+        <Grid className="missionAndVisionCardBox" container spacing={4} justifyContent="center">
           {/* Our Mission */}
           <Grid size={{ xs: 12, md: 6 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', p: 2, height: "100%" }}>
@@ -59,6 +107,7 @@ const Mission = () => {
               }}>
 
                 <Typography
+                  className='left'
                   variant="h5"
                   sx={{
                     fontWeight: 'bold',
@@ -72,6 +121,7 @@ const Mission = () => {
                 </Typography>
                 <Box sx={{ borderBottom: '2px solid #e0e0e0', width: '50px', my: 1 }} />
                 <Typography
+                  className='missionDescription'
                   variant="body1"
                   sx={{
                     color: '#616161',
@@ -83,15 +133,17 @@ const Mission = () => {
                 </Typography>
               </Box>
               {/* Mission Image */}
-              <Box sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                ml: 2,
-                backgroundColor: "#FF7F50",
-                padding: 2,
-                borderRadius: 2
-              }}>
+              <Box
+                className="missionImage"
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  ml: 2,
+                  backgroundColor: "#FF7F50",
+                  padding: 2,
+                  borderRadius: 2
+                }}>
                 <img src={mission} alt="Mission" width="80px" />
               </Box>
             </Box>
@@ -101,21 +153,24 @@ const Mission = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', p: 2, height: "100%" }}>
               {/* Vision Image */}
-              <Box sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                mr: 2,
-                backgroundColor: "#BD4916",
-                padding: 2,
-                borderRadius: 2
-              }}>
+              <Box
+                className="missionImage"
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  mr: 2,
+                  backgroundColor: "#BD4916",
+                  padding: 2,
+                  borderRadius: 2
+                }}>
                 <img src={vision} alt="Vision" width="80px" />
               </Box>
 
               {/* Vision Text */}
               <Box>
                 <Typography
+                  className='right'
                   variant="h5"
                   sx={{
                     fontWeight: 'bold',
@@ -128,6 +183,7 @@ const Mission = () => {
                 </Typography>
                 <Box sx={{ borderBottom: '2px solid #e0e0e0', width: '50px', my: 1 }} />
                 <Typography
+                  className='missionDescription'
                   variant="body1"
                   sx={{
                     color: '#616161',

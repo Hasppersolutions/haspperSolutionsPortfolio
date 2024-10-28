@@ -9,12 +9,12 @@ import DevelopmentServices from "../../components/Services/WebAppDevelopment/Dev
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import highperfIcon from "../../assets/img/webDevelopmentService/highperformanceIcon.png";
 import crossPltIcon from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
-import approachicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
+import approachicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
 import verstileIcon from "../../assets/img/webDevelopmentService/versatileIcon.png";
 import uiuximg from "../../assets/img/UIUximg.png";
 import maintenanceIcon from "../../assets/img/maintenanceIcon.png";
 import componentIcon from "../../assets/img/webDevelopmentService/webbaseddev.png"
-import API from "../../assets/img/API.svg";
+import API from "../../assets/img/webDevelopmentService/API.png";
 
 const VueDevelopment = () => {
     return (
@@ -44,7 +44,7 @@ const vueDescription = {
     firstHeading: "Build next-level web app interface with",
     secondHeading: "Vue.js",
     description:
-        "Our Vue.js development services help you build lightweight, high-performance applications. Whether you're aiming for cross-platform compatibility, or looking to create custom, scalable solutions, our expert team delivers results that meet your unique business needs. Leveraging the power of Vue.js, we ensure intuitive UI, seamless integration, and optimized performance that drive your business forward.",
+        ["Our Vue.js development services help you build lightweight, high-performance applications. Whether you're aiming for cross-platform compatibility, or looking to create custom, scalable solutions, our expert team delivers results that meet your unique business needs. Leveraging the power of Vue.js, we ensure intuitive UI, seamless integration, and optimized performance that drive your business forward."],
     button: "",
     image: VuejsDesc,
 };
