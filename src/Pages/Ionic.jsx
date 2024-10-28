@@ -14,6 +14,33 @@ import DevelopmentServices from "../components/Services/Ios/DevelopmentServices"
 import CodeLibrary from "../assets/img/Services/CrossPlatform/CodeLibrary.svg";
 import Mailus from "../components/Homepage/Mailus";
 import ionic from "../assets/img/Services/ionic.png";
+
+
+import card1 from "../assets/img/Services/ionic/card1.png";
+import card2 from "../assets/img/Services/ionic/card2.png";
+import card3 from "../assets/img/Services/ionic/card3.png";
+import card4 from "../assets/img/Services/ionic/card4.png";
+import card5 from "../assets/img/Services/ionic/card5.png";
+import card6 from "../assets/img/Services/ionic/card6.png";
+
+
+import desc1 from "../assets/img/Services/CrossPlatform/React/desc1.png"
+import desc2 from "../assets/img/Services/CrossPlatform/React/desc2.png"
+import desc3 from  "../assets/img/Services/ios/app5.png";
+import desc4 from "../assets/img/Services/CrossPlatform/React/desc4.png"
+import desc5 from "../assets/img/Services/ios/feature6.png";
+import desc6 from "../assets/img/Services/CrossPlatform/React/desc6.png"
+
+import process1 from "../assets/img/Services/ionic/process1.png";
+import process2 from "../assets/img/Services/ionic/process2.png";
+import process3 from "../assets/img/Services/ionic/process3.png";
+import process4 from "../assets/img/Services/ionic/process4.png";
+import process5 from "../assets/img/Services/ionic/process5.png";
+import process6 from "../assets/img/Services/ionic/process6.png";
+import process7 from "../assets/img/Services/ionic/process7.png";
+
+import { Contact } from "../components/Homepage/Contact";
+
 const Ionic = () => {
   return (
     <>
@@ -22,8 +49,9 @@ const Ionic = () => {
       <Potential data={potentialData} />
       <DevelopmentServices data={developmentServicesData} />
       <Outsourcing data={outSoutceData} />
-      <FAQ data={faqData} />
       <Project data={projectIdeaData} />
+      <FAQ data={faqData} />  
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -91,37 +119,37 @@ const potentialData = {
   secondHeading: "Ionic App Development?",
   cardData: [
     {
-      image: revenue,
+      image: card1,
       title: "Single codebase",
       description:
         "Write once, use anywhere- the first and foremost feature of Ionic is the shared code base. It saves you time, money, and effort and you can develop native iOS, Android, and web applications using the same code base.",
     },
     {
-      image: revenue,
+      image: card2,
       title: "Quick Development",
       description:
         "Ionic offers quick development compared to native iOS and Android development.",
     },
     {
-      image: revenue,
+      image: card3,
       title: "Plugins",
       description:
         "There are plenty of plugins available in Ionic that allow you to use the features of smartphones such as camera, geolocation, NFC, fingerprint sensors, etc.",
     },
     {
-      image: revenue,
+      image: card4,
       title: "User interface",
       description:
         "Thanks to the wide range of web libraries Ionic provides platform-specific user interface (UI) elements for iOS, Android, and progressive applications.",
     },
     {
-      image: revenue,
+      image: card5,
       title: "Easy testing",
       description:
         "Mobile app testing is far easier with Ionic. You could test in on a desktop browser or even perform simulator testing for both iOS and Android apps using Cordova commands.",
     },
     {
-      image: revenue,
+      image: card6,
       title: "Large community",
       description:
         "The best part about the Ionic Framework is that it has a large and active community that is eager to help on different forums or specialized YouTube channels.",
@@ -134,36 +162,36 @@ const developmentServicesData = {
   description: "",
   cardData: [
     {
-      icon: revenue,
+      icon: desc3,
       title: "Custom Ionic App Development",
       description:
         "Get us your requirement and our solution architects will formulate a custom application development for you. It will have customized features based on audience requirements and will offer optimum solutions.",
     },
     {
-      icon: revenue,
+      icon: desc4,
       title: "Ionic App Design",
       description: `App designers with decades of experience will be working dedicatedly to design each screen of the application and maintain consistency throughout the entire application.`,
     },
     {
-      icon: revenue,
+      icon: desc1,
       title: "Support & Maintenance",
       description:
         "We ensure support and maintenance services during and even after the development process. In case of any future enhancements in any module of the application or any maintenance, up-gradation we will be on standby for you.",
     },
     {
-      icon: revenue,
+      icon: desc5,
       title: "QA and Testing",
       description:
         "We have an experienced team of QA engineers to ensure the application’s functionality and user experience. We test it using Selenium automation testing, Katalon, Jenkins, and Apache.",
     },
     {
-      icon: revenue,
+      icon: desc2,
       title: "Ionic Widget Development",
       description:
         "We are capable enough to help you create Ionic widgets with various functionalities, including templates, CSS, locale resources, and others that enhance your apps with cutting-edge features.",
     },
     {
-      icon: revenue,
+      icon: desc6,
       title: "Ionic App Migration",
       description:
         "We can help you migrate your existing native app into a hybrid Ionic application. This too in a time-bound manner.",
@@ -177,13 +205,13 @@ const outSoutceData = {
   cardData: [
     [
       {
-        image: CodeLibrary,
+        image: process1,
         heading: "Rapid Delivery",
         description:
           "We ensure the rapid delivery of your project as our skilled and experienced Ionic app developers leave no stone unturned to complete your project within the given time.",
       },
       {
-        image: CodeLibrary,
+        image: process2,
         heading: "Proficient Developers",
         description:
           "Our proficient Ionic developers know why they are doing something in a certain way. They take full responsibility for their tasks. Having enough experience to get stuff done, they know how to be competent in the web app development world. Hire Ionic developers with and build intuitive, smart solutions.",
@@ -191,13 +219,13 @@ const outSoutceData = {
     ],
     [
       {
-        image: CodeLibrary,
+        image: process3,
         heading: "100% Customer Satisfaction",
         description:
           "Customer satisfaction is our only priority. We make sure that we fulfil all the requirements mentioned by our clients and give them what they want.",
       },
       {
-        image: CodeLibrary,
+        image: process4,
         heading: "Competitive Pricing",
         description:
           "We offer different competitive pricing models to meet the diverse needs of our clients located around the globe. We ideally consider an organized pricing method and thus follow only the best approach and policies.",
@@ -205,13 +233,13 @@ const outSoutceData = {
     ],
     [
       {
-        image: CodeLibrary,
+        image: process5,
         heading: "Active Support and Maintenance",
         description:
           "We actively maintain and assure the quality of the app we build. Our developers are there 24/7 to assist you when needed.",
       },
       {
-        image: CodeLibrary,
+        image: process6,
         heading: "Dedicated Developers",
         description:
           "Our dedicated developers aim to reduce the time to market your product by delivering a feature-rich app, which meets your requirements, on-time.",
@@ -219,7 +247,7 @@ const outSoutceData = {
     ],
     [
       {
-        image: CodeLibrary,
+        image: process7,
         heading: "Serve across globe",
         description:
           "We serve all types of customers around the world, from small enterprises to medium and large ones. We have our clients in almost every industry vertical.",
