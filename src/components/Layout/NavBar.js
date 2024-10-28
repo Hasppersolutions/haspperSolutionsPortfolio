@@ -522,7 +522,7 @@ const linkData = [
           },
           {
             name: "Startup IT Solutions",
-            link: "",
+            link: "startup-it-solutions",
             type: "heading"
           },
           {
@@ -532,7 +532,7 @@ const linkData = [
           },
           {
             name: "Enterprise IT Solutions",
-            link: "",
+            link: "/enterprise-it-solutions",
             type: "heading"
           },
         ]

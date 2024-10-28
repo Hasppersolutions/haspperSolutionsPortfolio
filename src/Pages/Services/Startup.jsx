@@ -1,11 +1,10 @@
 import { Box } from "@mui/material";
 import Banner from "../../components/Services/Banner";
 import ServiceBackgroudImage from "../../assets/img/Services/Startup/ServiceBackgroudImage.png";
-import AiFeature from "../../assets/img/aiFeature.png";
 import Potential from "../../components/Services/Ios/Potential";
 import agileDevOps from "../../assets/img/Services/Startup/agileDevOps.png";
 import cyberSecurity from "../../assets/img/Services/Startup/cyberSecurity.png";
-import dataAnalytics from "../../assets/img/Services/Startup/dataAnalytics.png";
+import dataAnalytics from "../../assets/img/Services/Startup/dataanlytics.png";
 import mobileDevelopment from "../../assets/img/Services/Startup/mobileDevelopment.png";
 import cloudcomputing from "../../assets/img/Services/Startup/cloudcomputing.png";
 import strategicTransformation from "../../assets/img/Services/Startup/strategicTransformation.png";
@@ -19,6 +18,7 @@ import optimize from "../../assets/img/Services/chatbot/optimize.png";
 import Stats from "../../components/Services/Stats";
 import Technology from "../../components/Services/Technology";
 import java from "../../assets/img/Services/chatbot/java.png";
+import developmentPlanning from "../../assets/img/Services/Startup/developmentPlanning.png";
 import python from "../../assets/img/Services/chatbot/python.png";
 import objectC from "../../assets/img/Services/chatbot/object-c.png";
 import xamarin from "../../assets/img/Services/chatbot/xamarin.png";
@@ -27,8 +27,11 @@ import node from "../../assets/img/Services/chatbot/node.png";
 import laravel from "../../assets/img/Services/chatbot/laravel.png";
 import monogoDb from "../../assets/img/Services/Startup/monogoDb.png";
 import mysql from "../../assets/img/Services/Startup/mysql.png";
+import ai from "../../assets/img/Services/Startup/ai.png";
+import testingQuality from "../../assets/img/Services/Startup/testingQuality.png";
 import oracle from "../../assets/img/Services/Startup/oracle.png";
 import sqlLite from "../../assets/img/Services/Startup/sqlLite.png";
+import telecomedev from "../../assets/img/Services/Startup/telecomedev.png";
 import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png"
 import IndustriesServed from "../../components/Services/IndustriesServed"
 import DividerComponent from "../../components/Solutions/DividerComponent";
@@ -38,7 +41,25 @@ import WaveLine from "../../components/WaveLine.jsx";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import DevelopmentProcess from "../../components/Services/Chatbot/DevelopmentProcess";
 import Mailus from "../../components/Homepage/Mailus";
-
+import foodimage from "../../assets/img/Services/Startup/foodimage.png"
+import fitnessapp from "../../assets/img/Services/Startup/fitnessapp.png"
+import iot from "../../assets/img/Services/Startup/iot.png";
+import elearningsolution from "../../assets/img/Services/Startup/elearningsolution.png";
+import marketresarch from "../../assets/img/Services/Startup/marketresearch.png";
+import mediaentertain from "../../assets/img/Services/Startup/mediaentertain.png";
+import banking from "../../assets/img/Services/Startup/banking.png";
+import blockchian from "../../assets/img/Services/Startup/blockchain.png";
+import growth from "../../assets/img/Services/Startup/growth.png";
+import solutiondelivered from "../../assets/img/Services/Startup/solutiondelivered.png";
+import threestar from "../../assets/img/Services/Startup/threestar.png";
+import thumsup from "../../assets/img/Services/Startup/thumsup.png";
+import DesignBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
+import Support from "../../assets/img/Services/Startup/support.png"
+import html from "../../assets/img/Services/Startup/html.png";
+import flutter from "../../assets/img/Services/Startup/flutter.png";
+import swift from "../../assets/img/Services/Startup/swift.png";
+import angularJs from "../../assets/img/Services/Startup/angularJs.png";
+import phoneGap from "../../assets/img/Services/Startup/phoneGap.png";
 
 const ChatBot = () => {
   return (
@@ -70,7 +91,6 @@ const bannerTextData = {
   mainHeading: "Innovative Startup ",
   middleHeading: "IT Solutions",
   backgroundImage: ServiceBackgroudImage,
-  rightImage: AiFeature,
   bottomHeading:
     "Take the entrepreneurial leap and thrive in today's competitive landscape with  our cutting-edge startup IT solutions.",
   // button: "Get Free Demo", //uncomment to add button to banner
@@ -157,22 +177,22 @@ const featureData = {
 const statsData = {
   cardData: [
     {
-      icon: multilingualChatbots,
+      icon: solutiondelivered,
       number: "100+",
       label: "Startup Solutions Delivered",
     },
     {
-      icon: multilingualChatbots,
+      icon: growth,
       number: "5+",
       label: "Years of Experience",
     },
     {
-      icon: multilingualChatbots,
+      icon: thumsup,
       number: "150+",
       label: "Startup Experts",
     },
     {
-      icon: multilingualChatbots,
+      icon: threestar,
       number: "98%",
       label: "Success Rate",
     },
@@ -182,23 +202,23 @@ const technologyData = [
   {
     name: "Languages",
     imgData: [
-      "path/to/html5-icon",
-      python,
-      java,
-      objectC,
-      "path/to/swift-icon",
+        html,
+        python,
+        java,
+        objectC,
+        swift,
     ],
   },
   {
     name: "Framework",
     imgData: [
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      xamarin,
-      ionic,
-      node,
-      laravel,
+        angularJs,
+        phoneGap,
+        flutter,
+        xamarin,
+        ionic,
+        node,
+        laravel,
     ],
   },
   {
@@ -209,35 +229,35 @@ const technologyData = [
 ];
 const industries= {
   firstHeading: "Startup Landscapes We Transform",
-  backgroundImage: ServiceBackgroudImage,
+  backgroundImage: DesignBackgroudImage,
   cardData: [
     {
-      image: mysql,
+      image: fitnessapp,
       title: "Fitness App Development Solutions",
       description: "Custom app solutions for fitness startups.",
     },
     {
-      image: mysql,
+      image: elearningsolution,
       title: "Custom E-Learning Solutions",
       description: "Innovative e-learning platforms tailored to your needs.",
     },
     {
-      image: mysql,
+      image: foodimage,
       title: "Food",
       description: "Digital solutions for the food industry.",
     },
     {
-      image: mysql,
+      image: telecomedev,
       title: "Telecom App Development Solutions",
       description: "Cutting-edge apps for the telecom sector.",
     },
     {
-      image: mysql,
+      image: banking,
       title: "Banking",
       description: "Secure and scalable solutions for banking.",
     },
     {
-      image: mysql,
+      image: mediaentertain,
       title: "Media and Entertainment",
       description: "Solutions for digital media and entertainment platforms.",
     }
@@ -256,19 +276,19 @@ const DividerComponentData = {
          `Harness the cloud’s scalability and flexibility to fuel your startup’s growth and agility.`,   
       },
       {
-        image: mysql,
+        image: blockchian,
         title: "Blockchain Consulting Services",
         description:
        `With our specialized blockchain consulting, we help you discover new prospects in the crypto realm.`, 
       },
       {
-        image: mysql,
+        image: ai,
         title: "Artificial Intelligence",
         description:
          `Utilize AI for smart automation, data analysis, and consumer interactions, revolutionizing your startup’s capabilities.`,
       },
       {
-        image: mysql,
+        image: iot,
         title: "Internet of Things (IoT)",
         description:
           `Connect devices and systems seamlessly, opening new avenues for control and data collection.`,
@@ -324,7 +344,7 @@ const DividerComponentData = {
         title: "Ideation and Market Research",
         description:
           "We work hand-in-hand with you to define the scope and requirements of your startup's tech project. A precise roadmap, complete with milestones and budget estimations.",
-        icon: ux,
+        icon: marketresarch,
       },
       {
         title: "UI/UX Design",
@@ -336,7 +356,7 @@ const DividerComponentData = {
         title: "Development Planning",
         description:
           "We create wireframe prototypes before transforming them into world-class UI designs.",
-        icon: ux,
+        icon: developmentPlanning,
       },
       {
         title: "Development and Iteration",
@@ -348,13 +368,13 @@ const DividerComponentData = {
         title: "Testing and Quality Assurance",
         description:
           "Our rigorous, startup-optimized QA process will vet the functionality and stability of your solution, ensuring it meets all quality standards before being staged for final approval.",
-        icon: ux,
+        icon: testingQuality,
       },
       {
         title: "Ongoing Support and Optimization",
         description:
           "Post-launch, we continue to monitor performance analytics and roll-out updates, ensuring your startup solution stays ahead of the curve and operates flawlessly.",
-        icon: ux,
+        icon: Support,
       },
     ],
   };

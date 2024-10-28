@@ -25,6 +25,8 @@ import DotnetDevelopment from './Pages/Services/DotNet';
 import VueDevelopment from  './Pages/Services/Vuejs';
 import ReactWebDevelopment from './Pages/Services/ReactWebDev';
 import Startup from './Pages/Services/Startup';
+import Enterprise from './Pages/Services/Enterprise';
+
 
 function App() {
   return (
@@ -54,6 +56,8 @@ function App() {
             <Route path = '/vuejs-development' element = { <VueDevelopment/> }/>
             <Route path = '/react-web-development' element = { <ReactWebDevelopment/>}/>
             <Route path = '/startup-it-solutions' element = { <Startup/>}/>
+            <Route path = '/enterprise-it-solutions' element = { <Enterprise/>}/>
+
 
             {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>

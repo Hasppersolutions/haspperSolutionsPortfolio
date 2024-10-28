@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Card, CardContent, Typography, Box, styled, Container } from "@mui/material";
+import { Grid2 as Grid, Card, CardContent, Typography, Box, styled, Container } from "@mui/material";
 import mysql from "../../assets/img/Services/Startup/mysql.png";
 
 
@@ -65,7 +65,7 @@ const IndustriesServed = ({data}) => {
       <Container>
       <Grid container spacing={3}>
         {/* Left Text */}
-        <Grid item xs={12} md={6} style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
+        <Grid size = {{xs: 12 ,md: 6}}  style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
           <Typography
             variant="h2"
             sx={{
@@ -79,7 +79,7 @@ const IndustriesServed = ({data}) => {
         </Grid>
 
         {/* First Row with 2 Smaller Cards */}
-        <Grid item xs={12} md={6}>
+        <Grid size = {{xs: 12, md:6}}>
           <Grid container spacing={2}>
             {data.cardData.slice(0, 2).map((card, index) => (
               <Grid item xs={12} sm={6} key={index}>
@@ -95,10 +95,10 @@ const IndustriesServed = ({data}) => {
         </Grid>
 
         {/* Second Row with 4 Regular Sized Cards */}
-        <Grid item xs={12}>
+        <Grid size = {{xs: 12}} >
           <Grid container spacing={3}>
             {data.cardData.slice(2).map((card, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size = {{xs: 12, sm: 6, md: 3}}  key={index}>
                 <CustomCard 
                   image={card.image} 
                   title={card.title} 
