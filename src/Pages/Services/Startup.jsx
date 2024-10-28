@@ -42,7 +42,7 @@ import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import DevelopmentProcess from "../../components/Services/Chatbot/DevelopmentProcess";
 import Mailus from "../../components/Homepage/Mailus";
 import foodimage from "../../assets/img/Services/Startup/foodimage.png"
-import fitnessapp from "../../assets/img/Services/Startup/fitnessapp.png"
+import fitnessApp from "../../assets/img/Services/Startup/fitnessApp.png"
 import iot from "../../assets/img/Services/Startup/iot.png";
 import elearningsolution from "../../assets/img/Services/Startup/elearningsolution.png";
 import marketresarch from "../../assets/img/Services/Startup/marketresearch.png";
@@ -232,7 +232,7 @@ const industries= {
   backgroundImage: DesignBackgroudImage,
   cardData: [
     {
-      image: fitnessapp,
+      image: fitnessApp,
       title: "Fitness App Development Solutions",
       description: "Custom app solutions for fitness startups.",
     },
