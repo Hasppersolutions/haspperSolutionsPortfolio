@@ -302,7 +302,7 @@ export const NavBar = () => {
       }}
       onClick={() => handleNavigate("/enterprise-it-solutions")}
     >
-      <Factory sx={{ fontSize: 60, color: '#333' }} />
+      <Factory sx={{ fontSize: 100, color: '#333' }} />
       <Typography sx={{ 
         marginTop: '12px', 
         fontSize: '16px', 
@@ -311,6 +311,7 @@ export const NavBar = () => {
         padding: '6px 12px', 
         backgroundColor: '#F1F5F9', 
         borderRadius: '8px',
+        marginBottom: '-50px'
       }}>
         ENTERPRISE
       </Typography>
