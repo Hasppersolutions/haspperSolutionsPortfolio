@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import Banner from "../../components/Services/Banner";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
-import AiFeature from "../../assets/img/aiFeature.png";
 import Potential from "../../components/Services/Ios/Potential";
 import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
 import chatbot from "../../assets/img/Services/chatbot/chatbot.png";
@@ -10,12 +9,6 @@ import customer from "../../assets/img/Services/chatbot/customer.png";
 import support from "../../assets/img/Services/chatbot/support.png";
 import voiceAnable from "../../assets/img/Services/chatbot/voiceAnable.png";
 import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
-import scale from "../../assets/img/Services/chatbot/scale.png";
-import Group from "../../assets/img/Services/chatbot/Group.png";
-import Vector from "../../assets/img/Services/chatbot/Vector.png";
-import bot from "../../assets/img/Services/chatbot/bot.png";
-import person from "../../assets/img/Services/chatbot/person.png";
-import optimize from "../../assets/img/Services/chatbot/optimize.png";
 import Stats from "../../components/Services/Stats";
 import Technology from "../../components/Services/Technology";
 import java from "../../assets/img/Services/chatbot/java.png";
@@ -32,7 +25,6 @@ import stripe from "../../assets/img/Services/chatbot/stripe.png";
 import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
-import DividerComponent from "../../components/Solution/DividerComponent";
  import workflow1 from "../../assets/img/Solutions/Voicebot/workflow1.png"
  import workflow2 from "../../assets/img/Solutions/Voicebot/workflow2.png"
  import workflow3 from "../../assets/img/Solutions/Voicebot/workflow3.png"
@@ -267,53 +259,6 @@ const FAQData = {
       
     ]
   }
-
-
-  const DividerComponentData = {
-    firstHeading: "Why choose Haspper for",
-    secondHeading: "VoiceBot app development ",
-    description:
-      `You just sit back in your office or home and enjoy your app development journey with us. You can trust us for all your Voicebot app development requirements`,
-    cardData: [
-      {
-        image: multilingualChatbots,
-        title: "Automated",
-        description:
-          `With AI assistance, voice calls are automatically promoted to prospects, reducing the number of manual calls and promoting automation`
-      },
-      {
-        image: support,
-        title: "Personalized",
-        description:
-        `Customers will get the best calling experience with individualized conversation, language, and the correct context that will keep them engaged.`,  
-      },
-      {
-        image: customer,
-        title: "Time-saving",
-        description:
-         `Our voice bot helps you save time by making multiple calls at once. This reduces your staff's contact volume and increases productivity in your call center.`,
-      },
-      {
-        image: chatbot,
-        title: "Cost-saving",
-        description:
-          `Eliminates the need for several call agents and staff, resulting in significant cost savings for your company.`,
-      },
-      {
-        image: chatTesting,
-        title: "Customizable",
-        description:
-          `With the help of our fully customizable Voicebot technology, you may customize your Voicebot to meet your specific company needs.`,    
-      },
-      {
-        image: voiceAnable,
-        title: "Highly Secure",
-        description:
-          `Our voicebot system is built on innovative technologies and monitored by in-house developers throughout the day, ensuring that all of your data is kept safe and secure.`,    
-      },
-    ],
-  };
-
 
   const outSoutceData = {
     firstHeading: "Why choose Haspper for",

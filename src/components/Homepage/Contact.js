@@ -597,7 +597,7 @@
 //           <Grid xs={12} md={6} display="flex" justifyContent="center">
 //             <img src={contactUs} alt="Contact Us" style={{ width: '92%', objectFit: 'cover' }} />
 //           </Grid>
-          
+
 //           {/* Right side: Form */}
 //           <Grid xs={12} md={6}>
 //             <Box
@@ -721,7 +721,7 @@
 
 
 import React, { useState } from 'react';
-import { Container,TextField, Button, Typography, Box } from '@mui/material';
+import { Container, TextField, Button, Typography, Box } from '@mui/material';
 import contactUs from '../../assets/img/contactUs.svg';
 import Grid from '@mui/material/Grid2';
 
@@ -739,37 +739,37 @@ export const Contact = () => {
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
+    setFormDetails({
+      ...formDetails,
+      [category]: value
+    })
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    try{
-    let response = await fetch("http://localhost:5001/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+    try {
+      let response = await fetch("http://localhost:5001/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      });
+      setButtonText("Send");
+      let result = await response.json();
+      setFormDetails(formInitialDetails);
+      if (result.code == 200) {
+        setStatus({ succes: true, message: 'Message sent successfully' });
+      } else {
+        setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
+      }
+    } catch (error) {
+      console.error("There was an error!", error);
+      setStatus({ success: false, message: "Failed to send message. Please try again later." });
+    } finally {
+      setButtonText("Send");
     }
-}catch (error) {
-    console.error("There was an error!", error);
-    setStatus({ success: false, message: "Failed to send message. Please try again later." });
-  } finally {
-    setButtonText("Send");
-  }
   };
 
   return (
@@ -777,12 +777,12 @@ export const Contact = () => {
       <Container>
         <Grid container spacing={3} alignItems="center">
           {/* Left side: Image */}
-          <Grid size={{xs: 12, md: 6}} display="flex" justifyContent="center">
+          <Grid size={{ xs: 12, md: 6 }} display="flex" justifyContent="center">
             <img src={contactUs} alt="Contact Us" style={{ width: '92%', objectFit: 'cover' }} />
           </Grid>
-          
+
           {/* Right side: Form */}
-          <Grid size={{xs: 12, md: 6}}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
                 backgroundColor: '#fff',
@@ -797,7 +797,7 @@ export const Contact = () => {
               </Typography>
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, sm: 6}}>
+                  <Grid size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="First Name"
@@ -811,7 +811,7 @@ export const Contact = () => {
                       }}
                     />
                   </Grid>
-                  <Grid size={{xs: 12, sm: 6}}>
+                  <Grid size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="Last Name"
@@ -825,7 +825,7 @@ export const Contact = () => {
                       }}
                     />
                   </Grid>
-                  <Grid size={{xs: 12, sm: 6}}>
+                  <Grid size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="Email"
@@ -840,7 +840,7 @@ export const Contact = () => {
                       }}
                     />
                   </Grid>
-                  <Grid size={{xs: 12, sm: 6}}>
+                  <Grid size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="Phone No."
@@ -890,6 +890,11 @@ export const Contact = () => {
                     >
                       {buttonText}
                     </Button>
+                  </Grid>
+                  <Grid size={12}>
+                    {status && (
+                      <Typography sx={{ color: "red", fontSize: 14 }}>{status?.message}</Typography>
+                    )}
                   </Grid>
                 </Grid>
               </form>

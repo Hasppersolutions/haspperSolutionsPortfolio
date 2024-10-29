@@ -130,22 +130,18 @@ const solutionsData = {
 const statsData = {
   cardData: [
     {
-      icon: appDevelopment,
       number: "250+",
       label: "Apps Developed",
     },
     {
-      icon: experience,
       number: "10+",
       label: "Years of Experience",
     },
     {
-      icon: thumbUp,
       number: "100+",
       label: "Food App Developers",
     },
     {
-      icon: rating,
       number: "99+",
       label: "Customer Satisfaction",
     },

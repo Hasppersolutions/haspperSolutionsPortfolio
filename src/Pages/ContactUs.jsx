@@ -7,7 +7,7 @@ const ContactUs = () => {
     <>
       <Box
         sx={{
-          backgroundColor: "#9D9494",
+          backgroundColor: "#fff",
           height: "100%",
         }}
       >

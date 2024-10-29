@@ -38,17 +38,17 @@ const DividerComponent = ({ data }) => {
                     <Box sx={cardStyle}>
                       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <img
-                          src={data.cardData[index].image}
-                          alt={data.cardData[index].title}
+                          src={item.image}
+                          alt={item.title}
                           style={{ height: 88, marginBottom: '16px' }}
                         />
                         <Typography
                           sx={{ fontSize: { xs: 22, sm: 26 }, fontWeight: 700, pb: "11px" }}
                         >
-                          {data.cardData[index].title}
+                          {item.title}
                         </Typography>
                         <Typography sx={{ fontSize: 16, color: "#666", textAlign: 'center' }}>
-                          {data.cardData[index].description}
+                          {item.description}
                         </Typography>
                       </Box>
                     </Box>

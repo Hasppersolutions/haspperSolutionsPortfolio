@@ -24,18 +24,16 @@ const IotDevelopment = () => {
 };
 export default IotDevelopment;
 const bannerTextData = {
-  mainHeading: "AI based IoT & IIoT Solutions to",
+  mainHeading: "AI based IoT & IoT Solutions to",
   middleHeading: "Unlock Faster Time to Market and Value",
   backgroundImage: ServiceBackgroudImage,
   rightImage: AiFeature,
   bottomHeading:
     "With an unmatched spectrum of development tools, processor designs, and a world-class ecosystem of partners that allow AI and end-to-end security, we are the industry standard for IoT and embedded devices.",
-  // button: "Get Free Demo", //uncomment to add button to banner
-  // link: "link" //uncomment to add link to button
 };
 const potentialData = {
     firstHeading: "360 Degree End-to-End",
-    secondHeading: "IoT & IIoT Services",
+    secondHeading: "IoT & IoT Services",
     description: "OnGraph delivers Product Design and Development across industry verticals. Our experts assist you from concept to production that enables you to focus on product strategy and management. Backed by skilled and proficient experts, we make use of the most advanced technology and tools to design and develop IoT products that meet your business model as well as focus on end consumer needs.",
     cardData: [
       {
