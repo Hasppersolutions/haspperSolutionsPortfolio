@@ -41,7 +41,18 @@ import development from "../../assets/img/Services/chatbot/development.png";
 import Mailus from "../../components/Homepage/Mailus";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
 import WaveLine from "../../components/WaveLine.jsx";
+import { Contact } from "../../components/Homepage/Contact";
+import Outsourcing from "../../components/Services/CrossPlatform/OutSourcing";
 // import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
+import VariteyApp from '../../assets/img/Services/CrossPlatform/VarietyApps.svg';
+import TimelyDilevery from '../../assets/img/Services/CrossPlatform/TimelyDilevery.svg';
+import Mission from '../../assets/img/Services/CrossPlatform/Mission.svg';
+import EnterpriseApplication from '../../assets/img/Services/CrossPlatform/EnterpriceApplication.svg'
+import Pricing from '../../assets/img/Services/CrossPlatform/Pricing.svg';
+import run5 from "../../assets/img/Services/CrossPlatform/React/run5.png"
+
+import run1 from "../../assets/img/Services/CrossPlatform/React/run1.png"
+import run2 from "../../assets/img/Services/CrossPlatform/React/run3.png"
 
 const ChatBot = () => {
   return (
@@ -57,9 +68,11 @@ const ChatBot = () => {
         <WaveLine />
         <Stats data={statsData} />
         <Technology data={technologyData} />
+        <Outsourcing data={outSoutceData} />
         <DevelopmentProcess data={developmentProcessData} />
         <WaveLine />
         <FAQ data={faqData}/>
+        <Contact />
         <Mailus />
         <ServicesAndStaffing />
         {/* <KeyFeatures /> */}
@@ -291,5 +304,69 @@ const developmentProcessData = {
         "We continue to offer widespread support and maintenance to guarantee smooth operations.",
       icon: quality,
     },
+  ],
+};
+
+const outSoutceData = {
+  firstHeading: "Why Choose Us",
+  secondHeading: "as Your React Native outsourcing Partner?",
+  // description: "",
+  cardData: [
+    [
+      {
+        image: run1,
+        heading: "Proficient React Developers",
+        description:
+          "We have experienced React Native developers capable of building highly scalable mobile applications.",
+      },
+      {
+        image: Mission,
+        heading: "Up-to-dated developers",
+        description:
+          "Our team of experienced developers has the capability and skills of working with React versions 16.9-18.1 and native versions 0.61-0.63",
+      },
+    ],
+    [
+      {
+        image: run2,
+        heading: "Various Libraries",
+        description:
+          "Our React Native team works with multiple React libraries such as material-ui, stripe, chart.js, lodash, j moment, bootstrap, firebase, react-chart-js2, push-notification, react-native-voice, semantic-ui, google-maps-react, amplitude-js, and server-timing.",
+      },
+      {
+        image: VariteyApp,
+        heading: "Variety of apps",
+        description:
+          "Our React Native developers have created a wide range of applications for social media, e-gaming, e-learning, eCommerce, Shopify, health, and many more.",
+      },
+    ],
+    [
+      {
+        image: TimelyDilevery,
+        heading: "Timely delivery",
+        description:
+          "At OnGraph we strictly follow timelines and try to deliver defect-free, well optimized solutions, every time!",
+      },
+      {
+        image: run5,
+        heading: "Seamless Support",
+        description:
+          "Be it pre or post development issues or bugs, we are here to help you out. You just need to raise a support ticket with the concerned project manager and our technical support team will be assigned to it within an hour.",
+      },
+    ],
+    [
+      {
+        image: EnterpriseApplication,
+        heading: "Enterprise Applications",
+        description:
+          "Enterprises need exceptional solutions that can cater millions of users without compromising on the user experience. Keeping this in mind, we employ highly experienced and dedicated developers to build powerful and robust applications for enterprise level businesses.",
+      },
+      {
+        image: Pricing,
+        heading: "Competitive Pricing",
+        description:
+          "Another feature that distinguishes us is our competitive price, as we believe in providing services that are worth the money.",
+      },
+    ],
   ],
 };

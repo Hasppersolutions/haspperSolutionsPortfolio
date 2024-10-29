@@ -19,6 +19,9 @@ import Mailus from "../components/Homepage/Mailus";
 import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
 import Challenges from "../components/Services/Challenges";
 import WaveLine from "../components/WaveLine.jsx";
+import Technologies from "../components/Services/MobileAppDevelopment/Technologies.jsx";
+import mobileAppConsult from "../assets/img/Services/mobile-app-consulting.png";
+import { Contact } from "../components/Homepage/Contact";
 const ArtificialIntelligence = () => {
   return (
     <>
@@ -33,8 +36,12 @@ const ArtificialIntelligence = () => {
         <Challenges data={challengesData} />
         <InnovationSection data={innovationSectionData} />
         <AiTool data={toolData} />
+        <WaveLine />
+        <Technologies data={technologiesData} />
         <Certification />
         <Review />
+        <WaveLine />
+        <Contact />
         <Mailus />
         <ServicesAndStaffing />
       </Box>
@@ -175,6 +182,45 @@ const challengesData = {
         left: -81,
       },
       side: "left",
+    },
+  ],
+};
+
+const technologiesData = {
+  firstHeading: "Next-Gen Artificial Intelligence for",
+  secondHeading: "AI-Driven Business Transformation",
+  description:
+    "Leverage our extensive AI services for swift, reliable, and transformational business outcomes.",
+  technologies: [
+    {
+      title: "AI Consultinga",
+      description:
+        "With our specialized AI consulting services, you can navigate the challenging AI world. We plan and direct your AI transformation to maximize commercial benefit.",
+      icon: mobileAppConsult,
+    },
+    {
+      title: "AI Development",
+      description:
+        "We create customized AI solutions tailored to your specific business requirements, resulting in increased productivity and decision-making",
+      icon: mobileAppConsult,
+    },
+    {
+      title: "AI Integration",
+      description:
+        "Our services ensure seamless integration of AI solutions within your existing systems. Experience a hassle-free transition and enriched operational workflow.",
+      icon: mobileAppConsult,
+    },
+    {
+      title: "Generative AI",
+      description:
+        "We assist in the creation of original data and content with advanced Generative AI. Empower your business with innovative AI-driven content creation.",
+      icon: mobileAppConsult,
+    },
+    {
+      title: "Data Engineering",
+      description:
+        "We structure and organize your data for insightful and data-driven decision-making. Harness the power of data for an evidence-based business strategy.",
+      icon: mobileAppConsult,
     },
   ],
 };
