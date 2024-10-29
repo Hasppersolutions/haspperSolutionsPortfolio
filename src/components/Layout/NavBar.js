@@ -247,7 +247,6 @@ export const NavBar = () => {
   }}>
     
     <Button 
-    disableRipple
       sx={{
         backgroundColor: "#fff",
         borderRadius: "20px",
@@ -289,7 +288,6 @@ export const NavBar = () => {
     width: '200px',
   }}>
     <Button
-    disableRipple
       sx={{
         backgroundColor: "#fff",
         borderRadius: "20px",
@@ -370,7 +368,7 @@ export const NavBar = () => {
                       },
                     },
                     tooltip: {
-                      sx: [tooltipStyle, { minWidth: { lg: "900px" } }],
+                      sx: [tooltipStyle, { minWidth: { lg: "950px" } }],
                     },
                   }}
                   title={
@@ -378,11 +376,12 @@ export const NavBar = () => {
                       <Grid container>
                         <Grid size={4}>
                           <Box sx={{
-                           rowGap: 8,
-                           display: 'flex',
-                           flexDirection: 'column'
+                            rowGap: 8,
+                            display: 'flex',
+                            flexDirection: 'column'
                           }}>
-                            <Box sx={{
+
+<Box sx={{
     backgroundColor: "#fff",
     borderRadius: "16px",
     padding: '20px 16px',
@@ -809,7 +808,7 @@ const linkData = [
               },
               {
                 name: "Enterprise Product",
-                link: "",
+                link: "/product-engineer-development",
                 type: "subHeading"
               },
             ]
