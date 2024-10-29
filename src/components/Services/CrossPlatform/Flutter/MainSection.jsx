@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Typography, Grid2 as Grid, Paper, Container } from '@mui/material';
-// import BackgroundImage from '../../../../assets/img/Services/MainImg.svg'; 
+
 const StatsCard = ({ value, label }) => (
   <Paper
     elevation={3}

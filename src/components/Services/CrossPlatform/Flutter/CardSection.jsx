@@ -10,10 +10,6 @@ import Consulting from '../../../../assets/img/Services/CrossPlatform/Consulting
 import Migration from '../../../../assets/img/Services/CrossPlatform/Migration.svg';
 import DevelopmentDesign from '../../../../assets/img/Services/CrossPlatform/DevelopmentDesgn.svg';
 import Testing from '../../../../assets/img/Services/CrossPlatform/Testing.svg';
-import Deployment from '../../../../assets/img/Services/CrossPlatform/Deployment.svg';
-import LaunchSupport from '../../../../assets/img/Services/CrossPlatform/LaunchSupport.svg';
-
-// Import Swiper modules
 import { Navigation, Pagination } from 'swiper/modules';
 
 // Dummy data for card content

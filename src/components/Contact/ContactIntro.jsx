@@ -28,9 +28,7 @@ export const ContactIntro = () => {
       <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: '3rem', marginBottom: '20px' }}>
         Let's Build Tomorrow Together - Contact Our IT Experts Today
       </Typography>
-      {/* <Typography variant="h5" sx={{ marginBottom: '20px' }}>
-        Contact Our IT Experts Today
-      </Typography> */}
+
       <Typography variant="body1" sx={{ fontSize: '2rem', fontWeight: '200', marginBottom: '20px' }}>
         Unlock the power of advanced technology with our dedicated IT team. Let's collaborate to build future-proof solutions that keep your business ahead of the competition.
       </Typography>

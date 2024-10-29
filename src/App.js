@@ -12,7 +12,6 @@ import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment';
 import Layout from "./components/Layout/index"
 import ReactNative from "./Pages/ReactNative"
 import Ionic from "./Pages/Ionic"
-// import Flutter from "./Pages/Flutter"
 import Ios from './Pages/Services/Ios';
 import Android from './Pages/Services/Android';
 import Flutter from './Pages/Services/Flutter';
@@ -24,6 +23,8 @@ import PhpDevelopment from './Pages/Services/Php';
 import DotnetDevelopment from './Pages/Services/DotNet';
 import VueDevelopment from './Pages/Services/Vuejs';
 import ReactWebDevelopment from './Pages/Services/ReactWebDev';
+import Startup from './Pages/Services/Startup';
+import Enterprise from './Pages/Services/Enterprise';
 import JavaDevelopment from './Pages/Services/java';
 import PythonDevelopment from './Pages/Services/Python';
 import AngularDevelopment from './Pages/Services/Angular';
@@ -41,6 +42,7 @@ import Banking from './Pages/Solutions/Banking';
 import Telecom from './Pages/Solutions/Telecom';
 import Fitness from './Pages/Solutions/Fitness';
 import MediaEntertainment from './Pages/Solutions/MediaEntertainment';
+
 function App() {
   return (
     <>
@@ -91,14 +93,14 @@ function App() {
             <Route path='/services/php-development' element={< PhpDevelopment />} />
             <Route path='/services/dotnet-development' element={< DotnetDevelopment />} />
             <Route path='/services/vuejs-development' element={<VueDevelopment />} />
-            {/* <Route path='/services/react-web-development' element={<ReactWebDevelopment />} /> */}
             <Route path='/services/block-chain' element={<BlockChain />} />
             <Route path='/services/voicebot' element={<Voicebot />} />
             <Route path='/services/operation-staffing' element={<OperationStaffing />} />
             <Route path='/services/software-support' element={<SoftwareSupport />} />
             <Route path='/services/cloud-computing' element={<CloudComputing />} />
             <Route path='/services/marketplace' element={<Marketplace />} />
-            {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
+             <Route path = '/startup-it-solutions' element = { <Startup/>}/>
+            <Route path = '/enterprise-it-solutions' element = { <Enterprise/>}/>
           </Routes>
         </Layout>
       </BrowserRouter>

@@ -6,7 +6,6 @@ import WebPageDesc from "../../components/Services/WebAppDevelopment/WebPageDesc
 import WhyUsforWebDev from "../../components/Services/WebAppDevelopment/WhyUsforWebDev";
 import OurIndustryExperience from "../../components/Services/WebAppDevelopment/OurIndustryExperience";
 import TechnologyStack from "../../components/Services/WebAppDevelopment/TechnologyStack";
-import { Description } from "@mui/icons-material";
 import DevelopmentServices from "../../components/Services/WebAppDevelopment/DevelopmentServices";
 import phpdescriptionimg from "../../assets/img/phpdescriptionimg.svg";
 import TechnologyAdv from "../../components/Services/WebAppDevelopment/TechnologyAdvantage";
@@ -16,12 +15,24 @@ import MultipleLangPhp from "../../assets/img/webDevelopmentService/MultipleLang
 import easyDBphp from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import crosspltfmPhp from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityphp.png";
-import securityphp from "../../assets/img/webDevelopmentService/securityphp.jpeg";
-import cmswebdevphp from "../../assets/img/webDevelopmentService/cmswebdevphp.svg"
-import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
-import Microservices from "../../assets/img/Microservices.svg";
+import securityphp from "../../assets/img/webDevelopmentService/securityphp.png";
+import cmswebdevphp from "../../assets/img/webDevelopmentService/customCMS.png";
+import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
+import enterprise from "../../assets/img/webDevelopmentService/enterprise.png";
 import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
-import API from "../../assets/img/API.svg";
+import API from "../../assets/img/webDevelopmentService/API.png";
+import ecomIcon from "../../assets/img/webDevelopmentService/e-comWeb.png"
+import laravelIcon from "../../assets/img/webDevelopmentService/laravel.png";
+import symfonyIcon from "../../assets/img/webDevelopmentService/symfony.png";
+import codeIgniIcon from "../../assets/img/webDevelopmentService/codeignitor.png";
+import yiiIcon from "../../assets/img/webDevelopmentService/YiiIcon.png"
+import cakePhpIcon from "../../assets/img/webDevelopmentService/cakephp.png";
+import zendIcon from "../../assets/img/webDevelopmentService/zend.png";
+import medicalIcon from "../../assets/img/healthCare.png";
+import bankIcon from "../../assets/img/webDevelopmentService/banking.png";
+import MediaIcon from "../../assets/img/webDevelopmentService/media.png";
+import transportIcon from "../../assets/img/transportApp.png";
+import eduicon from "../../assets/img/eduApp.png";
 
 const PhpDevelopment = () => {
     return(
@@ -119,37 +130,37 @@ const ourIndustryExperience = {
     "Our extensive experience in PHP development enables us to provide customized solutions across various industries, ensuring robust performance, security, and scalability.",
   technologies: [
     {
-      icon: dynamicIntPhp,
+      icon: ecomIcon,
       title: "E-commerce Solutions",
       description:
         "We build feature-rich, secure, and scalable e-commerce platforms using PHP that provide seamless shopping experiences and efficient order management systems.",
     },
     {
-      icon: MultipleLangPhp,
+      icon: medicalIcon,
       title: "Healthcare Applications",
       description:
         "Leverage PHP to create highly secure and scalable healthcare applications that streamline patient management, data sharing, and integration with medical devices.",
     },
     {
-      icon: easyDBphp,
+      icon: bankIcon,
       title: "Finance and Banking",
       description:
         "Develop secure and scalable PHP-based finance solutions that streamline operations and ensure compliance with the latest industry regulations.",
     },
     {
-      icon: crosspltfmPhp,
+      icon: eduicon,
       title: "Education Platforms",
       description:
         "Build interactive and dynamic PHP-powered education platforms that facilitate learning, course management, and communication between students and teachers.",
     },
     {
-      icon: Scalabilityphp,
+      icon: transportIcon,
       title: "Logistics and Transportation",
       description:
         "Create PHP applications that enhance supply chain management and provide real-time tracking solutions for the logistics and transportation industry.",
     },
     {
-      icon: securityphp,
+      icon: MediaIcon,
       title: "Media and Entertainment",
       description:
         "Utilize PHP to develop engaging media platforms that offer seamless content delivery, subscription management, and high-performance video streaming services.",
@@ -161,7 +172,7 @@ const whyUsForWebDev = {
   mainHeading: "Experience Innovative Applications with Our PHP Development Services",
   cards: [
       {
-          image: crosspltfmPhp,
+          image: ecomIcon,
           title: "E-commerce Website Development",
           description: "At Haspper, we specialize in crafting e-commerce websites that prioritize an intuitive user experience, rapid performance, and robust security. Our team designs scalable platforms that allow businesses to reach a global audience effortlessly. Whether you're looking to launch a small online store or a multi-vendor marketplace, we ensure your e-commerce website drives growth and customer engagement."
       },
@@ -176,7 +187,7 @@ const whyUsForWebDev = {
           description: "We excel in building dynamic social networking web applications that foster interaction and engagement. Whether you're looking to create a niche community or a large-scale platform, our PHP-driven solutions offer responsive, secure, and interactive environments where users can connect, share, and engage effortlessly."
       },
       {
-          image : Microservices,
+          image : enterprise,
           title: "Enterprise Web Application Development",
           description: "Our team is adept at creating powerful enterprise web applications that streamline business operations and boost productivity. Whether it's a customer relationship management (CRM) tool, a project management system, or an internal communication platform, we build custom PHP solutions that align with your business processes and scale as you grow."
       },
@@ -198,32 +209,32 @@ const developmentService = {
   description: "We excel at various PHP frameworks that enhance our development process.",
   cardData: [
       {
-          //icon: crosspltfmPhp,
+          icon: laravelIcon,
           title: "Laravel",
           description: "An elegant framework for web artisans that makes building modern web applications a breeze."
       },
       {
-          //icon: MultipleLangPhp,
+          icon: symfonyIcon,
           title: "Symfony",
           description: "A high-performance PHP framework for web development that is flexible and robust."
       },
       {
-          //icon: CodeIgniter,
+          icon: codeIgniIcon,
           title: "CodeIgniter",
           description: "A powerful PHP framework with a small footprint, great for rapid application development."
       },
       {
-          //icon: Yii,
+          icon: yiiIcon,
           title: "Yii",
           description: "A fast, secure, and efficient framework for developing large-scale applications."
       },
       {
-          //icon: CakePHP,
+          icon: cakePhpIcon,
           title: "CakePHP",
           description: "A framework that simplifies the development of web applications by providing a set of conventions."
       },
       {
-          //icon: Zend,
+          icon: zendIcon,
           title: "Zend Framework",
           description: "A robust and secure PHP framework for enterprise-level applications."
       },

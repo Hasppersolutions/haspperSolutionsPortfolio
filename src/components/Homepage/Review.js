@@ -32,17 +32,6 @@ const reviews = [
 ];
 
 const Review = () => {
-  // const theme = useTheme();
-  // const [activeStep, setActiveStep] = useState(0);
-  // const maxSteps = reviews.length;
-
-  // const handleNext = () => {
-  //   setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  // };
-
-  // const handleBack = () => {
-  //   setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  // };
 
   const renderStars = (rating) => {
     const totalStars = 5;
@@ -114,17 +103,6 @@ const Review = () => {
         <h2>Our Reviews</h2>
       </header>
 
-      {/* <div className="reviews-list">
-        {reviews.map((review) => (
-          <div key={review.id} className="review-card">
-            <img src={review.logo} alt={review.name} className="review-logo" />
-            <div className="review-stars">
-              {renderStars(review.stars)}
-            </div>
-            <p className="review-description">{review.description}</p>
-          </div>
-        ))}
-      </div> */}
       <Carousel
         responsive={responsive}
         autoPlaySpeed={3000}

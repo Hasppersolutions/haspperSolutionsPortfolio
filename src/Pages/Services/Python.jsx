@@ -6,22 +6,10 @@ import WebPageDesc from "../../components/Services/WebAppDevelopment/WebPageDesc
 import WhyUsforWebDev from "../../components/Services/WebAppDevelopment/WhyUsforWebDev";
 import OurIndustryExperience from "../../components/Services/WebAppDevelopment/OurIndustryExperience";
 import TechnologyStack from "../../components/Services/WebAppDevelopment/TechnologyStack";
-import { Description } from "@mui/icons-material";
 import DevelopmentServices from "../../components/Services/WebAppDevelopment/DevelopmentServices";
 import phpdescriptionimg from "../../assets/img/phpdescriptionimg.svg";
 import TechnologyAdv from "../../components/Services/WebAppDevelopment/TechnologyAdvantage";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ"
-import dynamicIntPhp from "../../assets/img/webDevelopmentService/dynamicIntPhp.png";
-import MultipleLangPhp from "../../assets/img/webDevelopmentService/MultipleLangPhp.png";
-import easyDBphp from "../../assets/img/webDevelopmentService/easyDBphp.png";
-import crosspltfmPhp from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
-import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityphp.png";
-import securityphp from "../../assets/img/webDevelopmentService/securityphp.jpeg";
-import cmswebdevphp from "../../assets/img/webDevelopmentService/cmswebdevphp.svg"
-import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.jpg";
-import Microservices from "../../assets/img/Microservices.svg";
-import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
-import API from "../../assets/img/API.svg";
 import pythonchoice from "../../assets/img/webDevelopmentService/pythonchoice.png";
 import pythoneasyintegration from "../../assets/img/webDevelopmentService/pythoneasyintegration.png";
 import pythonready from "../../assets/img/webDevelopmentService/pythonready.png";
@@ -30,15 +18,14 @@ import pythonversatile from "../../assets/img/webDevelopmentService/pythonversat
 import pythonwidelibrary from "../../assets/img/webDevelopmentService/pythonwidelibrary.png";
 import pythonmachine from "../../assets/img/webDevelopmentService/pythonmachine.png";
 import pythonCMS from "../../assets/img/webDevelopmentService/pythonCMS.png";
-import pythonweb from "../../assets/img/webDevelopmentService/pythonweb.png";
-import pythoncore from "../../assets/img/webDevelopmentService/pythoncore.png";
-import pythondjango from "../../assets/img/webDevelopmentService/pythondjango.jpg";
-import pythonfull from "../../assets/img/webDevelopmentService/pythonfull.png";
+import pythonweb from "../../assets/img/webDevelopmentService/webbaseddev.png";
+import pythoncore from "../../assets/img/webDevelopmentService/javawebdevelopment.png";
+import pythondjango from "../../assets/img/webDevelopmentService/pythonfull.png";
 import pythoncustom from "../../assets/img/webDevelopmentService/pythoncustom.png";
 import pythonmobile from "../../assets/img/webDevelopmentService/pythonmobile.png";
 import python24support from "../../assets/img/webDevelopmentService/python24support.png";
-import pythonEnterprise from "../../assets/img/webDevelopmentService/pythonEnterprise.jpg";
-import pythonNextgen from "../../assets/img/webDevelopmentService/pythonNextgen.jpg";
+import pythonEnterprise from "../../assets/img/webDevelopmentService/pythonEnterprise.png";
+import pythonNextgen from "../../assets/img/webDevelopmentService/pythonNextgen.png";
 import pythonSwift from "../../assets/img/webDevelopmentService/pythonSwift.png";
 import pythondevelopers from "../../assets/img/webDevelopmentService/pythondevelopers.png";
 import pythonserving from "../../assets/img/webDevelopmentService/pythonserving.png";
@@ -81,7 +68,7 @@ const pythondescription = {
   description: [
     "Python has become the preferred choice for entrepreneurs and growing businesses seeking to develop applications in data science, dynamic web platforms, artificial intelligence, machine learning, and next-generation digital solutions. Its seamless compatibility with a wide array of frameworks, packages, and libraries allows for rapid application development, enabling the creation of both native and cross-platform applications.",
     "With Python, you can develop a diverse range of applications, including command-line tools, multimedia applications, business software, machine learning solutions, games, and blockchain applications. Notable examples of applications built using Python include Instagram, Uber, Dropbox, Spotify, Reddit, and Pinterest.",
-    "At Haspper, we offer comprehensive Python web app development services that encompass feature-rich web applications, engaging mobile apps, data aggregation tools, analytics solutions, and web crawlers across various industries, including Fintech, Healthcare, E-commerce, and Enterprise solutions. As a leading Python development company with over ten years of industry experience, OnGraph leverages top-tier Python tools and frameworks like Django, TurboGears, and Flask to harness the full potential of scalable and robust Python solutions tailored for your business needs."
+    "At Haspper, we offer comprehensive Python web app development services that encompass feature-rich web applications, engaging mobile apps, data aggregation tools, analytics solutions, and web crawlers across various industries, including Fintech, Healthcare, E-commerce, and Enterprise solutions. As a leading Python development company with over ten years of industry experience, Haspper leverages top-tier Python tools and frameworks like Django, TurboGears, and Flask to harness the full potential of scalable and robust Python solutions tailored for your business needs."
 ],
   button: "",
   image: phpdescriptionimg,
@@ -192,12 +179,12 @@ const pythonStack = [
 
   const whyUsForWebDev = {
     mainHeading: "Why Choose Haspper for Python Development?",
-    description: ["With over 14 years of industry experience and 500+ successful projects, OnGraph has earned the trust of more than 210 clients. Our proficient team of 250+ Python developers excels in creating customized and scalable solutions across various domains."],
+    description: ["With over 14 years of industry experience and 500+ successful projects, Haspper has earned the trust of more than 210 clients. Our proficient team of 250+ Python developers excels in creating customized and scalable solutions across various domains."],
     cards: [
       {
         image: pythondevelopers,
         title: "Skilled Python Developers",
-        description: "At OnGraph, our Python developers write clean, efficient, and high-quality code tailored for your applications using the right frameworks, libraries, and tools."
+        description: "At Haspper, our Python developers write clean, efficient, and high-quality code tailored for your applications using the right frameworks, libraries, and tools."
       },
       {
         image: pythonNextgen,
@@ -212,7 +199,7 @@ const pythonStack = [
       {
         image: pythonserving,
         title: "Serving Various Industries",
-        description: "As a trusted Python development company, OnGraph brings over 14 years of expertise in delivering services across numerous sectors, including eCommerce, Finance, E-learning, Advertising, and IoT."
+        description: "As a trusted Python development company, Haspper brings over 14 years of expertise in delivering services across numerous sectors, including eCommerce, Finance, E-learning, Advertising, and IoT."
       },
       {
         image: pythonEnterprise,
@@ -230,7 +217,7 @@ const pythonStack = [
 
 const developmentService = {
     heading: "Python Development Services We Offer",
-    description: ["Being a premier Python Development Company, we at OnGraph are agile, resourceful, and dedicated to turning your vision into a reality. Our expertise in diverse industry verticals enables us to keep you ahead of the competition by promising to provide beyond expectations."],
+    description: ["Being a premier Python Development Company, we at Haspper are agile, resourceful, and dedicated to turning your vision into a reality. Our expertise in diverse industry verticals enables us to keep you ahead of the competition by promising to provide beyond expectations."],
     cardData: [
      {
         icon: pythonmachine,

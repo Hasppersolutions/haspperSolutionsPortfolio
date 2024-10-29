@@ -8,7 +8,6 @@ import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import reactBgimg from "../../assets/img/reactdevbg.png";
 import reactDescimg from "../../assets/img/reactDescimg.png";
-import VitualDomIcon from "../../assets/img/DataScience.svg";
 import crossPltIcon from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import seoIcon from "../../assets/img/vision-1.png";
 import componentIcon from "../../assets/img/webDevelopmentService/webbaseddev.png";
@@ -17,6 +16,7 @@ import dataBindIcon from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import declarativeIcon from "../../assets/img/UIUximg.png";
 import mobileIcon from "../../assets/img/healthCare.png";
 import customIcon from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
+import virtualIcon from "../../assets/img/webDevelopmentService/virtual.png";
 
 const ReactWebDevelopment = () =>{
     return(
@@ -57,7 +57,7 @@ const technologyAdv = {
     description: "Due to its inherent flexibility and scalability, ReactJS development has seen a significant increase in demand, positioning it as a powerful JavaScript library. With the capabilities of this open-source library, Haspper's ReactJS developers are equipped to craft intricate web and mobile application solutions.",
     cardData: [
         {
-            image: VitualDomIcon,
+            image: virtualIcon,
             title: "Virtual DOM",
             description: "In contrast to traditional DOM, makes coding more straightforward by only re-rendering the parts of the UI that change."
         },
@@ -77,7 +77,7 @@ const technologyAdv = {
             image: componentIcon,
             title: "Component-Based",
             description:
-            "ReactJS’s component-based approach encourages developers at OnGraph to design sophisticated user interfaces by breaking the UI into individual, reusable segments."
+            "ReactJS’s component-based approach encourages developers at Haspper to design sophisticated user interfaces by breaking the UI into individual, reusable segments."
         },
         {
             image: jsxIcon,
