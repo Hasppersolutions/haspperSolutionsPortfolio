@@ -10,6 +10,7 @@ import {
   Grid2 as Grid,
   Typography,
 } from "@mui/material";
+import { Link, useNavigate } from "react-router-dom"
 const Section = () => {
   useGSAP(() => {
     let tl = gsap.timeline({
@@ -117,6 +118,7 @@ const Section = () => {
           </Box>
         </Grid>
       </Grid>
+      <Link to ="/why-haspper" className="link" color="white">
       <Box
         sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
@@ -124,6 +126,7 @@ const Section = () => {
           LEARN MORE ABOUT HASPPER
         </Button>
       </Box>
+      </Link>
     </Box>
   );
 };

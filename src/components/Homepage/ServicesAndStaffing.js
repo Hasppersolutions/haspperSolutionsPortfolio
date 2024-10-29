@@ -28,11 +28,11 @@ const ServicesAndStaffing = () => {
               <a href="/services/ios-app-development" style={styles.link} target="_blank" rel="noopener noreferrer">iOS App Development</a>
               <a href="/services/python-development" style={styles.link} target="_blank" rel="noopener noreferrer">Python</a>
               <a href="/services/ionic-app-development" style={styles.link} target="_blank" rel="noopener noreferrer">Ionic App Development</a>
-              <a href="" style={styles.link} target="_blank" rel="noopener noreferrer">Amazon Web Services</a>
+              <a href="/php-development" style={styles.link} target="_blank" rel="noopener noreferrer">PHP</a>
               <a href="/services/nodejs-development" style={styles.link} target="_blank" rel="noopener noreferrer">NodeJs Development</a>
-              <a href="" style={styles.link} target="_blank" rel="noopener noreferrer">Grails</a>
-              <a href="" style={styles.link} target="_blank" rel="noopener noreferrer">Symfony</a>
-              <a href="" style={styles.link} target="_blank" rel="noopener noreferrer">Selenium Automation</a>
+              <a href="/services/java-development" style={styles.link} target="_blank" rel="noopener noreferrer">Java</a>
+              <a href="/services/vuejs-development" style={styles.link} target="_blank" rel="noopener noreferrer">VueJs</a>
+              <a href="/services/angular-development" style={styles.link} target="_blank" rel="noopener noreferrer">Angular</a>
             </div>
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
@@ -57,10 +57,10 @@ const ServicesAndStaffing = () => {
               <h3 style={styles.heading}>Technology</h3>
               <a href="/services/block-chain" style={styles.link} target="_blank" rel="noopener noreferrer">Blockchain Development</a>
               <a href="/chatbot-development" style={styles.link} target="_blank" rel="noopener noreferrer">Chatbot Development</a>
-              <a href="" style={styles.link} target="_blank" rel="noopener noreferrer">Cross Platform App Development</a>
-              <a href="" style={styles.link} target="_blank" rel="noopener noreferrer">Ecommerce Development</a>
+              <a href="/product-engineer-development" style={styles.link} target="_blank" rel="noopener noreferrer">Enterprise Product Engineering</a>
+              <a href="/artificial-intelligence" style={styles.link} target="_blank" rel="noopener noreferrer">Artificial Intelligence</a>
               <a href="/iot-development" style={styles.link} target="_blank" rel="noopener noreferrer">IoT Solutions</a>
-              <a href="" style={styles.link} target="_blank" rel="noopener noreferrer">Enterprise IT Solutions</a>
+              <a href="/services/Voicebot" style={styles.link} target="_blank" rel="noopener noreferrer">Voicebot Development</a>
             </div>
           </Grid>
         </Grid>
