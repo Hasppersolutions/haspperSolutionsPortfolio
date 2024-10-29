@@ -1,10 +1,8 @@
 import React from "react";
-import Features from "../../components/Services/MobileAppDevelopment/Features";
 import Banner from "../../components/Services/Banner.jsx";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import mainCloudImg from "../../assets/img/Solutions/CloudComputing/CloudComputingMain.svg"
 import aiDescImg from "../../assets/img/Solutions/CloudComputing/FeatureImg.svg"
-import mobileAppConsult from "../../assets/img/Services/mobile-app-consulting.png";
 import icon1 from "../../assets/img/Solutions/CloudComputing/img2.png"
 import icon2 from "../../assets/img/Solutions/CloudComputing/cloud-syncing.svg"
 import icon3 from "../../assets/img/Solutions/CloudComputing/img3.png"
@@ -21,13 +19,8 @@ import techdata4 from "../../assets/img/Solutions/CloudComputing/techdata4.png"
 import techdata5 from "../../assets/img/Solutions/CloudComputing/techdata5.png"
 import techdata2 from "../../assets/img/Solutions/CloudComputing/techdata2.png"
 import techdata6 from "../../assets/img/Solutions/CloudComputing/techdata6.png"
-import Accredited from "../../components/Services/MobileAppDevelopment/Accredited.jsx";
-import { Box } from "@mui/material";
-import DevelopmentServices from "../../components/Services/MobileAppDevelopment/DevelopmentServices.jsx";
 import Technologies from "../../components/Services/MobileAppDevelopment/Technologies.jsx";
-import Industries from "../../components/Services/MobileAppDevelopment/Industries.jsx";
 import WaveLine from "../../components/WaveLine.jsx";
-import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ.jsx";
 import AiDescription from "../../components/Services/AiDescription.jsx";
 import AiTool from "../../components/Services/Ai/AiTool.jsx";
 import Certification from "../../components/Homepage/Certification.js";
@@ -85,7 +78,7 @@ const technologiesData = {
     {
       title: "Proven Expertise",
       description:
-      "At OnGraph, we leverage our wealth of experience and strong technical skills to provide cloud solutions that help businesses succeed."
+      "At Haspper, we leverage our wealth of experience and strong technical skills to provide cloud solutions that help businesses succeed."
         ,icon: techdata1,
     },
     {
@@ -126,11 +119,11 @@ const technologiesData = {
 const aiDescriptionData = {
     firstHeading: "Managing Your Success with",
     secondHeading: "Custom Cloud Solutions",
-    description: `Streamline your processes, discover hidden potential, and gain a competitive advantage with OnGraph’s cutting-edge cloud solutions. We are your one-stop expert for all cloud-related requirements.
+    description: `Streamline your processes, discover hidden potential, and gain a competitive advantage with Haspper’s cutting-edge cloud solutions. We are your one-stop expert for all cloud-related requirements.
 
-                Discover the power of OnGraph’s intelligent, secure, and highly personalized cloud services. Utilize cloud migration for smooth transitions, cloud-native and edge computing development for real-time data processing, data strategy and engineering for informed decision-making, and digital transformation for overall change. Our cloud solutions simplify as well as help you innovate, enabling you to succeed.
+                Discover the power of Haspper’s intelligent, secure, and highly personalized cloud services. Utilize cloud migration for smooth transitions, cloud-native and edge computing development for real-time data processing, data strategy and engineering for informed decision-making, and digital transformation for overall change. Our cloud solutions simplify as well as help you innovate, enabling you to succeed.
 
-                We offer a full range of services, including Cloud Consulting, Development, Integration, Maintenance, Edge Computing, and Data Engineering. You can count on us to be your partner at every stage of your cloud journey. Choose OnGraph for a future business that is cloud-powered, efficient, fast, and disruptive.`,
+                We offer a full range of services, including Cloud Consulting, Development, Integration, Maintenance, Edge Computing, and Data Engineering. You can count on us to be your partner at every stage of your cloud journey. Choose Haspper for a future business that is cloud-powered, efficient, fast, and disruptive.`,
     button: "GET FREE DEMO",
     image: aiDescImg,
   };

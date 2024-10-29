@@ -121,7 +121,7 @@ const Section = () => {
         sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
         <Button className="btn-learn-more" sx={learnButton}>
-          LEARN MORE ABOUT ONGRAPH
+          LEARN MORE ABOUT HASPPER
         </Button>
       </Box>
     </Box>

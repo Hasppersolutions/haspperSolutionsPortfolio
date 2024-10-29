@@ -6,7 +6,6 @@ import WebPageDesc from "../../components/Services/WebAppDevelopment/WebPageDesc
 import WhyUsforWebDev from "../../components/Services/WebAppDevelopment/WhyUsforWebDev";
 import OurIndustryExperience from "../../components/Services/WebAppDevelopment/OurIndustryExperience";
 import TechnologyStack from "../../components/Services/WebAppDevelopment/TechnologyStack";
-import { Description } from "@mui/icons-material";
 import DevelopmentServices from "../../components/Services/WebAppDevelopment/DevelopmentServices";
 import phpdescriptionimg from "../../assets/img/phpdescriptionimg.svg";
 import TechnologyAdv from "../../components/Services/WebAppDevelopment/TechnologyAdvantage";
@@ -34,7 +33,6 @@ import serverRenderIcon from "../../assets/img/webDevelopmentService/serverRende
 import cloudIcon from "../../assets/img/webDevelopmentService/dataMigration.png";
 import apiIcon from "../../assets/img/webDevelopmentService/API.png";
 import realTimeIcon from "../../assets/img/webDevelopmentService/pythonmachine.png";
-import { Link } from 'react-router-dom';
 
 const NodeJsDevelopment = () => {
     return(

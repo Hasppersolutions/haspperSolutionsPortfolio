@@ -5,8 +5,8 @@ import CodeLibrary from '../../../../assets/img/Services/CrossPlatform/CodeLibra
 import VariteyApp from '../../../../assets/img/Services/CrossPlatform/VarietyApps.svg';
 import TimelyDilevery from '../../../../assets/img/Services/CrossPlatform/TimelyDilevery.svg';
 import Mission from '../../../../assets/img/Services/CrossPlatform/Mission.svg';
-import EnterpriseApplication from '../../../../assets/img/Services/CrossPlatform/EnterpriceApplication.svg'
 import Pricing from '../../../../assets/img/Services/CrossPlatform/Pricing.svg';
+
 const OutSourcing = () => {
   return (
     <Box sx={{ padding: '40px 20px', backgroundColor: '#f5f5f5' }}>

@@ -6,7 +6,6 @@ import WebPageDesc from "../../components/Services/WebAppDevelopment/WebPageDesc
 import WhyUsforWebDev from "../../components/Services/WebAppDevelopment/WhyUsforWebDev";
 import OurIndustryExperience from "../../components/Services/WebAppDevelopment/OurIndustryExperience";
 import TechnologyStack from "../../components/Services/WebAppDevelopment/TechnologyStack";
-import { Description } from "@mui/icons-material";
 import DevelopmentServices from "../../components/Services/WebAppDevelopment/DevelopmentServices";
 import phpdescriptionimg from "../../assets/img/phpdescriptionimg.svg";
 import TechnologyAdv from "../../components/Services/WebAppDevelopment/TechnologyAdvantage";

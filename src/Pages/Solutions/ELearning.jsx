@@ -1,8 +1,6 @@
 import Banner from "../../components/Services/Banner";
-import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import AiFeature from "../../assets/img/aiFeature.png";
 import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
-import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
 import AiDescription from "../../components/Services/AiDescription";
 import java from "../../assets/img/Services/chatbot/java.png";
 import python from "../../assets/img/Services/chatbot/python.png";
@@ -33,7 +31,6 @@ import quality from "../../assets/img/Solutions/hrms/quality.png";
 import softwareSolution from "../../assets/img/Solutions/hrms/softwareSolution.png";
 import supportGear from "../../assets/img/Solutions/hrms/supportGear.png";
 import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
-import wordpress from "../../assets/img/Solutions/ELearning/wordpress.png";
 import onlineLearingPortal from "../../assets/img/Solutions/ELearning/onlineLearingPortal.png";
 import Solutions from "../../components/Solutions/Solutions.jsx";
 import performance from "../../assets/img/Solutions/hrms/performance.png";
@@ -80,9 +77,9 @@ const bannerTextData = {
 const aiDescriptionData = {
   firstHeading: "Custom e-Learning Solutions",
   secondHeading: "Ensure Maximum ROI for Your Company",
-  description: `Being a leading e-learning development company, OnGraph has been reshaping the industry with its custom e-learning solutions. Our innovative design thinking and use of advanced technologies help educators, startups, corporates and organizations in creating effective online learning programs. We build highly interactive learning systems and portals to provide an enriching and individualized e-learning experience.
+  description: `Being a leading e-learning development company, Haspper has been reshaping the industry with its custom e-learning solutions. Our innovative design thinking and use of advanced technologies help educators, startups, corporates and organizations in creating effective online learning programs. We build highly interactive learning systems and portals to provide an enriching and individualized e-learning experience.
 
-                OnGraph has an established track record of creating effective customized elearning solutions by turning instructor-led, PDF, PPT, and other paper-based learning content into custom interactive eLearning courses.`,
+                Haspper has an established track record of creating effective customized elearning solutions by turning instructor-led, PDF, PPT, and other paper-based learning content into custom interactive eLearning courses.`,
   button: "TALK TO OUR EXPERTS",
   image: hrms,
 };
@@ -193,11 +190,11 @@ const faqData = {
     {
       question: "Q. How long will it take to create an e-Learning app?",
       answer:
-        "The length of time it takes to construct an e-learning app is determined by the features and functionalities chosen, as well as the app development company’s competence. A business like OnGraph will make certain that all of the agreed-upon features are given according to your preferences and at the best possible time.",
+        "The length of time it takes to construct an e-learning app is determined by the features and functionalities chosen, as well as the app development company’s competence. A business like Haspper will make certain that all of the agreed-upon features are given according to your preferences and at the best possible time.",
     },
     {
       question: "Q. How do you pick the right eLearning app development company?",
-      answer: `Your choice of the top eLearning app development business should be based on the company’s and team members’ experience and knowledge. OnGraph offers a staff of competent and dependable education app engineers who work diligently on each project and take it to the next level, according to your specifications. To create compelling e-learning apps, we mix our highly competent and inventive programming with accuracy.`,
+      answer: `Your choice of the top eLearning app development business should be based on the company’s and team members’ experience and knowledge. Haspper offers a staff of competent and dependable education app engineers who work diligently on each project and take it to the next level, according to your specifications. To create compelling e-learning apps, we mix our highly competent and inventive programming with accuracy.`,
     },
     {
       question:

@@ -23,7 +23,6 @@ import Stats from "../../components/Services/Stats";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import aglie from "../../assets/img/Solutions/hrms/aglie.png";
 import deliveryTime from "../../assets/img/Solutions/hrms/deliveryTime.png";
-import elearning from "../../assets/img/Solutions/hrms/elearning.png";
 import quality from "../../assets/img/Solutions/hrms/quality.png";
 import softwareSolution from "../../assets/img/Solutions/hrms/softwareSolution.png";
 import supportGear from "../../assets/img/Solutions/hrms/supportGear.png";
@@ -41,7 +40,6 @@ import pos from "../../assets/img/Solutions/banking/pos.png";
 import protection from "../../assets/img/Solutions/banking/protection.png";
 import wealthManagement from "../../assets/img/Solutions/banking/wealth-management.png";
 import investment from "../../assets/img/Solutions/banking/investment.png";
-import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
 import telecomSolutions from "../../assets/img/Solutions/telecom/Telecom-solutions.png";
 
 const Telecom = () => {
@@ -256,7 +254,7 @@ const faqData = {
   faqItems: [
     {
       question:
-        "Q. Why should we use OnGraph over another agency for telecom app development?",
+        "Q. Why should we use Haspper over another agency for telecom app development?",
       answer:
         "Our clients choose us because of our broad capabilities to successfully deliver complex app and online portal development projects. We have over fourteen years of experience in solving all kinds of problems, such as working alongside existing development teams, working with legacy systems to support new app developments, building technically complex features, and bringing together systems, processes and applications with seamless integration.",
     },

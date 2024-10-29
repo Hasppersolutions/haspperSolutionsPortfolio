@@ -3,11 +3,7 @@ import Banner from "../../components/Services/Banner";
 import ServiceBackgroudImage from "../../assets/img/Services/Enterprise/ServiceBackgroudImage.png";
 import Potential from "../../components/Services/Ios/Potential";
 import agileDevOps from "../../assets/img/Services/Startup/agileDevOps.png";
-import cyberSecurity from "../../assets/img/Services/Startup/cyberSecurity.png";
-import dataAnalytics from "../../assets/img/Services/Startup/dataanlytics.png";
-import mobileDevelopment from "../../assets/img/Services/Startup/mobileDevelopment.png";
 import cloudcomputing from "../../assets/img/Services/Startup/cloudcomputing.png";
-import strategicTransformation from "../../assets/img/Services/Startup/strategicTransformation.png";
 import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
 import scale from "../../assets/img/Services/chatbot/scale.png";
 import Group from "../../assets/img/Services/chatbot/Group.png";
@@ -32,7 +28,6 @@ import testingQuality from "../../assets/img/Services/Startup/testingQuality.png
 import oracle from "../../assets/img/Services/Startup/oracle.png";
 import sqlLite from "../../assets/img/Services/Startup/sqlLite.png";
 import telecomedev from "../../assets/img/Services/Startup/telecomedev.png";
-import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png"
 import IndustriesServed from "../../components/Services/IndustriesServed"
 import DividerComponent from "../../components/Solutions/DividerComponent";
 import ux from "../../assets/img/Services/chatbot/ux.png";
@@ -45,7 +40,6 @@ import foodimage from "../../assets/img/Services/Startup/foodimage.png"
 import fitnessApp from "../../assets/img/Services/Startup/fitnessApp.png"
 import iot from "../../assets/img/Services/Startup/iot.png";
 import elearningsolution from "../../assets/img/Services/Startup/elearningsolution.png";
-import marketresarch from "../../assets/img/Services/Startup/marketresearch.png";
 import mediaentertain from "../../assets/img/Services/Startup/mediaentertain.png";
 import banking from "../../assets/img/Services/Startup/banking.png";
 import blockchian from "../../assets/img/Services/Startup/blockchain.png";
@@ -65,10 +59,7 @@ import html from "../../assets/img/Services/Startup/html.png";
 import flutter from "../../assets/img/Services/Startup/flutter.png";
 import swift from "../../assets/img/Services/Startup/swift.png";
 import angularJs from "../../assets/img/Services/Startup/angularJs.png";
-import phoneGap from "../../assets/img/Services/Startup/phoneGap.png";
-
-
-
+import phoneGap from "../../assets/img/Services/Startup/phoneGap.png"; 
 
 
 const ChatBot = () => {

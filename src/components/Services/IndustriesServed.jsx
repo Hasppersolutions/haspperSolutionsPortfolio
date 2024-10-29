@@ -1,7 +1,5 @@
 import React from "react";
 import { Grid2 as Grid, Card, CardContent, Typography, Box, styled, Container } from "@mui/material";
-import mysql from "../../assets/img/Services/Startup/mysql.png";
-
 
 // Styled component for hover effect
 const HoverCard = styled(Card)(({ theme, isSmall }) => ({

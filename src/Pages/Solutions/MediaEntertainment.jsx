@@ -11,7 +11,6 @@ import Mailus from "../../components/Homepage/Mailus";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
 import Stats from "../../components/Services/Stats";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
-import hrms from "../../assets/img/Solutions/hrms/hrms.png";
 import aglie from "../../assets/img/Solutions/hrms/aglie.png";
 import deliveryTime from "../../assets/img/Solutions/hrms/deliveryTime.png";
 import elearning from "../../assets/img/Solutions/hrms/elearning.png";
@@ -25,7 +24,6 @@ import pos from "../../assets/img/Solutions/banking/pos.png";
 import protection from "../../assets/img/Solutions/banking/protection.png";
 import wealthManagement from "../../assets/img/Solutions/banking/wealth-management.png";
 import investment from "../../assets/img/Solutions/banking/investment.png";
-import fitness from "../../assets/img/Solutions/fitness/fitness.png";
 import mongoDB from "../../assets/img/Solutions/fitness/MongoDB_Logo.png";
 import mysql from "../../assets/img/Solutions/fitness/MySQL-Logo.png";
 import sqlite from "../../assets/img/Solutions/fitness/sqlite-logo.png";
@@ -34,7 +32,6 @@ import aspNet from "../../assets/img/Solutions/fitness/asp-net.png";
 import flutter from "../../assets/img/Solutions/fitness/flutter.png";
 import java from "../../assets/img/Solutions/fitness/java.png";
 import python from "../../assets/img/Solutions/fitness/python.png";
-import fitnessImg from "../../assets/img/Solutions/fitness/fitness-img.png";
 import oracle from "../../assets/img/Solutions/food/oracle.png";
 import html from "../../assets/img/Solutions/food/html.png";
 import appDevelopment from "../../assets/img/Solutions/food/app-development.png";
@@ -166,7 +163,7 @@ const technologyData = [
 ];
 const developmentServicesData = {
   heading:
-    "Why Choose OnGraph for Media and Entertainment App Development Solution",
+    "Why Choose Haspper for Media and Entertainment App Development Solution",
   description:
     "Streaming App Development Company to help you Evolve your Brand and Services for the New Normal",
   cardData: [
@@ -278,7 +275,7 @@ const faqData = {
       question:
         "Q. Should I invest in Media and Entertainment App Development?",
       answer:
-        "Today the M & E industry is a key part of our lives. And, it has evolved as a newer mobile apps revolution, especially for young people, who want to entertain themselves while on the go. Today entertainment is one of the buzzwords and catering to the user’s demand, we at OnGraph have created numerous video, music and audio apps.",
+        "Today the M & E industry is a key part of our lives. And, it has evolved as a newer mobile apps revolution, especially for young people, who want to entertain themselves while on the go. Today entertainment is one of the buzzwords and catering to the user’s demand, we at Haspper have created numerous video, music and audio apps.",
     },
   ],
 };

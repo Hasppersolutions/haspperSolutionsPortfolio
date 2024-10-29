@@ -5,7 +5,6 @@ import WebPageDesc from "../../components/Services/WebAppDevelopment/WebPageDesc
 import WhyUsforWebDev from "../../components/Services/WebAppDevelopment/WhyUsforWebDev";
 import OurIndustryExperience from "../../components/Services/WebAppDevelopment/OurIndustryExperience";
 import TechnologyStack from "../../components/Services/WebAppDevelopment/TechnologyStack";
-import { Description } from "@mui/icons-material";
 import DevelopmentServices from "../../components/Services/WebAppDevelopment/DevelopmentServices";
 import TechnologyAdv from "../../components/Services/WebAppDevelopment/TechnologyAdvantage";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
@@ -18,7 +17,6 @@ import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityph
 import securityphp from "../../assets/img/webDevelopmentService/securityphp.png";
 import cmswebdevphp from "../../assets/img/webDevelopmentService/customCMS.png"
 import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
-import Microservices from "../../assets/img/Microservices.svg";
 import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
 import API from "../../assets/img/webDevelopmentService/API.png";
 import healthCare from "../../assets/img/webDevelopmentService/medical.png";
