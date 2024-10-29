@@ -41,6 +41,15 @@ import appDevelopment from "../../assets/img/Solutions/food/app-development.png"
 import rating from "../../assets/img/Solutions/food/rating.png";
 import experience from "../../assets/img/Solutions/food/experience.png";
 import thumbUp from "../../assets/img/Solutions/food/thumb-up.png";
+import running from "../../assets/img/Solutions/fitness/running.png";
+
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+ import { Contact } from "../../components/Homepage/Contact.js";
+
+ 
 
 const Fitness = () => {
   return (
@@ -56,6 +65,7 @@ const Fitness = () => {
       <KeyFeatures data={keyFeatureData} />
       <WaveLine />
       <FAQ data={faqData} />
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -77,7 +87,7 @@ const aiDescriptionData = {
 Haspper is a Digital Specialist with expertise in digital fitness and wellness solutions that help businesses grow by increasing app awareness and increasing revenue. We also assist fitness buffs in finding the best workout expert in the quickest amount of time.`,
   button: "TALK TO OUR EXPERTS",
   link: "",
-  image: hrms,
+  image: running,
 };
 // Keep 6 Steps max
 const solutionsData = {
@@ -127,18 +137,22 @@ const solutionsData = {
 const statsData = {
   cardData: [
     {
+      icon: number1,
       number: "250+",
       label: "Apps Developed",
     },
     {
+      icon: number2,
       number: "10+",
       label: "Years of Experience",
     },
     {
+      icon: number3,
       number: "100+",
       label: "Fitness App Developers",
     },
     {
+      icon: number4,
       number: "99+",
       label: "Customer Satisfaction",
     },

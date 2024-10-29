@@ -25,16 +25,16 @@ import stripe from "../../assets/img/Services/chatbot/stripe.png";
 import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
- import workflow1 from "../../assets/img/Solutions/Voicebot/workflow1.png"
- import workflow2 from "../../assets/img/Solutions/Voicebot/workflow2.png"
- import workflow3 from "../../assets/img/Solutions/Voicebot/workflow3.png"
+import workflow1 from "../../assets/img/Solutions/Voicebot/workflow1.png"
+import workflow2 from "../../assets/img/Solutions/Voicebot/workflow2.png"
+import workflow3 from "../../assets/img/Solutions/Voicebot/workflow3.png"
 
- import card1 from "../../assets/img/Solutions/Voicebot/card1.png"
- import card2 from "../../assets/img/Solutions/Voicebot/card2.png"
- import card3 from "../../assets/img/Solutions/Voicebot/card3.png"
- import card4 from "../../assets/img/Solutions/Voicebot/card4.png"
- import card5 from "../../assets/img/Solutions/Voicebot/card5.png"
- import card6 from "../../assets/img/Solutions/Voicebot/card6.png"
+import card1 from "../../assets/img/Solutions/Voicebot/card1.png"
+import card2 from "../../assets/img/Solutions/Voicebot/card2.png"
+import card3 from "../../assets/img/Solutions/Voicebot/card3.png"
+import card4 from "../../assets/img/Solutions/Voicebot/card4.png"
+import card5 from "../../assets/img/Solutions/Voicebot/card5.png"
+import card6 from "../../assets/img/Solutions/Voicebot/card6.png"
 
  import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
  import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
@@ -47,20 +47,20 @@ import language2 from "../../assets/img/Solutions/Voicebot/language2.png"
 
 
 import framework1 from "../../assets/img/Solutions/Voicebot/framework1.png"
- import framework2 from "../../assets/img/Solutions/Voicebot/framework2.png"
- import framework3 from "../../assets/img/Solutions/Voicebot/framework3.png"
+import framework2 from "../../assets/img/Solutions/Voicebot/framework2.png"
+import framework3 from "../../assets/img/Solutions/Voicebot/framework3.png"
 
- import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing.jsx"
+import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing.jsx"
 
- import outsource1 from "../../assets/img/Solutions/Voicebot/outsource1.png"
- import outsource2 from "../../assets/img/Solutions/Voicebot/outsource2.png"
- import outsource3 from "../../assets/img/Solutions/Voicebot/outsource3.png"
- import outsource4 from "../../assets/img/Solutions/Voicebot/outsource4.png"
- import outsource5 from "../../assets/img/Solutions/Voicebot/outsource5.png"
- import outsource8 from "../../assets/img/Solutions/Voicebot/outsource8.png"
- import outsource9 from "../../assets/img/Solutions/Voicebot/outsource9.png"
+import outsource1 from "../../assets/img/Solutions/Voicebot/outsource1.png"
+import outsource2 from "../../assets/img/Solutions/Voicebot/outsource2.png"
+import outsource3 from "../../assets/img/Solutions/Voicebot/outsource3.png"
+import outsource4 from "../../assets/img/Solutions/Voicebot/outsource4.png"
+import outsource5 from "../../assets/img/Solutions/Voicebot/outsource5.png"
+import outsource8 from "../../assets/img/Solutions/Voicebot/outsource8.png"
+import outsource9 from "../../assets/img/Solutions/Voicebot/outsource9.png"
  
- import backgroundImg from "../../assets/img/Solutions/Voicebot/backgroundrightImg.png"
+import backgroundImg from "../../assets/img/Solutions/Voicebot/backgroundrightImg.png"
 import { Contact } from "../../components/Homepage/Contact.js";
 import Mailus from "../../components/Homepage/Mailus.js";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing.js";

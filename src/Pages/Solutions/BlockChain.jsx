@@ -125,7 +125,7 @@ const potentialData = {
       image: potential3,
       title: "Experience in 15+ Industries",
       description:
-       `Hire blockchain developers from OnGraph, bringing expertise across diverse sectors like healthcare, fintech, entertainment, education, and more.`,
+       `Hire blockchain developers from Haspper, bringing expertise across diverse sectors like healthcare, fintech, entertainment, education, and more.`,
     },
     {
       image: potential4,
@@ -153,7 +153,7 @@ With our unique offerings, you can enhance your supply chain operations with blo
 
  
 
-At OnGraph, we don’t just provide services; we empower your company and spark industry change
+At Haspper, we don’t just provide services; we empower your company and spark industry change
     `,
   cardData: [
     {

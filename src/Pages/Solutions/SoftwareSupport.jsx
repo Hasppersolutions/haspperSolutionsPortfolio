@@ -20,7 +20,6 @@ import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 
-
 import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
  import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
  import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
@@ -272,7 +271,7 @@ Maintenance and Support`,
         question: 
         " Q. Why should I outsource my development to Haspper  " ,
         answer:
-        `Save time and reduce costs significantly when you outsource your development to OnGraph. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.`,
+        `Save time and reduce costs significantly when you outsource your development to Haspper. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.`,
       }
 
     ]
@@ -293,13 +292,13 @@ Maintenance and Support`,
         image: cardA,
         heading: "Post-Development Support Services",
         description:
-         `Our adaptive software maintenance assistance includes making changes to the managing functions of your software applications. Beyond the initial implementation, Ongraph will support you completely with a broad choice of services: maintenance plans tailored to your preferred level of incident resolution.`,
+         `Our adaptive software maintenance assistance includes making changes to the managing functions of your software applications. Beyond the initial implementation, Haspper will support you completely with a broad choice of services: maintenance plans tailored to your preferred level of incident resolution.`,
       },
       {
         image: cardB,
         heading: "Application Upgrade & Improvements",
         description:
-        `You already have your applications built but want to upgrade them to the latest technologies or OS Versions. The OnGraph team can help you quickly define a complete roadmap to upgrade your applications. We can also help you resolve any software-related errors and bugs, like rectifying misspelled words or sentences in your software’s interface, eliminating bugs & errors, and correcting any wrong algorithms in your software product. Our professional software maintenance team provides corrective software maintenance services, and can easily correct any.`,
+        `You already have your applications built but want to upgrade them to the latest technologies or OS Versions. The Haspper team can help you quickly define a complete roadmap to upgrade your applications. We can also help you resolve any software-related errors and bugs, like rectifying misspelled words or sentences in your software’s interface, eliminating bugs & errors, and correcting any wrong algorithms in your software product. Our professional software maintenance team provides corrective software maintenance services, and can easily correct any.`,
         },
       ],
       [
@@ -313,7 +312,7 @@ Maintenance and Support`,
         image: cardD,
         heading: "Preventive Application Support Services",
         description:
-        `It is always better to improve applications and systems before anyone faces any problem. OnGraph’s preventive software maintenance services aim at planning and incorporating solutions to meet future requirements and overcome problems that may arise in the long run. Our expert team is capable of effectively analyzing your software’s future needs and problems based on.`,  
+        `It is always better to improve applications and systems before anyone faces any problem. Haspper’s preventive software maintenance services aim at planning and incorporating solutions to meet future requirements and overcome problems that may arise in the long run. Our expert team is capable of effectively analyzing your software’s future needs and problems based on.`,  
       },
     ]
     ],

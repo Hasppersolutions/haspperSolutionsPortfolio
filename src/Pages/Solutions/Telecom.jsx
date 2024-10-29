@@ -23,7 +23,6 @@ import Stats from "../../components/Services/Stats";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import aglie from "../../assets/img/Solutions/hrms/aglie.png";
 import deliveryTime from "../../assets/img/Solutions/hrms/deliveryTime.png";
-import elearning from "../../assets/img/Solutions/hrms/elearning.png";
 import quality from "../../assets/img/Solutions/hrms/quality.png";
 import softwareSolution from "../../assets/img/Solutions/hrms/softwareSolution.png";
 import supportGear from "../../assets/img/Solutions/hrms/supportGear.png";
@@ -41,9 +40,18 @@ import pos from "../../assets/img/Solutions/banking/pos.png";
 import protection from "../../assets/img/Solutions/banking/protection.png";
 import wealthManagement from "../../assets/img/Solutions/banking/wealth-management.png";
 import investment from "../../assets/img/Solutions/banking/investment.png";
-import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
 import telecomSolutions from "../../assets/img/Solutions/telecom/Telecom-solutions.png";
+import backgroundImg from "../../assets/img/Solutions/telecom/backgroundImg.png";
+import section from "../../assets/img/Solutions/telecom/section.png";
 
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+ import language1 from "../../assets/img/Solutions/Voicebot/language1.png"
+
+ import { Contact } from "../../components/Homepage/Contact.js";
 const Telecom = () => {
   return (
     <>
@@ -57,6 +65,7 @@ const Telecom = () => {
       <KeyFeatures data={keyFeatureData} />
       <WaveLine />
       <FAQ data={faqData} />
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -67,7 +76,7 @@ export default Telecom;
 const bannerTextData = {
   mainHeading: "We bring people  ",
   middleHeading: "together, forever",
-  rightImage: AiFeature,
+  rightImage: backgroundImg,
   bottomHeading:
     "Create brand value with our telecom development solutions while enhancing customer experience to connect instantly.",
 };
@@ -77,7 +86,7 @@ const aiDescriptionData = {
   description: `People’s communication methods are evolving rapidly, which is why the telecom sector must reconsider and reformulate its fundamental services in order to keep up with the next difficulties. Designing creative solutions allows you to develop long-term revenue streams, grow your customer base, and provide customers with essential services.
   With so many providers competing for the attention of consumers, it’s critical for the telecom sector to develop a solution that is not only cost-effective but also efficient in handling various operations. Hiring an app development firm with specialized expertise will address all concerns and save you time, allowing you to provide exceptional customer experience.
 `,
-  image: customerEngagement,
+  image: section,
 };
 // Keep 6 Steps max
 const solutionsData = {
@@ -127,18 +136,22 @@ const solutionsData = {
 const statsData = {
   cardData: [
     {
+      icon: number1,
       number: "250+",
       label: "Solution Provided",
     },
     {
+      icon: number2,
       number: "10+",
       label: "Years of Experience",
     },
     {
+      icon: number3,
       number: "100+",
       label: "App Developers",
     },
     {
+      icon: number4,
       number: "99+",
       label: "Customer Satisfaction",
     },
@@ -147,7 +160,7 @@ const statsData = {
 const technologyData = [
   {
     name: "Languages",
-    imgData: [html, python, java, objectC, "path/to/swift-icon"],
+    imgData: [html, python, java, objectC, language1],
   },
   {
     name: "Database",
@@ -252,7 +265,7 @@ const faqData = {
   faqItems: [
     {
       question:
-        "Q. Why should we use OnGraph over another agency for telecom app development?",
+        "Q. Why should we use Haspper over another agency for telecom app development?",
       answer:
         "Our clients choose us because of our broad capabilities to successfully deliver complex app and online portal development projects. We have over fourteen years of experience in solving all kinds of problems, such as working alongside existing development teams, working with legacy systems to support new app developments, building technically complex features, and bringing together systems, processes and applications with seamless integration.",
     },

@@ -38,6 +38,22 @@ import acquisition from "../../assets/img/Solutions/hrms/acquisition.png";
 import employee from "../../assets/img/Solutions/hrms/employee.png";
 import payroll from "../../assets/img/Solutions/hrms/payroll.png";
 
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+ import language1 from "../../assets/img/Solutions/Voicebot/language1.png"
+ import language2 from "../../assets/img/Solutions/Voicebot/language2.png"
+
+
+ import framework1 from "../../assets/img/Solutions/Voicebot/framework1.png"
+ import framework2 from "../../assets/img/Solutions/Voicebot/framework2.png"
+ import framework3 from "../../assets/img/Solutions/Voicebot/framework3.png"
+
+ import { Contact } from "../../components/Homepage/Contact.js";
+ import backgroundImg from "../../assets/img/Solutions/hrms/backgroundImg.png"
+
 const Hrms = () => {
   return (
     <>
@@ -51,6 +67,7 @@ const Hrms = () => {
       <WaveLine />
       <KeyFeatures data={keyFeatureData} />
       <FAQ data={faqData} />
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -63,7 +80,7 @@ const bannerTextData = {
     "Optimize Workforce Efficiency with a Comprehensive HRMS Platform",
   middleHeading: "",
   backgroundImage: rebrandCities,
-  rightImage: AiFeature,
+  rightImage: backgroundImg,
   bottomHeading:
     "HR management—from recruiting and onboarding to payroll, time tracking, and performance reviews. Empower your HR team to work smarter with intuitive self-service tools, reducing administrative burden and enhancing employee engagement. With real-time analytics and customizable workflows, you'll gain actionable insights into workforce trends and make more informed decisions.",
   // button: "Get Free Demo", //uncomment to add button to banner
@@ -120,22 +137,22 @@ const keyFeatureData = {
 const statsData = {
   cardData: [
     {
-      // icon: multilingualChatbots,
+      icon: number1,
       number: "1500+",
       label: "Apps Developed",
     },
     {
-      // icon: multilingualChatbots,
+      icon: number2,
       number: "150+",
       label: "Mobile App Developers",
     },
     {
-      // icon: multilingualChatbots,
+      icon: number3,
       number: "1000+",
       label: "Clients Worldwide",
     },
     {
-      // icon: multilingualChatbots,
+      icon: number4,
       number: "98%",
       label: "Success Rate",
     },
@@ -145,19 +162,19 @@ const technologyData = [
   {
     name: "Languages",
     imgData: [
-      "path/to/html5-icon",
+      language1,
       python,
       java,
       objectC,
-      "path/to/swift-icon",
+      language2,
     ],
   },
   {
     name: "Framework",
     imgData: [
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
+      framework1,
+      framework2,
+      framework3,
       xamarin,
       ionic,
       node,

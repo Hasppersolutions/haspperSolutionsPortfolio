@@ -43,6 +43,18 @@ import wealthManagement from "../../assets/img/Solutions/banking/wealth-manageme
 import investment from "../../assets/img/Solutions/banking/investment.png";
 import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
 
+import backgroundImg from "../../assets/img/Solutions/banking/backgroundImg.png";
+import section from "../../assets/img/Solutions/banking/section.png";
+
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+ import language1 from "../../assets/img/Solutions/Voicebot/language1.png"
+
+ import { Contact } from "../../components/Homepage/Contact.js";
+
 const Banking = () => {
   return (
     <>
@@ -56,6 +68,7 @@ const Banking = () => {
       <KeyFeatures data={keyFeatureData} gridContainerClass="headingBoxWidth" />
       <WaveLine />
       <FAQ data={faqData} />
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -67,7 +80,7 @@ const bannerTextData = {
   mainHeading:
     "Banking in the Cloud: Scalable IT Solutions for Financial Institutions",
   middleHeading: "",
-  rightImage: AiFeature,
+  rightImage: backgroundImg,
   bottomHeading:
     "How AI-driven solutions are enhancing customer experiences, improving operational efficiency, and strengthening security across financial institutions.",
 };
@@ -77,7 +90,7 @@ const aiDescriptionData = {
   description: `Acquiring a software development company for banking services helps you turn your business challenges such as regulation and technology risk into opportunities such as effective risk management, next-generation customer experience, robust processes and data insights. The customer-centric approach of an established app development company lets you visualize the near future and enables you to make your banking and financial business and related processes future-proof.
   Banking experts and financial app developers help you streamline various banking processes such as mobile banking, payment system, and transaction-related processes and bring operational efficiencies. Whether you want to build a net-banking app or a data management solution, app developers make sure that you’re able to use the most out of the cutting-edge technologies.
 `,
-  image: customerEngagement,
+  image: section,
 };
 // Keep 6 Steps max
 const solutionsData = {
@@ -127,18 +140,22 @@ const solutionsData = {
 const statsData = {
   cardData: [
     {
+      icon: number1,
       number: "250+",
       label: "Solution Provided",
     },
     {
+      icon: number2,
       number: "10+",
       label: "Years of Experience",
     },
     {
+      icon: number3,
       number: "100+",
       label: "App Developers",
     },
     {
+      icon: number4,
       number: "99+",
       label: "Customer Satisfaction",
     },
@@ -188,7 +205,7 @@ const keyFeatureData = {
 const technologyData = [
   {
     name: "Languages",
-    imgData: [html, python, java, objectC, "path/to/swift-icon"],
+    imgData: [html, python, java, objectC, language1],
   },
   {
     name: "Framework",

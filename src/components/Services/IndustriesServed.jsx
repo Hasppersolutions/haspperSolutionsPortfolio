@@ -8,7 +8,6 @@ import {
   styled,
   Container,
 } from "@mui/material";
-import mysql from "../../assets/img/Services/Startup/mysql.png";
 
 // Styled component for hover effect
 const HoverCard = styled(Box)(({ theme }) => ({
@@ -90,7 +89,7 @@ const IndustriesServed = ({ data }) => {
           >
             <Typography
               sx={{
-                fontSize: {xs: 26, sm: 36, md: 42, lg: 60},
+                fontSize: { xs: 26, sm: 36, md: 42, lg: 60 },
                 fontWeight: 700,
                 lineHeight: 1.2,
                 color: "#c75425",
@@ -102,8 +101,8 @@ const IndustriesServed = ({ data }) => {
               sx={{
                 color: "#333",
                 fontWeight: 500,
-                fontSize: {xs: 16, sm: 18},
-                mt: 1
+                fontSize: { xs: 16, sm: 18 },
+                mt: 1,
               }}
             >
               {data.description}

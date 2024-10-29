@@ -6,6 +6,7 @@ import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
 import Group from "../../assets/img/Services/chatbot/Group.png";
 import Vector from "../../assets/img/Services/chatbot/Vector.png";
 import bot from "../../assets/img/Services/chatbot/bot.png";
+import optimize from "../../assets/img/Services/chatbot/optimize.png";
 import Stats from "../../components/Services/Stats";
 import Technology from "../../components/Services/Technology";
 import java from "../../assets/img/Services/chatbot/java.png";
@@ -241,7 +242,7 @@ const FAQData = {
         answer:
          `There are three main options:
 
-Hire an agency, such as OnGraph, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
+Hire an agency, such as Haspper, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
 Use a ready-made solution. It will have all of the basic functions, but you will need a developer on your team to make the necessary adjustments.
 Use a software-as-a-service (SaaS) solution. Although this is likely the cheapest option, you will be limited to conventional functionality with few possibilities for adding additional features.`,
       },
@@ -251,7 +252,7 @@ Use a software-as-a-service (SaaS) solution. Although this is likely the cheapes
         answer:
          `There are three main options:
 
-Hire an agency, such as OnGraph, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
+Hire an agency, such as Haspper, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
 Use a ready-made solution. It will have all of the basic functions, but you will need a developer on your team to make the necessary adjustments.
 Use a software-as-a-service (SaaS) solution. Although this is likely the cheapest option, you will be limited to conventional functionality with few possibilities for adding additional features.`, 
       },

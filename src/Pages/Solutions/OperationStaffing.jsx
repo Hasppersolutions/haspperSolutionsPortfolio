@@ -123,13 +123,13 @@ We have a reputation for attracting highly qualified people, having recruited ex
       image: potential2,
       title: "Application Development Staffing Services",
       description:
-      `Whether you are developing or planning for internal or external software applications which can be mission-critical or handling huge data or providing information on the go or using the latest technologies, the OnGraph team can help you staff your technology teams within no time and help you leverage the best talent in the industry at reasonable prices. Our all talent is either experienced or certified to meet your desired skill sets and can be available on-premise or offshore as your engagement needs. We can fill all your positions within 30 days on-contract or contract-to-hire basis.`,
+      `Whether you are developing or planning for internal or external software applications which can be mission-critical or handling huge data or providing information on the go or using the latest technologies, the Haspper team can help you staff your technology teams within no time and help you leverage the best talent in the industry at reasonable prices. Our all talent is either experienced or certified to meet your desired skill sets and can be available on-premise or offshore as your engagement needs. We can fill all your positions within 30 days on-contract or contract-to-hire basis.`,
     },
     {
       image: potential3,
       title: "Network & Infrastructure Staffing Services",
       description:
-      `Whether you are planning to migrate to the cloud or managing your own dedicated infrastructure, OnGraph experience network and infrastructure engineers can help you plan your capacity well, deploy or move applications on the cloud, perform DevOps or continuous deployments, Administrator and monitor your applications for their 24X7 availability. Our talent has deployed and maintained large applications for fortune 5000 companies in the past and their experience will be handy for your business.`,
+      `Whether you are planning to migrate to the cloud or managing your own dedicated infrastructure, Haspper experience network and infrastructure engineers can help you plan your capacity well, deploy or move applications on the cloud, perform DevOps or continuous deployments, Administrator and monitor your applications for their 24X7 availability. Our talent has deployed and maintained large applications for fortune 5000 companies in the past and their experience will be handy for your business.`,
     },
     {
       image: potential4,
@@ -141,7 +141,7 @@ We have a reputation for attracting highly qualified people, having recruited ex
       image: potential5,
       title: "Business Process Staffing Services",
       description:
-       `OnGraph has been helping clients globally in setting up a cost-effective dedicated 24X7 offshore team to support many business operations or lines of business. We can provide 100% managed offshore operations and can scale the team to 50 or 100 people in no time. We will take complete ownership of the business process, hire and train staff and work on SLAs as per your business needs. You have flexible engagement models to scale up or scale down teams as your business situation changes.`,
+       `Haspper has been helping clients globally in setting up a cost-effective dedicated 24X7 offshore team to support many business operations or lines of business. We can provide 100% managed offshore operations and can scale the team to 50 or 100 people in no time. We will take complete ownership of the business process, hire and train staff and work on SLAs as per your business needs. You have flexible engagement models to scale up or scale down teams as your business situation changes.`,
     }
   ],
 };
@@ -285,7 +285,7 @@ Maintenance and Support`,
         question: 
         " Q. Why should I outsource my development to Haspper  " ,
         answer:
-        `Save time and reduce costs significantly when you outsource your development to OnGraph. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.`,
+        `Save time and reduce costs significantly when you outsource your development to Haspper. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.`,
       }
 
     ]

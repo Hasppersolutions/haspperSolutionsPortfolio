@@ -1,8 +1,7 @@
 import Banner from "../../components/Services/Banner";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
-import AiFeature from "../../assets/img/aiFeature.png";
+import AiFeature from "../../assets/img/Solutions/ELearning/backgroundImg.png";
 import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
-import keyFeatures from "../../assets/img/Solutions/keyFeature.png";
 import AiDescription from "../../components/Services/AiDescription";
 import java from "../../assets/img/Services/chatbot/java.png";
 import python from "../../assets/img/Services/chatbot/python.png";
@@ -33,7 +32,6 @@ import quality from "../../assets/img/Solutions/hrms/quality.png";
 import softwareSolution from "../../assets/img/Solutions/hrms/softwareSolution.png";
 import supportGear from "../../assets/img/Solutions/hrms/supportGear.png";
 import rebrandCities from "../../assets/img/Solutions/hrms/rebrandCities.png";
-import wordpress from "../../assets/img/Solutions/ELearning/wordpress.png";
 import onlineLearingPortal from "../../assets/img/Solutions/ELearning/onlineLearingPortal.png";
 import Solutions from "../../components/Solutions/Solutions.jsx";
 import performance from "../../assets/img/Solutions/hrms/performance.png";
@@ -42,9 +40,21 @@ import pos from "../../assets/img/Solutions/banking/pos.png";
 import protection from "../../assets/img/Solutions/banking/protection.png";
 import wealthManagement from "../../assets/img/Solutions/banking/wealth-management.png";
 import investment from "../../assets/img/Solutions/banking/investment.png";
+import section from "../../assets/img/Solutions/ELearning/section.png"
+
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+ import language1 from "../../assets/img/Solutions/Voicebot/language1.png"
+import language2 from "../../assets/img/Solutions/Voicebot/language2.png"
 
 
-
+import framework1 from "../../assets/img/Solutions/Voicebot/framework1.png"
+ import framework2 from "../../assets/img/Solutions/Voicebot/framework2.png"
+ import framework3 from "../../assets/img/Solutions/Voicebot/framework3.png"
+ import { Contact } from "../../components/Homepage/Contact.js";
 
 const ELearning = () => {
   return (
@@ -59,6 +69,7 @@ const ELearning = () => {
       <WaveLine />
       <KeyFeatures data={keyFeatureData}/>
       <FAQ data={faqData} />
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -71,7 +82,7 @@ const bannerTextData = {
     "Make your way into academia",
   middleHeading: "with interactive e-learning solutions",
   backgroundImage: rebrandCities,
-  rightImage: AiFeature,
+  rightImage: section,
   bottomHeading:
     "We build bespoke courseware that engages your target audience and meets your business objectives in a timely and cost-effective manner, using our proven instructional design methodology.",
   // button: "Get Free Demo", //uncomment to add button to banner
@@ -80,11 +91,11 @@ const bannerTextData = {
 const aiDescriptionData = {
   firstHeading: "Custom e-Learning Solutions",
   secondHeading: "Ensure Maximum ROI for Your Company",
-  description: `Being a leading e-learning development company, OnGraph has been reshaping the industry with its custom e-learning solutions. Our innovative design thinking and use of advanced technologies help educators, startups, corporates and organizations in creating effective online learning programs. We build highly interactive learning systems and portals to provide an enriching and individualized e-learning experience.
+  description: `Being a leading e-learning development company, Haspper has been reshaping the industry with its custom e-learning solutions. Our innovative design thinking and use of advanced technologies help educators, startups, corporates and organizations in creating effective online learning programs. We build highly interactive learning systems and portals to provide an enriching and individualized e-learning experience.
 
-                OnGraph has an established track record of creating effective customized elearning solutions by turning instructor-led, PDF, PPT, and other paper-based learning content into custom interactive eLearning courses.`,
+                Haspper has an established track record of creating effective customized elearning solutions by turning instructor-led, PDF, PPT, and other paper-based learning content into custom interactive eLearning courses.`,
   button: "TALK TO OUR EXPERTS",
-  image: hrms,
+  image: AiFeature,
 };
 
 const keyFeatureData = {
@@ -131,18 +142,22 @@ const keyFeatureData = {
 const statsData = {
     cardData: [
       {
+        icon: number1,
         number: "1500+",
         label: "Apps Developed",
       },
       {
+        icon: number2,
         number: "150+",
         label: "Mobile App Developers",
       },
       {
+        icon: number3,
         number: "1000+",
         label: "Clients Worldwide",
       },
       {
+        icon: number4,
         number: "98%",
         label: "Success Rate",
       },
@@ -151,21 +166,21 @@ const statsData = {
 
 const technologyData = [
   {
-    name: "CMS",
+    name: "Languages",
     imgData: [
-      "path/to/html5-icon",
+      language1,
       python,
       java,
       objectC,
-      "path/to/swift-icon",
+      language2,
     ],
   },
   {
-    name: "Database",
+    name: "Framework",
     imgData: [
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
+      framework1,
+      framework2,
+      framework3,
       xamarin,
       ionic,
       node,
@@ -189,11 +204,11 @@ const faqData = {
     {
       question: "Q. How long will it take to create an e-Learning app?",
       answer:
-        "The length of time it takes to construct an e-learning app is determined by the features and functionalities chosen, as well as the app development company’s competence. A business like OnGraph will make certain that all of the agreed-upon features are given according to your preferences and at the best possible time.",
+        "The length of time it takes to construct an e-learning app is determined by the features and functionalities chosen, as well as the app development company’s competence. A business like Haspper will make certain that all of the agreed-upon features are given according to your preferences and at the best possible time.",
     },
     {
       question: "Q. How do you pick the right eLearning app development company?",
-      answer: `Your choice of the top eLearning app development business should be based on the company’s and team members’ experience and knowledge. OnGraph offers a staff of competent and dependable education app engineers who work diligently on each project and take it to the next level, according to your specifications. To create compelling e-learning apps, we mix our highly competent and inventive programming with accuracy.`,
+      answer: `Your choice of the top eLearning app development business should be based on the company’s and team members’ experience and knowledge. Haspper offers a staff of competent and dependable education app engineers who work diligently on each project and take it to the next level, according to your specifications. To create compelling e-learning apps, we mix our highly competent and inventive programming with accuracy.`,
     },
     {
       question:

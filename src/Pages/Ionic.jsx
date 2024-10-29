@@ -7,11 +7,8 @@ import Project from "../components/Services/CrossPlatform/Project";
 import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
 import ServiceBackgroudImage from "../assets/img/ServiceBackgroudImage.png";
 import AiBannerIcon from "../assets/img/AiBannerIcon.png";
-import AiFeature from "../assets/img/aiFeature.png";
 import Potential from "../components/Services/Ios/Potential";
-import revenue from "../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../components/Services/Ios/DevelopmentServices";
-import CodeLibrary from "../assets/img/Services/CrossPlatform/CodeLibrary.svg";
 import Mailus from "../components/Homepage/Mailus";
 import ionic from "../assets/img/Services/ionic.png";
 
@@ -74,7 +71,7 @@ const aiDescriptionData = {
   secondHeading: "Development?",
   description: `Created by Drifty Co. in 2013, Ionic is an Open-Source SDK for cross-platform Mobile App Development. The initial alpha version of Ionic was released in November 2013 followed by the beta 1.0 in March 2014. Using familiar web libraries, frameworks, and languages, Ionic provides a set of tools that help developers to build native iOS, Android, and progressive web applications.
 
-Backed by a dedicated team of Ionic developers we at OnGraph help you build outstanding cross-platform application development that works perfectly in Android, iOS, and progressive web. Get in touch with us today for a free consultation and start your Ionic development.`,
+Backed by a dedicated team of Ionic developers we at haspper help you build outstanding cross-platform application development that works perfectly in Android, iOS, and progressive web. Get in touch with us today for a free consultation and start your Ionic development.`,
   button: "GET FREE DEMO",
   image: ionic,
 };
