@@ -247,6 +247,7 @@ export const NavBar = () => {
   }}>
     
     <Button 
+    disableRipple
       sx={{
         backgroundColor: "#fff",
         borderRadius: "20px",
@@ -288,6 +289,7 @@ export const NavBar = () => {
     width: '200px',
   }}>
     <Button
+    disableRipple
       sx={{
         backgroundColor: "#fff",
         borderRadius: "20px",
