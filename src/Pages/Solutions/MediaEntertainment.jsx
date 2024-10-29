@@ -45,6 +45,13 @@ import mediaAndEntertainment from "../../assets/img/Solutions/media/media-and-en
 import media from "../../assets/img/Solutions/media/media-and-entainment-1.png";
 import mediaBanner from "../../assets/img/Solutions/media/media.png";
 
+
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+ import { Contact } from "../../components/Homepage/Contact.js";
 const MediaEntertainment = () => {
   return (
     <>
@@ -58,6 +65,7 @@ const MediaEntertainment = () => {
       <WaveLine />
       <KeyFeatures data={keyFeatureData} />
       <FAQ data={faqData} />
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -129,22 +137,22 @@ const solutionsData = {
 const statsData = {
   cardData: [
     {
-      icon: appDevelopment,
+      icon: number1,
       number: "250+",
       label: "Apps Developed",
     },
     {
-      icon: experience,
+      icon: number2,
       number: "10+",
       label: "Years of Experience",
     },
     {
-      icon: thumbUp,
+      icon: number3,
       number: "100+",
       label: "Developers",
     },
     {
-      icon: rating,
+      icon: number4,
       number: "99+",
       label: "Customer Satisfaction",
     },

@@ -43,6 +43,18 @@ import html from "../../assets/img/Solutions/food/html.png";
 import phoneGap from "../../assets/img/Solutions/food/phone-gap.png";
 import oracle from "../../assets/img/Solutions/food/oracle.png";
 
+import backgroundImg from "../../assets/img/Solutions/food/backgroundImg.png";
+
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png"
+ import number2 from "../../assets/img/Solutions/Voicebot/number2.png"
+ import number3 from "../../assets/img/Solutions/Voicebot/number3.png"
+ import number4 from "../../assets/img/Solutions/Voicebot/number4.png"
+
+ import language1 from "../../assets/img/Solutions/Voicebot/language1.png"
+ import framework1 from "../../assets/img/Solutions/Voicebot/framework1.png"
+ import framework2 from "../../assets/img/Solutions/Voicebot/framework2.png"
+
+ import { Contact } from "../../components/Homepage/Contact.js";
 const Food = () => {
   return (
     <>
@@ -56,6 +68,7 @@ const Food = () => {
       <KeyFeatures data={keyFeatureData} />
       <WaveLine />
       <FAQ data={faqData} />
+      <Contact/>
       <Mailus />
       <ServicesAndStaffing />
     </>
@@ -68,7 +81,7 @@ const bannerTextData = {
     "Food It App Brings Smart Ordering and Personalized Dining Recommendations to Your Fingertips",
   middleHeading: "",
   //   backgroundImage: rebrandCities,
-  rightImage: AiFeature,
+  rightImage: backgroundImg,
   bottomHeading:
     "A deep dive into how industry-leading food apps use a combination of cutting-edge design principles, smart interfaces, and user-focused innovation to improve engagement and satisfaction.",
   // button: "Get Free Demo", //uncomment to add button to banner
@@ -130,22 +143,22 @@ const solutionsData = {
 const statsData = {
   cardData: [
     {
-      icon: appDevelopment,
+      icon: number1,
       number: "250+",
       label: "Apps Developed",
     },
     {
-      icon: experience,
+      icon: number2,
       number: "10+",
       label: "Years of Experience",
     },
     {
-      icon: thumbUp,
+      icon: number3,
       number: "100+",
       label: "Food App Developers",
     },
     {
-      icon: rating,
+      icon: number4,
       number: "99+",
       label: "Customer Satisfaction",
     },
@@ -195,13 +208,13 @@ const keyFeatureData = {
 const technologyData = [
   {
     name: "Languages",
-    imgData: [html, python, java, objectC, "path/to/swift-icon"],
+    imgData: [html, python, java, objectC, language1],
   },
   {
     name: "Framework",
     imgData: [
-      "path/to/flutter-icon",
-      "angularJs",
+      framework1,
+      framework2,
       phoneGap,
       xamarin,
       ionic,
