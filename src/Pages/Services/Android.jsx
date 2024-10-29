@@ -1,15 +1,11 @@
 import React from "react";
 import Banner from "../../components/Services/Banner";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
-import mobileDevelopmentRight from "../../assets/img/Services/mobile-development-right.png";
 import AiDescription from "../../components/Services/AiDescription";
-import AiFeature from "../../assets/img/aiFeature.png";
 import Potential from "../../components/Services/Ios/Potential";
-import revenue from "../../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing";
-import CodeLibrary from "../../assets/img/Services/CrossPlatform/CodeLibrary.svg";
 import backgroundImg from "../../assets/img/Services/android/backgroundImg.png"
 import aiImg from "../../assets/img/Services/android/aiImg.png"
 
@@ -68,7 +64,7 @@ const aiDescriptionData = {
   description: `Android is a widely installed platform among other platforms around the globe. The operating system is ruling the global market and this trend is only rising with each passing day. <br />
     Android is an open-source and Linux-based operating system that is used to build powerful and robust mobile applications. <br />
     Google says, using the Android SDK, Android applications can be coded using Kotlin, Java, and C++ languages, while using other languages is also possible.<br />
-    Being a leading Android app development company, OnGraph works closely with businesses to know their app idea, business objectives, and app requirements to develop a detailed roadmap for creating tailor-made mobile apps. `,
+    Being a leading Android app development company, Haspper works closely with businesses to know their app idea, business objectives, and app requirements to develop a detailed roadmap for creating tailor-made mobile apps. `,
   button: "",
   image: aiImg,
 };

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './OnGraph.css'; // Ensure to import your updated CSS file
+import './Haspper.css'; // Ensure to import your updated CSS file
 
-export const OnGraph = () => {
+export const Haspper = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -63,7 +63,7 @@ export const OnGraph = () => {
   ];
 
   return (
-    <section className="ongraph" id="ongraph">
+    <section className="haspper" id="haspper">
       <div className="container">
         <div className="header">
           <h2 className="heading" >WE MAKE YOUR
@@ -71,7 +71,7 @@ export const OnGraph = () => {
           </h2>
           <p className="description">We Are Your Angles In Disguise! And our services will deliver you miracles of success.</p>
         </div>
-        <Carousel responsive={responsive} infinite={true} className="ongraph-slider">
+        <Carousel responsive={responsive} infinite={true} className="haspper-slider">
           {industries.map((industry, index) => (
             <div className="item" key={index}>
               <IndustryCard industry={industry} />
@@ -85,15 +85,15 @@ export const OnGraph = () => {
 
 const IndustryCard = ({ industry }) => {
     return (
-      <div className="ongraph-card">
+      <div className="haspper-card">
         <img
           src={industry.normalImg}
           alt={industry.title}
           style={{ width: '100%', height: 'auto', borderRadius: '10px' }} // Optional styling
         />
-        <h5 className="ongraph-title">{industry.title}</h5>
-        <div className="ongraph-content">
-          <p className="ongraph-description">
+        <h5 className="haspper-title">{industry.title}</h5>
+        <div className="haspper-content">
+          <p className="haspper-description">
             {industry.description}
           </p>
         </div>

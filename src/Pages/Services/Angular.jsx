@@ -6,7 +6,6 @@ import WebPageDesc from "../../components/Services/WebAppDevelopment/WebPageDesc
 import WhyUsforWebDev from "../../components/Services/WebAppDevelopment/WhyUsforWebDev";
 import OurIndustryExperience from "../../components/Services/WebAppDevelopment/OurIndustryExperience";
 import TechnologyStack from "../../components/Services/WebAppDevelopment/TechnologyStack";
-import { Description } from "@mui/icons-material";
 import DevelopmentServices from "../../components/Services/WebAppDevelopment/DevelopmentServices";
 import phpdescriptionimg from "../../assets/img/phpdescriptionimg.svg";
 import TechnologyAdv from "../../components/Services/WebAppDevelopment/TechnologyAdvantage";
@@ -17,17 +16,13 @@ import easyDBphp from "../../assets/img/webDevelopmentService/easyDBphp.png";
 import crosspltfmPhp from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import Scalabilityphp from "../../assets/img/webDevelopmentService/Scalabilityphp.png";
 import securityphp from "../../assets/img/webDevelopmentService/securityphp.png";
-import cmswebdevphp from "../../assets/img/webDevelopmentService/customCMS.png"
-import socialnetworkicon from "../../assets/img/webDevelopmentService/socialnetworkicon.png";
 import Support from "../../assets/img/webDevelopmentService/communication.png";
 import webbaseddev from "../../assets/img/webDevelopmentService/webbaseddev.png";
 import Ontime from "../../assets/img/webDevelopmentService/lesstime.png";
 import angularDeveloper from "../../assets/img/webDevelopmentService/pythondevelopers.png";
 import angularEnterprise from "../../assets/img/webDevelopmentService/pythonEnterprise.png";
 import angularjsImage from "../../assets/img/webDevelopmentService/angularjs.svg";
-import angularjsEnterprise from "../../assets/img/webDevelopmentService/angularjsenterprise.png";
 import angularmaterialImage from "../../assets/img/webDevelopmentService/angularmaterial.png";
-import angularGridImage from "../../assets/img/webDevelopmentService/uigrid.png";
 import angularMask from "../../assets/img/webDevelopmentService/Mask group.png";
 import angularCLI from "../../assets/img/webDevelopmentService/angularCLi.png";
 import ngRX from "../../assets/img/webDevelopmentService/ngRX.png";

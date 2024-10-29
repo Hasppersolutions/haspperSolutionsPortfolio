@@ -8,7 +8,6 @@ import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
 import reactBgimg from "../../assets/img/reactdevbg.png";
 import reactDescimg from "../../assets/img/reactDescimg.png";
-import VitualDomIcon from "../../assets/img/DataScience.svg";
 import crossPltIcon from "../../assets/img/webDevelopmentService/crosspltfmPhp.png";
 import seoIcon from "../../assets/img/vision-1.png";
 import componentIcon from "../../assets/img/webDevelopmentService/webbaseddev.png";
@@ -78,7 +77,7 @@ const technologyAdv = {
             image: componentIcon,
             title: "Component-Based",
             description:
-            "ReactJS’s component-based approach encourages developers at OnGraph to design sophisticated user interfaces by breaking the UI into individual, reusable segments."
+            "ReactJS’s component-based approach encourages developers at Haspper to design sophisticated user interfaces by breaking the UI into individual, reusable segments."
         },
         {
             image: jsxIcon,

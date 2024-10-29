@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid2 as Grid, Typography, Card, CardContent, Box, Divider } from '@mui/material';
-import { CheckCircleOutline, PersonOutline } from '@mui/icons-material';
 
 const WhyUsForWebDev = ({ data }) => {
   return (

@@ -1,21 +1,8 @@
 import { Box } from "@mui/material";
 import Banner from "../../components/Services/Banner";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
-import AiFeature from "../../assets/img/aiFeature.png";
 import Potential from "../../components/Services/Ios/Potential";
-import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
-import chatbot from "../../assets/img/Services/chatbot/chatbot.png";
-import chatTesting from "../../assets/img/Services/chatbot/chatTesting.png";
-import customer from "../../assets/img/Services/chatbot/customer.png";
-import support from "../../assets/img/Services/chatbot/support.png";
-import voiceAnable from "../../assets/img/Services/chatbot/voiceAnable.png";
 import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
-import scale from "../../assets/img/Services/chatbot/scale.png";
-import Group from "../../assets/img/Services/chatbot/Group.png";
-import Vector from "../../assets/img/Services/chatbot/Vector.png";
-import bot from "../../assets/img/Services/chatbot/bot.png";
-import person from "../../assets/img/Services/chatbot/person.png";
-import optimize from "../../assets/img/Services/chatbot/optimize.png";
 import Stats from "../../components/Services/Stats";
 import Technology from "../../components/Services/Technology";
 import java from "../../assets/img/Services/chatbot/java.png";
@@ -25,14 +12,8 @@ import xamarin from "../../assets/img/Services/chatbot/xamarin.png";
 import ionic from "../../assets/img/Services/chatbot/ionic.png";
 import node from "../../assets/img/Services/chatbot/node.png";
 import laravel from "../../assets/img/Services/chatbot/laravel.png";
-import securePay from "../../assets/img/Services/chatbot/secure-pay.png";
-import amazonPay from "../../assets/img/Services/chatbot/amazon-pay.png";
-import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
-import stripe from "../../assets/img/Services/chatbot/stripe.png";
-import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
-import DividerComponent from "../../components/Solution/DividerComponent";
 import backgroundImg from "../../assets/img/Solutions/Operation/BackgroundImg.png"
 
 import card1 from "../../assets/img/Solutions/Operation/card1.png"
@@ -142,13 +123,13 @@ We have a reputation for attracting highly qualified people, having recruited ex
       image: potential2,
       title: "Application Development Staffing Services",
       description:
-      `Whether you are developing or planning for internal or external software applications which can be mission-critical or handling huge data or providing information on the go or using the latest technologies, the OnGraph team can help you staff your technology teams within no time and help you leverage the best talent in the industry at reasonable prices. Our all talent is either experienced or certified to meet your desired skill sets and can be available on-premise or offshore as your engagement needs. We can fill all your positions within 30 days on-contract or contract-to-hire basis.`,
+      `Whether you are developing or planning for internal or external software applications which can be mission-critical or handling huge data or providing information on the go or using the latest technologies, the Haspper team can help you staff your technology teams within no time and help you leverage the best talent in the industry at reasonable prices. Our all talent is either experienced or certified to meet your desired skill sets and can be available on-premise or offshore as your engagement needs. We can fill all your positions within 30 days on-contract or contract-to-hire basis.`,
     },
     {
       image: potential3,
       title: "Network & Infrastructure Staffing Services",
       description:
-      `Whether you are planning to migrate to the cloud or managing your own dedicated infrastructure, OnGraph experience network and infrastructure engineers can help you plan your capacity well, deploy or move applications on the cloud, perform DevOps or continuous deployments, Administrator and monitor your applications for their 24X7 availability. Our talent has deployed and maintained large applications for fortune 5000 companies in the past and their experience will be handy for your business.`,
+      `Whether you are planning to migrate to the cloud or managing your own dedicated infrastructure, Haspper experience network and infrastructure engineers can help you plan your capacity well, deploy or move applications on the cloud, perform DevOps or continuous deployments, Administrator and monitor your applications for their 24X7 availability. Our talent has deployed and maintained large applications for fortune 5000 companies in the past and their experience will be handy for your business.`,
     },
     {
       image: potential4,
@@ -160,7 +141,7 @@ We have a reputation for attracting highly qualified people, having recruited ex
       image: potential5,
       title: "Business Process Staffing Services",
       description:
-       `OnGraph has been helping clients globally in setting up a cost-effective dedicated 24X7 offshore team to support many business operations or lines of business. We can provide 100% managed offshore operations and can scale the team to 50 or 100 people in no time. We will take complete ownership of the business process, hire and train staff and work on SLAs as per your business needs. You have flexible engagement models to scale up or scale down teams as your business situation changes.`,
+       `Haspper has been helping clients globally in setting up a cost-effective dedicated 24X7 offshore team to support many business operations or lines of business. We can provide 100% managed offshore operations and can scale the team to 50 or 100 people in no time. We will take complete ownership of the business process, hire and train staff and work on SLAs as per your business needs. You have flexible engagement models to scale up or scale down teams as your business situation changes.`,
     }
   ],
 };
@@ -304,7 +285,7 @@ Maintenance and Support`,
         question: 
         " Q. Why should I outsource my development to Haspper  " ,
         answer:
-        `Save time and reduce costs significantly when you outsource your development to OnGraph. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.`,
+        `Save time and reduce costs significantly when you outsource your development to Haspper. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.`,
       }
 
     ]

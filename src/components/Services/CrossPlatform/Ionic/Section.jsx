@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box,Typography, Container, Grid2 as Grid} from '@mui/material';
 import SectionImage from '../../../../assets/img/Services/IonicSectionImg.svg';
+
 const Section = () => {
   return (
     <Box
@@ -28,7 +29,7 @@ const Section = () => {
               Ionic provides a set of tools that help developers to build native iOS,<br/> Android, and progressive web applications.
               </Typography>
               <Typography variant="body1" sx={{ fontSize: '1.1rem', color: '#333', lineHeight: 1.6, mb: 2 }}>
-              Backed by a dedicated team of Ionic developers we at OnGraph help you build <br/> outstanding 
+              Backed by a dedicated team of Ionic developers we at Haspper help you build <br/> outstanding 
               cross-platform application development that works perfectly in <br/>Android, iOS, and progressive web.
                Get in touch with us today for a free consultation<br/> and start your Ionic development.
               </Typography>

@@ -523,7 +523,7 @@ const linkData = [
           },
           {
             name: "Startup IT Solutions",
-            link: "startup-it-solutions",
+            link: "/startup-it-solutions",
             type: "heading"
           },
           {
@@ -598,16 +598,7 @@ const linkData = [
                 link: "/services/marketplace",
                 type: "subHeading"
               },
-              // {
-              //   name: "WordPress",
-              //   link: "",
-              //   type: "subHeading"
-              // },
-              // {
-              //   name: "Shopify",
-              //   link: "",
-              //   type: "subHeading"
-              // },
+
             ]
           },
         ]
