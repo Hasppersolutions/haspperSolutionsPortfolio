@@ -1,7 +1,9 @@
 import React from "react";
 import { ProjectEstimatePage } from "../components/ProjectEstimate/ProjectEstimateIntroPage";
 import { Box } from "@mui/material";
-
+import { Contact } from "../components/Homepage/Contact";
+import Mailus from "../components/Homepage/Mailus";
+import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
 const GetProjectEstimate = () =>{
     return (
         <>
@@ -13,6 +15,9 @@ const GetProjectEstimate = () =>{
         >
         <ProjectEstimatePage />
         </Box>
+        <Contact/>
+        <Mailus/>
+        <ServicesAndStaffing/>
         </>
     );
 };
