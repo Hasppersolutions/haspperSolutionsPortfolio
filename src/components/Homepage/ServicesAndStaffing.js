@@ -1,28 +1,41 @@
 import React from 'react';
-import { Container, Grid2 as Grid } from "@mui/material"
+import { Container, Grid2 as Grid, Box } from "@mui/material";
+import haspperLogo from "../../assets/img/haspperLogo.png"
 
 const ServicesAndStaffing = () => {
   return (
     <>
       <Container sx={{ pb: 3 }}>
-        <Grid container columnSpacing={{ sm: 3 }} rowGap={{ xs: 3, md: 0 }}>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+        <Grid container columnSpacing={{ sm: 3 }} rowGap={{ xs: 3, md: 0, margin: { md: '60px' } }}>
+          <Grid size={{ xs: 12, sm: 7, md: 3 }}>
+            <Box sx={haspperLogoBox}>
+              <img
+                className='logo-image'
+                src={haspperLogo}
+                alt="Haspper"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  zIndex: 5,
+                }} />
+            </Box>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             {/* Services Column */}
             <div style={styles.column}>
               <h3 style={styles.heading}>Services</h3>
-              <a href="/android" style={styles.link} target="_blank" rel="noopener noreferrer">Android</a>
-              <p style={styles.link}>iOS App Development</p>
-              <p style={styles.link}>Ruby on Rails</p>
-              <p style={styles.link}>Python</p>
-              <p style={styles.link}>Ionic App Development</p>
-              <p style={styles.link}>Amazon Web Services</p>
-              <p style={styles.link}>NodeJs Development Company</p>
-              <p style={styles.link}>Grails</p>
-              <p style={styles.link}>Symfony</p>
-              <p style={styles.link}>Selenium Automation</p>
+              <a href="/services/android-application-development" style={styles.link} target="_blank" rel="noopener noreferrer">Android</a>
+              <a href="/services/ios-app-development" style={styles.link} target="_blank" rel="noopener noreferrer">iOS App Development</a>
+              <a href="/services/python-development" style={styles.link} target="_blank" rel="noopener noreferrer">Python</a>
+              <a href="/services/ionic-app-development" style={styles.link} target="_blank" rel="noopener noreferrer">Ionic App Development</a>
+              <a href="/php-development" style={styles.link} target="_blank" rel="noopener noreferrer">PHP</a>
+              <a href="/services/nodejs-development" style={styles.link} target="_blank" rel="noopener noreferrer">NodeJs Development</a>
+              <a href="/services/java-development" style={styles.link} target="_blank" rel="noopener noreferrer">Java</a>
+              <a href="/services/vuejs-development" style={styles.link} target="_blank" rel="noopener noreferrer">VueJs</a>
+              <a href="/services/angular-development" style={styles.link} target="_blank" rel="noopener noreferrer">Angular</a>
             </div>
           </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             {/* Staffing Services Column */}
             <div style={styles.column}>
               <h3 style={styles.heading}>Staffing Services</h3>
@@ -38,16 +51,16 @@ const ServicesAndStaffing = () => {
               <p style={styles.link}>Hire React Native Developer</p>
             </div>
           </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             {/* Technology Column */}
             <div style={styles.column}>
               <h3 style={styles.heading}>Technology</h3>
-              <p style={styles.link}>Blockchain Development</p>
-              <p style={styles.link}>Chatbot Development</p>
-              <p style={styles.link}>Cross Platform App Development</p>
-              <p style={styles.link}>eCommerce Development</p>
-              <p style={styles.link}>IoT Solutions</p>
-              <p style={styles.link}>Enterprise IT Solutions</p>
+              <a href="/services/block-chain" style={styles.link} target="_blank" rel="noopener noreferrer">Blockchain Development</a>
+              <a href="/chatbot-development" style={styles.link} target="_blank" rel="noopener noreferrer">Chatbot Development</a>
+              <a href="/product-engineer-development" style={styles.link} target="_blank" rel="noopener noreferrer">Enterprise Product Engineering</a>
+              <a href="/artificial-intelligence" style={styles.link} target="_blank" rel="noopener noreferrer">Artificial Intelligence</a>
+              <a href="/iot-development" style={styles.link} target="_blank" rel="noopener noreferrer">IoT Solutions</a>
+              <a href="/services/Voicebot" style={styles.link} target="_blank" rel="noopener noreferrer">Voicebot Development</a>
             </div>
           </Grid>
         </Grid>
@@ -90,3 +103,25 @@ const styles = {
 };
 
 export default ServicesAndStaffing;
+const haspperLogoBox = {
+  position: "relative",
+  zIndex: 5,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "start",
+  minHeight: 148,
+  ".logo-image": {
+    width: { xs: "80% !important", sm: "80% !important", md: "100%" }
+  },
+  ":after": {
+    content: "''",
+    position: "absolute",
+    top: 0,
+    right: 0,
+    height: "100%",
+    width: "100vw",
+    borderRadius: "0px 200px 200px 0px",
+    boxShadow: "6px 10px 15px 0px #00000040",
+    background: "#fff",
+  }
+}

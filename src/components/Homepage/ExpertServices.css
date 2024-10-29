@@ -1,121 +1,190 @@
 /* General styling for the container */
-.expert-services-container {
-    padding: 60px 30px;
-    text-align: center;
-    background-color: #f2f2f2;
-    /* background-color: #f9f9f9; */
+.scroll-down-icon {
+  font-size: 2rem;
+  color: #0462ac;
+  margin-top: 10px;
+  position: relative;
+  animation: 1.8s linear infinite arrow-pulse-down;
+}
+
+.main-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.logo-container img {
+  width: 120px;
+  height: 120px;
+  margin-right: 40px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  /* margin-right: 20px; */
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  color: #0462ac;
+  margin: 0;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Button styling */
+.view-services-btn {
+  background-color: #0462ac;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.view-services-btn:hover {
+  background-color: #023e73;
+}
+
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #C94C16;
+  margin: 0;
+  text-align: left;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: left;
+}
+
+.scroll-down-icon {
+  font-size: 2rem;
+  color: #C94C16;
+  margin-top: 10px;
+}
+
+.main-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.services {
+  flex-direction: column;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.service-item {
+  flex-direction: column;
+  text-align: center;
+}
+
+.service-icon {
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  color: #C94C16;
+  margin: 0;
+}
+
+@keyframes arrow-pulse-down {
+  0% {
+    bottom: 40px
   }
-  
-  .header h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #C94C16;
-    margin: 0;
-    text-align: left;
+
+  50% {
+    bottom: 25px;
   }
-  
-  .header p {
-    font-size: 1.2rem;
-    color: #666;
-    text-align: left;
+
+  100% {
+    bottom: 40px;
+    opacity: 1;
   }
-  
-  .scroll-down-icon {
-    font-size: 2rem;
-    color: #C94C16;
-    margin-top: 10px;
-  }
-  
-  .main-content p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .main-content h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-    margin-bottom: 40px;
-  }
-  
+}
+
+/* Button styling */
+.view-services-btn {
+  background-color: #C94C16;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.view-services-btn:hover {
+  background-color: #C94C16;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-  
-  .logo-container img {
-    width: 120px;
-    height: 120px;
-    margin-right: 40px;
-  }
-  
-  .services-list {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
   }
-  
-  .service-item {
-    display: flex;
-    align-items: center;
+
+  .logo-container {
     margin-bottom: 20px;
   }
-  
+
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .service-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+    margin-bottom: 10px;
   }
-  
-  .service-item h3 {
-    font-size: 1.2rem;
-    color: #C94C16;
-    margin: 0;
-  }
-  
-  .service-item p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  /* Button styling */
-  .view-services-btn {
-    background-color: #C94C16;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    margin-top: 40px;
-  }
-  
-  .view-services-btn:hover {
-    background-color: #C94C16;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .services {
-      flex-direction: column;
-    }
-  
-    .logo-container {
-      margin-bottom: 20px;
-    }
-  
-    .service-item {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .service-icon {
-      margin-bottom: 10px;
-    }
-  }
-  
+}
