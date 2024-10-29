@@ -260,53 +260,6 @@ const FAQData = {
     ]
   }
 
-
-  const DividerComponentData = {
-    firstHeading: "Why choose Haspper for",
-    secondHeading: "VoiceBot app development ",
-    description:
-      `You just sit back in your office or home and enjoy your app development journey with us. You can trust us for all your Voicebot app development requirements`,
-    cardData: [
-      {
-        image: multilingualChatbots,
-        title: "Automated",
-        description:
-          `With AI assistance, voice calls are automatically promoted to prospects, reducing the number of manual calls and promoting automation`
-      },
-      {
-        image: support,
-        title: "Personalized",
-        description:
-        `Customers will get the best calling experience with individualized conversation, language, and the correct context that will keep them engaged.`,  
-      },
-      {
-        image: customer,
-        title: "Time-saving",
-        description:
-         `Our voice bot helps you save time by making multiple calls at once. This reduces your staff's contact volume and increases productivity in your call center.`,
-      },
-      {
-        image: chatbot,
-        title: "Cost-saving",
-        description:
-          `Eliminates the need for several call agents and staff, resulting in significant cost savings for your company.`,
-      },
-      {
-        image: chatTesting,
-        title: "Customizable",
-        description:
-          `With the help of our fully customizable Voicebot technology, you may customize your Voicebot to meet your specific company needs.`,    
-      },
-      {
-        image: voiceAnable,
-        title: "Highly Secure",
-        description:
-          `Our voicebot system is built on innovative technologies and monitored by in-house developers throughout the day, ensuring that all of your data is kept safe and secure.`,    
-      },
-    ],
-  };
-
-
   const outSoutceData = {
     firstHeading: "Why choose Haspper for",
     secondHeading: "VoiceBot app development?",

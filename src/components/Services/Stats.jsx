@@ -1,5 +1,9 @@
 import React from "react";
 import { Typography, Box, Container } from "@mui/material";
+import number1 from "../../assets/img/Solutions/Voicebot/number1.png";
+import number2 from "../../assets/img/Solutions/Voicebot/number2.png";
+import number3 from "../../assets/img/Solutions/Voicebot/number3.png";
+import number4 from "../../assets/img/Solutions/Voicebot/number4.png";
 
 const Stats = ({ data }) => {
   return (
@@ -39,14 +43,22 @@ const Stats = ({ data }) => {
             position: "relative",
           }}
         >
-          {data.cardData.map((item, index) => (
+          {data?.cardData?.map((item, index) => (
             <Box sx={cardStyle} key={index}>
               <Typography
                 sx={{
-                  height:200
+                  height: 200,
                 }}
               >
-              <img src={item.icon} alt="" style={{height:"100%",width:'100%',objectFit:'contain'}} />
+                <img
+                  src={item?.icon || imageData[index]}
+                  alt=""
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    objectFit: "contain",
+                  }}
+                />
               </Typography>
               <Typography
                 sx={{
@@ -62,7 +74,6 @@ const Stats = ({ data }) => {
                 sx={{
                   fontSize: { xs: 18, md: 15 },
                   color: "#333",
-                  
                 }}
               >
                 {item.label}
@@ -99,3 +110,4 @@ const textStyle = {
   fontWeight: 700,
   lineHeight: 1.2,
 };
+const imageData = [number1, number2, number3, number4];
