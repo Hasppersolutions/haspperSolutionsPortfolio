@@ -16,7 +16,6 @@ import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import blockchainImg from "../../assets/img/Solutions/Blockchain/backgroundImg.png"
 
-
 import card1 from "../../assets/img/Solutions/Blockchain/card1.png"
 import card2 from "../../assets/img/Solutions/Blockchain/card2.png"
 import card3 from "../../assets/img/Solutions/Blockchain/card3.png"
@@ -103,8 +102,6 @@ const bannerTextData = {
   rightImage: blockchainImg,
   bottomHeading:
   `Dive into the transformative world of secure, reliable, and efficient solutions with our cutting-edge Blockchain technology development. Connect with our top developers for Custom Blockchain Development Services.`,
-     // button: "Get Free Demo", //uncomment to add button to banner
-  // link: "link" //uncomment to add link to button
 };
 const potentialData = {
   firstHeading: "Why Choose Haspper?",

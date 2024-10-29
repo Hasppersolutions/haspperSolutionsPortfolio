@@ -116,7 +116,7 @@ const AiDescription = ({ data }) => {
                 }}
               />
               {data.button && (
-                <Link to={data.link} style={{ textDecoration: "none" }}>
+                <Link to={data.link || "/contact"} style={{ textDecoration: "none" }}>
                   <Button className="btn-learn-more" sx={learnButton}>
                     {data.button}
                   </Button>

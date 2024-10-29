@@ -156,22 +156,18 @@ const featureData = {
 const statsData = {
   cardData: [
     {
-      icon: multilingualChatbots,
       number: "1500+",
       label: "Apps Developed",
     },
     {
-      icon: multilingualChatbots,
       number: "150+",
       label: "Mobile App Developers",
     },
     {
-      icon: multilingualChatbots,
       number: "1000+",
       label: "Clients Worldwide",
     },
     {
-      icon: multilingualChatbots,
       number: "98%",
       label: "Success Rate",
     },
