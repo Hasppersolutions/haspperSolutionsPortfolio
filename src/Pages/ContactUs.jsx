@@ -13,8 +13,8 @@ const ContactUs = () => {
         }}
       >
         <ContactPage />
-        <Mailus/>
-        <ServicesAndStaffing/>
+        {/* <Mailus/> */}
+        {/* <ServicesAndStaffing/> */}
       </Box>
     </>
   );
