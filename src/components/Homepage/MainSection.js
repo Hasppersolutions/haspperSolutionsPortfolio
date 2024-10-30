@@ -90,6 +90,7 @@ const HeroSection = () => {
             rowGap: { xs: 2, sm: 0 },
             mt: 5
           }}>
+            <Link to="/contact">
           <Button
             variant="contained"
             sx={{
@@ -103,6 +104,8 @@ const HeroSection = () => {
           >
             Consult With Us
           </Button>
+          </Link>
+          <Link to="/project-estimate">
           <Button
             variant="contained"
             sx={{
@@ -115,6 +118,7 @@ const HeroSection = () => {
           >
             Get An Estimate
           </Button>
+          </Link>
         </Box>
       </Container>
     </Box>

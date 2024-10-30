@@ -7,7 +7,7 @@ require('dotenv').config(); // Load environment variables
 // server used to send send emails
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:3000' // Allow your React app's origin
+  origin: 'www.haspper.com' // Allow your React app's origin
 }));
 app.use(express.json());
 app.use("/", router);

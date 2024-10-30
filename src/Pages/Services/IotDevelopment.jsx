@@ -18,22 +18,22 @@ import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import { Contact } from "../../components/Homepage/Contact";
 import Mailus from "../../components/Homepage/Mailus";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
-import VariteyApp from '../../assets/img/Services/CrossPlatform/VarietyApps.svg';
-import TimelyDilevery from '../../assets/img/Services/CrossPlatform/TimelyDilevery.svg';
-import Mission from '../../assets/img/Services/CrossPlatform/Mission.svg';
-import EnterpriseApplication from '../../assets/img/Services/CrossPlatform/EnterpriceApplication.svg'
-import Pricing from '../../assets/img/Services/CrossPlatform/Pricing.svg';
-import run5 from "../../assets/img/Services/CrossPlatform/React/run5.png"
+import VariteyApp from "../../assets/img/Services/CrossPlatform/VarietyApps.svg";
+import TimelyDilevery from "../../assets/img/Services/CrossPlatform/TimelyDilevery.svg";
+import Mission from "../../assets/img/Services/CrossPlatform/Mission.svg";
+import EnterpriseApplication from "../../assets/img/Services/CrossPlatform/EnterpriceApplication.svg";
+import Pricing from "../../assets/img/Services/CrossPlatform/Pricing.svg";
+import run5 from "../../assets/img/Services/CrossPlatform/React/run5.png";
 import support2 from "../../assets/img/Services/chatbot/support-1.png";
 import ux from "../../assets/img/Services/chatbot/ux.png";
 import quality from "../../assets/img/Services/chatbot/quality.png";
 import planning from "../../assets/img/Services/chatbot/planning.png";
 import research from "../../assets/img/Services/chatbot/research.png";
 import development from "../../assets/img/Services/chatbot/development.png";
-import run1 from "../../assets/img/Services/CrossPlatform/React/run1.png"
-import run2 from "../../assets/img/Services/CrossPlatform/React/run3.png"
-import foodimage from "../../assets/img/Services/Startup/foodimage.png"
-import fitnessApp from "../../assets/img/Services/Startup/fitnessApp.png"
+import run1 from "../../assets/img/Services/CrossPlatform/React/run1.png";
+import run2 from "../../assets/img/Services/CrossPlatform/React/run3.png";
+import foodimage from "../../assets/img/Services/Startup/foodimage.png";
+import fitnessApp from "../../assets/img/Services/Startup/fitnessApp.png";
 import elearningsolution from "../../assets/img/Services/Startup/elearningsolution.png";
 import mediaentertain from "../../assets/img/Services/Startup/mediaentertain.png";
 import banking from "../../assets/img/Services/Startup/banking.png";
@@ -56,7 +56,6 @@ import Vector from "../../assets/img/Services/chatbot/Vector.png";
 import bot from "../../assets/img/Services/chatbot/bot.png";
 import person from "../../assets/img/Services/chatbot/person.png";
 import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
-
 
 const IotDevelopment = () => {
   return (
@@ -86,14 +85,12 @@ const IotDevelopment = () => {
 };
 export default IotDevelopment;
 const bannerTextData = {
-  mainHeading: "AI based IoT & IIoT Solutions to",
+  mainHeading: "AI based IoT & IoT Solutions to",
   middleHeading: "Unlock Faster Time to Market and Value",
   backgroundImage: ServiceBackgroudImage,
   rightImage: AiFeature,
   bottomHeading:
     "With an unmatched spectrum of development tools, processor designs, and a world-class ecosystem of partners that allow AI and end-to-end security, we are the industry standard for IoT and embedded devices.",
-  // button: "Get Free Demo", //uncomment to add button to banner
-  // link: "link" //uncomment to add link to button
 };
 const potentialData = {
   firstHeading: "360 Degree End-to-End",
@@ -148,7 +145,7 @@ const featureData = {
     {
       image: person,
       text: "Deployment, Monitoring and Support",
-    }
+    },
   ],
 };
 const statsData = {
@@ -207,49 +204,42 @@ const technologyData = [
 const faqData = {
   faqItems: [
     {
-      question:
-        "Q. How do I hire developers or a team?",
-      answer:
-        `✅First of all – you should gather all the tasks for the developer which you want them to do for you.
+      question: "Q. How do I hire developers or a team?",
+      answer: `✅First of all – you should gather all the tasks for the developer which you want them to do for you.
         ✅Based on the chosen developer and technology, finalize the agreement with the sales team.
-        ✅Upon your confirmation, we will set up everything, and connect you with the developer.`
+        ✅Upon your confirmation, we will set up everything, and connect you with the developer.`,
     },
     {
       question: "Q. What can your developers do for you?",
-      answer:
-        `Our developers can help you build feature-rich apps that work effortlessly across different platforms. Here are some of the services we offer:
+      answer: `Our developers can help you build feature-rich apps that work effortlessly across different platforms. Here are some of the services we offer:
         ✅Product Consultation
         ✅Product Design
         ✅Product Development
         ✅Product Testing
         ✅Product Migration
-        ✅Maintenance and Support`
+        ✅Maintenance and Support`,
     },
     {
       question: "Q. Can I hire a developer for hourly or project based tasks?",
       answer: `Yes, if you know the task to get done from the developer, then you can hire a developer on an hourly or project/task basis. Even we give the flexibility to change the hire model at a later stage.`,
     },
     {
-      question:
-        "Q. How much does it cost to hire a developer?",
+      question: "Q. How much does it cost to hire a developer?",
       answer:
         "There is no straightforward answer to this question. The cost to hire a developer depends on many factors like the development platform, the type of app, complexity of the design, number of pages, features and functions, maintenance cost, etc. You can hire offshore developers on an hourly or fixed cost basis.",
     },
     {
-      question:
-        "Q. How will the apps be secure from external hacks?",
+      question: "Q. How will the apps be secure from external hacks?",
       answer:
         "Of Course, we consider various security standards when creating applications. Our testing parameters ensure that the android app performs perfectly without any difficulties.",
     },
     {
-      question:
-        "Q. Is there any hidden cost?",
+      question: "Q. Is there any hidden cost?",
       answer:
         "No, once we discuss with you your website requirements and then price. We work hard so that the outlined price quote is strictly maintained the same.",
     },
     {
-      question:
-        "Q. Why should I outsource my development to OnGraph?",
+      question: "Q. Why should I outsource my development to OnGraph?",
       answer:
         "Save time and reduce costs significantly when you outsource your development to OnGraph. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.",
     },
@@ -260,8 +250,7 @@ const faqData = {
         "Right from the beginning, we make sure to keep you in the loop by providing progress updates on your project’s development. During that time you can provide feedback and we’ll implement it. This process repeats until you are satisfied with the final result.",
     },
     {
-      question:
-        "Q. What about maintenance after my product is launched?",
+      question: "Q. What about maintenance after my product is launched?",
       answer:
         "After successfully launching your product, we provide an open and dedicated support team to ensure any problems that arise are resolved quickly and efficiently. We can implement suggested updates or feature requests at an additional cost or as part of a monthly plan – find out more by contacting us.",
     },
@@ -323,28 +312,24 @@ const outSoutceData = {
       {
         image: run1,
         heading: "Connectivity",
-        description:
-          "NFC, Bluetooth, WiFi, 4G LTE, BLE etc",
+        description: "NFC, Bluetooth, WiFi, 4G LTE, BLE etc",
       },
       {
         image: Mission,
         heading: "Protocols",
-        description:
-          "HTTPS, HTTP, UDP, TCP, MQTT, SNMP, XMPP etc",
+        description: "HTTPS, HTTP, UDP, TCP, MQTT, SNMP, XMPP etc",
       },
     ],
     [
       {
         image: run2,
         heading: "Platforms & Standards",
-        description:
-          "Nest,OPENIoT, Thread, HomeKit etc",
+        description: "Nest,OPENIoT, Thread, HomeKit etc",
       },
       {
         image: VariteyApp,
         heading: "Data Visualization",
-        description:
-          "Big Data, D3, PowerBI, Tableau etc",
+        description: "Big Data, D3, PowerBI, Tableau etc",
       },
     ],
     [
@@ -357,8 +342,7 @@ const outSoutceData = {
       {
         image: run5,
         heading: "Operating Systems",
-        description:
-          "iOS, Android, Windows, Mac, Ubuntu etc",
+        description: "iOS, Android, Windows, Mac, Ubuntu etc",
       },
     ],
   ],

@@ -160,7 +160,7 @@ const Mission = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                   mr: 2,
-                  backgroundColor: "#BD4916",
+                  backgroundColor: "rgb(189 73 22 / 70%)",
                   padding: 2,
                   borderRadius: 2
                 }}>

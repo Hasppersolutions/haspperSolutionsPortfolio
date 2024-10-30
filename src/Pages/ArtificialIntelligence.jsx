@@ -63,10 +63,10 @@ const bannerTextData = {
 const aiDescriptionData = {
   firstHeading: "Unleashing Business Potential with",
   secondHeading: "Tailor-Made Artificial Intelligence Development Services",
-  description: `With OnGraph’s cutting-edge AI solutions, you can increase operational efficiency, uncover untapped opportunities, and achieve a competitive advantage. We are your one-stop shop for any AI requirements.<br />
-  Discover the power of OnGraph’s intelligent, secured, and highly personalized artificial intelligence services. Natural language processing for faster processes, machine learning for insightful decision-making, computer vision for enhanced customer experience, and deep learning for discovering new opportunities can all help your organization.<br />
+  description: `With Haspper’s cutting-edge AI solutions, you can increase operational efficiency, uncover untapped opportunities, and achieve a competitive advantage. We are your one-stop shop for any AI requirements.<br />
+  Discover the power of Haspper’s intelligent, secured, and highly personalized artificial intelligence services. Natural language processing for faster processes, machine learning for insightful decision-making, computer vision for enhanced customer experience, and deep learning for discovering new opportunities can all help your organization.<br />
   Besides offering Development in AI across diverse domains, we specialize in artificial intelligence game development, and software development powered by AI, and provide top-tier artificial intelligence automation consulting. Our AI technologies go beyond automation, allowing you to create and excel.<br />
-  As a leading Artificial Intelligence Company, we cover all bases, from AI consulting and development of Artificial Intelligence to Integration, Maintenance, Generative AI, and AI Data Engineering. Trust our AI consulting experts to guide you through the AI transformation process. Choose OnGraph for an AI-powered, smarter, faster, and genuinely revolutionary corporate future.`,
+  As a leading Artificial Intelligence Company, we cover all bases, from AI consulting and development of Artificial Intelligence to Integration, Maintenance, Generative AI, and AI Data Engineering. Trust our AI consulting experts to guide you through the AI transformation process. Choose Haspper for an AI-powered, smarter, faster, and genuinely revolutionary corporate future.`,
   button: "GET FREE DEMO",
   image: AiFeature,
 };
@@ -111,9 +111,9 @@ const toolData = {
   ],
 };
 const innovationSectionData = {
-  firstHeading: " OnGraph, fueling innovation with pioneering AI solutions",
+  firstHeading: " Haspper, fueling innovation with pioneering AI solutions",
   description:
-    "With our robust, secure, and comprehensive AI tools, we create synergy between challenges and solutions. OnGraph professionals simplify the difficulty by providing capabilities to manage AI processes, track KPIs, generate and customize AI algorithms, and ensure seamless integration and increased security. Improve your business with our skillfully created AI services.",
+    "With our robust, secure, and comprehensive AI tools, we create synergy between challenges and solutions. Haspper professionals simplify the difficulty by providing capabilities to manage AI processes, track KPIs, generate and customize AI algorithms, and ensure seamless integration and increased security. Improve your business with our skillfully created AI services.",
   backgroundImage: innovationBackImg,
 };
 // Keep 6 max Steps data

@@ -13,10 +13,6 @@ import panel from "../../assets/img/Solutions/marketResearch/panel.png";
 import fraud from "../../assets/img/Solutions/marketResearch/fraud.png";
 import tools from "../../assets/img/Solutions/marketResearch/tools.png";
 import survey from "../../assets/img/Solutions/marketResearch/survey.png";
-import reconciliationRate from "../../assets/img/Solutions/marketResearch/reconcilation-rate.png";
-import surveyCompleted from "../../assets/img/Solutions/marketResearch/survey-completed.png";
-import apiIntegration from "../../assets/img/Solutions/marketResearch/api-integration.png";
-import panelIntegration from "../../assets/img/Solutions/marketResearch/panel-integration.png";
 import innovationBackImg from "../../assets/img/innovationBackImg.png";
 import InnovationSection from "../../components/Services/Ai/InnovationSection.jsx";
 
@@ -171,22 +167,18 @@ const technologiesData = {
 const statsData = {
   cardData: [
     {
-      icon: surveyCompleted,
       number: "8M+",
       label: "Survey Completed",
     },
     {
-      icon: panelIntegration,
       number: "65+",
       label: "Panel Integration",
     },
     {
-      icon: reconciliationRate,
       number: "5%",
       label: "Reconciliation Rate",
     },
     {
-      icon: apiIntegration,
       number: "40+",
       label: "API Integrations",
     },

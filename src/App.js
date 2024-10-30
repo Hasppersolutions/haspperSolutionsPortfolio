@@ -12,7 +12,6 @@ import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment';
 import Layout from "./components/Layout/index"
 import ReactNative from "./Pages/ReactNative"
 import Ionic from "./Pages/Ionic"
-// import Flutter from "./Pages/Flutter"
 import Ios from './Pages/Services/Ios';
 import Android from './Pages/Services/Android';
 import Flutter from './Pages/Services/Flutter';
@@ -94,7 +93,6 @@ function App() {
             <Route path='/services/php-development' element={< PhpDevelopment />} />
             <Route path='/services/dotnet-development' element={< DotnetDevelopment />} />
             <Route path='/services/vuejs-development' element={<VueDevelopment />} />
-            {/* <Route path='/services/react-web-development' element={<ReactWebDevelopment />} /> */}
             <Route path='/services/block-chain' element={<BlockChain />} />
             <Route path='/services/voicebot' element={<Voicebot />} />
             <Route path='/services/operation-staffing' element={<OperationStaffing />} />
@@ -103,7 +101,6 @@ function App() {
             <Route path='/services/marketplace' element={<Marketplace />} />
              <Route path = '/startup-it-solutions' element = { <Startup/>}/>
             <Route path = '/enterprise-it-solutions' element = { <Enterprise/>}/>
-            {/* <Route path='flutter-app-development' element={<Flutter />}/> */}
           </Routes>
         </Layout>
       </BrowserRouter>

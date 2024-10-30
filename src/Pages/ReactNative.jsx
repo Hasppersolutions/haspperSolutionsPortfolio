@@ -5,11 +5,8 @@ import Outsourcing from "../components/Services/CrossPlatform/OutSourcing";
 import FAQ from "../components/Services/CrossPlatform/Ionic/FAQ";
 import Project from "../components/Services/CrossPlatform/Project";
 import ServicesAndStaffing from "../components/Homepage/ServicesAndStaffing";
-import ServiceBackgroudImage from "../assets/img/ServiceBackgroudImage.png";
-import AiBannerIcon from "../assets/img/AiBannerIcon.png";
-import AiFeature from "../assets/img/aiFeature.png";
+import ServiceBackgroudImage from "../assets/img/ServiceBackgroudImage.png";import AiBannerIcon from "../assets/img/AiBannerIcon.png";
 import Potential from "../components/Services/Ios/Potential";
-import revenue from "../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../components/Services/Ios/DevelopmentServices";
 
 import Mailus from "../components/Homepage/Mailus";
@@ -33,7 +30,6 @@ import desc4 from "../assets/img/Services/CrossPlatform/React/desc4.png"
 import desc5 from "../assets/img/Services/CrossPlatform/React/desc5.png"
 import desc6 from "../assets/img/Services/CrossPlatform/React/desc6.png"
 
-import CodeLibrary from '../assets/img/Services/CrossPlatform/CodeLibrary.svg';
 import VariteyApp from '../assets/img/Services/CrossPlatform/VarietyApps.svg';
 import TimelyDilevery from '../assets/img/Services/CrossPlatform/TimelyDilevery.svg';
 import Mission from '../assets/img/Services/CrossPlatform/Mission.svg';
@@ -176,7 +172,7 @@ const developmentServicesData = {
       icon: desc1,
       title: "Support and Maintenance",
       description:
-        "To provide complete support and maintenance, OnGraph employs an innovative and efficient app monitoring system. Response times, crash metrics, and system uptime are all monitored to ensure that the app is meeting your real-world business goals.",
+        "To provide complete support and maintenance, haspper employs an innovative and efficient app monitoring system. Response times, crash metrics, and system uptime are all monitored to ensure that the app is meeting your real-world business goals.",
     },
     {
       icon: desc2,
@@ -247,7 +243,7 @@ const outSoutceData = {
         image: TimelyDilevery,
         heading: "Timely delivery",
         description:
-          "At OnGraph we strictly follow timelines and try to deliver defect-free, well optimized solutions, every time!",
+          "At haspper we strictly follow timelines and try to deliver defect-free, well optimized solutions, every time!",
       },
       {
         image: run5,

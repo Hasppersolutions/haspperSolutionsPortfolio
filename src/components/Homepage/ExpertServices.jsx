@@ -5,6 +5,7 @@ import Chatbot from "../../assets/img/Chatbot.png";
 import Enterprise from "../../assets/img/Enterprice.png";
 import appDevelopment from "../../assets/img/APPICON.svg";
 import webDevelopment from "../../assets/img/webDevelopment.png";
+import haspperImg from "../../assets/img/haspperImg.png";
 import {
   Box,
   Container,
@@ -143,7 +144,7 @@ const ExpertServices = () => {
               lineHeight: 0.6,
             }}
           >
-            16 Years
+            5 Years
           </Typography>
           <Box>
             <img
@@ -223,11 +224,11 @@ const ExpertServices = () => {
                     }}
                   >
                     <img
-                      src={"haspperLogo"}
+                      src={haspperImg}
                       alt="HaspperSolutions Logo"
                       style={{
                         width: "100%",
-                        height: "100%",
+                        height: "115%",
                         objectFit: "cover",
                         objectPosition: "left",
                       }}

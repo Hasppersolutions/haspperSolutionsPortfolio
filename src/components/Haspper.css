@@ -1,4 +1,4 @@
-.ongraph {
+.haspper {
     padding: 60px 0;
     background-color: #ffffff;
   }
@@ -27,7 +27,7 @@
   }
   
   
-  .ongraph-card {
+  .haspper-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -43,7 +43,7 @@
     z-index: 1;
   }
   
-  .ongraph-card:hover {
+  .haspper-card:hover {
     transform: scale(1.2);
     background-color: #c75425;
     position: absolute;
@@ -53,7 +53,7 @@
     z-index: 10;
   }
   
-  .ongraph-title {
+  .haspper-title {
     font-size: 30px;
     font-weight: bold;
     color: rgb(5, 0, 0);
@@ -65,27 +65,27 @@
     transition: opacity 0.3s ease;
   }
   
-  .ongraph-content {
+  .haspper-content {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
   
-  .ongraph-description {
+  .haspper-description {
     font-size: 14px;
     color: rgb(15, 1, 0);
     margin-top: 10px;
   }
   
-  .ongraph-card:hover .ongraph-content {
+  .haspper-card:hover .haspper-content {
     opacity: 1;
     margin-top: 30px;
   }
   
-  .ongraph-card:hover .ongraph-title {
+  .haspper-card:hover .haspper-title {
     opacity: 0;
   }
   
-  .ongraph-card .ongraph-description {
+  .haspper-card .haspper-description {
     margin-left: 0px;
   }
   /* Custom positioning for the left arrow */

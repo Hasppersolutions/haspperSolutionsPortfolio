@@ -5,11 +5,9 @@ import mobileDevelopmentRight from "../../assets/img/Services/flutter/background
 import AiDescription from "../../components/Services/AiDescription";
 import aiImg from "../../assets/img/Services/flutter/aiImg.png";
 import Potential from "../../components/Services/Ios/Potential";
-import revenue from "../../assets/img/Services/ios/revenue.png";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import OutSourcing from "../../components/Services/CrossPlatform/OutSourcing";
-import CodeLibrary from "../../assets/img/Services/CrossPlatform/CodeLibrary.svg";
 import card1 from "../../assets/img/Services/CrossPlatform/React/card1.png"
 import card2 from "../../assets/img/Services/CrossPlatform/React/card2.png"
 import card3 from "../../assets/img/Services/CrossPlatform/React/desc2.png"

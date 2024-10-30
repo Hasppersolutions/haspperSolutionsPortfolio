@@ -1,20 +1,11 @@
 import { Box } from "@mui/material";
 import Banner from "../../components/Services/Banner";
 import ServiceBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
-import AiFeature from "../../assets/img/aiFeature.png";
 import Potential from "../../components/Services/Ios/Potential";
-import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
-import chatbot from "../../assets/img/Services/chatbot/chatbot.png";
-import chatTesting from "../../assets/img/Services/chatbot/chatTesting.png";
-import customer from "../../assets/img/Services/chatbot/customer.png";
-import support from "../../assets/img/Services/chatbot/support.png";
-import voiceAnable from "../../assets/img/Services/chatbot/voiceAnable.png";
 import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
-import scale from "../../assets/img/Services/chatbot/scale.png";
 import Group from "../../assets/img/Services/chatbot/Group.png";
 import Vector from "../../assets/img/Services/chatbot/Vector.png";
 import bot from "../../assets/img/Services/chatbot/bot.png";
-import person from "../../assets/img/Services/chatbot/person.png";
 import optimize from "../../assets/img/Services/chatbot/optimize.png";
 import Stats from "../../components/Services/Stats";
 import Technology from "../../components/Services/Technology";
@@ -25,14 +16,8 @@ import xamarin from "../../assets/img/Services/chatbot/xamarin.png";
 import ionic from "../../assets/img/Services/chatbot/ionic.png";
 import node from "../../assets/img/Services/chatbot/node.png";
 import laravel from "../../assets/img/Services/chatbot/laravel.png";
-import securePay from "../../assets/img/Services/chatbot/secure-pay.png";
-import amazonPay from "../../assets/img/Services/chatbot/amazon-pay.png";
-import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
-import stripe from "../../assets/img/Services/chatbot/stripe.png";
-import authorizeNet from "../../assets/img/Services/chatbot/authorize-net.png";
 import WaveLine from "../../components/WaveLine";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
-import DividerComponent from "../../components/Solution/DividerComponent";
 
 import marketplaceImg from "../../assets/img/Solutions/Marketplace/makretplaceImg.png";
 
@@ -257,7 +242,7 @@ const FAQData = {
         answer:
          `There are three main options:
 
-Hire an agency, such as OnGraph, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
+Hire an agency, such as Haspper, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
 Use a ready-made solution. It will have all of the basic functions, but you will need a developer on your team to make the necessary adjustments.
 Use a software-as-a-service (SaaS) solution. Although this is likely the cheapest option, you will be limited to conventional functionality with few possibilities for adding additional features.`,
       },
@@ -267,7 +252,7 @@ Use a software-as-a-service (SaaS) solution. Although this is likely the cheapes
         answer:
          `There are three main options:
 
-Hire an agency, such as OnGraph, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
+Hire an agency, such as Haspper, to create a specialized marketplace for you. It will include all of the functionality you require for your specific requirements.
 Use a ready-made solution. It will have all of the basic functions, but you will need a developer on your team to make the necessary adjustments.
 Use a software-as-a-service (SaaS) solution. Although this is likely the cheapest option, you will be limited to conventional functionality with few possibilities for adding additional features.`, 
       },
