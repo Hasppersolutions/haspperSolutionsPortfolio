@@ -44,9 +44,21 @@ import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
 import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
 import FeatureSection from "../../components/Services/Chatbot/FeatureSection";
 import WaveLine from "../../components/WaveLine.jsx";
-
-
-
+import { Contact } from "../../components/Homepage/Contact";
+import IndustriesServed from "../../components/Services/IndustriesServed";
+import Outsourcing from "../../components/Services/CrossPlatform/OutSourcing";
+import run1 from "../../assets/img/Services/CrossPlatform/React/run1.png"
+import run2 from "../../assets/img/Services/CrossPlatform/React/run3.png"
+import foodimage from "../../assets/img/Services/Startup/foodimage.png"
+import fitnessApp from "../../assets/img/Services/Startup/fitnessApp.png"
+import elearningsolution from "../../assets/img/Services/Startup/elearningsolution.png";
+import mediaentertain from "../../assets/img/Services/Startup/mediaentertain.png";
+import banking from "../../assets/img/Services/Startup/banking.png";
+import DesignBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
+import VariteyApp from '../../assets/img/Services/CrossPlatform/VarietyApps.svg';
+import TimelyDilevery from '../../assets/img/Services/CrossPlatform/TimelyDilevery.svg';
+import Mission from '../../assets/img/Services/CrossPlatform/Mission.svg';
+import run5 from "../../assets/img/Services/CrossPlatform/React/run5.png"
 
 const ProductEngineer = () => {
   return (
@@ -62,9 +74,12 @@ const ProductEngineer = () => {
         <WaveLine />
         <Stats data={statsData} />
         <Technology data={technologyData} />
+        <IndustriesServed data={industries} />
+        <Outsourcing data={outSoutceData} />
         <DevelopmentProcess data={developmentProcessData} />
         <WaveLine />
         <FAQ data={faqData}/>
+        <Contact />
         <Mailus />
         <ServicesAndStaffing />
       </Box>
@@ -291,3 +306,78 @@ const potentialData = {
       },
     ],
   };
+  const industries = {
+    firstHeading: "Industries We Serve",
+    description: "We build Chatbot solutions for every niche",
+    backgroundImage: DesignBackgroudImage,
+    cardData: [
+      {
+        image: fitnessApp,
+        title: "Fitness App Development Solutions",
+        description: "Custom app solutions for fitness startups.",
+      },
+      {
+        image: elearningsolution,
+        title: "Custom E-Learning Solutions",
+        description: "Innovative e-learning platforms tailored to your needs.",
+      },
+      {
+        image: foodimage,
+        title: "Food",
+        description: "Digital solutions for the food industry.",
+      },
+      {
+        image: banking,
+        title: "Banking",
+        description: "Secure and scalable solutions for banking.",
+      },
+      {
+        image: mediaentertain,
+        title: "Media and Entertainment",
+        description: "Solutions for digital media and entertainment platforms.",
+      },
+      {
+        image: mediaentertain,
+        title: "HRMS",
+        description: "Custom Feature-Packed HRMS Development Solution.",
+      },
+    ],
+  };
+  const outSoutceData = {
+    firstHeading: "Why choose",
+    secondHeading: "OnGraph?",
+    description:
+      "Our product engineering services are a one-stop-shop that can help you with everything from concept to development and deployment, support and enhancement, and market promotion.",
+    cardData: [
+      [
+        {
+          image: run1,
+          heading: "Extensive experience",
+          description:
+            "Our combined expertise of 14+ years in the field of IT solutions delivery and technology provides us an advantage when it comes to delivering startup IT services and solutions, giving them a competitive advantage.",
+        },
+        {
+          image: Mission,
+          heading: "Client confidentiality",
+          description:
+            "As the market becomes more competitive, we recognize the value of privacy. As a result, we go to great lengths to keep your product concept and information private and secure.",
+        },
+      ],
+      [
+        {
+          image: run2,
+          heading: "Cost-effective",
+          description:
+            "We understand that startups face funding constraints and a difficult road ahead. As a result, we draw on our extensive experience to develop the most cost-effective solutions for them to get started and support them along their growth path.",
+        },
+        {
+          image: VariteyApp,
+          heading: "Execution flexibility",
+          description:
+            "We recognize that the road ahead may be uncertain, and we’ll help you sort it out by working with you to achieve your objectives. We’ll work around your changing requirements to create a product that delivers results.",
+        },
+      ],
+    ],
+  };
+
+  

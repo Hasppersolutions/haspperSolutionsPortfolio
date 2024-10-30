@@ -34,7 +34,7 @@ const HoverCard = styled(Box)(({ theme }) => ({
 // Card component
 const CustomCard = ({ image, title, description, isSmall }) => (
   <HoverCard isSmall={isSmall}>
-    <CardContent style={{ textAlign: "center", padding: "10px" }}>
+    <CardContent style={{ textAlign: "center", padding: "10px", width: "100%" }}>
       <img
         src={image}
         alt={title}

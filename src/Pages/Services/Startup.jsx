@@ -60,7 +60,7 @@ import angularJs from "../../assets/img/Services/Startup/angularJs.png";
 import phoneGap from "../../assets/img/Services/Startup/phoneGap.png";
 import Outsourcing from "../../components/Services/CrossPlatform/OutSourcing";
 
-const ChatBot = () => {
+const Startup = () => {
   return (
     <>
       <Box
@@ -84,7 +84,7 @@ const ChatBot = () => {
     </>
   );
 };
-export default ChatBot;
+export default Startup;
 const bannerTextData = {
   mainHeading: "Innovative Startup ",
   middleHeading: "IT Solutions",

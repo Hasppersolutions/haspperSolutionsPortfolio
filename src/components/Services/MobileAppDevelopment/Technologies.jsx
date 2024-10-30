@@ -1,11 +1,32 @@
 import React from "react";
 import { Grid2 as Grid, Typography, Box, Container } from "@mui/material";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
+
+
+ 
 
 const Technologies = ({ data }) => {
+    //Animation
+    useGSAP(() => {
+      gsap.from(".animationTitleBox p", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".animationTitleBox",
+          start: "top 98%",
+          end: "bottom 70%",
+          toggleActions: "play none none reset",
+        },
+      });
+    });
+  
   return (
     <Box sx={{ py: "50px" }}>
       <Container>
-        <Box sx={{ textAlign: "center", maxWidth: 1100, margin: "auto" }}>
+        <Box className='animationTitleBox' sx={{ textAlign: "center", maxWidth: 1100, margin: "auto" }}>
           <Typography sx={titleStyle}>{data.firstHeading}</Typography>
           <Typography
             sx={[
