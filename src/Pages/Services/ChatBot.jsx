@@ -53,6 +53,18 @@ import run5 from "../../assets/img/Services/CrossPlatform/React/run5.png"
 
 import run1 from "../../assets/img/Services/CrossPlatform/React/run1.png"
 import run2 from "../../assets/img/Services/CrossPlatform/React/run3.png"
+import IndustriesServed from "../../components/Services/IndustriesServed"
+import foodimage from "../../assets/img/Services/Startup/foodimage.png"
+import fitnessApp from "../../assets/img/Services/Startup/fitnessApp.png"
+import elearningsolution from "../../assets/img/Services/Startup/elearningsolution.png";
+import mediaentertain from "../../assets/img/Services/Startup/mediaentertain.png";
+import banking from "../../assets/img/Services/Startup/banking.png";
+import DesignBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
+import telecomedev from "../../assets/img/Services/Startup/telecomedev.png";
+
+
+
+
 
 const ChatBot = () => {
   return (
@@ -68,6 +80,7 @@ const ChatBot = () => {
         <WaveLine />
         <Stats data={statsData} />
         <Technology data={technologyData} />
+        <IndustriesServed data={industries} />
         <Outsourcing data={outSoutceData} />
         <DevelopmentProcess data={developmentProcessData} />
         <WaveLine />
@@ -308,65 +321,109 @@ const developmentProcessData = {
 };
 
 const outSoutceData = {
-  firstHeading: "Why Choose Us",
-  secondHeading: "as Your React Native outsourcing Partner?",
-  // description: "",
+  firstHeading: "Technologies empowering",
+  secondHeading: "a Chatbot",
+  description: "Our AI and NLP-powered Chatbots are enterprise-grade for use in the most popular consumer and business communication channels. Let us share technologies which empower a personal assistant to perform human-centric conversations.",
   cardData: [
     [
       {
         image: run1,
-        heading: "Proficient React Developers",
+        heading: "Dialogue Management",
         description:
-          "We have experienced React Native developers capable of building highly scalable mobile applications.",
+          "We train an AI-powered bot that lets it be context-aware and look back into the conversational history to predict the next action.",
       },
       {
         image: Mission,
-        heading: "Up-to-dated developers",
+        heading: "Fluid Conversations",
         description:
-          "Our team of experienced developers has the capability and skills of working with React versions 16.9-18.1 and native versions 0.61-0.63",
+          "Depending on the action predicted by the dialogue manager, the respective template message is invoked.",
       },
     ],
     [
       {
         image: run2,
-        heading: "Various Libraries",
+        heading: "Rich & Interactive Content",
         description:
-          "Our React Native team works with multiple React libraries such as material-ui, stripe, chart.js, lodash, j moment, bootstrap, firebase, react-chart-js2, push-notification, react-native-voice, semantic-ui, google-maps-react, amplitude-js, and server-timing.",
+          "We provide our smart Chatbot conversational UX design that enables them to respond to users with different types of structured messages like buttons, images, lists, quick replies, etc.",
       },
       {
         image: VariteyApp,
-        heading: "Variety of apps",
+        heading: "Human Handover",
         description:
-          "Our React Native developers have created a wide range of applications for social media, e-gaming, e-learning, eCommerce, Shopify, health, and many more.",
+          "We perform bot development with a button to begin a “live chat session” when Chatbot doesn’t understand, or when a user wants to.",
       },
     ],
     [
       {
         image: TimelyDilevery,
-        heading: "Timely delivery",
+        heading: "API Integration",
         description:
-          "At OnGraph we strictly follow timelines and try to deliver defect-free, well optimized solutions, every time!",
+          "Our custom bots development services include coding of Bot logic, which makes it easier to integrate third parties via web services.",
       },
       {
         image: run5,
-        heading: "Seamless Support",
+        heading: "Language Support",
         description:
-          "Be it pre or post development issues or bugs, we are here to help you out. You just need to raise a support ticket with the concerned project manager and our technical support team will be assigned to it within an hour.",
+          "AI Chatbots Development includes multilingual support that helps you serve a different targeted audience.",
       },
     ],
     [
       {
         image: EnterpriseApplication,
-        heading: "Enterprise Applications",
+        heading: "Enterprise Capabilities",
         description:
-          "Enterprises need exceptional solutions that can cater millions of users without compromising on the user experience. Keeping this in mind, we employ highly experienced and dedicated developers to build powerful and robust applications for enterprise level businesses.",
+          "We propose Chatbots that are built for enterprise requirements and stand up parallel to your existing systems.",
       },
       {
         image: Pricing,
-        heading: "Competitive Pricing",
+        heading: "Platform Intelligence",
         description:
-          "Another feature that distinguishes us is our competitive price, as we believe in providing services that are worth the money.",
+          "Our smart Bot enriches digital experiences. The intelligent engine of Chatbots understand, remember, and learn from the information gathered during each interaction.",
       },
     ],
+  ],
+  
+};
+const industries= {
+  firstHeading: "Industries We Serve",
+  description: "We build Chatbot solutions for every niche",
+  backgroundImage: DesignBackgroudImage,
+  cardData: [
+    {
+      image: fitnessApp,
+      title: "Fitness App Development Solutions",
+      description: "Custom app solutions for fitness startups.",
+    },
+    {
+      image: elearningsolution,
+      title: "Custom E-Learning Solutions",
+      description: "Innovative e-learning platforms tailored to your needs.",
+    },
+    {
+      image: foodimage,
+      title: "Food",
+      description: "Digital solutions for the food industry.",
+    },
+    {
+      image: telecomedev,
+      title: "Telecom App Development Solutions",
+      description: "Cutting-edge apps for the telecom sector.",
+    },
+    {
+      image: banking,
+      title: "Banking",
+      description: "Secure and scalable solutions for banking.",
+    },
+    {
+      image: mediaentertain,
+      title: "Media and Entertainment",
+      description: "Solutions for digital media and entertainment platforms.",
+    },
+    {
+      image: mediaentertain,
+      title: "HRMS",
+      description: "Custom Feature-Packed HRMS Development Solution.",
+    }
+    
   ],
 };

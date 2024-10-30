@@ -77,7 +77,8 @@ const OutSourcing = ({ data }) => {
             <Grid
               container
               sx={{
-                height: { xs: "100%", md: "100", lg: "100" },
+                height: { xs: "100%"},
+                width: "100%"
               }}
             >
               <Grid
@@ -103,7 +104,8 @@ const OutSourcing = ({ data }) => {
                     flexDirection: "column",
                     alignItems: { xs: "center", md: "end" },
                     padding: { xs: "20px 10px 20px", md: "35px 50px 15px" },
-                    borderRadius: {xs: 2, md: 0}
+                    borderRadius: {xs: 2, md: 0},
+                    width: "100%"
                   }}
                 >
                   <Box
@@ -150,6 +152,7 @@ const OutSourcing = ({ data }) => {
                     alignContent: { xs: "center", md: "end" },
                     textAlign: { xs: "center", md: "start" },
                     justifyContent: "start",
+                    width: "100%"
                   }}
                 >
                   <Box
@@ -161,7 +164,8 @@ const OutSourcing = ({ data }) => {
                       flexDirection: "column",
                       alignItems: { xs: "center", md: "start" },
                       padding: { xs: "20px 10px 20px", md: "35px 50px 15px" },
-                      borderRadius: {xs: 2, md: 0}
+                      borderRadius: {xs: 2, md: 0},
+                      width: "100%"
                     }}
                   >
                     <Box

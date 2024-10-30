@@ -15,8 +15,8 @@ const HoverCard = styled(Card)(({ theme, isSmall }) => ({
     },
   },
   cursor: "pointer",
-  height: isSmall ? "250px" : "250px",
-  width: isSmall ? "100%" : "100%",
+  height: "250px",
+  width: "100%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -27,7 +27,7 @@ const HoverCard = styled(Card)(({ theme, isSmall }) => ({
 // Card component
 const CustomCard = ({ image, title, description, isSmall }) => (
   <HoverCard isSmall={isSmall}>
-    <CardContent style={{ textAlign: "center", padding: "10px" }}>
+    <CardContent style={{ textAlign: "center", padding: "10px", width: "100%" }}>
       <img
         src={image}
         alt={title}
