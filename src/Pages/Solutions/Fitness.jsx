@@ -173,7 +173,7 @@ const technologyData = [
   },
 ];
 const developmentServicesData = {
-  heading: "Why choose OnGraph for Fitness App Development?",
+  heading: "Why choose Haspper for Fitness App Development?",
   description:
     "We aim to be a reliable and trustworthy tech partner by reaching even the most involved development requirements and specifications of our clients",
   cardData: [

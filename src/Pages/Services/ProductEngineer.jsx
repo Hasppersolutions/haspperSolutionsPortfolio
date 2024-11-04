@@ -106,13 +106,13 @@ const potentialData = {
         image: enterprise,
         title: "Enterprise Resource Planning",
         description:
-          "With Ongraph, businesses can efficiently address the challenges that are associated with enterprise integration. We not only analyze your existing enterprise-to-cloud and cloud-to-cloud integration requirements but also, present a flexible platform that can quickly adapt to your future business needs. We use technologies like Oracle, Salesforce, SAP, MS Dynamics, Biztalk Services, Mulesoft for seamless integration.",
+          "With Haspper, businesses can efficiently address the challenges that are associated with enterprise integration. We not only analyze your existing enterprise-to-cloud and cloud-to-cloud integration requirements but also, present a flexible platform that can quickly adapt to your future business needs. We use technologies like Oracle, Salesforce, SAP, MS Dynamics, Biztalk Services, Mulesoft for seamless integration.",
       },
       {
         image: hassleFree,
         title: "Customer Relationship management",
         description:
-          "Ongraph's Customer Relationship Management solutions leverage techniques like predictive modeling, gathering intelligent insights through forecasting, data mining, and text mining to put the customer at the center of everything. We help our clients accelerate their CRM transformation initiatives to increase sales, boost productivity and improve customer service – while reducing operational cost and increasing time-to-market.",
+          "Hasppers Customer Relationship Management solutions leverage techniques like predictive modeling, gathering intelligent insights through forecasting, data mining, and text mining to put the customer at the center of everything. We help our clients accelerate their CRM transformation initiatives to increase sales, boost productivity and improve customer service – while reducing operational cost and increasing time-to-market.",
       },
       {
         image: delivery,
@@ -130,19 +130,19 @@ const potentialData = {
         image: dataMigration,
         title: "Cloud & Data Center Management",
         description:
-          "Cloud with its universal nature is becoming the clear choice for enterprises for the development and scalable performance of applications. With a track record of helping customers transform products into Cloud, migrate or enable their product for Cloud access, Ongraph can help you leverage the power of Cloud for your business.",
+          "Cloud with its universal nature is becoming the clear choice for enterprises for the development and scalable performance of applications. With a track record of helping customers transform products into Cloud, migrate or enable their product for Cloud access, Haspper can help you leverage the power of Cloud for your business.",
       },
       {
         image: promosntional,
         title: "Marketing Automation Systems",
         description:
-          "Ongraph offers innovative services that optimize your marketing automation by linking Marketing and IT processes with technology. This technology includes: campaign management, interactive marketing, marketing resource management, multi-channel and marketing measurement solutions to achieve a particular view of the customer and dramatically increase the ROI of your marketing efforts.",
+          "Haspper offers innovative services that optimize your marketing automation by linking Marketing and IT processes with technology. This technology includes: campaign management, interactive marketing, marketing resource management, multi-channel and marketing measurement solutions to achieve a particular view of the customer and dramatically increase the ROI of your marketing efforts.",
       },
       {
         image: dataBinding,
         title: "Big Data Intelligence",
         description:
-          "Ongraph's Big Data Intelligence enables organizations to conceptualize and execute a well-thought-out big data program over multiple domains and converge areas. We help our clients account for scale and platform willingness while developing Big Data Engineering capabilities to encourage vision and value.",
+          "Haspper's Big Data Intelligence enables organizations to conceptualize and execute a well-thought-out big data program over multiple domains and converge areas. We help our clients account for scale and platform willingness while developing Big Data Engineering capabilities to encourage vision and value.",
       },
       {
         image: dataCollection,
@@ -278,7 +278,7 @@ const potentialData = {
     mainHeading: "",
     subHeading: "Enterprise Product Engineering Solutions To Achieve Your Objectives",
     description:
-      "Product engineering leaders are discovering scale-out opportunities in automation, innovation, and related technology development in the ever-changing technology business. While many of these technology companies keep their core engineering efforts in-house, they rely on partners to construct, extend, alter, or support their products. <br/>Product engineering, transformation, and maintenance are all specialist disciplines at OnGraph. We solve the complexity of establishing and extending products that demand a variety of user experiences and must be architected for spikes in usage kinds, performance, and availability by leveraging our knowledge. We provide our clients a range of flexible, dependable, and high-quality product development and transformation services to meet their specific business requirements, including innovation, scalability, talents, multi-location, cost arbitrage, and more.",
+      "Product engineering leaders are discovering scale-out opportunities in automation, innovation, and related technology development in the ever-changing technology business. While many of these technology companies keep their core engineering efforts in-house, they rely on partners to construct, extend, alter, or support their products. <br/>Product engineering, transformation, and maintenance are all specialist disciplines at Haspper. We solve the complexity of establishing and extending products that demand a variety of user experiences and must be architected for spikes in usage kinds, performance, and availability by leveraging our knowledge. We provide our clients a range of flexible, dependable, and high-quality product development and transformation services to meet their specific business requirements, including innovation, scalability, talents, multi-location, cost arbitrage, and more.",
     cardData: [
       {
         image: Group,
@@ -345,7 +345,7 @@ const potentialData = {
   };
   const outSoutceData = {
     firstHeading: "Why choose",
-    secondHeading: "OnGraph?",
+    secondHeading: "Haspper?",
     description:
       "Our product engineering services are a one-stop-shop that can help you with everything from concept to development and deployment, support and enhancement, and market promotion.",
     cardData: [

@@ -55,7 +55,9 @@ import Group from "../../assets/img/Services/chatbot/Group.png";
 import Vector from "../../assets/img/Services/chatbot/Vector.png";
 import bot from "../../assets/img/Services/chatbot/bot.png";
 import person from "../../assets/img/Services/chatbot/person.png";
-import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
+import html from "../../assets/img/Services/Startup/html.png";
+import flutter from "../../assets/img/Services/Startup/flutter.png";
+import swift from "../../assets/img/Services/Startup/swift.png";
 
 const IotDevelopment = () => {
   return (
@@ -96,7 +98,7 @@ const potentialData = {
   firstHeading: "360 Degree End-to-End",
   secondHeading: "IoT & IIoT Services",
   description:
-    "OnGraph delivers Product Design and Development across industry verticals. Our experts assist you from concept to production that enables you to focus on product strategy and management. Backed by skilled and proficient experts, we make use of the most advanced technology and tools to design and develop IoT products that meet your business model as well as focus on end consumer needs.",
+    "Haspper delivers Product Design and Development across industry verticals. Our experts assist you from concept to production that enables you to focus on product strategy and management. Backed by skilled and proficient experts, we make use of the most advanced technology and tools to design and develop IoT products that meet your business model as well as focus on end consumer needs.",
   cardData: [
     {
       image: mlearning,
@@ -151,22 +153,19 @@ const featureData = {
 const statsData = {
   cardData: [
     {
-      icon: multilingualChatbots,
       number: "1500+",
       label: "Apps Developed",
     },
     {
-      icon: multilingualChatbots,
       number: "150+",
       label: "Mobile App Developers",
     },
     {
-      icon: multilingualChatbots,
       number: "1000+",
       label: "Clients Worldwide",
     },
     {
-      icon: multilingualChatbots,
+
       number: "98%",
       label: "Success Rate",
     },
@@ -176,19 +175,17 @@ const technologyData = [
   {
     name: "Languages",
     imgData: [
-      "path/to/html5-icon",
+      html,
       python,
       java,
       objectC,
-      "path/to/swift-icon",
+      swift,
     ],
   },
   {
     name: "Framework",
     imgData: [
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
-      "path/to/flutter-icon",
+      flutter,
       xamarin,
       ionic,
       node,
@@ -239,9 +236,9 @@ const faqData = {
         "No, once we discuss with you your website requirements and then price. We work hard so that the outlined price quote is strictly maintained the same.",
     },
     {
-      question: "Q. Why should I outsource my development to OnGraph?",
+      question: "Q. Why should I outsource my development to Haspper?",
       answer:
-        "Save time and reduce costs significantly when you outsource your development to OnGraph. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.",
+        "Save time and reduce costs significantly when you outsource your development to Haspper. We provide dedicated development teams and shared resources to work on your project full-time. Check out our article about offshore development teams.",
     },
     {
       question:
@@ -306,7 +303,7 @@ const outSoutceData = {
   firstHeading: "Full IoT applications",
   secondHeading: "Stack Expertise",
   description:
-    "OnGraph engineering tech talent has solid expertise across all technologies related to IoT and IIoT world. We have expertise in IoT applications that can pick sensor data from cloud servers and build intelligent applications (having informative visualizations) for web and mobile interfaces. Our app solutions can help you decipher business insights and can perform 2-way information exchange between your apps and installed devices to perform actions like switch-on or switch-off etc.",
+    "Haspper engineering tech talent has solid expertise across all technologies related to IoT and IIoT world. We have expertise in IoT applications that can pick sensor data from cloud servers and build intelligent applications (having informative visualizations) for web and mobile interfaces. Our app solutions can help you decipher business insights and can perform 2-way information exchange between your apps and installed devices to perform actions like switch-on or switch-off etc.",
   cardData: [
     [
       {

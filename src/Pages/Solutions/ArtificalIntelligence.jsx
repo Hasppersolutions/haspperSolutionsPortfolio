@@ -103,7 +103,7 @@ Discover the power of Haspper intelligent, secured, and highly personalized arti
 Besides offering Development in AI across diverse domains, we specialize in artificial intelligence game development, and software development powered by AI, and provide top-tier artificial intelligence automation consulting. Our AI technologies go beyond automation, allowing you to create and excel.
 
 As a leading Artificial Intelligence Company, we cover all bases, from AI consulting and development of Artificial Intelligence to Integration, Maintenance, Generative AI, and AI Data Engineering. Trust our AI consulting experts to guide you through the AI transformation process.
-Choose OnGraph for an AI-powered, smarter, faster, and genuinely revolutionary corporate future.
+Choose Haspper for an AI-powered, smarter, faster, and genuinely revolutionary corporate future.
 
     `,
     button: "GET FREE DEMO",
