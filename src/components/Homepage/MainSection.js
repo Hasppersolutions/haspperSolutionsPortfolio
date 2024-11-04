@@ -136,9 +136,9 @@ const StatsSection = () => {
     })
   })
   const statsData = [
-    { value: '300+', label: 'Developers' },
-    { value: '500+', label: 'Customers' },
-    { value: '1140', label: 'Projects Delivered' },
+    { value: '50+', label: 'Developers' },
+    { value: '100+', label: 'Customers' },
+    { value: '500+', label: 'Projects Delivered' },
     { value: '96%', label: 'Retention rate' },
   ];
 
