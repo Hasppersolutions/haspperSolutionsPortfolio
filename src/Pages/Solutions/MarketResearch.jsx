@@ -13,10 +13,6 @@ import panel from "../../assets/img/Solutions/marketResearch/panel.png";
 import fraud from "../../assets/img/Solutions/marketResearch/fraud.png";
 import tools from "../../assets/img/Solutions/marketResearch/tools.png";
 import survey from "../../assets/img/Solutions/marketResearch/survey.png";
-import reconciliationRate from "../../assets/img/Solutions/marketResearch/reconcilation-rate.png";
-import surveyCompleted from "../../assets/img/Solutions/marketResearch/survey-completed.png";
-import apiIntegration from "../../assets/img/Solutions/marketResearch/api-integration.png";
-import panelIntegration from "../../assets/img/Solutions/marketResearch/panel-integration.png";
 import innovationBackImg from "../../assets/img/innovationBackImg.png";
 import InnovationSection from "../../components/Services/Ai/InnovationSection.jsx";
 
@@ -50,7 +46,7 @@ const aiDescriptionData = {
   firstHeading: "Maximize Your Market Understanding With ",
   secondHeading: "Our Integrated Research Solutions",
   description: `Streamlining market research in a managed, secure, and highly-customized manner. Enjoy immense capabilities from managing projects internally, a panel website for connecting and managing multi-regional respondents, creating target-specific surveys with pre-built themes, mitigating survey frauds, and getting the freedom to run own projects at feasible prices with DIY tools.
-  OnGraph is pushing boundaries to cover each endpoint of Market Research and making it better than ever. With our cutting-edge AI-based market research software development services, we can help you drive better and faster research for informed decisions by using artificial intelligence technology.
+  Haspper is pushing boundaries to cover each endpoint of Market Research and making it better than ever. With our cutting-edge AI-based market research software development services, we can help you drive better and faster research for informed decisions by using artificial intelligence technology.
   Transform your diverse research requirements with our customized, white-label market research software solutions.`,
   button: "TALK TO OUR EXPERTS",
   image: remoteWork,
@@ -127,7 +123,7 @@ const challengesData = {
 const innovationSectionData = {
   firstHeading: " We’ve helped businesses complete 8M+ surveys",
   description:
-    "OnGraph arms your business with the right tech-led solutions to tackle potential market research challenges. Bridging gaps between the client, suppliers, and respondents to generate targeted and reliable survey results. Trusted by top market brands. We are successful in delivering what matters the most- Quality and Reliability.",
+    "Haspper arms your business with the right tech-led solutions to tackle potential market research challenges. Bridging gaps between the client, suppliers, and respondents to generate targeted and reliable survey results. Trusted by top market brands. We are successful in delivering what matters the most- Quality and Reliability.",
   backgroundImage: innovationBackImg,
 };
 const technologiesData = {
@@ -171,22 +167,18 @@ const technologiesData = {
 const statsData = {
   cardData: [
     {
-      icon: surveyCompleted,
       number: "8M+",
       label: "Survey Completed",
     },
     {
-      icon: panelIntegration,
       number: "65+",
       label: "Panel Integration",
     },
     {
-      icon: reconciliationRate,
       number: "5%",
       label: "Reconciliation Rate",
     },
     {
-      icon: apiIntegration,
       number: "40+",
       label: "API Integrations",
     },

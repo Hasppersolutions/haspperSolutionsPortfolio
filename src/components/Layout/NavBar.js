@@ -247,6 +247,7 @@ export const NavBar = () => {
   }}>
     
     <Button 
+    disableRipple
       sx={{
         backgroundColor: "#fff",
         borderRadius: "20px",
@@ -288,6 +289,7 @@ export const NavBar = () => {
     width: '200px',
   }}>
     <Button
+    disableRipple
       sx={{
         backgroundColor: "#fff",
         borderRadius: "20px",
@@ -368,34 +370,108 @@ export const NavBar = () => {
                       },
                     },
                     tooltip: {
-                      sx: [tooltipStyle, { minWidth: { lg: "900px" } }],
+                      sx: [tooltipStyle, { minWidth: { lg: "950px" } }],
                     },
                   }}
                   title={
                     <Box>
                       <Grid container>
-                        <Grid size={3}>
+                        <Grid size={4}>
                           <Box sx={{
-                            rowGap: 4
+                            rowGap: 8,
+                            display: 'flex',
+                            flexDirection: 'column'
                           }}>
 
-                            <Box sx={{
-                              backgroundColor: "#fff",
-                              borderRadius: "20px",
-                              height: 100,
-                              width: 100
-                            }}>
-                            </Box>
-                            <Box sx={{
-                              backgroundColor: "#fff",
-                              borderRadius: "20px",
-                              height: 100,
-                              width: 100
-                            }}>
-                            </Box>
+<Box sx={{
+    backgroundColor: "#fff",
+    borderRadius: "16px",
+    padding: '20px 16px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+    width: '200px',
+    marginBottom: '24px',
+  }}>
+    
+    <Button 
+    disableRipple
+      sx={{
+        backgroundColor: "#fff",
+        borderRadius: "20px",
+        height: 'auto',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '-10px'
+      }}
+      onClick={() => handleNavigate("/startup-it-solutions")}
+    >
+      <Rocket sx={{ fontSize: 100, color: '#333',  }} />
+      <Typography sx={{ 
+        marginTop: '12px', 
+        fontSize: '16px', 
+        fontWeight: '600', 
+        color: '#1E3A8A', 
+        padding: '6px 12px', 
+        backgroundColor: '#F1F5F9', 
+        borderRadius: '8px',
+        marginBottom: '-50px',
+      }}>
+        STARTUPS
+      </Typography>
+    </Button>
+  </Box>
+
+  <Box sx={{
+    backgroundColor: "#fff",
+    borderRadius: "16px",
+    padding: '20px 16px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+    width: '200px',
+  }}>
+    <Button
+    disableRipple
+      sx={{
+        backgroundColor: "#fff",
+        borderRadius: "20px",
+        height: 'auto',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '-10px'
+        
+      }}
+      onClick={() => handleNavigate("/enterprise-it-solutions")}
+    >
+      <Factory sx={{ fontSize: 100, color: '#333' }} />
+      <Typography sx={{ 
+        marginTop: '12px', 
+        fontSize: '16px', 
+        fontWeight: '600', 
+        color: '#1E3A8A', 
+        padding: '6px 12px', 
+        backgroundColor: '#F1F5F9', 
+        borderRadius: '8px',
+        marginBottom: '-50px'
+      }}>
+        ENTERPRISE
+      </Typography>
+    </Button>
+  </Box>       
                           </Box>
                         </Grid>
-                        <Grid size={9}>
+                        <Grid size={8}>
                           <Grid container columnSpacing={4}>
                             {item?.dropdownLinks?.map((item, index) => (
                               <Grid size={6}>
@@ -450,9 +526,9 @@ export const NavBar = () => {
             </>
           ))}
           <Box className="social-icon">
-            <Link to="#"><img src={navIcon1} alt="LinkedIn" /></Link>
+            <Link to="https://www.linkedin.com/in/haspper-solutions-b4b82232b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src={navIcon1} alt="LinkedIn" /></Link>
             <Link to="#"><img src={navIcon2} alt="Facebook" /></Link>
-            <Link to="#"><img src={navIcon3} alt="Instagram" /></Link>
+            <Link to="https://www.instagram.com/haspper_solutions/profilecard/?igsh=MTNhbWZ5ZGYyajliaQ=="><img src={navIcon3} alt="Instagram" /></Link>
           </Box>
         </Box>
         {/* Mobile Navbar */}
@@ -734,7 +810,7 @@ const linkData = [
               },
               {
                 name: "Enterprise Product",
-                link: "",
+                link: "/product-engineer-development",
                 type: "subHeading"
               },
             ]

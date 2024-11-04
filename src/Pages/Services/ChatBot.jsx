@@ -41,6 +41,30 @@ import development from "../../assets/img/Services/chatbot/development.png";
 import Mailus from "../../components/Homepage/Mailus";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
 import WaveLine from "../../components/WaveLine.jsx";
+import { Contact } from "../../components/Homepage/Contact";
+import Outsourcing from "../../components/Services/CrossPlatform/OutSourcing";
+// import KeyFeatures from "../../components/Solutions/KeyFeatures.jsx";
+import VariteyApp from '../../assets/img/Services/CrossPlatform/VarietyApps.svg';
+import TimelyDilevery from '../../assets/img/Services/CrossPlatform/TimelyDilevery.svg';
+import Mission from '../../assets/img/Services/CrossPlatform/Mission.svg';
+import EnterpriseApplication from '../../assets/img/Services/CrossPlatform/EnterpriceApplication.svg'
+import Pricing from '../../assets/img/Services/CrossPlatform/Pricing.svg';
+import run5 from "../../assets/img/Services/CrossPlatform/React/run5.png"
+
+import run1 from "../../assets/img/Services/CrossPlatform/React/run1.png"
+import run2 from "../../assets/img/Services/CrossPlatform/React/run3.png"
+import IndustriesServed from "../../components/Services/IndustriesServed"
+import foodimage from "../../assets/img/Services/Startup/foodimage.png"
+import fitnessApp from "../../assets/img/Services/Startup/fitnessApp.png"
+import elearningsolution from "../../assets/img/Services/Startup/elearningsolution.png";
+import mediaentertain from "../../assets/img/Services/Startup/mediaentertain.png";
+import banking from "../../assets/img/Services/Startup/banking.png";
+import DesignBackgroudImage from "../../assets/img/ServiceBackgroudImage.png";
+import telecomedev from "../../assets/img/Services/Startup/telecomedev.png";
+
+
+
+
 
 const ChatBot = () => {
   return (
@@ -56,9 +80,12 @@ const ChatBot = () => {
         <WaveLine />
         <Stats data={statsData} />
         <Technology data={technologyData} />
+        <IndustriesServed data={industries} />
+        <Outsourcing data={outSoutceData} />
         <DevelopmentProcess data={developmentProcessData} />
         <WaveLine />
         <FAQ data={faqData}/>
+        <Contact />
         <Mailus />
         <ServicesAndStaffing />
         {/* <KeyFeatures /> */}
@@ -156,22 +183,18 @@ const featureData = {
 const statsData = {
   cardData: [
     {
-      icon: multilingualChatbots,
       number: "1500+",
       label: "Apps Developed",
     },
     {
-      icon: multilingualChatbots,
       number: "150+",
       label: "Mobile App Developers",
     },
     {
-      icon: multilingualChatbots,
       number: "1000+",
       label: "Clients Worldwide",
     },
     {
-      icon: multilingualChatbots,
       number: "98%",
       label: "Success Rate",
     },
@@ -290,5 +313,113 @@ const developmentProcessData = {
         "We continue to offer widespread support and maintenance to guarantee smooth operations.",
       icon: quality,
     },
+  ],
+};
+
+const outSoutceData = {
+  firstHeading: "Technologies empowering",
+  secondHeading: "a Chatbot",
+  description: "Our AI and NLP-powered Chatbots are enterprise-grade for use in the most popular consumer and business communication channels. Let us share technologies which empower a personal assistant to perform human-centric conversations.",
+  cardData: [
+    [
+      {
+        image: run1,
+        heading: "Dialogue Management",
+        description:
+          "We train an AI-powered bot that lets it be context-aware and look back into the conversational history to predict the next action.",
+      },
+      {
+        image: Mission,
+        heading: "Fluid Conversations",
+        description:
+          "Depending on the action predicted by the dialogue manager, the respective template message is invoked.",
+      },
+    ],
+    [
+      {
+        image: run2,
+        heading: "Rich & Interactive Content",
+        description:
+          "We provide our smart Chatbot conversational UX design that enables them to respond to users with different types of structured messages like buttons, images, lists, quick replies, etc.",
+      },
+      {
+        image: VariteyApp,
+        heading: "Human Handover",
+        description:
+          "We perform bot development with a button to begin a “live chat session” when Chatbot doesn’t understand, or when a user wants to.",
+      },
+    ],
+    [
+      {
+        image: TimelyDilevery,
+        heading: "API Integration",
+        description:
+          "Our custom bots development services include coding of Bot logic, which makes it easier to integrate third parties via web services.",
+      },
+      {
+        image: run5,
+        heading: "Language Support",
+        description:
+          "AI Chatbots Development includes multilingual support that helps you serve a different targeted audience.",
+      },
+    ],
+    [
+      {
+        image: EnterpriseApplication,
+        heading: "Enterprise Capabilities",
+        description:
+          "We propose Chatbots that are built for enterprise requirements and stand up parallel to your existing systems.",
+      },
+      {
+        image: Pricing,
+        heading: "Platform Intelligence",
+        description:
+          "Our smart Bot enriches digital experiences. The intelligent engine of Chatbots understand, remember, and learn from the information gathered during each interaction.",
+      },
+    ],
+  ],
+  
+};
+const industries= {
+  firstHeading: "Industries We Serve",
+  description: "We build Chatbot solutions for every niche",
+  backgroundImage: DesignBackgroudImage,
+  cardData: [
+    {
+      image: fitnessApp,
+      title: "Fitness App Development Solutions",
+      description: "Custom app solutions for fitness startups.",
+    },
+    {
+      image: elearningsolution,
+      title: "Custom E-Learning Solutions",
+      description: "Innovative e-learning platforms tailored to your needs.",
+    },
+    {
+      image: foodimage,
+      title: "Food",
+      description: "Digital solutions for the food industry.",
+    },
+    {
+      image: telecomedev,
+      title: "Telecom App Development Solutions",
+      description: "Cutting-edge apps for the telecom sector.",
+    },
+    {
+      image: banking,
+      title: "Banking",
+      description: "Secure and scalable solutions for banking.",
+    },
+    {
+      image: mediaentertain,
+      title: "Media and Entertainment",
+      description: "Solutions for digital media and entertainment platforms.",
+    },
+    {
+      image: mediaentertain,
+      title: "HRMS",
+      description: "Custom Feature-Packed HRMS Development Solution.",
+    }
+    
   ],
 };

@@ -145,7 +145,10 @@ const Banner = ({ data }) => {
               </Box>
               {data.button && (
                 <Box>
-                  <Link to={data.link} style={{ textDecoration: "none" }}>
+                  <Link
+                    to={data.link || "/contact"}
+                    style={{ textDecoration: "none" }}
+                  >
                     <Button sx={buttonStyle}>{data.button}</Button>
                   </Link>
                 </Box>

@@ -10,7 +10,6 @@ import xamarin from "../../assets/img/Services/chatbot/xamarin.png";
 import ionic from "../../assets/img/Services/chatbot/ionic.png";
 import node from "../../assets/img/Services/chatbot/node.png";
 import laravel from "../../assets/img/Services/chatbot/laravel.png";
-
 import securePay from "../../assets/img/Services/chatbot/secure-pay.png";
 import amazonPay from "../../assets/img/Services/chatbot/amazon-pay.png";
 import payPal from "../../assets/img/Services/chatbot/pay-pal.png";
@@ -21,7 +20,6 @@ import WaveLine from "../../components/WaveLine.jsx";
 import FAQ from "../../components/Services/CrossPlatform/Ionic/FAQ";
 import Mailus from "../../components/Homepage/Mailus";
 import ServicesAndStaffing from "../../components/Homepage/ServicesAndStaffing";
-import multilingualChatbots from "../../assets/img/Services/chatbot/multilingualChatbots.png";
 import Stats from "../../components/Services/Stats";
 import DevelopmentServices from "../../components/Services/Ios/DevelopmentServices";
 import hrms from "../../assets/img/Solutions/hrms/hrms.png";
