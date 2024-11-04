@@ -526,9 +526,9 @@ export const NavBar = () => {
             </>
           ))}
           <Box className="social-icon">
-            <Link to="#"><img src={navIcon1} alt="LinkedIn" /></Link>
+            <Link to="https://www.linkedin.com/in/haspper-solutions-b4b82232b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src={navIcon1} alt="LinkedIn" /></Link>
             <Link to="#"><img src={navIcon2} alt="Facebook" /></Link>
-            <Link to="#"><img src={navIcon3} alt="Instagram" /></Link>
+            <Link to="https://www.instagram.com/haspper_solutions/profilecard/?igsh=MTNhbWZ5ZGYyajliaQ=="><img src={navIcon3} alt="Instagram" /></Link>
           </Box>
         </Box>
         {/* Mobile Navbar */}
